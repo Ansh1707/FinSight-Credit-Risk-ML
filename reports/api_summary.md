@@ -16,8 +16,10 @@ http://127.0.0.1:8000/docs
 
 ## Endpoints
 
+- `GET /`: returns project metadata and links to docs and health checks.
 - `GET /health`: checks service and model availability.
 - `POST /predict`: returns `default_probability`, `risk_band`, and `collections_priority_score`.
+- `POST /batch_predict`: returns predictions for multiple applicants in one request.
 - `POST /explain`: returns prediction fields plus top reason codes.
 - `GET /model_info`: returns model name, version, feature count, threshold, and validation/test metric summary.
 
@@ -42,6 +44,33 @@ Missing model features are defaulted to `0.0` and counted in the response.
   }
 }
 ```
+
+## Batch Request Body
+
+```json
+{
+  "applicants": [
+    {
+      "sk_id_curr": 406244,
+      "features": {
+        "AMT_INCOME_TOTAL": 135000.0,
+        "AMT_CREDIT": 675000.0,
+        "external_score_mean": 0.22
+      }
+    },
+    {
+      "sk_id_curr": 238626,
+      "features": {
+        "AMT_INCOME_TOTAL": 180000.0,
+        "AMT_CREDIT": 900000.0,
+        "external_score_mean": 0.30
+      }
+    }
+  ]
+}
+```
+
+Batch requests accept up to 500 applicants. Each applicant uses the same feature payload shape as `/predict`.
 
 ## Collections Priority Formula
 

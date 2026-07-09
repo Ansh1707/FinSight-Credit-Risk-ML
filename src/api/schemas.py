@@ -39,6 +39,16 @@ class PredictionRequest(BaseModel):
     )
 
 
+class RootResponse(BaseModel):
+    """Helpful landing response for the API root."""
+
+    project: str
+    status: str
+    docs_url: str
+    health_url: str
+    endpoints: list[str]
+
+
 class PredictionResponse(BaseModel):
     """Prediction response for `/predict`."""
 
@@ -55,6 +65,24 @@ class ExplainResponse(PredictionResponse):
 
     top_reason_codes: list[str]
     reason_code_source: str
+
+
+class BatchPredictionRequest(BaseModel):
+    """Batch scoring payload for `/batch_predict`."""
+
+    applicants: list[PredictionRequest] = Field(
+        ...,
+        min_length=1,
+        max_length=500,
+        description="Applicants to score. Each applicant uses the same payload shape as /predict.",
+    )
+
+
+class BatchPredictionResponse(BaseModel):
+    """Batch prediction response."""
+
+    applicant_count: int
+    predictions: list[PredictionResponse]
 
 
 class HealthResponse(BaseModel):

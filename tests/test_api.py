@@ -41,6 +41,11 @@ def test_api_endpoints_with_mocked_model_service(monkeypatch) -> None:
     monkeypatch.setattr(main, "get_model_service", lambda: FakeModelService())
     client = TestClient(main.app)
 
+    root = client.get("/")
+    assert root.status_code == 200
+    assert root.json()["docs_url"] == "/docs"
+    assert "POST /batch_predict" in root.json()["endpoints"]
+
     health = client.get("/health")
     assert health.status_code == 200
     assert health.json() == {"status": "ok", "model_loaded": True}
@@ -69,6 +74,36 @@ def test_api_endpoints_with_mocked_model_service(monkeypatch) -> None:
     assert info.json()["feature_count"] == 2
 
 
+def test_batch_predict_scores_multiple_applicants(monkeypatch) -> None:
+    monkeypatch.setattr(main, "get_model_service", lambda: FakeModelService())
+    client = TestClient(main.app)
+
+    response = client.post(
+        "/batch_predict",
+        json={
+            "applicants": [
+                {"sk_id_curr": 1, "features": {"AMT_CREDIT": 250000.0}},
+                {"sk_id_curr": 2, "features": {"AMT_CREDIT": 750000.0}},
+            ]
+        },
+    )
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["applicant_count"] == 2
+    assert len(payload["predictions"]) == 2
+    assert payload["predictions"][1]["credit_amount"] == 750000.0
+
+
+def test_batch_predict_requires_at_least_one_applicant(monkeypatch) -> None:
+    monkeypatch.setattr(main, "get_model_service", lambda: FakeModelService())
+    client = TestClient(main.app)
+
+    response = client.post("/batch_predict", json={"applicants": []})
+
+    assert response.status_code == 422
+
+
 def test_api_converts_value_errors_to_422(monkeypatch) -> None:
     class FailingService(FakeModelService):
         def predict(self, features: dict[str, float]) -> dict[str, Any]:
@@ -81,4 +116,3 @@ def test_api_converts_value_errors_to_422(monkeypatch) -> None:
 
     assert response.status_code == 422
     assert "Unknown feature names" in response.json()["detail"]
-

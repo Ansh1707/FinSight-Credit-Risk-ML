@@ -6,11 +6,14 @@ from fastapi import FastAPI, HTTPException
 
 from src.api.model_loader import get_model_service
 from src.api.schemas import (
+    BatchPredictionRequest,
+    BatchPredictionResponse,
     ExplainResponse,
     HealthResponse,
     ModelInfoResponse,
     PredictionRequest,
     PredictionResponse,
+    RootResponse,
 )
 
 
@@ -22,6 +25,25 @@ app = FastAPI(
     ),
     version="1.0.0",
 )
+
+
+@app.get("/", response_model=RootResponse)
+def root() -> RootResponse:
+    """Return a friendly API landing response."""
+    return RootResponse(
+        project="FinSight Credit Risk API",
+        status="ok",
+        docs_url="/docs",
+        health_url="/health",
+        endpoints=[
+            "GET /",
+            "GET /health",
+            "POST /predict",
+            "POST /batch_predict",
+            "POST /explain",
+            "GET /model_info",
+        ],
+    )
 
 
 @app.get("/health", response_model=HealthResponse)
@@ -40,6 +62,25 @@ def predict(request: PredictionRequest) -> PredictionResponse:
     try:
         result = get_model_service().predict(request.features)
         return PredictionResponse(**result)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/batch_predict", response_model=BatchPredictionResponse)
+def batch_predict(request: BatchPredictionRequest) -> BatchPredictionResponse:
+    """Return predictions for multiple applicants in one request."""
+    try:
+        service = get_model_service()
+        predictions = [
+            PredictionResponse(**service.predict(applicant.features))
+            for applicant in request.applicants
+        ]
+        return BatchPredictionResponse(
+            applicant_count=len(predictions),
+            predictions=predictions,
+        )
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
     except Exception as exc:

@@ -183,8 +183,10 @@ http://127.0.0.1:8000/docs
 
 Endpoints:
 
+- `GET /`
 - `GET /health`
 - `POST /predict`
+- `POST /batch_predict`
 - `POST /explain`
 - `GET /model_info`
 
