@@ -319,7 +319,10 @@ This runs:
 - `python -m compileall src dashboard tests`
 - `pytest -q`
 
-GitHub Actions runs the same smoke checks on pushes and pull requests to `main`.
+GitHub Actions runs the same checks on pushes and pull requests to `main`.
+The test suite covers repository hygiene, raw-data validation helpers, model metrics,
+collections scoring logic, prediction utilities, and FastAPI endpoints with a mocked
+model service so CI does not require private raw data or trained model artifacts.
 
 ## Resume-Ready Impact Bullets
 
