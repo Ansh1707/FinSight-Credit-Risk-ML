@@ -133,6 +133,26 @@ Actual 5-fold stability results:
 | Recall@Top-10% | 0.3646 | 0.0074 | 0.3577 | 0.3772 |
 | KS statistic | 0.4276 | 0.0104 | 0.4146 | 0.4419 |
 
+## Calibration
+
+Compare raw final-model probabilities against Platt/sigmoid and isotonic calibration:
+
+```bash
+python src/models/calibrate_model.py
+```
+
+The command writes `reports/calibration_comparison.csv`, `reports/calibration_report.md`, and `reports/figures/calibration_comparison.png`. This phase separates ranking quality from probability quality, which matters in credit-risk settings where probabilities may feed policy thresholds or portfolio planning.
+
+Actual test-set calibration results:
+
+| method | Brier | ECE | ROC-AUC | PR-AUC | Recall@Top-10% |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Uncalibrated | 0.1645 | 0.2742 | 0.7765 | 0.2640 | 0.3593 |
+| Platt/sigmoid | 0.0669 | 0.0062 | 0.7765 | 0.2640 | 0.3593 |
+| Isotonic | 0.0668 | 0.0023 | 0.7760 | 0.2540 | 0.3547 |
+
+Platt/sigmoid calibration is the most balanced option because it materially improves probability calibration while preserving the final model's ranking metrics. Isotonic has the lowest test Brier score but slightly weakens PR-AUC and Recall@Top-10%.
+
 ## Explainability
 
 SHAP is used for global feature importance and applicant-level reason codes. The explainability script samples `5,000` processed applicants for SHAP analysis and only generates reason codes from positive SHAP contributions.
@@ -314,6 +334,7 @@ python src/features/pyspark_feature_engineering.py
 python src/models/train_baseline.py
 python src/models/train_final_model.py
 python src/models/cross_validate_model.py
+python src/models/calibrate_model.py
 python src/explainability/shap_reason_codes.py
 python src/business/collections_scoring.py
 uvicorn src.api.main:app --reload

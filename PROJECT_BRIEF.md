@@ -120,3 +120,15 @@ The final LightGBM configuration was checked with stratified 5-fold validation o
 | PR-AUC | 0.2745 | 0.0074 | 0.2651 | 0.2854 |
 | Recall@Top-10% | 0.3646 | 0.0074 | 0.3577 | 0.3772 |
 | KS statistic | 0.4276 | 0.0104 | 0.4146 | 0.4419 |
+
+## Calibration Snapshot
+
+Calibration was evaluated by fitting Platt/sigmoid and isotonic transforms on the validation split and evaluating on the test split.
+
+| method | test Brier | test ECE | test ROC-AUC | test PR-AUC | test Recall@Top-10% |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Uncalibrated | 0.1645 | 0.2742 | 0.7765 | 0.2640 | 0.3593 |
+| Platt/sigmoid | 0.0669 | 0.0062 | 0.7765 | 0.2640 | 0.3593 |
+| Isotonic | 0.0668 | 0.0023 | 0.7760 | 0.2540 | 0.3547 |
+
+Platt/sigmoid calibration is the preferred balanced option for calibrated probability reporting because it improves Brier score and expected calibration error while preserving the model's ranking metrics.

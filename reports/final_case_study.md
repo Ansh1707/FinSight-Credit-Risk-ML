@@ -66,6 +66,8 @@ The final model uses validation PR-AUC as the selection metric because the defau
 
 The selected LightGBM configuration was also checked with stratified 5-fold cross-validation on the full processed dataset. Cross-validation mean metrics were ROC-AUC `0.7830`, PR-AUC `0.2745`, Recall@Top-10% `0.3646`, and KS statistic `0.4276`. The low fold-to-fold variation supports the model's use as a stable ranking baseline, while still leaving room for calibration, fairness, and cost-sensitive threshold work before production deployment.
 
+Calibration analysis compared raw LightGBM probabilities against Platt/sigmoid and isotonic calibration fitted on the validation split. On the test split, Platt/sigmoid improved Brier score from `0.1645` to `0.0669` and expected calibration error from `0.2742` to `0.0062` while preserving ROC-AUC, PR-AUC, and Recall@Top-10%. Isotonic produced the lowest test Brier score at `0.0668`, but slightly reduced PR-AUC and Recall@Top-10%, so Platt/sigmoid is the cleaner balanced choice for calibrated probability reporting.
+
 ## Business Impact
 
 FinSight turns a credit-risk model into a business workflow:
