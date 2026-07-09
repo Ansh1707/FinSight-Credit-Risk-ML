@@ -132,3 +132,14 @@ Calibration was evaluated by fitting Platt/sigmoid and isotonic transforms on th
 | Isotonic | 0.0668 | 0.0023 | 0.7760 | 0.2540 | 0.3547 |
 
 Platt/sigmoid calibration is the preferred balanced option for calibrated probability reporting because it improves Brier score and expected calibration error while preserving the model's ranking metrics.
+
+## Business Impact Snapshot
+
+Collections capacity analysis ranks applicants by final model probability and evaluates how many observed defaults are captured at different review queue sizes. At a `10%` review capacity, the model reviews `30,752` applicants and captures `10,853` observed defaults, or `43.72%` of all defaults. This is `4.37x` the default capture expected from random review at the same queue size.
+
+| review capacity | applicants reviewed | defaults captured | default capture rate | lift vs random |
+| --- | ---: | ---: | ---: | ---: |
+| Top 5% | 15,376 | 6,715 | 27.05% | 5.41x |
+| Top 10% | 30,752 | 10,853 | 43.72% | 4.37x |
+| Top 15% | 46,127 | 14,029 | 56.51% | 3.77x |
+| Top 20% | 61,503 | 16,376 | 65.97% | 3.30x |

@@ -86,6 +86,8 @@ Portfolio risk-band output from the collections layer:
 | High Risk | 53,578 | 0.5953 | 57.1230 |
 | Critical Risk | 30,881 | 0.7810 | 91.6985 |
 
+Business impact analysis evaluates model-ranked review queues at different capacity levels. At a `10%` review capacity, the queue contains `30,752` applicants and captures `10,853` observed defaults, or `43.72%` of all defaults. That is `4.37x` the capture expected from random review at the same capacity. At a `20%` review capacity, the queue captures `65.97%` of observed defaults. These values are based on actual labels and model scores, while `AMT_CREDIT` is used only as an exposure proxy rather than a realized loss estimate.
+
 Monitoring output shows stable simulated production windows for this run:
 
 - Features with PSI >= 0.2: `0`

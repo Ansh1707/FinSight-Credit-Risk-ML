@@ -206,6 +206,27 @@ Portfolio risk-band output:
 | High Risk | 53,578 | 0.5953 | 57.1230 |
 | Critical Risk | 30,881 | 0.7810 | 91.6985 |
 
+## Business Impact Evaluation
+
+Estimate how many defaults and how much credit-exposure proxy the model-ranked queue captures at different review capacities:
+
+```bash
+python src/business/business_impact.py
+```
+
+The command writes `reports/business_impact_by_threshold.csv` and `reports/business_impact_summary.md`. It uses actual labels and `AMT_CREDIT` as an exposure proxy, without inventing loss-given-default or recovery-rate assumptions.
+
+Actual review-capacity results:
+
+| review capacity | applicants reviewed | defaults captured | default capture rate | lift vs random |
+| --- | ---: | ---: | ---: | ---: |
+| Top 5% | 15,376 | 6,715 | 27.05% | 5.41x |
+| Top 10% | 30,752 | 10,853 | 43.72% | 4.37x |
+| Top 15% | 46,127 | 14,029 | 56.51% | 3.77x |
+| Top 20% | 61,503 | 16,376 | 65.97% | 3.30x |
+
+At a 10% review capacity, the model-ranked queue captures `43.72%` of observed defaults, compared with about `10%` expected from random review.
+
 ## API Instructions
 
 Start the FastAPI service locally:
@@ -337,6 +358,7 @@ python src/models/cross_validate_model.py
 python src/models/calibrate_model.py
 python src/explainability/shap_reason_codes.py
 python src/business/collections_scoring.py
+python src/business/business_impact.py
 uvicorn src.api.main:app --reload
 python src/monitoring/evidently_monitoring.py
 python dashboard/build_dashboard_data.py

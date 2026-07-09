@@ -57,7 +57,8 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 
 - Converts predicted default probabilities into Low, Medium, High, and Critical risk bands.
 - Creates a collections priority score using probability, normalized credit amount, and risk-band weight.
-- Output: `reports/collections_priority_sample.csv` and `reports/collections_summary.md`.
+- Adds review-capacity business impact analysis using actual labels and credit-exposure proxies.
+- Output: `reports/collections_priority_sample.csv`, `reports/collections_summary.md`, `reports/business_impact_by_threshold.csv`, and `reports/business_impact_summary.md`.
 
 ## Phase 10: API Deployment - Complete
 

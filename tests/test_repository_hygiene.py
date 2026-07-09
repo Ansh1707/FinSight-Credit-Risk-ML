@@ -20,6 +20,7 @@ def test_expected_project_files_exist() -> None:
         "src/models/calibrate_model.py",
         "src/explainability/shap_reason_codes.py",
         "src/business/collections_scoring.py",
+        "src/business/business_impact.py",
         "src/monitoring/evidently_monitoring.py",
         "src/api/main.py",
         "dashboard/build_dashboard_data.py",
