@@ -1,0 +1,9 @@
+check,value
+Evidently status,available (0.7.21) but custom fallback used
+Reference rows,"153,755"
+Current rows,"153,756"
+Features with PSI >= 0.2,0
+Features with missingness-rate change >= 5%,0
+Prediction PSI,0.000117
+Reference default rate,0.0813
+Current default rate,0.0802

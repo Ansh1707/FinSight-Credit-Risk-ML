@@ -1,0 +1,16 @@
+data/raw/
+data/processed/
+/models/
+reports/*.html
+reports/.cache/
+reports/.matplotlib-cache/
+
+.env
+.venv/
+venv/
+
+__pycache__/
+pycache/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

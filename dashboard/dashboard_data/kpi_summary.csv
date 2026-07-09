@@ -1,0 +1,9 @@
+metric,value
+Total applicants analyzed,307511
+Average default probability,0.356111
+Critical risk applicants,30881
+Test ROC-AUC,0.776456
+Test PR-AUC,0.263981
+Test Recall@Top-10%,0.359315
+Prediction PSI,0.000117
+Feature drift flags,0

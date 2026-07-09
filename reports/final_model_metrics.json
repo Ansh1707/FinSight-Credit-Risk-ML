@@ -1,0 +1,155 @@
+{
+  "model_type": "lightgbm",
+  "selection_metric": "validation_pr_auc",
+  "threshold_strategy": "validation_top_10_percent_score_cutoff",
+  "threshold": 0.6973716480146466,
+  "top_k": 0.1,
+  "random_state": 42,
+  "rows_loaded": 307511,
+  "feature_count": 76,
+  "best_params": {
+    "boosting_type": "gbdt",
+    "class_weight": null,
+    "colsample_bytree": 0.8,
+    "importance_type": "split",
+    "learning_rate": 0.02,
+    "max_depth": -1,
+    "min_child_samples": 120,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "n_estimators": 600,
+    "n_jobs": -1,
+    "num_leaves": 63,
+    "objective": "binary",
+    "random_state": 42,
+    "reg_alpha": 0.2,
+    "reg_lambda": 4.0,
+    "subsample": 0.85,
+    "subsample_for_bin": 200000,
+    "subsample_freq": 0,
+    "scale_pos_weight": 11.38710976837865,
+    "verbose": -1
+  },
+  "splits": {
+    "validation": {
+      "classification": {
+        "roc_auc": 0.7799203369943319,
+        "pr_auc": 0.2711740100132865,
+        "precision": 0.2940985205657617,
+        "recall": 0.36435045317220544,
+        "f1_score": 0.3254767902123066,
+        "recall_at_top_10pct": 0.36435045317220544,
+        "ks_statistic": 0.4194457867434744,
+        "tn": 52195,
+        "fp": 4342,
+        "fn": 3156,
+        "tp": 1809
+      },
+      "calibration": {
+        "brier_score": 0.1642712638154553,
+        "calibration_table": [
+          {
+            "mean_predicted_probability": 0.0642596045843675,
+            "observed_default_rate": 0.009591936270525118
+          },
+          {
+            "mean_predicted_probability": 0.1176791312600748,
+            "observed_default_rate": 0.014634146341463415
+          },
+          {
+            "mean_predicted_probability": 0.1667095639583127,
+            "observed_default_rate": 0.025365853658536587
+          },
+          {
+            "mean_predicted_probability": 0.218913626376312,
+            "observed_default_rate": 0.03333333333333333
+          },
+          {
+            "mean_predicted_probability": 0.278487102533248,
+            "observed_default_rate": 0.04097560975609756
+          },
+          {
+            "mean_predicted_probability": 0.34791656215387806,
+            "observed_default_rate": 0.056910569105691054
+          },
+          {
+            "mean_predicted_probability": 0.42969377832914074,
+            "observed_default_rate": 0.07365853658536585
+          },
+          {
+            "mean_predicted_probability": 0.5221221221366357,
+            "observed_default_rate": 0.10276422764227643
+          },
+          {
+            "mean_predicted_probability": 0.6335331967739408,
+            "observed_default_rate": 0.1559349593495935
+          },
+          {
+            "mean_predicted_probability": 0.7788239053999083,
+            "observed_default_rate": 0.2940985205657617
+          }
+        ]
+      }
+    },
+    "test": {
+      "classification": {
+        "roc_auc": 0.7764561203602978,
+        "pr_auc": 0.2639813012708453,
+        "precision": 0.2907662082514735,
+        "recall": 0.3577039274924471,
+        "f1_score": 0.3207802763478732,
+        "recall_at_top_10pct": 0.35931520644511583,
+        "ks_statistic": 0.41226513002671034,
+        "tn": 52206,
+        "fp": 4332,
+        "fn": 3189,
+        "tp": 1776
+      },
+      "calibration": {
+        "brier_score": 0.1644893399938551,
+        "calibration_table": [
+          {
+            "mean_predicted_probability": 0.06323110429207131,
+            "observed_default_rate": 0.008128759551292473
+          },
+          {
+            "mean_predicted_probability": 0.11617294202807595,
+            "observed_default_rate": 0.01707317073170732
+          },
+          {
+            "mean_predicted_probability": 0.16438524055424572,
+            "observed_default_rate": 0.023252032520325202
+          },
+          {
+            "mean_predicted_probability": 0.21740915685168882,
+            "observed_default_rate": 0.03284552845528455
+          },
+          {
+            "mean_predicted_probability": 0.27746124327367283,
+            "observed_default_rate": 0.0463339294423671
+          },
+          {
+            "mean_predicted_probability": 0.3472533125812572,
+            "observed_default_rate": 0.06260162601626017
+          },
+          {
+            "mean_predicted_probability": 0.42829576921501844,
+            "observed_default_rate": 0.07040650406504065
+          },
+          {
+            "mean_predicted_probability": 0.5229437249017045,
+            "observed_default_rate": 0.10130081300813008
+          },
+          {
+            "mean_predicted_probability": 0.6337718011014282,
+            "observed_default_rate": 0.15528455284552845
+          },
+          {
+            "mean_predicted_probability": 0.7778907659748194,
+            "observed_default_rate": 0.2900341407901154
+          }
+        ]
+      }
+    }
+  }
+}

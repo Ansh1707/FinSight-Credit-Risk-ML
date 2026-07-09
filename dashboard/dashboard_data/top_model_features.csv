@@ -1,0 +1,16 @@
+feature,mean_abs_shap,mean_shap
+external_score_mean,0.48368,-0.021683
+annuity_to_credit_ratio,0.123492,-0.000229
+CODE_GENDER_idx,0.123329,-0.005748
+goods_price_to_credit_ratio,0.120168,-0.001549
+pos_cash_avg_installments_future,0.119669,-0.001792
+NAME_EDUCATION_TYPE_idx,0.09531,-0.00189
+pos_cash_month_count,0.093901,-0.004323
+installment_max_payment_delay_days,0.092362,0.000561
+EXT_SOURCE_1,0.091881,0.006329
+AMT_ANNUITY,0.08858,0.009782
+previous_down_payment_mean,0.080468,-0.002711
+EXT_SOURCE_3,0.078118,0.003137
+installment_payment_count,0.07365,-0.001092
+previous_refused_count,0.070119,-0.00033
+FLAG_OWN_CAR_idx,0.06994,0.01073

@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.git/
+
+data/raw/
+data/processed/
+notebooks/
+reports/*
+!reports/final_model_metrics.json
+!reports/sample_reason_codes.csv
+
+models/*
+!models/credit_risk_model.pkl
