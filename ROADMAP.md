@@ -44,7 +44,8 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 
 - Selects tuned LightGBM by validation PR-AUC.
 - Evaluates ROC-AUC, PR-AUC, Precision, Recall, F1, Recall@Top-10%, KS statistic, confusion matrix, and calibration.
-- Output: `models/credit_risk_model.pkl`, `reports/final_model_metrics.json`, and `reports/final_model_report.md`.
+- Adds stratified 5-fold cross-validation to check champion-model stability.
+- Output: `models/credit_risk_model.pkl`, `reports/final_model_metrics.json`, `reports/final_model_report.md`, `reports/cross_validation_results.csv`, and `reports/cross_validation_summary.md`.
 
 ## Phase 8: Explainability - Complete
 
@@ -97,4 +98,3 @@ git status --ignored
 ```
 
 Raw data, processed data, trained models, HTML reports, virtual environments, and Python caches should remain untracked or ignored.
-

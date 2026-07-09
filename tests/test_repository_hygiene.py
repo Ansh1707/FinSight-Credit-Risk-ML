@@ -16,6 +16,7 @@ def test_expected_project_files_exist() -> None:
         "src/features/pyspark_feature_engineering.py",
         "src/models/train_baseline.py",
         "src/models/train_final_model.py",
+        "src/models/cross_validate_model.py",
         "src/explainability/shap_reason_codes.py",
         "src/business/collections_scoring.py",
         "src/monitoring/evidently_monitoring.py",
@@ -61,4 +62,3 @@ def test_readme_contains_portfolio_sections() -> None:
 
     missing = [section for section in required_sections if section not in readme]
     assert not missing, f"Missing README sections: {missing}"
-

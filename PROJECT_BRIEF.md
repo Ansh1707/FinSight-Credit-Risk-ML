@@ -109,3 +109,14 @@ The final tuned LightGBM model was selected by validation PR-AUC.
 | test | 0.7765 | 0.2640 | 0.2908 | 0.3577 | 0.3208 | 0.3593 | 0.4123 |
 
 These metrics are actual computed results from the saved project reports. Accuracy is intentionally not used as the main metric.
+
+## Cross-Validation Snapshot
+
+The final LightGBM configuration was checked with stratified 5-fold validation on the full processed dataset.
+
+| metric | mean | std | min | max |
+| --- | ---: | ---: | ---: | ---: |
+| ROC-AUC | 0.7830 | 0.0044 | 0.7782 | 0.7893 |
+| PR-AUC | 0.2745 | 0.0074 | 0.2651 | 0.2854 |
+| Recall@Top-10% | 0.3646 | 0.0074 | 0.3577 | 0.3772 |
+| KS statistic | 0.4276 | 0.0104 | 0.4146 | 0.4419 |

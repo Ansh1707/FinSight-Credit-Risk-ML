@@ -64,6 +64,8 @@ Final model: tuned LightGBM classifier.
 
 The final model uses validation PR-AUC as the selection metric because the default class is rare and the business need is to rank risky applicants. The top-10% risk threshold captures a materially higher share of defaults than random review, making the model useful for prioritization workflows. Calibration should be reviewed before raw probabilities are used for hard policy decisions.
 
+The selected LightGBM configuration was also checked with stratified 5-fold cross-validation on the full processed dataset. Cross-validation mean metrics were ROC-AUC `0.7830`, PR-AUC `0.2745`, Recall@Top-10% `0.3646`, and KS statistic `0.4276`. The low fold-to-fold variation supports the model's use as a stable ranking baseline, while still leaving room for calibration, fairness, and cost-sensitive threshold work before production deployment.
+
 ## Business Impact
 
 FinSight turns a credit-risk model into a business workflow:
@@ -108,4 +110,3 @@ Monitoring output shows stable simulated production windows for this run:
 - Add model registry-style versioning and batch scoring logs.
 - Extend monitoring with production event logs, alert thresholds, and scheduled retraining recommendations.
 - Add CI checks before GitHub pushes to run formatting, compile checks, and smoke tests.
-

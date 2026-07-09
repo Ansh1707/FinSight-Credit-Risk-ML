@@ -114,6 +114,25 @@ Operational threshold: validation top `10%` risk cutoff at score `0.697372`.
 
 The model is best interpreted as a risk-ranking and prioritization model. Calibration should be reviewed before using raw probabilities for strict policy thresholds.
 
+## Cross-Validation
+
+Run stratified K-fold validation around the selected LightGBM configuration:
+
+```bash
+python src/models/cross_validate_model.py
+```
+
+The command writes `reports/cross_validation_results.csv` and `reports/cross_validation_summary.md`. This phase checks whether ROC-AUC, PR-AUC, Recall@Top-10%, and KS are stable across folds.
+
+Actual 5-fold stability results:
+
+| metric | mean | std | min | max |
+| --- | ---: | ---: | ---: | ---: |
+| ROC-AUC | 0.7830 | 0.0044 | 0.7782 | 0.7893 |
+| PR-AUC | 0.2745 | 0.0074 | 0.2651 | 0.2854 |
+| Recall@Top-10% | 0.3646 | 0.0074 | 0.3577 | 0.3772 |
+| KS statistic | 0.4276 | 0.0104 | 0.4146 | 0.4419 |
+
 ## Explainability
 
 SHAP is used for global feature importance and applicant-level reason codes. The explainability script samples `5,000` processed applicants for SHAP analysis and only generates reason codes from positive SHAP contributions.
@@ -294,6 +313,7 @@ python src/data/create_duckdb.py
 python src/features/pyspark_feature_engineering.py
 python src/models/train_baseline.py
 python src/models/train_final_model.py
+python src/models/cross_validate_model.py
 python src/explainability/shap_reason_codes.py
 python src/business/collections_scoring.py
 uvicorn src.api.main:app --reload
