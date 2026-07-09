@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.15.0 - Reject Inference Methodology
+
+- Added portfolio-safe reject inference methodology documentation.
+- Documented accepted-applicant bias, missing rejected outcomes, interpretation impact, and production methods.
+- Confirmed no rejected-applicant labels are invented and no model is retrained.
+
 ## 0.14.0 - Feature Registry And Timestamp Lineage
 
 - Added generated feature registry for all final model features.

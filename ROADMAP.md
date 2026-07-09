@@ -124,6 +124,12 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Separates low-risk application-time features from proxy-risk categorical encodings and timing-sensitive historical aggregate features.
 - Output: `src/features/feature_registry.py`, `reports/feature_registry.csv`, and `reports/feature_registry.md`.
 
+## Phase 20: Reject Inference Methodology - Complete
+
+- Adds a portfolio-safe reject inference methodology note without creating rejected-applicant labels or retraining models.
+- Documents accepted-applicant bias, missing rejected outcomes, interpretation impact, and production methods such as parceling, fuzzy augmentation, bureau outcome matching, controlled exploration, and two-stage selection modeling.
+- Output: `src/models/reject_inference.py`, `reports/reject_inference_note.md`, and `reports/reject_inference_methodology.json`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

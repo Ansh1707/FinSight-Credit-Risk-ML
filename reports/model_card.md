@@ -150,6 +150,19 @@ Current findings:
 
 Production use would require fair-lending review, protected-class handling strategy, policy review, reject-inference analysis, and compliance sign-off.
 
+## Reject Inference
+
+Reject inference methodology is documented in `reports/reject_inference_note.md` and `reports/reject_inference_methodology.json`.
+
+Current portfolio decision:
+
+- No rejected-applicant labels are invented.
+- No model is retrained with inferred rejected-applicant outcomes.
+- Validation metrics are interpreted as accepted/booked-population metrics.
+- Through-the-door risk interpretation would require additional rejected-applicant outcome data or approved reject-inference assumptions.
+
+Production options documented include parceling, fuzzy augmentation, bureau or alternative outcome matching, controlled exploration, and two-stage selection modeling.
+
 ## Leakage Audit
 
 The saved final model feature list passed the automated leakage audit:
@@ -193,7 +206,7 @@ Production monitoring should include:
 ## Limitations
 
 - The dataset is public and historical, not live production data.
-- The model is trained on accepted historical applicants only; reject inference is not addressed.
+- The model is trained on accepted historical applicants only; reject inference methodology is documented but not applied because rejected-applicant outcomes are not available.
 - Monitoring is simulated rather than based on live serving logs.
 - SHAP explanations are sampled for runtime practicality.
 - Encoded categorical proxies require stronger production treatment for unseen categories and protected/proxy features.
@@ -211,6 +224,7 @@ Required before production:
 - Validate feature availability time for all historical aggregates.
 - Add feature registry entries with owner, source, availability time, and leakage-risk rating.
 - Complete fair-lending and compliance review.
+- Apply reject inference only after obtaining compliant rejected-applicant outcomes or approved inference assumptions.
 - Select calibrated probability policy and threshold strategy.
 - Validate API schema, error handling, and batch scoring behavior under realistic load.
 - Add model versioning and rollback plan.
@@ -233,6 +247,7 @@ The local `mlruns/` store is ignored by Git. A real production registry would ad
 - `reports/final_model_metrics.json`
 - `reports/cross_validation_summary.md`
 - `reports/feature_registry.md`
+- `reports/reject_inference_note.md`
 - `reports/calibration_report.md`
 - `reports/fairness_proxy_analysis.md`
 - `reports/leakage_audit.md`

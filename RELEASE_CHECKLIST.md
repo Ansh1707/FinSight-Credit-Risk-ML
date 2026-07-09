@@ -51,6 +51,7 @@ Current verified result: `30` tests passed.
 - [ ] Final submission note and final project audit are present.
 - [ ] MLflow tracking and model registry documentation are present.
 - [ ] Feature registry and timestamp-lineage documentation are present.
+- [ ] Reject inference methodology note is present and does not invent labels.
 
 ## GitHub Presentation
 
@@ -72,6 +73,7 @@ Current verified result: `30` tests passed.
 - [ ] You can explain proxy-risk findings carefully without overstating fairness claims.
 - [ ] You can explain why calibration matters for credit-risk probabilities.
 - [ ] You can explain how monitoring would work in real production.
+- [ ] You can explain accepted-applicant bias and why reject inference is documented but not applied.
 - [ ] You can describe the next production steps: feature registry, timestamp controls, compliance review, model registry, and live monitoring.
 
 ## Final Push Flow

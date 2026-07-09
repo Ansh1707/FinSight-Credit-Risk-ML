@@ -1,0 +1,55 @@
+{
+  "accepted_applicant_rows": 307511,
+  "analysis_type": "reject_inference_methodology",
+  "core_limitation": "Observed default labels exist only for applicants/accounts that entered the historical booked-loan population. Rejected applicants do not have observed loan outcomes in this dataset.",
+  "feature_count": 76,
+  "interpretation_impact": [
+    "Validation metrics are conditional on the observed accepted/booked population.",
+    "Default probabilities should not be interpreted as fully through-the-door population risk.",
+    "Thresholds and calibration may shift if rejected applicants are later included.",
+    "Fairness and segment conclusions may be incomplete if rejected applicants differ by segment."
+  ],
+  "labels_created": false,
+  "model_type": "lightgbm",
+  "models_retrained": false,
+  "portfolio_decision": "Do not invent rejected-applicant labels. Document the selection-bias limitation and define production methods that require additional data, policy review, and compliance approval.",
+  "production_methods": [
+    {
+      "benefit": "Simple to explain and commonly discussed in credit-risk workflows.",
+      "description": "Assign inferred good/bad outcomes to rejected applicants within score bands using observed accepted-applicant bad rates adjusted by policy or bureau evidence.",
+      "method": "Parceling",
+      "portfolio_status": "documented_only_not_applied",
+      "risk": "Can reinforce historical policy bias if parceling assumptions are wrong."
+    },
+    {
+      "benefit": "Captures uncertainty rather than forcing a single inferred label.",
+      "description": "Add rejected applicants multiple times with fractional outcome weights based on estimated default probability or external performance signals.",
+      "method": "Fuzzy augmentation",
+      "portfolio_status": "documented_only_not_applied",
+      "risk": "Requires strong assumptions and careful calibration; can overstate certainty."
+    },
+    {
+      "benefit": "Anchors rejected outcomes in observed external behavior.",
+      "description": "Use later bureau performance or external repayment/default signals to observe whether rejected applicants defaulted elsewhere.",
+      "method": "Bureau or alternative outcome matching",
+      "portfolio_status": "production_candidate_requires_data",
+      "risk": "Requires data contracts, identity matching, observation windows, and consent/legal review."
+    },
+    {
+      "benefit": "Produces cleaner labels for policy expansion and bias reduction.",
+      "description": "Approve a controlled, risk-managed sample near the decision boundary to observe future repayment outcomes.",
+      "method": "Exploration or randomized policy holdout",
+      "portfolio_status": "production_candidate_requires_governance",
+      "risk": "Requires risk appetite, ethics review, operational controls, and compliance approval."
+    },
+    {
+      "benefit": "Explicitly models the accepted-applicant selection mechanism.",
+      "description": "Model approval/acceptance probability and use inverse-probability or selection-bias corrections when estimating default risk.",
+      "method": "Two-stage selection modeling",
+      "portfolio_status": "documented_only_not_applied",
+      "risk": "Requires rejected-applicant features and a reliable acceptance policy history."
+    }
+  ],
+  "raw_data_modified": false,
+  "selection_metric": "validation_pr_auc"
+}

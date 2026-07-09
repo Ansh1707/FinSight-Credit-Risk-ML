@@ -164,6 +164,21 @@ Operational threshold: validation top `10%` risk cutoff at score `0.697372`.
 
 The model is best interpreted as a risk-ranking and prioritization model. Calibration should be reviewed before using raw probabilities for strict policy thresholds.
 
+## Reject Inference Methodology
+
+Generate the reject inference methodology note:
+
+```bash
+python src/models/reject_inference.py
+```
+
+The command writes:
+
+- `reports/reject_inference_note.md`
+- `reports/reject_inference_methodology.json`
+
+This analysis does not invent rejected-applicant labels and does not retrain the model. It explains accepted-applicant bias, why rejected-applicant outcomes are missing, how that affects interpretation, and which production methods would be considered before real lending deployment, including parceling, fuzzy augmentation, bureau outcome matching, controlled exploration, and two-stage selection modeling.
+
 ## Cross-Validation
 
 Run stratified K-fold validation around the selected LightGBM configuration:
@@ -458,6 +473,7 @@ python src/features/leakage_checks.py
 python src/models/train_baseline.py
 python src/models/train_final_model.py
 python src/models/mlflow_tracking.py
+python src/models/reject_inference.py
 python src/models/cross_validate_model.py
 python src/models/calibrate_model.py
 python src/models/fairness_analysis.py
@@ -515,6 +531,7 @@ For senior-review or interview discussion, start with:
 - `REVIEW_GUIDE.md`
 - `reports/final_project_audit.md`
 - `reports/feature_registry.md`
+- `reports/reject_inference_note.md`
 - `reports/mlflow_experiment_summary.md`
 - `reports/model_registry.md`
 - `reports/model_card.md`
@@ -539,7 +556,7 @@ For senior-review or interview discussion, start with:
 - Monitoring is simulated by splitting historical processed data into reference and current windows.
 - SHAP applicant-level reason codes are generated for a sample to keep local runtime practical.
 - Raw probabilities need further calibration and policy review before use as automated decision thresholds.
-- Formal fair-lending certification, regulatory compliance review, and reject-inference analysis are outside this portfolio scope but would be required for production deployment.
+- Formal fair-lending certification, regulatory compliance review, and applied reject inference are outside this portfolio scope but would be required for production deployment.
 
 ## Current Status
 

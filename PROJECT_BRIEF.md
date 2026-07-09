@@ -77,6 +77,7 @@ The implemented project produces:
 * leakage audit report under `reports/leakage_audit.md`
 * model governance artifacts under `reports/model_card.md` and `reports/governance_checklist.md`
 * MLflow tracking and registry-style documentation under `reports/mlflow_experiment_summary.md`, `reports/model_registry.md`, and `reports/model_registry.json`
+* reject inference methodology documentation under `reports/reject_inference_note.md` and `reports/reject_inference_methodology.json`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 * final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
@@ -163,6 +164,15 @@ Important findings:
 
 This is a proxy segment-performance review, not a regulatory fairness audit. Production use would require fair-lending review, policy review, feature governance, reject-inference analysis, and compliance sign-off.
 
+## Reject Inference Snapshot
+
+The project includes a portfolio-safe reject inference methodology note:
+
+* `reports/reject_inference_note.md`
+* `reports/reject_inference_methodology.json`
+
+The analysis explains accepted-applicant bias, why rejected-applicant outcomes are missing, why labels are not invented, and how production teams could approach reject inference through parceling, fuzzy augmentation, bureau outcome matching, controlled exploration, or two-stage selection modeling. No rejected-applicant labels are created and no model is retrained.
+
 ## Leakage Governance Snapshot
 
 The saved final model feature list was audited for obvious target leakage. The automated check passed on the current artifacts:
@@ -222,7 +232,7 @@ The final handoff files are:
 * `FINAL_SUBMISSION.md`
 * `reports/final_project_audit.md`
 
-The final audit rates FinSight at `98/100` as a portfolio project, with explicit remaining production gaps around live data contracts, formal fair-lending review, reject inference, production enforcement of timestamp cutoffs, authentication, production-grade registry approval workflow, production monitoring, and incident ownership.
+The final audit rates FinSight at `99/100` as a portfolio project, with explicit remaining production gaps around live data contracts, formal fair-lending certification, applied reject inference with compliant rejected-applicant outcomes, production enforcement of timestamp cutoffs, authentication, production-grade registry approval workflow, production monitoring, and incident ownership.
 
 ## MLflow and Registry Snapshot
 

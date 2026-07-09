@@ -22,6 +22,7 @@ Read these files in order:
 | SQL analysis | `sql/` and `reports/sql_analysis_summary.md` |
 | PySpark feature engineering | `src/features/pyspark_feature_engineering.py` |
 | Feature lineage | `src/features/feature_registry.py`, `reports/feature_registry.md` |
+| Reject inference | `src/models/reject_inference.py`, `reports/reject_inference_note.md` |
 | Imbalanced classification | `src/models/train_baseline.py`, `src/models/train_final_model.py` |
 | Experiment tracking | `src/models/mlflow_tracking.py`, `reports/mlflow_experiment_summary.md` |
 | Validation beyond accuracy | final report, cross-validation report, calibration report |
@@ -47,7 +48,7 @@ Read these files in order:
 - At `10%` review capacity, the model captures `43.72%` of observed defaults, a `4.37x` lift over random review.
 - Leakage audit passed with `0` forbidden target or identifier fields in the model input list.
 - Monitoring simulation found `0` features with PSI >= `0.2` and prediction PSI `0.000117`.
-- Final strict project audit rating: `98/100`.
+- Final strict project audit rating: `99/100`.
 
 These are actual generated project results, not placeholder metrics.
 
@@ -113,7 +114,7 @@ Open `http://127.0.0.1:8000/docs`.
 ## Honest Limitations
 
 - The dataset is public and historical, not live Navi data.
-- The model is trained on accepted historical applicants only; reject inference is not handled.
+- The model is trained on accepted historical applicants only; reject inference methodology is documented but not applied because rejected-applicant outcomes are unavailable.
 - Monitoring is simulated with historical splits.
 - Formal fair-lending certification, adverse-action review, and compliance sign-off are outside the portfolio scope.
 - Historical aggregate features need production timestamp controls before real deployment.
