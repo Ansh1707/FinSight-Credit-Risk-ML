@@ -130,6 +130,13 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Documents accepted-applicant bias, missing rejected outcomes, interpretation impact, and production methods such as parceling, fuzzy augmentation, bureau outcome matching, controlled exploration, and two-stage selection modeling.
 - Output: `src/models/reject_inference.py`, `reports/reject_inference_note.md`, and `reports/reject_inference_methodology.json`.
 
+## Phase 21: Fair-Lending And Proxy-Risk Governance - Complete
+
+- Adds a formal portfolio fair-lending and proxy-risk governance review without claiming legal certification.
+- Converts existing segment metrics and feature-registry metadata into protected/proxy feature controls, segment-risk interpretation, production controls, and sign-off requirements.
+- Documents restricted, review-required, monitoring-required, timestamp-controlled, and vendor-governance-required feature classes.
+- Output: `src/models/fair_lending_governance.py`, `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv`, and `reports/fair_lending_governance.json`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

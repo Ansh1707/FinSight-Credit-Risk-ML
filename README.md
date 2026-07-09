@@ -16,6 +16,7 @@ FinSight is an end-to-end fintech data science project for credit default predic
 - `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
 - `reports/model_card.md` — model card with validation, calibration, explainability, proxy-risk, leakage, and monitoring.
 - `reports/governance_checklist.md` — production-readiness and deployment controls.
+- `reports/fair_lending_review.md` — formal fair-lending/proxy-risk governance review without legal-certification claims.
 - `RELEASE_CHECKLIST.md` — final GitHub safety and presentation checklist.
 - `CHANGELOG.md` — release-history style summary of project maturity milestones.
 
@@ -235,6 +236,24 @@ Key findings from the current run:
 - Encoded gender proxy `CODE_GENDER_idx=1` has top-10% review rate `14.03%` versus `7.91%` for `CODE_GENDER_idx=0`.
 - Segment gaps should trigger deeper fair-lending, policy, and feature-governance review before production use.
 
+## Fair-Lending Governance Review
+
+Generate the formal fair-lending and proxy-risk governance review:
+
+```bash
+python src/models/fair_lending_governance.py
+```
+
+The command writes:
+
+- `reports/fair_lending_review.md`
+- `reports/proxy_feature_controls.csv`
+- `reports/fair_lending_governance.json`
+
+This review uses the existing segment metrics and feature registry to document protected/proxy feature controls, segment-risk interpretation, production sign-off requirements, and compliance-ready limitations. It does not claim legal fair-lending certification, does not approve adverse-action language, does not infer protected-class membership, and does not retrain the model.
+
+Current control summary: `76` model features reviewed; `1` gender proxy feature restricted pending fair-lending approval; `2` age-related features restricted pending policy approval; `5` categorical socioeconomic/employment proxies requiring fair-lending review; `7` region/social-network proxies requiring enhanced review; `32` historical credit-behavior features requiring timestamp controls.
+
 ## Leakage Audit
 
 Run a feature leakage audit against the saved final model feature list:
@@ -377,8 +396,10 @@ FinSight includes a professional model card and deployment governance checklist:
 
 - `reports/model_card.md`
 - `reports/governance_checklist.md`
+- `reports/fair_lending_review.md`
+- `reports/proxy_feature_controls.csv`
 
-The model card documents intended use, prohibited use, training data, feature groups, validation metrics, calibration, SHAP explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, and deployment readiness. The governance checklist translates those sections into concrete production controls for data, features, model validation, fairness review, API deployment, monitoring, rollback, and sign-off.
+The model card documents intended use, prohibited use, training data, feature groups, validation metrics, calibration, SHAP explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, and deployment readiness. The governance checklist translates those sections into concrete production controls for data, features, model validation, fairness review, API deployment, monitoring, rollback, and sign-off. The fair-lending review adds segment-risk interpretation and protected/proxy feature controls without claiming legal certification.
 
 Current governance position: FinSight is a portfolio-ready production-style prototype. It is not production-approved for automated credit decisions without business, risk, legal, compliance, data governance, and MLOps review.
 
@@ -474,6 +495,7 @@ python src/models/train_baseline.py
 python src/models/train_final_model.py
 python src/models/mlflow_tracking.py
 python src/models/reject_inference.py
+python src/models/fair_lending_governance.py
 python src/models/cross_validate_model.py
 python src/models/calibrate_model.py
 python src/models/fairness_analysis.py
@@ -532,6 +554,8 @@ For senior-review or interview discussion, start with:
 - `reports/final_project_audit.md`
 - `reports/feature_registry.md`
 - `reports/reject_inference_note.md`
+- `reports/fair_lending_review.md`
+- `reports/proxy_feature_controls.csv`
 - `reports/mlflow_experiment_summary.md`
 - `reports/model_registry.md`
 - `reports/model_card.md`
@@ -556,8 +580,8 @@ For senior-review or interview discussion, start with:
 - Monitoring is simulated by splitting historical processed data into reference and current windows.
 - SHAP applicant-level reason codes are generated for a sample to keep local runtime practical.
 - Raw probabilities need further calibration and policy review before use as automated decision thresholds.
-- Formal fair-lending certification, regulatory compliance review, and applied reject inference are outside this portfolio scope but would be required for production deployment.
+- Formal legal fair-lending certification, adverse-action compliance approval, regulatory sign-off, and applied reject inference with compliant rejected-applicant outcomes are outside this portfolio scope but would be required for production deployment.
 
 ## Current Status
 
-The full portfolio workflow is implemented: scaffold, data validation, EDA, SQL analysis, PySpark feature engineering, baseline and final modeling, explainability, collections scoring, FastAPI serving, monitoring, dashboard-ready outputs, governance, repository maintenance, reviewer handoff, and final audit documentation.
+The full portfolio workflow is implemented: scaffold, data validation, EDA, SQL analysis, PySpark feature engineering, baseline and final modeling, explainability, collections scoring, FastAPI serving, monitoring, dashboard-ready outputs, fair-lending/proxy-risk governance, repository maintenance, reviewer handoff, and final audit documentation.

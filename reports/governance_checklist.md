@@ -14,6 +14,7 @@ This checklist translates the model card into concrete controls a fintech data s
 | Explainability produced | Complete | `reports/explainability_summary.md` |
 | Leakage audit performed | Complete for automated screen | `reports/leakage_audit.md` |
 | Proxy-risk analysis performed | Complete for portfolio review | `reports/fairness_proxy_analysis.md` |
+| Fair-lending governance review | Complete for portfolio review | `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv` |
 | Reject inference methodology | Complete for portfolio review | `reports/reject_inference_note.md` |
 | Monitoring report produced | Complete for simulated windows | `reports/monitoring_summary.md` |
 | API implemented | Complete for local serving | `src/api/main.py` |
@@ -49,9 +50,11 @@ This checklist translates the model card into concrete controls a fintech data s
 ## Fairness And Compliance Controls
 
 - Treat current proxy-risk analysis as a screening tool, not a legal audit.
+- Treat `reports/fair_lending_review.md` as a formal portfolio governance review, not legal certification.
 - Review age-band, income-band, gender-proxy, education-proxy, family-status-proxy, and occupation-proxy gaps.
 - Investigate segments with high top-10% review rates or large non-default review rates.
-- Decide which features are prohibited, restricted, or require policy justification.
+- Use `reports/proxy_feature_controls.csv` to decide which features are prohibited, restricted, approved with monitoring, or require policy justification.
+- Require formal approval before using gender, age, education, occupation, family status, housing, organization, region, or social-circle proxies in production policy.
 - Review reject inference methodology and require compliant rejected-applicant outcome data or approved inference assumptions before real lending deployment.
 - Review adverse-action and reason-code requirements with compliance and legal teams.
 - Document final approval or rejection of proxy-sensitive feature groups.
@@ -98,6 +101,7 @@ Before production, every item below should be complete:
 - [ ] Feature availability timestamps validated.
 - [ ] Leakage audit passed with timestamp controls.
 - [ ] Fair-lending and proxy-risk review completed.
+- [ ] Protected/proxy feature controls reviewed and approved.
 - [ ] Reject inference approach reviewed and approved.
 - [ ] Calibration strategy selected.
 - [ ] Threshold and review-capacity policy approved.

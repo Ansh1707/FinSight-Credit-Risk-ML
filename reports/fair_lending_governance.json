@@ -1,0 +1,218 @@
+{
+  "analysis_type": "fair_lending_and_proxy_risk_governance",
+  "legal_certification_claimed": false,
+  "adverse_action_certification_claimed": false,
+  "models_retrained": false,
+  "labels_created": false,
+  "segment_metric_file": "reports/fairness_proxy_metrics.csv",
+  "feature_registry_file": "reports/feature_registry.csv",
+  "segments_reviewed": [
+    "age_band",
+    "education_type",
+    "family_status",
+    "gender_proxy",
+    "income_band",
+    "occupation_type"
+  ],
+  "segment_count": 41,
+  "feature_count_reviewed": 76,
+  "control_decision_counts": [
+    {
+      "control_decision": "allowed_with_monitoring",
+      "sensitivity_class": "asset_or_wealth_proxy",
+      "feature_count": 1
+    },
+    {
+      "control_decision": "allowed_with_monitoring",
+      "sensitivity_class": "credit_capacity_with_proxy_risk",
+      "feature_count": 7
+    },
+    {
+      "control_decision": "allowed_with_standard_controls",
+      "sensitivity_class": "standard_credit_feature",
+      "feature_count": 16
+    },
+    {
+      "control_decision": "allowed_with_timestamp_controls",
+      "sensitivity_class": "historical_credit_behavior",
+      "feature_count": 32
+    },
+    {
+      "control_decision": "enhanced_review_required",
+      "sensitivity_class": "geographic_or_network_proxy",
+      "feature_count": 7
+    },
+    {
+      "control_decision": "fair_lending_review_required",
+      "sensitivity_class": "proxy_sensitive",
+      "feature_count": 5
+    },
+    {
+      "control_decision": "restricted_pending_fair_lending_approval",
+      "sensitivity_class": "protected_or_high_proxy",
+      "feature_count": 1
+    },
+    {
+      "control_decision": "restricted_pending_policy_approval",
+      "sensitivity_class": "protected_or_policy_sensitive",
+      "feature_count": 2
+    },
+    {
+      "control_decision": "vendor_governance_required",
+      "sensitivity_class": "third_party_score",
+      "feature_count": 5
+    }
+  ],
+  "highest_review_rate_segments": [
+    {
+      "segment_type": "occupation_type",
+      "segment_value": "OCCUPATION_TYPE_idx=13",
+      "applicant_count": 2093,
+      "observed_default_rate": 0.1715241280458671,
+      "global_top10_review_rate": 0.3210702341137124,
+      "non_default_review_rate": 0.2520184544405998
+    },
+    {
+      "segment_type": "age_band",
+      "segment_value": "18-25",
+      "applicant_count": 12233,
+      "observed_default_rate": 0.1229461293223248,
+      "global_top10_review_rate": 0.2250470040055587,
+      "non_default_review_rate": 0.1757852549165812
+    },
+    {
+      "segment_type": "age_band",
+      "segment_value": "26-35",
+      "applicant_count": 72429,
+      "observed_default_rate": 0.1066009471344351,
+      "global_top10_review_rate": 0.1678057131811843,
+      "non_default_review_rate": 0.1235395932496754
+    },
+    {
+      "segment_type": "occupation_type",
+      "segment_value": "OCCUPATION_TYPE_idx=14",
+      "applicant_count": 1348,
+      "observed_default_rate": 0.1127596439169139,
+      "global_top10_review_rate": 0.1646884272997032,
+      "non_default_review_rate": 0.1187290969899665
+    },
+    {
+      "segment_type": "occupation_type",
+      "segment_value": "OCCUPATION_TYPE_idx=1",
+      "applicant_count": 55186,
+      "observed_default_rate": 0.1057876997789294,
+      "global_top10_review_rate": 0.1531729061718552,
+      "non_default_review_rate": 0.1102780254518926
+    }
+  ],
+  "largest_disparities": [
+    {
+      "segment_type": "age_band",
+      "metric": "default_capture_rate_within_segment",
+      "min_segment": "65+",
+      "min_value": 0.1215277777777777,
+      "max_segment": "18-25",
+      "max_value": 0.5764627659574468,
+      "absolute_gap": 0.45493498817966915,
+      "max_to_min_ratio": 4.743465045592708
+    },
+    {
+      "segment_type": "occupation_type",
+      "metric": "default_capture_rate_within_segment",
+      "min_segment": "OCCUPATION_TYPE_idx=7",
+      "min_value": 0.3080168776371308,
+      "max_segment": "OCCUPATION_TYPE_idx=13",
+      "max_value": 0.6545961002785515,
+      "absolute_gap": 0.3465792226414207,
+      "max_to_min_ratio": 2.125195558438585
+    },
+    {
+      "segment_type": "occupation_type",
+      "metric": "mean_default_probability",
+      "min_segment": "OCCUPATION_TYPE_idx=7",
+      "min_value": 0.2695922228325826,
+      "max_segment": "OCCUPATION_TYPE_idx=13",
+      "max_value": 0.5590742769943305,
+      "absolute_gap": 0.28948205416174794,
+      "max_to_min_ratio": 2.0737774670210607
+    },
+    {
+      "segment_type": "age_band",
+      "metric": "mean_default_probability",
+      "min_segment": "65+",
+      "min_value": 0.2113682255925904,
+      "max_segment": "18-25",
+      "max_value": 0.5007188021078203,
+      "absolute_gap": 0.2893505765152299,
+      "max_to_min_ratio": 2.368940746434374
+    },
+    {
+      "segment_type": "occupation_type",
+      "metric": "global_top10_review_rate",
+      "min_segment": "OCCUPATION_TYPE_idx=7",
+      "min_value": 0.0455518190155915,
+      "max_segment": "OCCUPATION_TYPE_idx=13",
+      "max_value": 0.3210702341137124,
+      "absolute_gap": 0.27551841509812086,
+      "max_to_min_ratio": 7.048461313999695
+    },
+    {
+      "segment_type": "family_status",
+      "metric": "default_capture_rate_within_segment",
+      "min_segment": "NAME_FAMILY_STATUS_idx=4",
+      "min_value": 0.2774813233724653,
+      "max_segment": "NAME_FAMILY_STATUS_idx=2",
+      "max_value": 0.508274231678487,
+      "absolute_gap": 0.23079290830602167,
+      "max_to_min_ratio": 1.8317421349336243
+    },
+    {
+      "segment_type": "occupation_type",
+      "metric": "non_default_review_rate",
+      "min_segment": "OCCUPATION_TYPE_idx=18",
+      "min_value": 0.0264227642276422,
+      "max_segment": "OCCUPATION_TYPE_idx=13",
+      "max_value": 0.2520184544405998,
+      "absolute_gap": 0.22559569021295758,
+      "max_to_min_ratio": 9.53792919882888
+    },
+    {
+      "segment_type": "age_band",
+      "metric": "global_top10_review_rate",
+      "min_segment": "65+",
+      "min_value": 0.010284408329101,
+      "max_segment": "18-25",
+      "max_value": 0.2250470040055587,
+      "absolute_gap": 0.2147625956764577,
+      "max_to_min_ratio": 21.882348191948047
+    },
+    {
+      "segment_type": "age_band",
+      "metric": "non_default_review_rate",
+      "min_segment": "65+",
+      "min_value": 0.0060622034791776,
+      "max_segment": "18-25",
+      "max_value": 0.1757852549165812,
+      "absolute_gap": 0.1697230514374036,
+      "max_to_min_ratio": 28.996924224065847
+    },
+    {
+      "segment_type": "education_type",
+      "metric": "default_capture_rate_within_segment",
+      "min_segment": "NAME_EDUCATION_TYPE_idx=1",
+      "min_value": 0.311549014716887,
+      "max_segment": "NAME_EDUCATION_TYPE_idx=0",
+      "max_value": 0.4631735300143413,
+      "absolute_gap": 0.1516245152974543,
+      "max_to_min_ratio": 1.486679489053238
+    }
+  ],
+  "required_production_signoffs": [
+    "business_owner",
+    "credit_risk_owner",
+    "fair_lending_or_compliance_owner",
+    "legal_owner",
+    "data_governance_owner",
+    "mlops_owner"
+  ]
+}

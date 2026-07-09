@@ -78,6 +78,7 @@ The implemented project produces:
 * model governance artifacts under `reports/model_card.md` and `reports/governance_checklist.md`
 * MLflow tracking and registry-style documentation under `reports/mlflow_experiment_summary.md`, `reports/model_registry.md`, and `reports/model_registry.json`
 * reject inference methodology documentation under `reports/reject_inference_note.md` and `reports/reject_inference_methodology.json`
+* fair-lending and proxy-risk governance review under `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv`, and `reports/fair_lending_governance.json`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 * final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
@@ -162,7 +163,25 @@ Important findings:
 * Age band `18-25` has top-10% review rate `22.50%`, with observed default rate `12.29%`.
 * Encoded gender proxy `CODE_GENDER_idx=1` has top-10% review rate `14.03%`, compared with `7.91%` for `CODE_GENDER_idx=0`.
 
-This is a proxy segment-performance review, not a regulatory fairness audit. Production use would require fair-lending review, policy review, feature governance, reject-inference analysis, and compliance sign-off.
+This is a proxy segment-performance review, not a regulatory fairness audit. Production use would require legal/compliance review, policy review, approved feature governance, reject-inference analysis, and documented sign-off.
+
+## Fair-Lending Governance Snapshot
+
+The project includes a formal portfolio governance review:
+
+* `reports/fair_lending_review.md`
+* `reports/proxy_feature_controls.csv`
+* `reports/fair_lending_governance.json`
+
+The review converts existing segment metrics and the feature registry into protected/proxy feature controls and production sign-off requirements. It reviews `76` model features and `41` segment metric rows. It explicitly does not claim legal fair-lending certification, does not approve adverse-action language, does not infer protected-class membership, and does not retrain the model.
+
+Current feature-control summary:
+
+* `1` gender proxy feature restricted pending fair-lending approval.
+* `2` age-related features restricted pending policy approval.
+* `5` socioeconomic/employment categorical proxies requiring fair-lending review.
+* `7` region/social-network proxies requiring enhanced review.
+* `32` historical credit-behavior features requiring timestamp controls.
 
 ## Reject Inference Snapshot
 
@@ -201,7 +220,7 @@ The project now includes a professional model card and governance checklist:
 * `reports/model_card.md`
 * `reports/governance_checklist.md`
 
-These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.
+These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.
 
 ## Reviewer Readiness Snapshot
 
@@ -232,7 +251,7 @@ The final handoff files are:
 * `FINAL_SUBMISSION.md`
 * `reports/final_project_audit.md`
 
-The final audit rates FinSight at `99/100` as a portfolio project, with explicit remaining production gaps around live data contracts, formal fair-lending certification, applied reject inference with compliant rejected-applicant outcomes, production enforcement of timestamp cutoffs, authentication, production-grade registry approval workflow, production monitoring, and incident ownership.
+The final audit rates FinSight at `99/100` as a portfolio project, with explicit remaining production gaps around live data contracts, legal fair-lending certification, adverse-action compliance approval, applied reject inference with compliant rejected-applicant outcomes, production enforcement of timestamp cutoffs, authentication, production-grade registry approval workflow, production monitoring, and incident ownership.
 
 ## MLflow and Registry Snapshot
 

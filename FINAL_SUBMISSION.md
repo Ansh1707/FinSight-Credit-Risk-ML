@@ -29,6 +29,7 @@ GitHub reviewers should start here:
 - PySpark feature pipeline under `src/features/pyspark_feature_engineering.py`.
 - Feature registry and timestamp-lineage report under `reports/feature_registry.md`.
 - Reject inference methodology note under `reports/reject_inference_note.md`.
+- Fair-lending governance review and protected/proxy feature controls under `reports/fair_lending_review.md` and `reports/proxy_feature_controls.csv`.
 - Final tuned LightGBM model validation with ROC-AUC, PR-AUC, Recall@Top-10%, KS statistic, confusion matrix, calibration, and cross-validation.
 - MLflow tracking script and model registry-style documentation for the existing final model artifacts.
 - Business impact analysis showing the model-ranked top `10%` review queue captures `43.72%` of observed defaults, a `4.37x` lift over random review.
@@ -52,7 +53,8 @@ GitHub reviewers should start here:
 | Model registry documentation | `reports/model_registry.md` |
 | Feature registry documentation | `reports/feature_registry.md` |
 | Reject inference methodology | `reports/reject_inference_note.md` |
-| Local test suite | `36` tests passed |
+| Fair-lending governance review | `reports/fair_lending_review.md` |
+| Local test suite | `38` tests passed |
 
 ## Repository Safety
 
@@ -80,7 +82,7 @@ Emphasize that this is not just a model. It is a production-style data science w
 
 - This is a portfolio prototype, not a production-approved lending system.
 - The dataset is public and historical, not Navi production data.
-- Formal fair-lending certification, adverse-action review, applied reject inference with compliant rejected-applicant outcomes, and compliance sign-off are not included.
+- Formal legal fair-lending certification, adverse-action compliance approval, applied reject inference with compliant rejected-applicant outcomes, and compliance sign-off are not included.
 - Historical aggregate features have documented timestamp-lineage assumptions; production use still needs source-system enforcement of those cutoffs.
 - Live deployment would require authentication, logging, production-grade model registry controls, alerts, rollback, and incident ownership.
 

@@ -109,8 +109,8 @@ Monitoring output shows stable simulated production windows for this run:
 - SHAP explanations are generated on a sample to keep local runtime practical.
 - Categorical encoding uses index-style preparation; further production work should validate category stability and unseen-category handling.
 - Probability calibration needs additional review before probabilities are used as policy thresholds.
-- The project does not include reject inference, adverse action compliance review, formal fair-lending certification, or production cost optimization.
-- Fairness analysis is proxy-based and not a legal fair-lending audit.
+- The project documents reject inference methodology and fair-lending/proxy-risk governance, but it does not apply reject inference with compliant rejected-applicant outcomes or claim legal certification.
+- Fairness analysis is proxy-based, and the formal governance review is not a legal fair-lending audit or adverse-action compliance approval.
 - Historical aggregate features pass the automated leakage screen, but production use still requires source-record timestamp controls to prove availability before each decision point.
 - The model card and governance checklist define production controls, but those controls are documented rather than executed by a live enterprise MLOps platform.
 
@@ -118,9 +118,9 @@ Monitoring output shows stable simulated production windows for this run:
 
 - Add robust automated tests around feature contracts, prediction schemas, and monitoring thresholds.
 - Add a Streamlit dashboard or a Power BI template file on top of the dashboard-ready CSV outputs.
-- Extend proxy fairness checks into a formal fair-lending review workflow with governance and compliance input.
+- Extend the documented fair-lending governance review into a lender-approved legal/compliance workflow with protected-class strategy, adverse-action review, and sign-off records.
 - Add probability calibration experiments and cost-sensitive threshold optimization.
-- Add a feature registry with availability timestamp, source table, owner, and leakage-risk rating for each feature.
+- Enforce the documented feature registry controls through a production feature store and model approval workflow.
 - Add model registry-style versioning and batch scoring logs.
 - Extend monitoring with production event logs, alert thresholds, and scheduled retraining recommendations.
 - Add CI checks before GitHub pushes to run formatting, compile checks, and smoke tests.

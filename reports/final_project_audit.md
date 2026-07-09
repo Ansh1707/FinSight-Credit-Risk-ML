@@ -6,7 +6,7 @@ FinSight is portfolio-ready for a fintech Data Scientist I application. The repo
 
 Strict final rating: `99/100`.
 
-This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, MLflow/model registry-style documentation, feature registry and timestamp-lineage documentation, reject inference methodology, governance documentation, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, formal fair-lending certification, compliant rejected-applicant outcome data for applied reject inference, production enforcement of timestamp cutoffs, authentication, production logging, production-grade registry approval workflow, and business/compliance sign-off.
+This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, MLflow/model registry-style documentation, feature registry and timestamp-lineage documentation, reject inference methodology, fair-lending/proxy-risk governance documentation, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, legal fair-lending certification, adverse-action compliance approval, compliant rejected-applicant outcome data for applied reject inference, production enforcement of timestamp cutoffs, authentication, production logging, production-grade registry approval workflow, and business/compliance sign-off.
 
 ## Completion Checklist
 
@@ -32,6 +32,7 @@ This rating reflects strong end-to-end scope, realistic fintech framing, validat
 | Dashboard outputs | Complete | `dashboard/dashboard_data/`, `reports/dashboard_summary.md` |
 | Leakage audit | Complete | `src/features/leakage_checks.py`, `reports/leakage_audit.md` |
 | Proxy-risk review | Complete | `src/models/fairness_analysis.py`, proxy-risk report |
+| Fair-lending governance | Complete | `src/models/fair_lending_governance.py`, feature-control report |
 | Governance | Complete | `reports/model_card.md`, `reports/governance_checklist.md` |
 | Reviewer readiness | Complete | `REVIEW_GUIDE.md`, `RELEASE_CHECKLIST.md` |
 | Maintenance | Complete | `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, GitHub templates |
@@ -75,6 +76,8 @@ This is a strong business translation because it connects model ranking to revie
 | High-risk outcome-keyword features | `0` |
 | Medium-risk historical aggregates | `32` |
 | Proxy-risk analysis | Complete, not legal certification |
+| Fair-lending governance review | Complete, no legal certification claimed |
+| Protected/proxy feature controls | Complete for portfolio review |
 | Model card | Complete |
 | Deployment checklist | Complete |
 | Security policy | Complete |
@@ -111,7 +114,7 @@ Expected ignored artifacts:
 
 - Live data contracts and source-system ownership.
 - Production feature store with enforced source-record timestamp cutoffs.
-- Formal fair-lending certification and adverse-action compliance review.
+- Legal fair-lending certification and adverse-action compliance approval.
 - Applied reject inference using compliant rejected-applicant outcome data.
 - Production authentication and authorization.
 - Prediction logging and production model registry integration.

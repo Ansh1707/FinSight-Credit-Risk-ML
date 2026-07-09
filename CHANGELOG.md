@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.16.0 - Fair-Lending Governance Review
+
+- Added formal fair-lending and proxy-risk governance review documentation without claiming legal certification.
+- Added protected/proxy feature-control inventory covering restricted, review-required, monitoring-required, timestamp-controlled, and vendor-governance-required features.
+- Documented segment-risk interpretation, production controls, compliance-ready limitations, and sign-off requirements.
+
 ## 0.15.0 - Reject Inference Methodology
 
 - Added portfolio-safe reject inference methodology documentation.

@@ -33,7 +33,7 @@ Suggested check:
 make check
 ```
 
-Current verified result: `30` tests passed.
+Current verified result: run `make check` before release and update this line if the local test count changes.
 
 ## Portfolio Evidence
 
@@ -52,6 +52,8 @@ Current verified result: `30` tests passed.
 - [ ] MLflow tracking and model registry documentation are present.
 - [ ] Feature registry and timestamp-lineage documentation are present.
 - [ ] Reject inference methodology note is present and does not invent labels.
+- [ ] Fair-lending governance review is present and does not claim legal certification.
+- [ ] Protected/proxy feature-control inventory is present.
 
 ## GitHub Presentation
 
@@ -71,6 +73,7 @@ Current verified result: `30` tests passed.
 - [ ] You can explain how Recall@Top-10% maps to collections capacity.
 - [ ] You can explain what the leakage audit did and did not prove.
 - [ ] You can explain proxy-risk findings carefully without overstating fairness claims.
+- [ ] You can explain protected/proxy feature controls without claiming legal certification.
 - [ ] You can explain why calibration matters for credit-risk probabilities.
 - [ ] You can explain how monitoring would work in real production.
 - [ ] You can explain accepted-applicant bias and why reject inference is documented but not applied.

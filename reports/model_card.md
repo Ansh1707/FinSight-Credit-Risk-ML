@@ -148,7 +148,17 @@ Current findings:
 - Age band `18-25` has top-10% review rate `22.50%` and observed default rate `12.29%`.
 - Encoded gender proxy `CODE_GENDER_idx=1` has top-10% review rate `14.03%`, compared with `7.91%` for `CODE_GENDER_idx=0`.
 
-Production use would require fair-lending review, protected-class handling strategy, policy review, reject-inference analysis, and compliance sign-off.
+Formal portfolio governance is documented in `reports/fair_lending_review.md`, with feature-level controls in `reports/proxy_feature_controls.csv` and a machine-readable governance record in `reports/fair_lending_governance.json`.
+
+Current governance controls:
+
+- `CODE_GENDER_idx` is restricted pending fair-lending approval.
+- `DAYS_BIRTH` and `age_years` are restricted pending policy approval.
+- Education, family status, housing, occupation, and organization encoded proxies require fair-lending review.
+- Region and social-circle variables require enhanced proxy-risk review.
+- Historical credit-behavior aggregates require timestamp controls.
+
+Production use would require legal fair-lending review, protected-class handling strategy, policy review, reject-inference analysis, adverse-action review, and compliance sign-off. This model card does not claim regulatory certification.
 
 ## Reject Inference
 
@@ -211,7 +221,7 @@ Production monitoring should include:
 - SHAP explanations are sampled for runtime practicality.
 - Encoded categorical proxies require stronger production treatment for unseen categories and protected/proxy features.
 - Calibration improves probability quality, but policy thresholds still require business, risk, and compliance review.
-- No formal fair-lending certification, adverse-action review, or regulatory validation has been performed.
+- A formal portfolio fair-lending governance review is documented, but no legal fair-lending certification, adverse-action approval, or regulatory validation has been performed.
 - Historical repayment and bureau features require timestamp controls before production use.
 
 ## Deployment Readiness
@@ -224,6 +234,7 @@ Required before production:
 - Validate feature availability time for all historical aggregates.
 - Add feature registry entries with owner, source, availability time, and leakage-risk rating.
 - Complete fair-lending and compliance review.
+- Review and approve protected/proxy feature controls from `reports/proxy_feature_controls.csv`.
 - Apply reject inference only after obtaining compliant rejected-applicant outcomes or approved inference assumptions.
 - Select calibrated probability policy and threshold strategy.
 - Validate API schema, error handling, and batch scoring behavior under realistic load.
@@ -248,6 +259,8 @@ The local `mlruns/` store is ignored by Git. A real production registry would ad
 - `reports/cross_validation_summary.md`
 - `reports/feature_registry.md`
 - `reports/reject_inference_note.md`
+- `reports/fair_lending_review.md`
+- `reports/proxy_feature_controls.csv`
 - `reports/calibration_report.md`
 - `reports/fairness_proxy_analysis.md`
 - `reports/leakage_audit.md`

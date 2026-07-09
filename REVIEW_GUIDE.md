@@ -12,7 +12,8 @@ Read these files in order:
 4. `reports/final_case_study.md` — business story, methodology, validation, impact, and limitations.
 5. `reports/model_card.md` — model governance, intended use, validation, calibration, fairness/proxy-risk, leakage, and monitoring.
 6. `reports/governance_checklist.md` — production-readiness controls and sign-off checklist.
-7. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
+7. `reports/fair_lending_review.md` — formal portfolio fair-lending/proxy-risk governance review without legal-certification claims.
+8. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
 
 ## What This Project Demonstrates
 
@@ -23,6 +24,7 @@ Read these files in order:
 | PySpark feature engineering | `src/features/pyspark_feature_engineering.py` |
 | Feature lineage | `src/features/feature_registry.py`, `reports/feature_registry.md` |
 | Reject inference | `src/models/reject_inference.py`, `reports/reject_inference_note.md` |
+| Fair-lending governance | `src/models/fair_lending_governance.py`, `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv` |
 | Imbalanced classification | `src/models/train_baseline.py`, `src/models/train_final_model.py` |
 | Experiment tracking | `src/models/mlflow_tracking.py`, `reports/mlflow_experiment_summary.md` |
 | Validation beyond accuracy | final report, cross-validation report, calibration report |
@@ -45,6 +47,7 @@ Read these files in order:
 - Cross-validation mean PR-AUC: `0.2745`.
 - Model registry-style documentation: `reports/model_registry.md`.
 - Feature registry and timestamp-lineage documentation: `reports/feature_registry.md`.
+- Fair-lending/proxy feature-control documentation: `reports/fair_lending_review.md`.
 - At `10%` review capacity, the model captures `43.72%` of observed defaults, a `4.37x` lift over random review.
 - Leakage audit passed with `0` forbidden target or identifier fields in the model input list.
 - Monitoring simulation found `0` features with PSI >= `0.2` and prediction PSI `0.000117`.
@@ -85,6 +88,7 @@ python src/models/train_final_model.py
 python src/models/cross_validate_model.py
 python src/models/calibrate_model.py
 python src/models/fairness_analysis.py
+python src/models/fair_lending_governance.py
 python src/explainability/shap_reason_codes.py
 python src/business/collections_scoring.py
 python src/business/business_impact.py
@@ -108,7 +112,7 @@ Open `http://127.0.0.1:8000/docs`.
 - Why leakage checks are necessary for historical repayment and bureau features.
 - Why calibration matters before using raw probabilities as policy thresholds.
 - How SHAP reason codes support analyst review but do not replace compliance-approved adverse-action logic.
-- How proxy-risk analysis surfaces segment gaps without claiming legal fairness certification.
+- How proxy-risk analysis and fair-lending governance surface segment gaps and protected/proxy feature controls without claiming legal certification.
 - How monitoring would work with real production windows and matured labels.
 
 ## Honest Limitations
@@ -116,7 +120,7 @@ Open `http://127.0.0.1:8000/docs`.
 - The dataset is public and historical, not live Navi data.
 - The model is trained on accepted historical applicants only; reject inference methodology is documented but not applied because rejected-applicant outcomes are unavailable.
 - Monitoring is simulated with historical splits.
-- Formal fair-lending certification, adverse-action review, and compliance sign-off are outside the portfolio scope.
+- Legal fair-lending certification, adverse-action compliance approval, and compliance sign-off are outside the portfolio scope.
 - Historical aggregate features need production timestamp controls before real deployment.
 
 ## Best Short Summary
