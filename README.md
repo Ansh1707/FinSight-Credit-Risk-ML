@@ -11,7 +11,9 @@ FinSight is an end-to-end fintech data science project for credit default predic
 ## Reviewer Quick Links
 
 - `REVIEW_GUIDE.md` — fast path for recruiters and interviewers.
+- `FINAL_SUBMISSION.md` — concise final project handoff and sharing note.
 - `reports/final_case_study.md` — end-to-end business case study.
+- `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
 - `reports/model_card.md` — model card with validation, calibration, explainability, proxy-risk, leakage, and monitoring.
 - `reports/governance_checklist.md` — production-readiness and deployment controls.
 - `RELEASE_CHECKLIST.md` — final GitHub safety and presentation checklist.
@@ -376,6 +378,7 @@ FinSight_Credit_Risk_ML/
 ├── sql/                      # business SQL queries
 ├── dashboard/                # dashboard data builder and CSV outputs
 ├── reports/                  # markdown, CSV, figures, and HTML reports
+│   ├── final_project_audit.md
 │   ├── model_card.md
 │   └── governance_checklist.md
 ├── models/                   # trained model artifacts, ignored by Git
@@ -386,6 +389,7 @@ FinSight_Credit_Risk_ML/
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── SECURITY.md
+├── FINAL_SUBMISSION.md
 ├── REVIEW_GUIDE.md
 ├── RELEASE_CHECKLIST.md
 ├── PROJECT_BRIEF.md
@@ -466,7 +470,9 @@ These files document how the project should be reviewed, changed, and shared wit
 
 For senior-review or interview discussion, start with:
 
+- `FINAL_SUBMISSION.md`
 - `REVIEW_GUIDE.md`
+- `reports/final_project_audit.md`
 - `reports/model_card.md`
 - `reports/governance_checklist.md`
 - `reports/final_case_study.md`
@@ -493,4 +499,4 @@ For senior-review or interview discussion, start with:
 
 ## Current Status
 
-The full portfolio workflow is implemented: scaffold, data validation, EDA, SQL analysis, PySpark feature engineering, baseline and final modeling, explainability, collections scoring, FastAPI serving, monitoring, dashboard-ready outputs, and final documentation.
+The full portfolio workflow is implemented: scaffold, data validation, EDA, SQL analysis, PySpark feature engineering, baseline and final modeling, explainability, collections scoring, FastAPI serving, monitoring, dashboard-ready outputs, governance, repository maintenance, reviewer handoff, and final audit documentation.

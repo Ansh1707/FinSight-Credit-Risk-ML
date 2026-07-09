@@ -7,10 +7,12 @@ This guide is for recruiters, hiring managers, and data science interviewers who
 Read these files in order:
 
 1. `README.md` — project overview, architecture, metrics, run commands, and resume bullets.
-2. `reports/final_case_study.md` — business story, methodology, validation, impact, and limitations.
-3. `reports/model_card.md` — model governance, intended use, validation, calibration, fairness/proxy-risk, leakage, and monitoring.
-4. `reports/governance_checklist.md` — production-readiness controls and sign-off checklist.
-5. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
+2. `FINAL_SUBMISSION.md` — concise final project handoff and sharing note.
+3. `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
+4. `reports/final_case_study.md` — business story, methodology, validation, impact, and limitations.
+5. `reports/model_card.md` — model governance, intended use, validation, calibration, fairness/proxy-risk, leakage, and monitoring.
+6. `reports/governance_checklist.md` — production-readiness controls and sign-off checklist.
+7. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
 
 ## What This Project Demonstrates
 
@@ -27,6 +29,7 @@ Read these files in order:
 | Monitoring | drift and performance monitoring reports |
 | Governance | model card, leakage audit, proxy-risk analysis, governance checklist |
 | Engineering hygiene | tests, Makefile, CI workflow, `.gitignore` |
+| Final handoff | final submission note and final project audit |
 
 ## Key Results To Notice
 
@@ -40,6 +43,7 @@ Read these files in order:
 - At `10%` review capacity, the model captures `43.72%` of observed defaults, a `4.37x` lift over random review.
 - Leakage audit passed with `0` forbidden target or identifier fields in the model input list.
 - Monitoring simulation found `0` features with PSI >= `0.2` and prediction PSI `0.000117`.
+- Final strict project audit rating: `96/100`.
 
 These are actual generated project results, not placeholder metrics.
 

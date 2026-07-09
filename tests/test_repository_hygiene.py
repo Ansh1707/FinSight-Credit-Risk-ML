@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_expected_project_files_exist() -> None:
     expected_paths = [
         "README.md",
+        "FINAL_SUBMISSION.md",
         "REVIEW_GUIDE.md",
         "RELEASE_CHECKLIST.md",
         "LICENSE",
@@ -22,6 +23,7 @@ def test_expected_project_files_exist() -> None:
         ".github/ISSUE_TEMPLATE/reproducibility_issue.md",
         ".github/ISSUE_TEMPLATE/model_governance_review.md",
         "reports/model_card.md",
+        "reports/final_project_audit.md",
         "reports/governance_checklist.md",
         "src/data/load_data.py",
         "src/features/pyspark_feature_engineering.py",

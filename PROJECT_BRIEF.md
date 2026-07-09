@@ -77,6 +77,7 @@ The implemented project produces:
 * model governance artifacts under `reports/model_card.md` and `reports/governance_checklist.md`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
+* final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
 
 ## Success Metrics
 
@@ -202,3 +203,12 @@ The repository includes open-source-style maintenance files:
 * `.github/ISSUE_TEMPLATE/`
 
 These artifacts make the repository easier to inspect, maintain, and safely share as a professional portfolio project.
+
+## Final Handoff Snapshot
+
+The final handoff files are:
+
+* `FINAL_SUBMISSION.md`
+* `reports/final_project_audit.md`
+
+The final audit rates FinSight at `96/100` as a portfolio project, with explicit remaining production gaps around live data contracts, formal fair-lending review, reject inference, timestamp-controlled feature lineage, authentication, model registry integration, production monitoring, and incident ownership.

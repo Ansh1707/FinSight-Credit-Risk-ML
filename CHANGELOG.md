@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.12.0 - Final Handoff
+
+- Added final submission note.
+- Added strict final project audit with scorecard, evidence checklist, repository safety audit, and production caveats.
+- Linked final handoff artifacts from README, reviewer guide, project brief, roadmap, and release checklist.
+
 ## 0.11.0 - GitHub Maintenance Polish
 
 - Added MIT license.

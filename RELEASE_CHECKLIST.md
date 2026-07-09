@@ -48,6 +48,7 @@ Current verified result: `30` tests passed.
 - [ ] Dashboard-ready outputs are present.
 - [ ] Reviewer guide is present.
 - [ ] Changelog summarizes project maturity milestones.
+- [ ] Final submission note and final project audit are present.
 
 ## GitHub Presentation
 
@@ -55,6 +56,7 @@ Current verified result: `30` tests passed.
 - [ ] README appears correctly on GitHub.
 - [ ] Badges render correctly.
 - [ ] License is visible on GitHub.
+- [ ] Final reviewer links are visible near the top of README.
 - [ ] Project description mentions credit risk, collections, explainability, monitoring, and FastAPI.
 - [ ] Repo topics include relevant keywords such as `credit-risk`, `machine-learning`, `pyspark`, `fastapi`, `shap`, `model-monitoring`, and `fintech`.
 - [ ] If the repository is private, access is granted to anyone expected to review it.
