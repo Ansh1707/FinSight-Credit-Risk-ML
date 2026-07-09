@@ -74,6 +74,7 @@ The implemented project produces:
 * monitoring reports under `reports/monitoring_summary.md`, `reports/monitoring_report.html`, and `reports/drift_report.html`
 * Power BI-ready dashboard data under `dashboard/dashboard_data/`
 * leakage audit report under `reports/leakage_audit.md`
+* model governance artifacts under `reports/model_card.md` and `reports/governance_checklist.md`
 
 ## Success Metrics
 
@@ -168,3 +169,12 @@ The saved final model feature list was audited for obvious target leakage. The a
 * Medium-risk historical aggregate features: `32`
 
 The medium-risk features are historical bureau, prior application, repayment, POS cash, and credit-card aggregates. They are acceptable for this portfolio build, but production use would require source-record timestamp filters and feature-lineage review to prove every signal was available before the credit decision or collections scoring timestamp.
+
+## Governance Snapshot
+
+The project now includes a professional model card and governance checklist:
+
+* `reports/model_card.md`
+* `reports/governance_checklist.md`
+
+These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.

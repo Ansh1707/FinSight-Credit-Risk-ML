@@ -12,6 +12,8 @@ def test_expected_project_files_exist() -> None:
         "requirements.txt",
         "Dockerfile",
         ".github/workflows/ci.yml",
+        "reports/model_card.md",
+        "reports/governance_checklist.md",
         "src/data/load_data.py",
         "src/features/pyspark_feature_engineering.py",
         "src/features/leakage_checks.py",
@@ -59,7 +61,9 @@ def test_readme_contains_portfolio_sections() -> None:
         "Collections Scoring Logic",
         "API Instructions",
         "Monitoring Summary",
+        "Model Governance",
         "Dashboard Instructions",
+        "Governance Artifacts",
         "Resume-Ready Impact Bullets",
         "Limitations",
     ]

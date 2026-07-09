@@ -306,6 +306,17 @@ Monitoring results:
 
 The implementation uses a lightweight custom fallback report because it is stable in the local environment. Evidently is available, but the fallback avoids version-specific API issues.
 
+## Model Governance
+
+FinSight includes a professional model card and deployment governance checklist:
+
+- `reports/model_card.md`
+- `reports/governance_checklist.md`
+
+The model card documents intended use, prohibited use, training data, feature groups, validation metrics, calibration, SHAP explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, and deployment readiness. The governance checklist translates those sections into concrete production controls for data, features, model validation, fairness review, API deployment, monitoring, rollback, and sign-off.
+
+Current governance position: FinSight is a portfolio-ready production-style prototype. It is not production-approved for automated credit decisions without business, risk, legal, compliance, data governance, and MLOps review.
+
 ## Dashboard Instructions
 
 This repo currently uses Power BI-ready CSV outputs instead of Streamlit. Streamlit is not required for the project to be portfolio-ready.
@@ -356,6 +367,8 @@ FinSight_Credit_Risk_ML/
 ├── sql/                      # business SQL queries
 ├── dashboard/                # dashboard data builder and CSV outputs
 ├── reports/                  # markdown, CSV, figures, and HTML reports
+│   ├── model_card.md
+│   └── governance_checklist.md
 ├── models/                   # trained model artifacts, ignored by Git
 ├── tests/
 ├── Dockerfile
@@ -419,6 +432,16 @@ GitHub Actions runs the same checks on pushes and pull requests to `main`.
 The test suite covers repository hygiene, raw-data validation helpers, model metrics,
 collections scoring logic, prediction utilities, and FastAPI endpoints with a mocked
 model service so CI does not require private raw data or trained model artifacts.
+
+## Governance Artifacts
+
+For senior-review or interview discussion, start with:
+
+- `reports/model_card.md`
+- `reports/governance_checklist.md`
+- `reports/final_case_study.md`
+- `reports/leakage_audit.md`
+- `reports/fairness_proxy_analysis.md`
 
 ## Resume-Ready Impact Bullets
 

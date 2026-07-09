@@ -55,6 +55,8 @@ The final model predictions are converted into four risk bands: Low Risk, Medium
 
 FastAPI serves `/health`, `/predict`, `/explain`, and `/model_info` endpoints from the saved model. Monitoring simulates production with reference and current windows and checks data drift, prediction drift, missingness changes, and labeled performance. Dashboard-ready CSV files are generated for Power BI to support business-facing review.
 
+The final documentation layer includes a model card and governance checklist covering intended use, prohibited use, validation evidence, calibration, fairness and proxy-risk review, leakage controls, monitoring, limitations, and production deployment sign-off requirements.
+
 ## Model Validation
 
 Final model: tuned LightGBM classifier.
@@ -110,6 +112,7 @@ Monitoring output shows stable simulated production windows for this run:
 - The project does not include reject inference, adverse action compliance review, formal fair-lending certification, or production cost optimization.
 - Fairness analysis is proxy-based and not a legal fair-lending audit.
 - Historical aggregate features pass the automated leakage screen, but production use still requires source-record timestamp controls to prove availability before each decision point.
+- The model card and governance checklist define production controls, but those controls are documented rather than executed by a live enterprise MLOps platform.
 
 ## Future Improvements
 

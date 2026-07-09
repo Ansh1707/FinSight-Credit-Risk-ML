@@ -87,6 +87,12 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Documents final metrics, architecture, run commands, limitations, and resume bullets.
 - Output: `README.md` and `reports/final_case_study.md`.
 
+## Phase 14: Model Governance - Complete
+
+- Adds a professional model card with intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, leakage audit, monitoring plan, limitations, and deployment readiness.
+- Adds a governance and deployment checklist covering data controls, feature timing, validation, fairness review, API deployment, monitoring, rollback, retraining, and sign-off.
+- Output: `reports/model_card.md` and `reports/governance_checklist.md`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash
