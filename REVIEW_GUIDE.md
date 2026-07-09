@@ -13,7 +13,8 @@ Read these files in order:
 5. `reports/model_card.md` — model governance, intended use, validation, calibration, fairness/proxy-risk, leakage, and monitoring.
 6. `reports/governance_checklist.md` — production-readiness controls and sign-off checklist.
 7. `reports/fair_lending_review.md` — formal portfolio fair-lending/proxy-risk governance review without legal-certification claims.
-8. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
+8. `reports/challenger_governance_report.md` — champion versus less-sensitive challenger tradeoff.
+9. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
 
 ## What This Project Demonstrates
 
@@ -25,6 +26,7 @@ Read these files in order:
 | Feature lineage | `src/features/feature_registry.py`, `reports/feature_registry.md` |
 | Reject inference | `src/models/reject_inference.py`, `reports/reject_inference_note.md` |
 | Fair-lending governance | `src/models/fair_lending_governance.py`, `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv` |
+| Challenger governance | `src/models/challenger_governance.py`, `reports/challenger_governance_report.md` |
 | Imbalanced classification | `src/models/train_baseline.py`, `src/models/train_final_model.py` |
 | Experiment tracking | `src/models/mlflow_tracking.py`, `reports/mlflow_experiment_summary.md` |
 | Validation beyond accuracy | final report, cross-validation report, calibration report |
@@ -48,6 +50,7 @@ Read these files in order:
 - Model registry-style documentation: `reports/model_registry.md`.
 - Feature registry and timestamp-lineage documentation: `reports/feature_registry.md`.
 - Fair-lending/proxy feature-control documentation: `reports/fair_lending_review.md`.
+- Less-sensitive challenger model: PR-AUC `0.2559`, Recall@Top-10% `0.3488`, after removing `15` controlled features.
 - At `10%` review capacity, the model captures `43.72%` of observed defaults, a `4.37x` lift over random review.
 - Leakage audit passed with `0` forbidden target or identifier fields in the model input list.
 - Monitoring simulation found `0` features with PSI >= `0.2` and prediction PSI `0.000117`.
@@ -89,6 +92,7 @@ python src/models/cross_validate_model.py
 python src/models/calibrate_model.py
 python src/models/fairness_analysis.py
 python src/models/fair_lending_governance.py
+python src/models/challenger_governance.py
 python src/explainability/shap_reason_codes.py
 python src/business/collections_scoring.py
 python src/business/business_impact.py
@@ -113,6 +117,7 @@ Open `http://127.0.0.1:8000/docs`.
 - Why calibration matters before using raw probabilities as policy thresholds.
 - How SHAP reason codes support analyst review but do not replace compliance-approved adverse-action logic.
 - How proxy-risk analysis and fair-lending governance surface segment gaps and protected/proxy feature controls without claiming legal certification.
+- How the less-sensitive challenger quantifies the tradeoff between predictive lift and fair-lending/proxy-risk exposure.
 - How monitoring would work with real production windows and matured labels.
 
 ## Honest Limitations

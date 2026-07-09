@@ -79,6 +79,7 @@ The implemented project produces:
 * MLflow tracking and registry-style documentation under `reports/mlflow_experiment_summary.md`, `reports/model_registry.md`, and `reports/model_registry.json`
 * reject inference methodology documentation under `reports/reject_inference_note.md` and `reports/reject_inference_methodology.json`
 * fair-lending and proxy-risk governance review under `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv`, and `reports/fair_lending_governance.json`
+* less-sensitive challenger-model governance comparison under `reports/challenger_model_comparison.csv`, `reports/challenger_governance_report.md`, and `reports/challenger_governance.json`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 * final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
@@ -183,6 +184,17 @@ Current feature-control summary:
 * `7` region/social-network proxies requiring enhanced review.
 * `32` historical credit-behavior features requiring timestamp controls.
 
+## Challenger Governance Snapshot
+
+The project includes a less-sensitive challenger model governance workflow:
+
+* `src/models/challenger_governance.py`
+* `reports/challenger_model_comparison.csv`
+* `reports/challenger_governance_report.md`
+* `reports/challenger_governance.json`
+
+The challenger removes `15` features flagged by fair-lending/proxy-risk controls and trains with `61` lower-risk features. Actual test metrics show a modest predictive tradeoff: PR-AUC moves from `0.2640` to `0.2559`, Recall@Top-10% moves from `0.3593` to `0.3488`, and KS moves from `0.4123` to `0.4013`. This gives reviewers a concrete governance artifact for discussing whether the champion model's predictive lift justifies stronger protected/proxy feature controls.
+
 ## Reject Inference Snapshot
 
 The project includes a portfolio-safe reject inference methodology note:
@@ -220,7 +232,7 @@ The project now includes a professional model card and governance checklist:
 * `reports/model_card.md`
 * `reports/governance_checklist.md`
 
-These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.
+These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, challenger-model tradeoffs, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.
 
 ## Reviewer Readiness Snapshot
 

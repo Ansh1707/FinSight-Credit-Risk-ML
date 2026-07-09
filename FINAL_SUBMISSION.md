@@ -30,6 +30,7 @@ GitHub reviewers should start here:
 - Feature registry and timestamp-lineage report under `reports/feature_registry.md`.
 - Reject inference methodology note under `reports/reject_inference_note.md`.
 - Fair-lending governance review and protected/proxy feature controls under `reports/fair_lending_review.md` and `reports/proxy_feature_controls.csv`.
+- Less-sensitive challenger model comparison under `reports/challenger_governance_report.md`.
 - Final tuned LightGBM model validation with ROC-AUC, PR-AUC, Recall@Top-10%, KS statistic, confusion matrix, calibration, and cross-validation.
 - MLflow tracking script and model registry-style documentation for the existing final model artifacts.
 - Business impact analysis showing the model-ranked top `10%` review queue captures `43.72%` of observed defaults, a `4.37x` lift over random review.
@@ -54,7 +55,8 @@ GitHub reviewers should start here:
 | Feature registry documentation | `reports/feature_registry.md` |
 | Reject inference methodology | `reports/reject_inference_note.md` |
 | Fair-lending governance review | `reports/fair_lending_review.md` |
-| Local test suite | `38` tests passed |
+| Challenger model governance | `reports/challenger_governance_report.md` |
+| Local test suite | `40` tests passed |
 
 ## Repository Safety
 
@@ -76,6 +78,7 @@ Emphasize that this is not just a model. It is a production-style data science w
 - Calibration and leakage checks because credit-risk probabilities can affect policy decisions.
 - SHAP explanations and reason codes for analyst usability.
 - Collections priority scoring that translates ML into an operational queue.
+- Challenger-model governance that quantifies predictive lift versus protected/proxy feature risk.
 - Monitoring and governance because real fintech models need lifecycle controls.
 
 ## Honest Production Caveats

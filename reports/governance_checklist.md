@@ -15,6 +15,7 @@ This checklist translates the model card into concrete controls a fintech data s
 | Leakage audit performed | Complete for automated screen | `reports/leakage_audit.md` |
 | Proxy-risk analysis performed | Complete for portfolio review | `reports/fairness_proxy_analysis.md` |
 | Fair-lending governance review | Complete for portfolio review | `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv` |
+| Challenger model review | Complete for portfolio review | `reports/challenger_governance_report.md` |
 | Reject inference methodology | Complete for portfolio review | `reports/reject_inference_note.md` |
 | Monitoring report produced | Complete for simulated windows | `reports/monitoring_summary.md` |
 | API implemented | Complete for local serving | `src/api/main.py` |
@@ -55,6 +56,7 @@ This checklist translates the model card into concrete controls a fintech data s
 - Investigate segments with high top-10% review rates or large non-default review rates.
 - Use `reports/proxy_feature_controls.csv` to decide which features are prohibited, restricted, approved with monitoring, or require policy justification.
 - Require formal approval before using gender, age, education, occupation, family status, housing, organization, region, or social-circle proxies in production policy.
+- Review `reports/challenger_governance_report.md` to compare the champion model against a less-sensitive feature-set challenger before approving protected/proxy feature inclusion.
 - Review reject inference methodology and require compliant rejected-applicant outcome data or approved inference assumptions before real lending deployment.
 - Review adverse-action and reason-code requirements with compliance and legal teams.
 - Document final approval or rejection of proxy-sensitive feature groups.
@@ -102,6 +104,7 @@ Before production, every item below should be complete:
 - [ ] Leakage audit passed with timestamp controls.
 - [ ] Fair-lending and proxy-risk review completed.
 - [ ] Protected/proxy feature controls reviewed and approved.
+- [ ] Less-sensitive challenger model comparison reviewed.
 - [ ] Reject inference approach reviewed and approved.
 - [ ] Calibration strategy selected.
 - [ ] Threshold and review-capacity policy approved.

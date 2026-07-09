@@ -137,6 +137,13 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Documents restricted, review-required, monitoring-required, timestamp-controlled, and vendor-governance-required feature classes.
 - Output: `src/models/fair_lending_governance.py`, `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv`, and `reports/fair_lending_governance.json`.
 
+## Phase 22: Challenger Model Governance - Complete
+
+- Adds a less-sensitive challenger model workflow that removes restricted and enhanced-review protected/proxy features.
+- Compares champion and challenger models with actual PR-AUC, Recall@Top-10%, KS, calibration, and top-10% business impact metrics.
+- Documents the tradeoff between predictive lift and fair-lending/proxy-risk exposure without inventing metrics or changing the champion model.
+- Output: `src/models/challenger_governance.py`, `reports/challenger_model_comparison.csv`, `reports/challenger_governance_report.md`, and `reports/challenger_governance.json`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

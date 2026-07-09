@@ -160,6 +160,19 @@ Current governance controls:
 
 Production use would require legal fair-lending review, protected-class handling strategy, policy review, reject-inference analysis, adverse-action review, and compliance sign-off. This model card does not claim regulatory certification.
 
+## Challenger Model Review
+
+A less-sensitive challenger workflow is documented in `reports/challenger_governance_report.md`, with metrics in `reports/challenger_model_comparison.csv`.
+
+The challenger removes `15` features flagged as restricted, fair-lending-review-required, or enhanced-review proxy features, including gender proxy, age fields, education, family status, housing, occupation, organization, region, and social-circle variables. It keeps `61` lower-risk features and retrains a LightGBM model only for governance comparison.
+
+| model | feature count | test PR-AUC | test Recall@Top-10% | test KS | test Brier |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Champion full-feature model | 76 | 0.2640 | 0.3593 | 0.4123 | 0.1645 |
+| Less-sensitive challenger | 61 | 0.2559 | 0.3488 | 0.4013 | 0.1678 |
+
+The challenger reduces protected/proxy feature exposure with a modest loss in ranking and business capture. Production model approval should explicitly decide whether the champion's incremental predictive lift justifies the stronger feature-governance burden, or whether a less-sensitive challenger is preferable.
+
 ## Reject Inference
 
 Reject inference methodology is documented in `reports/reject_inference_note.md` and `reports/reject_inference_methodology.json`.
@@ -220,6 +233,7 @@ Production monitoring should include:
 - Monitoring is simulated rather than based on live serving logs.
 - SHAP explanations are sampled for runtime practicality.
 - Encoded categorical proxies require stronger production treatment for unseen categories and protected/proxy features.
+- Challenger-model evidence exists, but final feature inclusion still requires business, risk, fair-lending, legal, and compliance approval.
 - Calibration improves probability quality, but policy thresholds still require business, risk, and compliance review.
 - A formal portfolio fair-lending governance review is documented, but no legal fair-lending certification, adverse-action approval, or regulatory validation has been performed.
 - Historical repayment and bureau features require timestamp controls before production use.
@@ -235,6 +249,7 @@ Required before production:
 - Add feature registry entries with owner, source, availability time, and leakage-risk rating.
 - Complete fair-lending and compliance review.
 - Review and approve protected/proxy feature controls from `reports/proxy_feature_controls.csv`.
+- Review challenger evidence from `reports/challenger_governance_report.md` before approving champion feature inclusion.
 - Apply reject inference only after obtaining compliant rejected-applicant outcomes or approved inference assumptions.
 - Select calibrated probability policy and threshold strategy.
 - Validate API schema, error handling, and batch scoring behavior under realistic load.
@@ -261,6 +276,8 @@ The local `mlruns/` store is ignored by Git. A real production registry would ad
 - `reports/reject_inference_note.md`
 - `reports/fair_lending_review.md`
 - `reports/proxy_feature_controls.csv`
+- `reports/challenger_governance_report.md`
+- `reports/challenger_model_comparison.csv`
 - `reports/calibration_report.md`
 - `reports/fairness_proxy_analysis.md`
 - `reports/leakage_audit.md`

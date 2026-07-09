@@ -94,6 +94,8 @@ Business impact analysis evaluates model-ranked review queues at different capac
 
 Fairness and proxy-risk analysis was added to inspect segment-level model behavior. The current run used processed encoded category proxies because raw application category files were not available locally. The highest top-10% review-rate segment was `OCCUPATION_TYPE_idx=13` at `32.11%`, and age band `18-25` had a top-10% review rate of `22.50%`. Encoded gender proxy `CODE_GENDER_idx=1` had a top-10% review rate of `14.03%` versus `7.91%` for `CODE_GENDER_idx=0`. These gaps should be treated as review signals, not conclusions of bias or compliance failure.
 
+A less-sensitive challenger model was trained to quantify the tradeoff between predictive lift and protected/proxy feature exposure. The challenger removed `15` controlled features and used `61` lower-risk features. Test PR-AUC moved from `0.2640` to `0.2559`, Recall@Top-10% moved from `0.3593` to `0.3488`, and KS moved from `0.4123` to `0.4013`. This is a useful governance result: the champion has modest additional lift, while the challenger reduces fair-lending/proxy-risk burden.
+
 Monitoring output shows stable simulated production windows for this run:
 
 - Features with PSI >= 0.2: `0`
@@ -111,6 +113,7 @@ Monitoring output shows stable simulated production windows for this run:
 - Probability calibration needs additional review before probabilities are used as policy thresholds.
 - The project documents reject inference methodology and fair-lending/proxy-risk governance, but it does not apply reject inference with compliant rejected-applicant outcomes or claim legal certification.
 - Fairness analysis is proxy-based, and the formal governance review is not a legal fair-lending audit or adverse-action compliance approval.
+- Challenger-model evidence is a portfolio governance comparison, not a lender-approved feature-selection decision.
 - Historical aggregate features pass the automated leakage screen, but production use still requires source-record timestamp controls to prove availability before each decision point.
 - The model card and governance checklist define production controls, but those controls are documented rather than executed by a live enterprise MLOps platform.
 
@@ -119,6 +122,7 @@ Monitoring output shows stable simulated production windows for this run:
 - Add robust automated tests around feature contracts, prediction schemas, and monitoring thresholds.
 - Add a Streamlit dashboard or a Power BI template file on top of the dashboard-ready CSV outputs.
 - Extend the documented fair-lending governance review into a lender-approved legal/compliance workflow with protected-class strategy, adverse-action review, and sign-off records.
+- Evaluate additional challenger variants, including feature-removal and constrained-model approaches approved by compliance and credit risk.
 - Add probability calibration experiments and cost-sensitive threshold optimization.
 - Enforce the documented feature registry controls through a production feature store and model approval workflow.
 - Add model registry-style versioning and batch scoring logs.

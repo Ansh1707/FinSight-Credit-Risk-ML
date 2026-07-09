@@ -254,6 +254,25 @@ This review uses the existing segment metrics and feature registry to document p
 
 Current control summary: `76` model features reviewed; `1` gender proxy feature restricted pending fair-lending approval; `2` age-related features restricted pending policy approval; `5` categorical socioeconomic/employment proxies requiring fair-lending review; `7` region/social-network proxies requiring enhanced review; `32` historical credit-behavior features requiring timestamp controls.
 
+## Challenger Model Governance
+
+Train and compare a less-sensitive challenger model:
+
+```bash
+python src/models/challenger_governance.py
+```
+
+The command writes:
+
+- `reports/challenger_model_comparison.csv`
+- `reports/challenger_governance_report.md`
+- `reports/challenger_governance.json`
+- `models/less_sensitive_challenger_model.pkl` locally, ignored by Git
+
+The challenger removes `15` features flagged as restricted, fair-lending-review-required, or enhanced-review proxy features. It keeps `61` lower-risk model features and compares against the saved champion model using actual computed PR-AUC, Recall@Top-10%, KS, Brier score, expected calibration error, and top-10% business capture.
+
+Current result: the challenger reduced protected/proxy exposure with a modest performance tradeoff. Test PR-AUC moved from `0.2640` to `0.2559`, Recall@Top-10% moved from `0.3593` to `0.3488`, and KS moved from `0.4123` to `0.4013`. This is governance evidence for discussing whether the champion's predictive lift justifies stronger fair-lending controls.
+
 ## Leakage Audit
 
 Run a feature leakage audit against the saved final model feature list:
@@ -398,6 +417,8 @@ FinSight includes a professional model card and deployment governance checklist:
 - `reports/governance_checklist.md`
 - `reports/fair_lending_review.md`
 - `reports/proxy_feature_controls.csv`
+- `reports/challenger_governance_report.md`
+- `reports/challenger_model_comparison.csv`
 
 The model card documents intended use, prohibited use, training data, feature groups, validation metrics, calibration, SHAP explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, and deployment readiness. The governance checklist translates those sections into concrete production controls for data, features, model validation, fairness review, API deployment, monitoring, rollback, and sign-off. The fair-lending review adds segment-risk interpretation and protected/proxy feature controls without claiming legal certification.
 
@@ -496,6 +517,7 @@ python src/models/train_final_model.py
 python src/models/mlflow_tracking.py
 python src/models/reject_inference.py
 python src/models/fair_lending_governance.py
+python src/models/challenger_governance.py
 python src/models/cross_validate_model.py
 python src/models/calibrate_model.py
 python src/models/fairness_analysis.py
@@ -556,6 +578,8 @@ For senior-review or interview discussion, start with:
 - `reports/reject_inference_note.md`
 - `reports/fair_lending_review.md`
 - `reports/proxy_feature_controls.csv`
+- `reports/challenger_governance_report.md`
+- `reports/challenger_model_comparison.csv`
 - `reports/mlflow_experiment_summary.md`
 - `reports/model_registry.md`
 - `reports/model_card.md`

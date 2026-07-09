@@ -54,6 +54,7 @@ Current verified result: run `make check` before release and update this line if
 - [ ] Reject inference methodology note is present and does not invent labels.
 - [ ] Fair-lending governance review is present and does not claim legal certification.
 - [ ] Protected/proxy feature-control inventory is present.
+- [ ] Challenger model governance comparison is present and uses actual computed metrics.
 
 ## GitHub Presentation
 
@@ -77,6 +78,7 @@ Current verified result: run `make check` before release and update this line if
 - [ ] You can explain why calibration matters for credit-risk probabilities.
 - [ ] You can explain how monitoring would work in real production.
 - [ ] You can explain accepted-applicant bias and why reject inference is documented but not applied.
+- [ ] You can explain the champion versus less-sensitive challenger tradeoff.
 - [ ] You can describe the next production steps: feature registry, timestamp controls, compliance review, model registry, and live monitoring.
 
 ## Final Push Flow

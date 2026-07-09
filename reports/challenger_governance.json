@@ -1,0 +1,113 @@
+{
+  "analysis_type": "challenger_model_governance",
+  "models_retrained": true,
+  "champion_model_modified": false,
+  "labels_created": false,
+  "legal_certification_claimed": false,
+  "removed_control_decisions": [
+    "enhanced_review_required",
+    "fair_lending_review_required",
+    "restricted_pending_fair_lending_approval",
+    "restricted_pending_policy_approval"
+  ],
+  "removed_features": [
+    "DEF_30_CNT_SOCIAL_CIRCLE",
+    "DEF_60_CNT_SOCIAL_CIRCLE",
+    "OBS_30_CNT_SOCIAL_CIRCLE",
+    "OBS_60_CNT_SOCIAL_CIRCLE",
+    "REGION_POPULATION_RELATIVE",
+    "REGION_RATING_CLIENT",
+    "REGION_RATING_CLIENT_W_CITY",
+    "NAME_EDUCATION_TYPE_idx",
+    "NAME_FAMILY_STATUS_idx",
+    "NAME_HOUSING_TYPE_idx",
+    "OCCUPATION_TYPE_idx",
+    "ORGANIZATION_TYPE_idx",
+    "CODE_GENDER_idx",
+    "DAYS_BIRTH",
+    "age_years"
+  ],
+  "removed_feature_count": 15,
+  "champion_feature_count": 76,
+  "challenger_feature_count": 61,
+  "comparison": [
+    {
+      "model_name": "champion_full_feature_model",
+      "feature_count": 76,
+      "validation_top_10pct_threshold": 0.6973716480146466,
+      "test_roc_auc": 0.7764561203602978,
+      "test_pr_auc": 0.2639813012708453,
+      "test_precision": 0.2907662082514735,
+      "test_recall": 0.3577039274924471,
+      "test_f1_score": 0.3207802763478732,
+      "test_recall_at_top_10pct": 0.35931520644511583,
+      "test_ks_statistic": 0.41226513002671034,
+      "test_brier_score": 0.1644893399938551,
+      "test_expected_calibration_error": 0.27415461370784405,
+      "top_10pct_applicants_reviewed": 6151,
+      "top_10pct_defaults_captured": 1784,
+      "top_10pct_default_capture_rate": 0.35931520644511583,
+      "top_10pct_lift_vs_random": 3.593152064451158,
+      "top_10pct_default_credit_exposure_capture_rate": 0.31965338412039385,
+      "delta_vs_champion_feature_count": 0,
+      "delta_vs_champion_test_roc_auc": 0.0,
+      "delta_vs_champion_test_pr_auc": 0.0,
+      "delta_vs_champion_test_recall_at_top_10pct": 0.0,
+      "delta_vs_champion_test_ks_statistic": 0.0,
+      "delta_vs_champion_test_brier_score": 0.0,
+      "delta_vs_champion_test_expected_calibration_error": 0.0,
+      "delta_vs_champion_top_10pct_default_capture_rate": 0.0,
+      "delta_vs_champion_top_10pct_lift_vs_random": 0.0
+    },
+    {
+      "model_name": "less_sensitive_challenger_model",
+      "feature_count": 61,
+      "validation_top_10pct_threshold": 0.6976792315915297,
+      "test_roc_auc": 0.7702719168603088,
+      "test_pr_auc": 0.25592480818782903,
+      "test_precision": 0.28229900114622564,
+      "test_recall": 0.3472306143001007,
+      "test_f1_score": 0.31141618497109824,
+      "test_recall_at_top_10pct": 0.3488418932527694,
+      "test_ks_statistic": 0.4013351339029366,
+      "test_brier_score": 0.16776810132649175,
+      "test_expected_calibration_error": 0.27925214068487114,
+      "top_10pct_applicants_reviewed": 6151,
+      "top_10pct_defaults_captured": 1732,
+      "top_10pct_default_capture_rate": 0.3488418932527694,
+      "top_10pct_lift_vs_random": 3.488418932527694,
+      "top_10pct_default_credit_exposure_capture_rate": 0.3065404369172278,
+      "delta_vs_champion_feature_count": -15,
+      "delta_vs_champion_test_roc_auc": -0.006184203499988938,
+      "delta_vs_champion_test_pr_auc": -0.008056493083016258,
+      "delta_vs_champion_test_recall_at_top_10pct": -0.010473313192346456,
+      "delta_vs_champion_test_ks_statistic": -0.010929996123773711,
+      "delta_vs_champion_test_brier_score": 0.0032787613326366594,
+      "delta_vs_champion_test_expected_calibration_error": 0.005097526977027089,
+      "delta_vs_champion_top_10pct_default_capture_rate": -0.010473313192346456,
+      "delta_vs_champion_top_10pct_lift_vs_random": -0.10473313192346412
+    }
+  ],
+  "removed_feature_summary": [
+    {
+      "control_decision": "enhanced_review_required",
+      "sensitivity_class": "geographic_or_network_proxy",
+      "removed_feature_count": 7
+    },
+    {
+      "control_decision": "fair_lending_review_required",
+      "sensitivity_class": "proxy_sensitive",
+      "removed_feature_count": 5
+    },
+    {
+      "control_decision": "restricted_pending_fair_lending_approval",
+      "sensitivity_class": "protected_or_high_proxy",
+      "removed_feature_count": 1
+    },
+    {
+      "control_decision": "restricted_pending_policy_approval",
+      "sensitivity_class": "protected_or_policy_sensitive",
+      "removed_feature_count": 2
+    }
+  ]
+}

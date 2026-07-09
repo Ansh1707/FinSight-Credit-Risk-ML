@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.17.0 - Challenger Model Governance
+
+- Added a less-sensitive challenger model workflow using the existing processed data and final-model split strategy.
+- Removed restricted and enhanced-review protected/proxy features from the challenger feature set.
+- Compared champion and challenger models with actual PR-AUC, Recall@Top-10%, KS, calibration, and business-impact metrics.
+
 ## 0.16.0 - Fair-Lending Governance Review
 
 - Added formal fair-lending and proxy-risk governance review documentation without claiming legal certification.
