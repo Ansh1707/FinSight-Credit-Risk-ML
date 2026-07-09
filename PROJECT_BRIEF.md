@@ -75,6 +75,7 @@ The implemented project produces:
 * Power BI-ready dashboard data under `dashboard/dashboard_data/`
 * leakage audit report under `reports/leakage_audit.md`
 * model governance artifacts under `reports/model_card.md` and `reports/governance_checklist.md`
+* reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 
 ## Success Metrics
 
@@ -178,3 +179,12 @@ The project now includes a professional model card and governance checklist:
 * `reports/governance_checklist.md`
 
 These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.
+
+## Reviewer Readiness Snapshot
+
+The repository includes:
+
+* `REVIEW_GUIDE.md` for a fast recruiter or interviewer walkthrough.
+* `RELEASE_CHECKLIST.md` for safe GitHub sharing and final push checks.
+
+These files help reviewers understand the strongest project evidence quickly while documenting what is intentionally excluded from Git, such as raw data, processed data, trained model binaries, virtual environments, and large HTML reports.

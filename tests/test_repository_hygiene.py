@@ -7,6 +7,8 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_expected_project_files_exist() -> None:
     expected_paths = [
         "README.md",
+        "REVIEW_GUIDE.md",
+        "RELEASE_CHECKLIST.md",
         "PROJECT_BRIEF.md",
         "ROADMAP.md",
         "requirements.txt",
@@ -55,6 +57,7 @@ def test_readme_contains_portfolio_sections() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     required_sections = [
         "Business Problem",
+        "Reviewer Quick Links",
         "Architecture",
         "Final Metrics",
         "Explainability",

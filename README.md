@@ -8,6 +8,14 @@
 
 FinSight is an end-to-end fintech data science project for credit default prediction, explainable risk review, collections prioritization, API serving, model monitoring, and dashboard-ready reporting. It is designed as a portfolio project for a Navi Data Scientist I application.
 
+## Reviewer Quick Links
+
+- `REVIEW_GUIDE.md` — fast path for recruiters and interviewers.
+- `reports/final_case_study.md` — end-to-end business case study.
+- `reports/model_card.md` — model card with validation, calibration, explainability, proxy-risk, leakage, and monitoring.
+- `reports/governance_checklist.md` — production-readiness and deployment controls.
+- `RELEASE_CHECKLIST.md` — final GitHub safety and presentation checklist.
+
 ## Business Problem
 
 Digital lenders need to identify applicants who are likely to default, understand why they are risky, and prioritize high-risk accounts for review or collections. A useful credit-risk workflow needs more than a model score: it needs feature pipelines, validation, explainability, monitoring, and business-facing outputs.
@@ -372,6 +380,8 @@ FinSight_Credit_Risk_ML/
 ├── models/                   # trained model artifacts, ignored by Git
 ├── tests/
 ├── Dockerfile
+├── REVIEW_GUIDE.md
+├── RELEASE_CHECKLIST.md
 ├── PROJECT_BRIEF.md
 ├── ROADMAP.md
 └── README.md
@@ -437,11 +447,13 @@ model service so CI does not require private raw data or trained model artifacts
 
 For senior-review or interview discussion, start with:
 
+- `REVIEW_GUIDE.md`
 - `reports/model_card.md`
 - `reports/governance_checklist.md`
 - `reports/final_case_study.md`
 - `reports/leakage_audit.md`
 - `reports/fairness_proxy_analysis.md`
+- `RELEASE_CHECKLIST.md`
 
 ## Resume-Ready Impact Bullets
 

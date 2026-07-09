@@ -93,6 +93,12 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Adds a governance and deployment checklist covering data controls, feature timing, validation, fairness review, API deployment, monitoring, rollback, retraining, and sign-off.
 - Output: `reports/model_card.md` and `reports/governance_checklist.md`.
 
+## Phase 15: GitHub Review Readiness - Complete
+
+- Adds a reviewer guide so recruiters and interviewers can evaluate the project quickly without running the full pipeline.
+- Adds a release checklist for GitHub safety, local quality checks, portfolio evidence, presentation, and interview readiness.
+- Output: `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash
