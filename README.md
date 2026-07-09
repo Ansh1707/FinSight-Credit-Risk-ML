@@ -15,6 +15,7 @@ FinSight is an end-to-end fintech data science project for credit default predic
 - `reports/model_card.md` — model card with validation, calibration, explainability, proxy-risk, leakage, and monitoring.
 - `reports/governance_checklist.md` — production-readiness and deployment controls.
 - `RELEASE_CHECKLIST.md` — final GitHub safety and presentation checklist.
+- `CHANGELOG.md` — release-history style summary of project maturity milestones.
 
 ## Business Problem
 
@@ -379,7 +380,12 @@ FinSight_Credit_Risk_ML/
 │   └── governance_checklist.md
 ├── models/                   # trained model artifacts, ignored by Git
 ├── tests/
+├── .github/                  # CI, issue templates, PR template
 ├── Dockerfile
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── SECURITY.md
 ├── REVIEW_GUIDE.md
 ├── RELEASE_CHECKLIST.md
 ├── PROJECT_BRIEF.md
@@ -443,6 +449,19 @@ The test suite covers repository hygiene, raw-data validation helpers, model met
 collections scoring logic, prediction utilities, and FastAPI endpoints with a mocked
 model service so CI does not require private raw data or trained model artifacts.
 
+## Repository Maintenance
+
+The repo includes standard GitHub maintenance files:
+
+- `LICENSE`
+- `CHANGELOG.md`
+- `CONTRIBUTING.md`
+- `SECURITY.md`
+- `.github/PULL_REQUEST_TEMPLATE.md`
+- `.github/ISSUE_TEMPLATE/`
+
+These files document how the project should be reviewed, changed, and shared without exposing raw data, model artifacts, secrets, or unsupported production claims.
+
 ## Governance Artifacts
 
 For senior-review or interview discussion, start with:
@@ -454,6 +473,7 @@ For senior-review or interview discussion, start with:
 - `reports/leakage_audit.md`
 - `reports/fairness_proxy_analysis.md`
 - `RELEASE_CHECKLIST.md`
+- `CHANGELOG.md`
 
 ## Resume-Ready Impact Bullets
 

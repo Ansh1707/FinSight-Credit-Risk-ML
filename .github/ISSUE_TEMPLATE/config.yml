@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security or data exposure concern
+    url: https://github.com/Ansh1707/FinSight-Credit-Risk-ML
+    about: Do not post secrets, tokens, raw data, or private applicant records in an issue.

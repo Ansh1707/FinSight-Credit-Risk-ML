@@ -76,6 +76,7 @@ The implemented project produces:
 * leakage audit report under `reports/leakage_audit.md`
 * model governance artifacts under `reports/model_card.md` and `reports/governance_checklist.md`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
+* repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 
 ## Success Metrics
 
@@ -188,3 +189,16 @@ The repository includes:
 * `RELEASE_CHECKLIST.md` for safe GitHub sharing and final push checks.
 
 These files help reviewers understand the strongest project evidence quickly while documenting what is intentionally excluded from Git, such as raw data, processed data, trained model binaries, virtual environments, and large HTML reports.
+
+## Repository Maintenance Snapshot
+
+The repository includes open-source-style maintenance files:
+
+* `LICENSE`
+* `CHANGELOG.md`
+* `CONTRIBUTING.md`
+* `SECURITY.md`
+* `.github/PULL_REQUEST_TEMPLATE.md`
+* `.github/ISSUE_TEMPLATE/`
+
+These artifacts make the repository easier to inspect, maintain, and safely share as a professional portfolio project.

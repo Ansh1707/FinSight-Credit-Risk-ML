@@ -11,6 +11,7 @@ Use this checklist before sharing the repository link with recruiters, interview
 - [ ] Large HTML monitoring reports are ignored.
 - [ ] No local absolute paths appear in code or documentation.
 - [ ] No secrets, tokens, or credentials are committed.
+- [ ] License, security policy, contributing guide, changelog, and GitHub templates are present.
 
 Suggested check:
 
@@ -46,12 +47,14 @@ Current verified result: `30` tests passed.
 - [ ] Business impact report is present.
 - [ ] Dashboard-ready outputs are present.
 - [ ] Reviewer guide is present.
+- [ ] Changelog summarizes project maturity milestones.
 
 ## GitHub Presentation
 
 - [ ] Repository name is clear and professional.
 - [ ] README appears correctly on GitHub.
 - [ ] Badges render correctly.
+- [ ] License is visible on GitHub.
 - [ ] Project description mentions credit risk, collections, explainability, monitoring, and FastAPI.
 - [ ] Repo topics include relevant keywords such as `credit-risk`, `machine-learning`, `pyspark`, `fastapi`, `shap`, `model-monitoring`, and `fintech`.
 - [ ] If the repository is private, access is granted to anyone expected to review it.

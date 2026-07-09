@@ -99,6 +99,12 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Adds a release checklist for GitHub safety, local quality checks, portfolio evidence, presentation, and interview readiness.
 - Output: `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`.
 
+## Phase 16: Repository Maintenance - Complete
+
+- Adds license, changelog, contributing guide, security policy, pull request template, and issue templates.
+- Documents how to make safe changes without committing raw data, processed data, model binaries, secrets, or unsupported production claims.
+- Output: `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, `.github/PULL_REQUEST_TEMPLATE.md`, and `.github/ISSUE_TEMPLATE/`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash
