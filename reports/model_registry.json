@@ -1,6 +1,6 @@
 {
   "artifact_path": "models/credit_risk_model.pkl",
-  "created_utc": "2026-07-09T22:18:11.091592+00:00",
+  "created_utc": "2026-07-09T22:24:14.603043+00:00",
   "feature_count": 76,
   "governance": {
     "governance_checklist": "reports/governance_checklist.md",
@@ -12,7 +12,7 @@
   "metrics_path": "reports/final_model_metrics.json",
   "mlflow": {
     "experiment_name": "FinSight Credit Risk",
-    "run_id": "2e99d5df17e244338c967c450c99bb78",
+    "run_id": "23398a4422544fa7bde06c0d7ac91f28",
     "status": "logged",
     "tracking_uri": "sqlite:///mlruns/mlflow.db"
   },

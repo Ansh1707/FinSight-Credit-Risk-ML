@@ -10,6 +10,7 @@
 | Target | `TARGET`, where `1` represents observed default |
 | Training artifact | `models/credit_risk_model.pkl` |
 | Feature dataset | `data/processed/model_features.parquet` |
+| Feature registry | `reports/feature_registry.md` |
 | Registry record | `reports/model_registry.md` |
 | Feature count | `76` model input features |
 | Applicant rows | `307,511` |
@@ -71,6 +72,8 @@ The project does not use `application_test.csv` or `sample_submission.csv`; it c
 | Previous applications | prior counts, approved/refused counts, credit and down-payment summaries | Medium leakage-risk timing assumption. |
 | Repayment behavior | installment delay, late payment, POS delinquency, credit card DPD | Highest timing-control concern; must exclude post-decision performance leakage. |
 | Encoded categoricals | contract type, gender proxy, education, family status, housing, occupation | Requires category stability, unseen-category handling, and proxy-risk review. |
+
+Detailed timestamp lineage is documented in `reports/feature_registry.md` and `reports/feature_registry.csv`. These artifacts map every final model feature to source tables, transformation logic, availability time, leakage risk, and production controls.
 
 Forbidden model inputs:
 
@@ -229,6 +232,7 @@ The local `mlruns/` store is ignored by Git. A real production registry would ad
 - `reports/final_model_report.md`
 - `reports/final_model_metrics.json`
 - `reports/cross_validation_summary.md`
+- `reports/feature_registry.md`
 - `reports/calibration_report.md`
 - `reports/fairness_proxy_analysis.md`
 - `reports/leakage_audit.md`

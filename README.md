@@ -99,6 +99,23 @@ PySpark is used to aggregate multiple Home Credit tables to applicant level (`SK
 
 Numeric nulls are filled after creating `missing_value_count`; selected categorical nulls are encoded as `Missing`.
 
+## Feature Registry And Timestamp Lineage
+
+Generate the feature registry and timestamp-lineage documentation:
+
+```bash
+python src/features/feature_registry.py
+```
+
+The command writes:
+
+- `reports/feature_registry.csv`
+- `reports/feature_registry.md`
+
+The registry documents `76` final model features across application, derived affordability/stability, encoded categorical, bureau, bureau balance, previous application, installment repayment, POS cash, and credit-card feature groups. For each group it records source tables, source columns, transformation logic, join key, aggregation level, availability-time assumptions, leakage risk, owner, and production controls.
+
+Key governance outcome: application-time features are low leakage risk, encoded categorical features require proxy-risk review, and historical bureau/repayment/balance aggregates require source-record timestamp cutoffs before production use.
+
 ## Modeling Approach
 
 The project creates a stratified train/validation/test split and handles class imbalance using class weights or `scale_pos_weight`. Accuracy is not used as the primary metric because defaults are rare and the business task is risk ranking.
@@ -436,6 +453,7 @@ python src/data/load_data.py
 python src/data/eda_utils.py
 python src/data/create_duckdb.py
 python src/features/pyspark_feature_engineering.py
+python src/features/feature_registry.py
 python src/features/leakage_checks.py
 python src/models/train_baseline.py
 python src/models/train_final_model.py
@@ -496,6 +514,7 @@ For senior-review or interview discussion, start with:
 - `FINAL_SUBMISSION.md`
 - `REVIEW_GUIDE.md`
 - `reports/final_project_audit.md`
+- `reports/feature_registry.md`
 - `reports/mlflow_experiment_summary.md`
 - `reports/model_registry.md`
 - `reports/model_card.md`

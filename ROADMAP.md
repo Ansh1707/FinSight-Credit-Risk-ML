@@ -118,6 +118,12 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Ignores local `mlruns/` tracking output in Git.
 - Output: `src/models/mlflow_tracking.py`, `reports/mlflow_experiment_summary.md`, `reports/model_registry.md`, and `reports/model_registry.json`.
 
+## Phase 19: Feature Registry And Timestamp Lineage - Complete
+
+- Adds a generated feature registry covering source tables, source columns, transformation logic, join keys, aggregation levels, availability-time assumptions, leakage risk, owners, and production controls.
+- Separates low-risk application-time features from proxy-risk categorical encodings and timing-sensitive historical aggregate features.
+- Output: `src/features/feature_registry.py`, `reports/feature_registry.csv`, and `reports/feature_registry.md`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

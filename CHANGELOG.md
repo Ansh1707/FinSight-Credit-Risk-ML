@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.14.0 - Feature Registry And Timestamp Lineage
+
+- Added generated feature registry for all final model features.
+- Added timestamp-lineage documentation for application, bureau, bureau balance, previous application, installment, POS cash, credit-card, and categorical feature groups.
+- Documented source tables, transformation logic, availability-time assumptions, leakage risk, and production controls.
+
 ## 0.13.0 - MLflow Tracking And Registry Docs
 
 - Added optional MLflow tracking for existing final model artifacts without retraining.

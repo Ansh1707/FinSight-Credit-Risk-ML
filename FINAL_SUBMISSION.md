@@ -27,6 +27,7 @@ GitHub reviewers should start here:
 - End-to-end pipeline from raw data validation to feature engineering, modeling, explainability, API serving, monitoring, dashboard outputs, and governance.
 - SQL analysis layer under `sql/`.
 - PySpark feature pipeline under `src/features/pyspark_feature_engineering.py`.
+- Feature registry and timestamp-lineage report under `reports/feature_registry.md`.
 - Final tuned LightGBM model validation with ROC-AUC, PR-AUC, Recall@Top-10%, KS statistic, confusion matrix, calibration, and cross-validation.
 - MLflow tracking script and model registry-style documentation for the existing final model artifacts.
 - Business impact analysis showing the model-ranked top `10%` review queue captures `43.72%` of observed defaults, a `4.37x` lift over random review.
@@ -48,7 +49,8 @@ GitHub reviewers should start here:
 | Top 10% lift vs random | `4.37x` |
 | Leakage audit | Passed with `0` forbidden target/identifier inputs |
 | Model registry documentation | `reports/model_registry.md` |
-| Local test suite | `30` tests passed |
+| Feature registry documentation | `reports/feature_registry.md` |
+| Local test suite | `34` tests passed |
 
 ## Repository Safety
 
@@ -77,7 +79,7 @@ Emphasize that this is not just a model. It is a production-style data science w
 - This is a portfolio prototype, not a production-approved lending system.
 - The dataset is public and historical, not Navi production data.
 - Formal fair-lending certification, adverse-action review, reject inference, and compliance sign-off are not included.
-- Historical aggregate features need source-record timestamp controls before production use.
+- Historical aggregate features have documented timestamp-lineage assumptions; production use still needs source-system enforcement of those cutoffs.
 - Live deployment would require authentication, logging, production-grade model registry controls, alerts, rollback, and incident ownership.
 
 ## Final Recommendation

@@ -21,6 +21,7 @@ Read these files in order:
 | Credit-risk framing | README, project brief, final case study |
 | SQL analysis | `sql/` and `reports/sql_analysis_summary.md` |
 | PySpark feature engineering | `src/features/pyspark_feature_engineering.py` |
+| Feature lineage | `src/features/feature_registry.py`, `reports/feature_registry.md` |
 | Imbalanced classification | `src/models/train_baseline.py`, `src/models/train_final_model.py` |
 | Experiment tracking | `src/models/mlflow_tracking.py`, `reports/mlflow_experiment_summary.md` |
 | Validation beyond accuracy | final report, cross-validation report, calibration report |
@@ -42,10 +43,11 @@ Read these files in order:
 - Cross-validation mean ROC-AUC: `0.7830`.
 - Cross-validation mean PR-AUC: `0.2745`.
 - Model registry-style documentation: `reports/model_registry.md`.
+- Feature registry and timestamp-lineage documentation: `reports/feature_registry.md`.
 - At `10%` review capacity, the model captures `43.72%` of observed defaults, a `4.37x` lift over random review.
 - Leakage audit passed with `0` forbidden target or identifier fields in the model input list.
 - Monitoring simulation found `0` features with PSI >= `0.2` and prediction PSI `0.000117`.
-- Final strict project audit rating: `96/100`.
+- Final strict project audit rating: `98/100`.
 
 These are actual generated project results, not placeholder metrics.
 

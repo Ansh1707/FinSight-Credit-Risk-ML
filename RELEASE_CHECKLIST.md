@@ -50,6 +50,7 @@ Current verified result: `30` tests passed.
 - [ ] Changelog summarizes project maturity milestones.
 - [ ] Final submission note and final project audit are present.
 - [ ] MLflow tracking and model registry documentation are present.
+- [ ] Feature registry and timestamp-lineage documentation are present.
 
 ## GitHub Presentation
 

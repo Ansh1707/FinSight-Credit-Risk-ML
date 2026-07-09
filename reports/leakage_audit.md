@@ -78,9 +78,9 @@ The saved model feature list does not include these forbidden fields.
 ## Production Recommendations
 
 - Add source-record timestamp filters for every historical table before production use.
-- Maintain a feature registry with availability time, source table, owner, and leakage-risk rating.
+- Maintain `reports/feature_registry.md` with availability time, source table, owner, and leakage-risk rating.
 - Keep identifiers for joins and auditability, but exclude them from model training.
-- Re-run this leakage audit after every feature engineering change.
+- Re-run `python src/features/feature_registry.py` and this leakage audit after every feature engineering change.
 
 ## Saved Output
 

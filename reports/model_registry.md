@@ -49,7 +49,7 @@ This document is a lightweight model registry-style record for the saved FinSigh
 | status | `logged` |
 | tracking_uri | `sqlite:///mlruns/mlflow.db` |
 | experiment_name | `FinSight Credit Risk` |
-| run_id | `2e99d5df17e244338c967c450c99bb78` |
+| run_id | `23398a4422544fa7bde06c0d7ac91f28` |
 
 ## Governance References
 

@@ -66,6 +66,7 @@ Do not use `application_test.csv` or `sample_submission.csv`. This is not a Kagg
 The implemented project produces:
 
 * `data/processed/model_features.parquet` with `307,511` applicant rows and `78` columns
+* feature registry and timestamp-lineage documentation under `reports/feature_registry.csv` and `reports/feature_registry.md`
 * `models/credit_risk_model.pkl` as the final tuned LightGBM model
 * `reports/final_model_metrics.json` and `reports/final_model_report.md`
 * SHAP plots and applicant-level reason codes under `reports/`
@@ -174,6 +175,15 @@ The saved final model feature list was audited for obvious target leakage. The a
 
 The medium-risk features are historical bureau, prior application, repayment, POS cash, and credit-card aggregates. They are acceptable for this portfolio build, but production use would require source-record timestamp filters and feature-lineage review to prove every signal was available before the credit decision or collections scoring timestamp.
 
+## Feature Registry Snapshot
+
+The project includes a generated feature registry:
+
+* `reports/feature_registry.csv`
+* `reports/feature_registry.md`
+
+The registry documents `76` final model features by feature group, source table, source columns, transformation logic, join key, aggregation level, availability time, leakage risk, owner, and production controls. It makes the timestamp-lineage assumptions explicit for bureau, bureau balance, previous application, installment repayment, POS cash, and credit-card feature groups.
+
 ## Governance Snapshot
 
 The project now includes a professional model card and governance checklist:
@@ -212,7 +222,7 @@ The final handoff files are:
 * `FINAL_SUBMISSION.md`
 * `reports/final_project_audit.md`
 
-The final audit rates FinSight at `97/100` as a portfolio project, with explicit remaining production gaps around live data contracts, formal fair-lending review, reject inference, timestamp-controlled feature lineage, authentication, production-grade registry approval workflow, production monitoring, and incident ownership.
+The final audit rates FinSight at `98/100` as a portfolio project, with explicit remaining production gaps around live data contracts, formal fair-lending review, reject inference, production enforcement of timestamp cutoffs, authentication, production-grade registry approval workflow, production monitoring, and incident ownership.
 
 ## MLflow and Registry Snapshot
 

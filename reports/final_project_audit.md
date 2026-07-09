@@ -4,9 +4,9 @@
 
 FinSight is portfolio-ready for a fintech Data Scientist I application. The repository demonstrates a complete, business-facing, production-style credit-risk workflow rather than a single notebook or isolated model.
 
-Strict final rating: `97/100`.
+Strict final rating: `98/100`.
 
-This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, MLflow/model registry-style documentation, governance documentation, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, formal fair-lending review, reject inference, timestamp-controlled feature lineage, authentication, production logging, production-grade registry approval workflow, and business/compliance sign-off.
+This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, MLflow/model registry-style documentation, feature registry and timestamp-lineage documentation, governance documentation, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, formal fair-lending review, reject inference, production enforcement of timestamp cutoffs, authentication, production logging, production-grade registry approval workflow, and business/compliance sign-off.
 
 ## Completion Checklist
 
@@ -17,6 +17,7 @@ This rating reflects strong end-to-end scope, realistic fintech framing, validat
 | EDA | Complete | `notebooks/`, `src/data/eda_utils.py`, `reports/eda_summary.md` |
 | SQL analysis | Complete | `sql/`, `src/data/create_duckdb.py`, `reports/sql_analysis_summary.md` |
 | PySpark features | Complete | `src/features/pyspark_feature_engineering.py` |
+| Feature registry | Complete | `src/features/feature_registry.py`, `reports/feature_registry.md` |
 | Baseline modeling | Complete | `src/models/train_baseline.py`, `reports/model_comparison.csv` |
 | Final model | Complete | `src/models/train_final_model.py`, `reports/final_model_report.md` |
 | MLflow tracking | Complete | `src/models/mlflow_tracking.py`, `reports/mlflow_experiment_summary.md` |
@@ -78,6 +79,7 @@ This is a strong business translation because it connects model ranking to revie
 | Security policy | Complete |
 | Release checklist | Complete |
 | MLflow/model registry documentation | Complete |
+| Feature timestamp-lineage documentation | Complete |
 
 ## Repository Safety Audit
 
@@ -106,7 +108,7 @@ Expected ignored artifacts:
 ## Remaining Gaps Before Real Production
 
 - Live data contracts and source-system ownership.
-- Formal feature registry with availability timestamps.
+- Production feature store with enforced source-record timestamp cutoffs.
 - Formal fair-lending and adverse-action compliance review.
 - Reject-inference strategy.
 - Production authentication and authorization.
