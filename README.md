@@ -1,5 +1,11 @@
 # FinSight: Explainable Credit Risk & Collections ML Platform
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![CI](https://img.shields.io/badge/CI-GitHub%20Actions-green)
+![Model](https://img.shields.io/badge/Model-LightGBM-orange)
+![API](https://img.shields.io/badge/API-FastAPI-teal)
+![Status](https://img.shields.io/badge/Status-Portfolio%20Ready-brightgreen)
+
 FinSight is an end-to-end fintech data science project for credit default prediction, explainable risk review, collections prioritization, API serving, model monitoring, and dashboard-ready reporting. It is designed as a portfolio project for a Navi Data Scientist I application.
 
 ## Business Problem
@@ -300,6 +306,21 @@ python -m compileall src dashboard tests
 python src/models/predict.py --input data/processed/model_features.parquet --limit 5
 ```
 
+## Repository Quality
+
+The repository includes lightweight CI and local quality commands for GitHub readiness:
+
+```bash
+make check
+```
+
+This runs:
+
+- `python -m compileall src dashboard tests`
+- `pytest -q`
+
+GitHub Actions runs the same smoke checks on pushes and pull requests to `main`.
+
 ## Resume-Ready Impact Bullets
 
 - Built FinSight, an end-to-end credit-risk and collections ML platform using PySpark, SQL, scikit-learn, XGBoost/LightGBM, SHAP, FastAPI, and Docker to predict loan default probability and prioritize high-risk applicants.
@@ -319,4 +340,3 @@ python src/models/predict.py --input data/processed/model_features.parquet --lim
 ## Current Status
 
 The full portfolio workflow is implemented: scaffold, data validation, EDA, SQL analysis, PySpark feature engineering, baseline and final modeling, explainability, collections scoring, FastAPI serving, monitoring, dashboard-ready outputs, and final documentation.
-
