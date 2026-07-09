@@ -16,3 +16,4 @@ imbalanced-learn
 pytest
 jupyter
 duckdb
+mlflow

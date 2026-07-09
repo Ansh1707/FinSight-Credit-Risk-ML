@@ -75,6 +75,7 @@ The implemented project produces:
 * Power BI-ready dashboard data under `dashboard/dashboard_data/`
 * leakage audit report under `reports/leakage_audit.md`
 * model governance artifacts under `reports/model_card.md` and `reports/governance_checklist.md`
+* MLflow tracking and registry-style documentation under `reports/mlflow_experiment_summary.md`, `reports/model_registry.md`, and `reports/model_registry.json`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 * final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
@@ -211,4 +212,16 @@ The final handoff files are:
 * `FINAL_SUBMISSION.md`
 * `reports/final_project_audit.md`
 
-The final audit rates FinSight at `96/100` as a portfolio project, with explicit remaining production gaps around live data contracts, formal fair-lending review, reject inference, timestamp-controlled feature lineage, authentication, model registry integration, production monitoring, and incident ownership.
+The final audit rates FinSight at `97/100` as a portfolio project, with explicit remaining production gaps around live data contracts, formal fair-lending review, reject inference, timestamp-controlled feature lineage, authentication, production-grade registry approval workflow, production monitoring, and incident ownership.
+
+## MLflow and Registry Snapshot
+
+The project includes `src/models/mlflow_tracking.py`, which logs existing final model parameters, validation/test metrics, and report artifacts to MLflow when MLflow is installed. It does not retrain the model.
+
+Generated outputs:
+
+* `reports/mlflow_experiment_summary.md`
+* `reports/model_registry.md`
+* `reports/model_registry.json`
+
+The local `mlruns/` tracking store is ignored by Git. The current generated summary documents `mlflow_not_installed` for the active local environment; after running `pip install -r requirements.txt`, rerun `python src/models/mlflow_tracking.py` to create a local MLflow run.

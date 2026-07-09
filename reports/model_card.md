@@ -10,6 +10,7 @@
 | Target | `TARGET`, where `1` represents observed default |
 | Training artifact | `models/credit_risk_model.pkl` |
 | Feature dataset | `data/processed/model_features.parquet` |
+| Registry record | `reports/model_registry.md` |
 | Feature count | `76` model input features |
 | Applicant rows | `307,511` |
 | Selection metric | Validation PR-AUC |
@@ -213,6 +214,16 @@ Required before production:
 - Add monitoring alerts, ownership, and escalation process.
 - Define retraining, recalibration, and retirement criteria.
 
+## Experiment Tracking And Registry
+
+The project includes `src/models/mlflow_tracking.py` to log existing final model parameters, metrics, and report artifacts to MLflow without retraining. It also writes lightweight model registry-style records:
+
+- `reports/mlflow_experiment_summary.md`
+- `reports/model_registry.md`
+- `reports/model_registry.json`
+
+The local `mlruns/` store is ignored by Git. A real production registry would add approval stages, artifact access control, deployment references, rollback metadata, model owner sign-off, and compliance review.
+
 ## Artifact References
 
 - `reports/final_model_report.md`
@@ -225,3 +236,5 @@ Required before production:
 - `reports/business_impact_summary.md`
 - `reports/monitoring_summary.md`
 - `reports/governance_checklist.md`
+- `reports/mlflow_experiment_summary.md`
+- `reports/model_registry.md`

@@ -4,9 +4,9 @@
 
 FinSight is portfolio-ready for a fintech Data Scientist I application. The repository demonstrates a complete, business-facing, production-style credit-risk workflow rather than a single notebook or isolated model.
 
-Strict final rating: `96/100`.
+Strict final rating: `97/100`.
 
-This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, governance documentation, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, formal fair-lending review, reject inference, timestamp-controlled feature lineage, model registry integration, authentication, production logging, and business/compliance sign-off.
+This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, MLflow/model registry-style documentation, governance documentation, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, formal fair-lending review, reject inference, timestamp-controlled feature lineage, authentication, production logging, production-grade registry approval workflow, and business/compliance sign-off.
 
 ## Completion Checklist
 
@@ -19,6 +19,8 @@ This rating reflects strong end-to-end scope, realistic fintech framing, validat
 | PySpark features | Complete | `src/features/pyspark_feature_engineering.py` |
 | Baseline modeling | Complete | `src/models/train_baseline.py`, `reports/model_comparison.csv` |
 | Final model | Complete | `src/models/train_final_model.py`, `reports/final_model_report.md` |
+| MLflow tracking | Complete | `src/models/mlflow_tracking.py`, `reports/mlflow_experiment_summary.md` |
+| Model registry docs | Complete | `reports/model_registry.md`, `reports/model_registry.json` |
 | Cross-validation | Complete | `reports/cross_validation_summary.md` |
 | Calibration | Complete | `reports/calibration_report.md` |
 | Explainability | Complete | `src/explainability/shap_reason_codes.py`, SHAP reports |
@@ -75,6 +77,7 @@ This is a strong business translation because it connects model ranking to revie
 | Deployment checklist | Complete |
 | Security policy | Complete |
 | Release checklist | Complete |
+| MLflow/model registry documentation | Complete |
 
 ## Repository Safety Audit
 
@@ -107,7 +110,8 @@ Expected ignored artifacts:
 - Formal fair-lending and adverse-action compliance review.
 - Reject-inference strategy.
 - Production authentication and authorization.
-- Prediction logging and model registry integration.
+- Prediction logging and production model registry integration.
+- Production-grade registry approval workflow and artifact access controls.
 - Real production monitoring windows and alert routing.
 - Retraining, recalibration, rollback, and incident-response process.
 

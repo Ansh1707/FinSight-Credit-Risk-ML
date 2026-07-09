@@ -1,0 +1,55 @@
+{
+  "artifact_path": "models/credit_risk_model.pkl",
+  "created_utc": "2026-07-09T22:12:17.817661+00:00",
+  "feature_count": 76,
+  "governance": {
+    "governance_checklist": "reports/governance_checklist.md",
+    "leakage_audit": "reports/leakage_audit.md",
+    "model_card": "reports/model_card.md",
+    "production_status": "Portfolio prototype; not production-approved.",
+    "proxy_risk_review": "reports/fairness_proxy_analysis.md"
+  },
+  "metrics_path": "reports/final_model_metrics.json",
+  "mlflow": {
+    "experiment_name": "FinSight Credit Risk",
+    "run_id": null,
+    "status": "mlflow_not_installed",
+    "tracking_uri": "file:mlruns"
+  },
+  "model_name": "FinSight Credit Risk LightGBM",
+  "model_stage": "portfolio_ready_not_production_approved",
+  "model_type": "lightgbm",
+  "model_version": "0.13.0",
+  "random_state": 42,
+  "rows_loaded": 307511,
+  "selection_metric": "validation_pr_auc",
+  "test_metrics": {
+    "f1_score": 0.3207802763478732,
+    "fn": 3189,
+    "fp": 4332,
+    "ks_statistic": 0.41226513002671034,
+    "pr_auc": 0.2639813012708453,
+    "precision": 0.2907662082514735,
+    "recall": 0.3577039274924471,
+    "recall_at_top_10pct": 0.35931520644511583,
+    "roc_auc": 0.7764561203602978,
+    "tn": 52206,
+    "tp": 1776
+  },
+  "threshold": 0.6973716480146466,
+  "threshold_strategy": "validation_top_10_percent_score_cutoff",
+  "top_k": 0.1,
+  "validation_metrics": {
+    "f1_score": 0.3254767902123066,
+    "fn": 3156,
+    "fp": 4342,
+    "ks_statistic": 0.4194457867434744,
+    "pr_auc": 0.2711740100132865,
+    "precision": 0.2940985205657617,
+    "recall": 0.36435045317220544,
+    "recall_at_top_10pct": 0.36435045317220544,
+    "roc_auc": 0.7799203369943319,
+    "tn": 52195,
+    "tp": 1809
+  }
+}

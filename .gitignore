@@ -1,6 +1,7 @@
 data/raw/
 data/processed/
 /models/
+mlruns/
 reports/*.html
 reports/.cache/
 reports/.matplotlib-cache/

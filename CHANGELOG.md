@@ -2,6 +2,13 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.13.0 - MLflow Tracking And Registry Docs
+
+- Added optional MLflow tracking for existing final model artifacts without retraining.
+- Added model registry-style JSON and Markdown records.
+- Added MLflow experiment summary documentation.
+- Ignored local `mlruns/` tracking store.
+
 ## 0.12.0 - Final Handoff
 
 - Added final submission note.

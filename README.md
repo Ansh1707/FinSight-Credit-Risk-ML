@@ -112,6 +112,28 @@ Baseline models trained:
 
 LightGBM was selected as the final model because it produced the strongest validation PR-AUC among the baselines. The final model was tuned using validation PR-AUC as the selection metric.
 
+## MLflow Tracking And Model Registry
+
+Create MLflow tracking records and registry-style documentation from existing final model artifacts:
+
+```bash
+python src/models/mlflow_tracking.py
+```
+
+This command does not retrain the model. It reads `reports/final_model_metrics.json`, logs parameters, metrics, and report artifacts to MLflow when MLflow is installed, and always writes:
+
+- `reports/mlflow_experiment_summary.md`
+- `reports/model_registry.md`
+- `reports/model_registry.json`
+
+Local MLflow UI:
+
+```bash
+mlflow ui --backend-store-uri mlruns
+```
+
+The local `mlruns/` tracking store is ignored by Git. In the current generated summary, MLflow logging is marked `mlflow_not_installed` because the active venv had not yet installed the newly added `mlflow` dependency; run `pip install -r requirements.txt` and rerun the command to create the local MLflow run.
+
 ## Final Metrics
 
 Final model: tuned LightGBM classifier.
@@ -417,6 +439,7 @@ python src/features/pyspark_feature_engineering.py
 python src/features/leakage_checks.py
 python src/models/train_baseline.py
 python src/models/train_final_model.py
+python src/models/mlflow_tracking.py
 python src/models/cross_validate_model.py
 python src/models/calibrate_model.py
 python src/models/fairness_analysis.py
@@ -473,6 +496,8 @@ For senior-review or interview discussion, start with:
 - `FINAL_SUBMISSION.md`
 - `REVIEW_GUIDE.md`
 - `reports/final_project_audit.md`
+- `reports/mlflow_experiment_summary.md`
+- `reports/model_registry.md`
 - `reports/model_card.md`
 - `reports/governance_checklist.md`
 - `reports/final_case_study.md`

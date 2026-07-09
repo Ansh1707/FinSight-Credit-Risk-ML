@@ -28,6 +28,7 @@ GitHub reviewers should start here:
 - SQL analysis layer under `sql/`.
 - PySpark feature pipeline under `src/features/pyspark_feature_engineering.py`.
 - Final tuned LightGBM model validation with ROC-AUC, PR-AUC, Recall@Top-10%, KS statistic, confusion matrix, calibration, and cross-validation.
+- MLflow tracking script and model registry-style documentation for the existing final model artifacts.
 - Business impact analysis showing the model-ranked top `10%` review queue captures `43.72%` of observed defaults, a `4.37x` lift over random review.
 - SHAP reason codes and proxy-risk analysis.
 - Leakage audit, model card, governance checklist, security policy, release checklist, and reviewer guide.
@@ -46,6 +47,7 @@ GitHub reviewers should start here:
 | Top 10% default capture | `43.72%` |
 | Top 10% lift vs random | `4.37x` |
 | Leakage audit | Passed with `0` forbidden target/identifier inputs |
+| Model registry documentation | `reports/model_registry.md` |
 | Local test suite | `30` tests passed |
 
 ## Repository Safety
@@ -76,7 +78,7 @@ Emphasize that this is not just a model. It is a production-style data science w
 - The dataset is public and historical, not Navi production data.
 - Formal fair-lending certification, adverse-action review, reject inference, and compliance sign-off are not included.
 - Historical aggregate features need source-record timestamp controls before production use.
-- Live deployment would require authentication, logging, model registry, alerts, rollback, and incident ownership.
+- Live deployment would require authentication, logging, production-grade model registry controls, alerts, rollback, and incident ownership.
 
 ## Final Recommendation
 

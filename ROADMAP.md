@@ -111,6 +111,13 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Adds a strict final project audit with rating, completion checklist, metric evidence, business evidence, governance evidence, repository safety audit, Navi role fit, and remaining production gaps.
 - Output: `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`.
 
+## Phase 18: MLflow Tracking And Registry Documentation - Complete
+
+- Adds optional MLflow logging for existing final model parameters, metrics, and report artifacts without retraining.
+- Adds lightweight model registry-style JSON and Markdown documentation.
+- Ignores local `mlruns/` tracking output in Git.
+- Output: `src/models/mlflow_tracking.py`, `reports/mlflow_experiment_summary.md`, `reports/model_registry.md`, and `reports/model_registry.json`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash
