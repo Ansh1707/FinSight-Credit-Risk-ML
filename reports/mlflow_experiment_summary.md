@@ -6,10 +6,10 @@ This report documents MLflow tracking for the existing FinSight final model arti
 
 | field | value |
 | --- | --- |
-| status | `mlflow_not_installed` |
-| tracking_uri | `file:mlruns` |
+| status | `logged` |
+| tracking_uri | `sqlite:///mlruns/mlflow.db` |
 | experiment_name | `FinSight Credit Risk` |
-| run_id | `None` |
+| run_id | `2e99d5df17e244338c967c450c99bb78` |
 
 ## Logged Content
 
@@ -27,12 +27,8 @@ python src/models/mlflow_tracking.py
 Open the local MLflow UI after logging:
 
 ```bash
-mlflow ui --backend-store-uri mlruns
+mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
 ```
-
-## Local Environment Note
-
-MLflow is not installed in the current environment, so the script wrote registry documentation but did not create an MLflow run. Install project requirements and rerun the command to create the local `mlruns/` tracking store.
 
 ## Registry Outputs
 

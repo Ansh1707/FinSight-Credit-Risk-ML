@@ -23,7 +23,7 @@ METRICS_PATH = REPORTS_DIR / "final_model_metrics.json"
 MLFLOW_SUMMARY_PATH = REPORTS_DIR / "mlflow_experiment_summary.md"
 REGISTRY_JSON_PATH = REPORTS_DIR / "model_registry.json"
 REGISTRY_MD_PATH = REPORTS_DIR / "model_registry.md"
-MLFLOW_TRACKING_URI = "file:mlruns"
+MLFLOW_TRACKING_URI = "sqlite:///mlruns/mlflow.db"
 EXPERIMENT_NAME = "FinSight Credit Risk"
 RUN_NAME = "final_lightgbm_existing_artifacts"
 
@@ -48,7 +48,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--tracking-uri",
         default=MLFLOW_TRACKING_URI,
-        help="MLflow tracking URI. Defaults to local file store file:mlruns.",
+        help=(
+            "MLflow tracking URI. Defaults to local SQLite store "
+            "sqlite:///mlruns/mlflow.db."
+        ),
     )
     parser.add_argument(
         "--experiment-name",
@@ -253,29 +256,44 @@ def try_log_to_mlflow(
             "run_id": None,
         }
 
-    mlflow.set_tracking_uri(tracking_uri)
-    mlflow.set_experiment(experiment_name)
-    with mlflow.start_run(run_name=run_name) as run:
-        mlflow.set_tag("project", "FinSight")
-        mlflow.set_tag("model_stage", "portfolio_ready_not_production_approved")
-        mlflow.set_tag("no_retraining", "true")
-        mlflow.log_param("model_type", metrics.get("model_type"))
-        mlflow.log_param("selection_metric", metrics.get("selection_metric"))
-        mlflow.log_param("threshold_strategy", metrics.get("threshold_strategy"))
-        mlflow.log_param("feature_count", metrics.get("feature_count"))
-        mlflow.log_param("rows_loaded", metrics.get("rows_loaded"))
-        for param_name, value in metrics.get("best_params", {}).items():
-            mlflow.log_param(f"best_{param_name}", value)
-        for metric_name, value in flatten_metrics(metrics).items():
-            mlflow.log_metric(metric_name, value)
-        for artifact_path in ARTIFACT_PATHS:
-            if artifact_path.exists():
-                mlflow.log_artifact(artifact_path.as_posix(), artifact_path="reports")
+    try:
+        if tracking_uri.startswith("sqlite:///"):
+            db_path = Path(tracking_uri.removeprefix("sqlite:///"))
+            db_path.parent.mkdir(parents=True, exist_ok=True)
+
+        mlflow.set_tracking_uri(tracking_uri)
+        mlflow.set_experiment(experiment_name)
+        with mlflow.start_run(run_name=run_name) as run:
+            mlflow.set_tag("project", "FinSight")
+            mlflow.set_tag("model_stage", "portfolio_ready_not_production_approved")
+            mlflow.set_tag("no_retraining", "true")
+            mlflow.log_param("model_type", metrics.get("model_type"))
+            mlflow.log_param("selection_metric", metrics.get("selection_metric"))
+            mlflow.log_param("threshold_strategy", metrics.get("threshold_strategy"))
+            mlflow.log_param("feature_count", metrics.get("feature_count"))
+            mlflow.log_param("rows_loaded", metrics.get("rows_loaded"))
+            for param_name, value in metrics.get("best_params", {}).items():
+                mlflow.log_param(f"best_{param_name}", value)
+            for metric_name, value in flatten_metrics(metrics).items():
+                mlflow.log_metric(metric_name, value)
+            for artifact_path in ARTIFACT_PATHS:
+                if artifact_path.exists():
+                    mlflow.log_artifact(
+                        artifact_path.as_posix(), artifact_path="reports"
+                    )
+            return {
+                "status": "logged",
+                "tracking_uri": tracking_uri,
+                "experiment_name": experiment_name,
+                "run_id": run.info.run_id,
+            }
+    except Exception as exc:
         return {
-            "status": "logged",
+            "status": "mlflow_logging_failed",
             "tracking_uri": tracking_uri,
             "experiment_name": experiment_name,
-            "run_id": run.info.run_id,
+            "run_id": None,
+            "error": f"{type(exc).__name__}: {exc}",
         }
 
 
@@ -318,7 +336,7 @@ def write_mlflow_summary(entry: dict[str, Any]) -> None:
         "Open the local MLflow UI after logging:",
         "",
         "```bash",
-        "mlflow ui --backend-store-uri mlruns",
+        "mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db",
         "```",
         "",
     ]
@@ -330,7 +348,20 @@ def write_mlflow_summary(entry: dict[str, Any]) -> None:
                 "MLflow is not installed in the current environment, so the script "
                 "wrote registry documentation but did not create an MLflow run. "
                 "Install project requirements and rerun the command to create the "
-                "local `mlruns/` tracking store.",
+                "local SQLite `mlruns/mlflow.db` tracking store.",
+                "",
+            ]
+        )
+    if status == "mlflow_logging_failed":
+        summary.extend(
+            [
+                "## MLflow Logging Error",
+                "",
+                "MLflow is installed, but the local logging attempt failed. The "
+                "script still wrote registry documentation so the project remains "
+                "reviewable.",
+                "",
+                f"- Error: `{mlflow_status.get('error')}`",
                 "",
             ]
         )

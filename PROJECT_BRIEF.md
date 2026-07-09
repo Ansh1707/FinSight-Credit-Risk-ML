@@ -224,4 +224,4 @@ Generated outputs:
 * `reports/model_registry.md`
 * `reports/model_registry.json`
 
-The local `mlruns/` tracking store is ignored by Git. The current generated summary documents `mlflow_not_installed` for the active local environment; after running `pip install -r requirements.txt`, rerun `python src/models/mlflow_tracking.py` to create a local MLflow run.
+The local `mlruns/` tracking store is ignored by Git. The script uses a local SQLite backend at `sqlite:///mlruns/mlflow.db` to avoid MLflow's deprecated filesystem tracking backend.

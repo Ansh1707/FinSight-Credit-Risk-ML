@@ -129,10 +129,10 @@ This command does not retrain the model. It reads `reports/final_model_metrics.j
 Local MLflow UI:
 
 ```bash
-mlflow ui --backend-store-uri mlruns
+mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
 ```
 
-The local `mlruns/` tracking store is ignored by Git. In the current generated summary, MLflow logging is marked `mlflow_not_installed` because the active venv had not yet installed the newly added `mlflow` dependency; run `pip install -r requirements.txt` and rerun the command to create the local MLflow run.
+The local `mlruns/` tracking store is ignored by Git. The script uses a local SQLite backend at `sqlite:///mlruns/mlflow.db` to avoid MLflow's deprecated filesystem tracking backend.
 
 ## Final Metrics
 

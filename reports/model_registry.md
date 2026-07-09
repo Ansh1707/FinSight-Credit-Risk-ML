@@ -46,10 +46,10 @@ This document is a lightweight model registry-style record for the saved FinSigh
 
 | field | value |
 | --- | --- |
-| status | `mlflow_not_installed` |
-| tracking_uri | `file:mlruns` |
+| status | `logged` |
+| tracking_uri | `sqlite:///mlruns/mlflow.db` |
 | experiment_name | `FinSight Credit Risk` |
-| run_id | `None` |
+| run_id | `2e99d5df17e244338c967c450c99bb78` |
 
 ## Governance References
 
