@@ -170,6 +170,18 @@ Key findings from the current run:
 - Encoded gender proxy `CODE_GENDER_idx=1` has top-10% review rate `14.03%` versus `7.91%` for `CODE_GENDER_idx=0`.
 - Segment gaps should trigger deeper fair-lending, policy, and feature-governance review before production use.
 
+## Leakage Audit
+
+Run a feature leakage audit against the saved final model feature list:
+
+```bash
+python src/features/leakage_checks.py
+```
+
+The command writes `reports/leakage_audit.md`. The audit verifies that target and identifier fields are excluded from the model feature list, classifies historical aggregate features as medium-risk timing assumptions, and documents which features require human review before production use.
+
+Current audit result: `passed`. The saved model uses `76` input features; `0` forbidden target/identifier fields were found, `0` model features were missing from the processed table, `0` high-risk outcome-keyword features were found, and `32` historical aggregate features were flagged as medium-risk timing assumptions. Those medium-risk features should have source-record timestamp filters before production use.
+
 ## Explainability
 
 SHAP is used for global feature importance and applicant-level reason codes. The explainability script samples `5,000` processed applicants for SHAP analysis and only generates reason codes from positive SHAP contributions.
@@ -369,6 +381,7 @@ python src/data/load_data.py
 python src/data/eda_utils.py
 python src/data/create_duckdb.py
 python src/features/pyspark_feature_engineering.py
+python src/features/leakage_checks.py
 python src/models/train_baseline.py
 python src/models/train_final_model.py
 python src/models/cross_validate_model.py

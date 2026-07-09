@@ -14,6 +14,7 @@ def test_expected_project_files_exist() -> None:
         ".github/workflows/ci.yml",
         "src/data/load_data.py",
         "src/features/pyspark_feature_engineering.py",
+        "src/features/leakage_checks.py",
         "src/models/train_baseline.py",
         "src/models/train_final_model.py",
         "src/models/cross_validate_model.py",

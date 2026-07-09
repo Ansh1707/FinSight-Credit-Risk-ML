@@ -37,6 +37,8 @@ DuckDB is used to run business-readable SQL analyses over `application_train.csv
 
 PySpark aggregates raw Home Credit tables to applicant level. The final model dataset contains `307,511` rows and `78` columns. Features include affordability ratios, employment and age transformations, external score aggregates, missingness counts, bureau credit history, prior application behavior, installment payment delay signals, POS delinquency signals, credit card balance signals, and encoded categorical fields.
 
+A leakage audit checks the saved model feature list against the processed table and known forbidden fields. The current audit passed with `76` model features, `0` target or identifier inputs, `0` missing processed columns, and `0` high-risk outcome-keyword features. It flags `32` historical aggregate features as medium-risk timing assumptions that would need timestamp filters and feature-lineage proof before production use.
+
 ### Modeling
 
 The modeling pipeline uses stratified train/validation/test splits. Class imbalance is handled with balanced class weights or `scale_pos_weight`, depending on the model. Accuracy is intentionally not used as the main selection metric. Baselines include Logistic Regression, Random Forest, XGBoost, and LightGBM. LightGBM was selected as the final model because it had the strongest validation PR-AUC among the baselines.
@@ -107,6 +109,7 @@ Monitoring output shows stable simulated production windows for this run:
 - Probability calibration needs additional review before probabilities are used as policy thresholds.
 - The project does not include reject inference, adverse action compliance review, formal fair-lending certification, or production cost optimization.
 - Fairness analysis is proxy-based and not a legal fair-lending audit.
+- Historical aggregate features pass the automated leakage screen, but production use still requires source-record timestamp controls to prove availability before each decision point.
 
 ## Future Improvements
 
@@ -114,6 +117,7 @@ Monitoring output shows stable simulated production windows for this run:
 - Add a Streamlit dashboard or a Power BI template file on top of the dashboard-ready CSV outputs.
 - Extend proxy fairness checks into a formal fair-lending review workflow with governance and compliance input.
 - Add probability calibration experiments and cost-sensitive threshold optimization.
+- Add a feature registry with availability timestamp, source table, owner, and leakage-risk rating for each feature.
 - Add model registry-style versioning and batch scoring logs.
 - Extend monitoring with production event logs, alert thresholds, and scheduled retraining recommendations.
 - Add CI checks before GitHub pushes to run formatting, compile checks, and smoke tests.

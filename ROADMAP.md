@@ -32,7 +32,9 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 
 - Aggregates bureau, bureau balance, previous application, installment, POS cash, and credit card tables to applicant level.
 - Creates affordability, stability, bureau, repayment, missingness, and encoded categorical features.
+- Adds an automated leakage audit for final model features, forbidden identifiers, and historical-feature timing risk.
 - Output: `data/processed/model_features.parquet` and `reports/feature_engineering_summary.md`.
+- Governance output: `reports/leakage_audit.md`.
 
 ## Phase 6: Baseline Modeling - Complete
 

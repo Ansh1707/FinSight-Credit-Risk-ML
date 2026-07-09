@@ -73,6 +73,7 @@ The implemented project produces:
 * FastAPI service under `src/api/`
 * monitoring reports under `reports/monitoring_summary.md`, `reports/monitoring_report.html`, and `reports/drift_report.html`
 * Power BI-ready dashboard data under `dashboard/dashboard_data/`
+* leakage audit report under `reports/leakage_audit.md`
 
 ## Success Metrics
 
@@ -155,3 +156,15 @@ Important findings:
 * Encoded gender proxy `CODE_GENDER_idx=1` has top-10% review rate `14.03%`, compared with `7.91%` for `CODE_GENDER_idx=0`.
 
 This is a proxy segment-performance review, not a regulatory fairness audit. Production use would require fair-lending review, policy review, feature governance, reject-inference analysis, and compliance sign-off.
+
+## Leakage Governance Snapshot
+
+The saved final model feature list was audited for obvious target leakage. The automated check passed on the current artifacts:
+
+* Model input features checked: `76`
+* Forbidden target or identifier inputs found: `0`
+* Model features missing from the processed table: `0`
+* High-risk outcome-keyword features found: `0`
+* Medium-risk historical aggregate features: `32`
+
+The medium-risk features are historical bureau, prior application, repayment, POS cash, and credit-card aggregates. They are acceptable for this portfolio build, but production use would require source-record timestamp filters and feature-lineage review to prove every signal was available before the credit decision or collections scoring timestamp.
