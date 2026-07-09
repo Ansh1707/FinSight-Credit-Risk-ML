@@ -88,6 +88,8 @@ Portfolio risk-band output from the collections layer:
 
 Business impact analysis evaluates model-ranked review queues at different capacity levels. At a `10%` review capacity, the queue contains `30,752` applicants and captures `10,853` observed defaults, or `43.72%` of all defaults. That is `4.37x` the capture expected from random review at the same capacity. At a `20%` review capacity, the queue captures `65.97%` of observed defaults. These values are based on actual labels and model scores, while `AMT_CREDIT` is used only as an exposure proxy rather than a realized loss estimate.
 
+Fairness and proxy-risk analysis was added to inspect segment-level model behavior. The current run used processed encoded category proxies because raw application category files were not available locally. The highest top-10% review-rate segment was `OCCUPATION_TYPE_idx=13` at `32.11%`, and age band `18-25` had a top-10% review rate of `22.50%`. Encoded gender proxy `CODE_GENDER_idx=1` had a top-10% review rate of `14.03%` versus `7.91%` for `CODE_GENDER_idx=0`. These gaps should be treated as review signals, not conclusions of bias or compliance failure.
+
 Monitoring output shows stable simulated production windows for this run:
 
 - Features with PSI >= 0.2: `0`
@@ -103,13 +105,14 @@ Monitoring output shows stable simulated production windows for this run:
 - SHAP explanations are generated on a sample to keep local runtime practical.
 - Categorical encoding uses index-style preparation; further production work should validate category stability and unseen-category handling.
 - Probability calibration needs additional review before probabilities are used as policy thresholds.
-- The project does not include reject inference, fairness analysis, adverse action compliance review, or cost-sensitive business optimization.
+- The project does not include reject inference, adverse action compliance review, formal fair-lending certification, or production cost optimization.
+- Fairness analysis is proxy-based and not a legal fair-lending audit.
 
 ## Future Improvements
 
 - Add robust automated tests around feature contracts, prediction schemas, and monitoring thresholds.
 - Add a Streamlit dashboard or a Power BI template file on top of the dashboard-ready CSV outputs.
-- Add fairness and bias checks across sensitive or proxy segments.
+- Extend proxy fairness checks into a formal fair-lending review workflow with governance and compliance input.
 - Add probability calibration experiments and cost-sensitive threshold optimization.
 - Add model registry-style versioning and batch scoring logs.
 - Extend monitoring with production event logs, alert thresholds, and scheduled retraining recommendations.

@@ -143,3 +143,15 @@ Collections capacity analysis ranks applicants by final model probability and ev
 | Top 10% | 30,752 | 10,853 | 43.72% | 4.37x |
 | Top 15% | 46,127 | 14,029 | 56.51% | 3.77x |
 | Top 20% | 61,503 | 16,376 | 65.97% | 3.30x |
+
+## Fairness and Proxy-Risk Snapshot
+
+Segment analysis was added to measure model behavior across age, income, and encoded categorical proxy groups. The current local run used processed encoded category proxies because raw application category files are intentionally ignored and were not available locally.
+
+Important findings:
+
+* `OCCUPATION_TYPE_idx=13` has the highest top-10% review rate at `32.11%`, with observed default rate `17.15%`.
+* Age band `18-25` has top-10% review rate `22.50%`, with observed default rate `12.29%`.
+* Encoded gender proxy `CODE_GENDER_idx=1` has top-10% review rate `14.03%`, compared with `7.91%` for `CODE_GENDER_idx=0`.
+
+This is a proxy segment-performance review, not a regulatory fairness audit. Production use would require fair-lending review, policy review, feature governance, reject-inference analysis, and compliance sign-off.

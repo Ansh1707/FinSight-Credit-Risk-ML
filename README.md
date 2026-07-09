@@ -153,6 +153,23 @@ Actual test-set calibration results:
 
 Platt/sigmoid calibration is the most balanced option because it materially improves probability calibration while preserving the final model's ranking metrics. Isotonic has the lowest test Brier score but slightly weakens PR-AUC and Recall@Top-10%.
 
+## Fairness And Proxy-Risk Analysis
+
+Run segment-level performance and proxy-risk checks:
+
+```bash
+python src/models/fairness_analysis.py
+```
+
+The command writes `reports/fairness_proxy_metrics.csv` and `reports/fairness_proxy_analysis.md`. This is not a legal fairness certification; it is a portfolio-grade segment-performance review across age bands, income bands, and encoded categorical proxies for gender, education, family status, and occupation.
+
+Key findings from the current run:
+
+- Highest top-10% review-rate segment: `OCCUPATION_TYPE_idx=13` at `32.11%`, with observed default rate `17.15%`.
+- Age band `18-25` has top-10% review rate `22.50%` and observed default rate `12.29%`.
+- Encoded gender proxy `CODE_GENDER_idx=1` has top-10% review rate `14.03%` versus `7.91%` for `CODE_GENDER_idx=0`.
+- Segment gaps should trigger deeper fair-lending, policy, and feature-governance review before production use.
+
 ## Explainability
 
 SHAP is used for global feature importance and applicant-level reason codes. The explainability script samples `5,000` processed applicants for SHAP analysis and only generates reason codes from positive SHAP contributions.
@@ -356,6 +373,7 @@ python src/models/train_baseline.py
 python src/models/train_final_model.py
 python src/models/cross_validate_model.py
 python src/models/calibrate_model.py
+python src/models/fairness_analysis.py
 python src/explainability/shap_reason_codes.py
 python src/business/collections_scoring.py
 python src/business/business_impact.py
@@ -403,7 +421,7 @@ model service so CI does not require private raw data or trained model artifacts
 - Monitoring is simulated by splitting historical processed data into reference and current windows.
 - SHAP applicant-level reason codes are generated for a sample to keep local runtime practical.
 - Raw probabilities need further calibration and policy review before use as automated decision thresholds.
-- Fair lending, regulatory compliance, and reject-inference analysis are outside this portfolio scope but would be required for production deployment.
+- Formal fair-lending certification, regulatory compliance review, and reject-inference analysis are outside this portfolio scope but would be required for production deployment.
 
 ## Current Status
 

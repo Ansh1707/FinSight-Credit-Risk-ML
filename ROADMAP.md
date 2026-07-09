@@ -46,7 +46,8 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Evaluates ROC-AUC, PR-AUC, Precision, Recall, F1, Recall@Top-10%, KS statistic, confusion matrix, and calibration.
 - Adds stratified 5-fold cross-validation to check champion-model stability.
 - Adds Platt/sigmoid and isotonic calibration comparison.
-- Output: `models/credit_risk_model.pkl`, `reports/final_model_metrics.json`, `reports/final_model_report.md`, `reports/cross_validation_results.csv`, `reports/cross_validation_summary.md`, `reports/calibration_comparison.csv`, and `reports/calibration_report.md`.
+- Adds proxy fairness and segment-performance analysis.
+- Output: `models/credit_risk_model.pkl`, `reports/final_model_metrics.json`, `reports/final_model_report.md`, `reports/cross_validation_results.csv`, `reports/cross_validation_summary.md`, `reports/calibration_comparison.csv`, `reports/calibration_report.md`, `reports/fairness_proxy_metrics.csv`, and `reports/fairness_proxy_analysis.md`.
 
 ## Phase 8: Explainability - Complete
 

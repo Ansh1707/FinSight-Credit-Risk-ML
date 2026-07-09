@@ -18,6 +18,7 @@ def test_expected_project_files_exist() -> None:
         "src/models/train_final_model.py",
         "src/models/cross_validate_model.py",
         "src/models/calibrate_model.py",
+        "src/models/fairness_analysis.py",
         "src/explainability/shap_reason_codes.py",
         "src/business/collections_scoring.py",
         "src/business/business_impact.py",
