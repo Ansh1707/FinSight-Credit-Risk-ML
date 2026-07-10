@@ -82,6 +82,7 @@ The implemented project produces:
 * less-sensitive challenger-model governance comparison under `reports/challenger_model_comparison.csv`, `reports/challenger_governance_report.md`, and `reports/challenger_governance.json`
 * batch scoring and privacy-safe prediction logging artifacts under `reports/batch_scoring_summary.md`, `reports/batch_scoring_schema.json`, and `reports/prediction_audit_log_sample.csv`
 * production readiness runbook and sign-off checklist under `reports/production_readiness_runbook.md` and `reports/production_readiness_checklist.json`
+* recruiter-facing executive summary and interview defense guide under `reports/executive_summary.md` and `reports/interview_defense_guide.md`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 * final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
@@ -262,6 +263,8 @@ These documents cover intended use, prohibited use, training data, feature group
 The repository includes:
 
 * `REVIEW_GUIDE.md` for a fast recruiter or interviewer walkthrough.
+* `reports/executive_summary.md` for a 2-minute, 5-minute, and deep-dive recruiter-facing summary.
+* `reports/interview_defense_guide.md` for likely interview questions and crisp answers.
 * `RELEASE_CHECKLIST.md` for safe GitHub sharing and final push checks.
 
 These files help reviewers understand the strongest project evidence quickly while documenting what is intentionally excluded from Git, such as raw data, processed data, trained model binaries, virtual environments, and large HTML reports.

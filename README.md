@@ -12,6 +12,8 @@ FinSight is an end-to-end fintech data science project for credit default predic
 
 - `REVIEW_GUIDE.md` — fast path for recruiters and interviewers.
 - `FINAL_SUBMISSION.md` — concise final project handoff and sharing note.
+- `reports/executive_summary.md` — recruiter-facing 2-minute, 5-minute, and deep-dive summary.
+- `reports/interview_defense_guide.md` — likely interview questions with crisp answers.
 - `reports/final_case_study.md` — end-to-end business case study.
 - `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
 - `reports/model_card.md` — model card with validation, calibration, explainability, proxy-risk, leakage, and monitoring.
@@ -27,6 +29,15 @@ Digital lenders need to identify applicants who are likely to default, understan
 FinSight answers:
 
 > Which applicants are most likely to default, what risk drivers explain the prediction, and how should collections teams prioritize action?
+
+## Executive Summary And Interview Defense
+
+For recruiter review and interview preparation:
+
+- `reports/executive_summary.md`
+- `reports/interview_defense_guide.md`
+
+The executive summary explains the project in 2-minute, 5-minute, and deep-dive formats. The interview guide covers strongest evidence, likely Navi Data Scientist I interview questions, crisp answers, limitations, and how to defend choices around PR-AUC, Recall@Top-K, KS, leakage, reject inference, fair-lending/proxy-risk controls, challenger modeling, batch logging, monitoring, and production readiness.
 
 ## Solution Overview
 
@@ -607,6 +618,8 @@ For senior-review or interview discussion, start with:
 - `FINAL_SUBMISSION.md`
 - `REVIEW_GUIDE.md`
 - `reports/final_project_audit.md`
+- `reports/executive_summary.md`
+- `reports/interview_defense_guide.md`
 - `reports/feature_registry.md`
 - `reports/reject_inference_note.md`
 - `reports/fair_lending_review.md`

@@ -17,14 +17,17 @@ Built an end-to-end credit-risk and collections ML platform that uses SQL, PySpa
 GitHub reviewers should start here:
 
 1. `README.md`
-2. `REVIEW_GUIDE.md`
-3. `reports/final_case_study.md`
-4. `reports/model_card.md`
-5. `reports/final_project_audit.md`
+2. `reports/executive_summary.md`
+3. `reports/interview_defense_guide.md`
+4. `REVIEW_GUIDE.md`
+5. `reports/final_case_study.md`
+6. `reports/model_card.md`
+7. `reports/final_project_audit.md`
 
 ## Best Evidence
 
 - End-to-end pipeline from raw data validation to feature engineering, modeling, explainability, API serving, monitoring, dashboard outputs, and governance.
+- Recruiter-facing executive summary and interview defense guide.
 - SQL analysis layer under `sql/`.
 - PySpark feature pipeline under `src/features/pyspark_feature_engineering.py`.
 - Feature registry and timestamp-lineage report under `reports/feature_registry.md`.
@@ -60,6 +63,8 @@ GitHub reviewers should start here:
 | Challenger model governance | `reports/challenger_governance_report.md` |
 | Batch scoring audit sample | `reports/prediction_audit_log_sample.csv` |
 | Production readiness runbook | `reports/production_readiness_runbook.md` |
+| Executive summary | `reports/executive_summary.md` |
+| Interview defense guide | `reports/interview_defense_guide.md` |
 | Local test suite | `44` tests passed |
 
 ## Repository Safety
@@ -78,6 +83,7 @@ The repository is safe to share because these artifacts are ignored and not comm
 Emphasize that this is not just a model. It is a production-style data science workflow:
 
 - Business framing before modeling.
+- Clear 2-minute, 5-minute, and deep-dive project explanation.
 - SQL and PySpark for scalable analysis and feature engineering.
 - Ranking-focused validation because defaults are imbalanced.
 - Calibration and leakage checks because credit-risk probabilities can affect policy decisions.

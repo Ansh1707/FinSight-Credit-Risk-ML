@@ -39,6 +39,8 @@ Current verified result: run `make check` before release and update this line if
 ## Portfolio Evidence
 
 - [ ] README explains the business problem, architecture, metrics, and run commands.
+- [ ] Executive summary is present and recruiter-friendly.
+- [ ] Interview defense guide is present with crisp answers.
 - [ ] Final case study is present.
 - [ ] Model card is present.
 - [ ] Governance checklist is present.
@@ -74,6 +76,7 @@ Current verified result: run `make check` before release and update this line if
 ## Interview Readiness
 
 - [ ] You can explain why accuracy is not the main metric.
+- [ ] You can give the 2-minute and 5-minute FinSight pitch.
 - [ ] You can explain why LightGBM was selected.
 - [ ] You can explain how Recall@Top-10% maps to collections capacity.
 - [ ] You can explain what the leakage audit did and did not prove.

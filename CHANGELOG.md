@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.20.0 - Executive Summary And Interview Defense
+
+- Added recruiter-facing executive summary with 2-minute, 5-minute, and deep-dive formats.
+- Added Navi Data Scientist I interview defense guide with likely questions, crisp answers, limitations, and closing narrative.
+- Linked executive and interview artifacts from README, final submission note, reviewer guide, project brief, roadmap, release checklist, and final audit.
+
 ## 0.19.0 - Production Readiness Runbook
 
 - Added production readiness runbook covering deployment, batch operations, monitoring cadence, alert thresholds, rollback, incidents, retraining triggers, ownership, and sign-off.

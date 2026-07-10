@@ -37,7 +37,7 @@ This rating reflects strong end-to-end scope, realistic fintech framing, validat
 | Fair-lending governance | Complete | `src/models/fair_lending_governance.py`, feature-control report |
 | Challenger governance | Complete | `src/models/challenger_governance.py`, challenger comparison report |
 | Governance | Complete | `reports/model_card.md`, `reports/governance_checklist.md` |
-| Reviewer readiness | Complete | `REVIEW_GUIDE.md`, `RELEASE_CHECKLIST.md` |
+| Reviewer readiness | Complete | `REVIEW_GUIDE.md`, `RELEASE_CHECKLIST.md`, executive/interview guides |
 | Maintenance | Complete | `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, GitHub templates |
 | Tests and CI | Complete | `tests/`, `Makefile`, `.github/workflows/ci.yml` |
 
@@ -88,6 +88,8 @@ This is a strong business translation because it connects model ranking to revie
 | Deployment checklist | Complete |
 | Security policy | Complete |
 | Release checklist | Complete |
+| Executive summary | Complete |
+| Interview defense guide | Complete |
 | MLflow/model registry documentation | Complete |
 | Feature timestamp-lineage documentation | Complete |
 | Reject inference methodology | Complete, no labels invented |
@@ -119,6 +121,7 @@ Expected ignored artifacts:
 - Includes a less-sensitive challenger model to quantify predictive lift versus proxy-risk control tradeoffs.
 - Includes privacy-safe batch prediction logging with schema validation, model metadata, request IDs, timestamps, hashed IDs, risk bands, and reason-code fields.
 - Includes an operator-facing production readiness runbook with deployment, rollback, incidents, retraining triggers, ownership, and sign-off gates.
+- Includes recruiter-facing executive and interview defense guides for concise communication.
 - Documents limitations honestly, which is important in regulated lending contexts.
 
 ## Remaining Gaps Before Real Production

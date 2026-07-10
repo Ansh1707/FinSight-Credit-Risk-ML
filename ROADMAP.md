@@ -158,6 +158,12 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Adds a machine-readable checklist with required owners, approval gates, alert thresholds, and privacy controls.
 - Output: `reports/production_readiness_runbook.md` and `reports/production_readiness_checklist.json`.
 
+## Phase 25: Executive Summary And Interview Defense - Complete
+
+- Adds a recruiter-facing executive summary with 2-minute, 5-minute, and deep-dive project narratives.
+- Adds an interview defense guide with strongest evidence, likely Navi Data Scientist I questions, crisp answers, limitations, and questions to ask interviewers.
+- Output: `reports/executive_summary.md` and `reports/interview_defense_guide.md`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

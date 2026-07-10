@@ -24,6 +24,8 @@ def test_expected_project_files_exist() -> None:
         ".github/ISSUE_TEMPLATE/model_governance_review.md",
         "reports/model_card.md",
         "reports/final_project_audit.md",
+        "reports/executive_summary.md",
+        "reports/interview_defense_guide.md",
         "reports/governance_checklist.md",
         "reports/mlflow_experiment_summary.md",
         "reports/model_registry.md",
@@ -95,6 +97,7 @@ def test_readme_contains_portfolio_sections() -> None:
     required_sections = [
         "Business Problem",
         "Reviewer Quick Links",
+        "Executive Summary And Interview Defense",
         "Architecture",
         "Feature Registry And Timestamp Lineage",
         "Final Metrics",
