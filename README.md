@@ -6,7 +6,7 @@
 ![API](https://img.shields.io/badge/API-FastAPI-teal)
 ![Status](https://img.shields.io/badge/Status-Portfolio%20Ready-brightgreen)
 
-FinSight is an end-to-end fintech data science project for credit default prediction, explainable risk review, collections prioritization, API serving, model monitoring, and dashboard-ready reporting. It is designed as a portfolio project for a Navi Data Scientist I application.
+FinSight is an end-to-end fintech data science project for credit default prediction, explainable risk review, collections prioritization, API serving, model monitoring, and dashboard-ready reporting. It is designed as a portfolio project.
 
 ## Reviewer Quick Links
 
