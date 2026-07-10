@@ -104,10 +104,13 @@ Monitoring output shows stable simulated production windows for this run:
 - Current window ROC-AUC: `0.8432`
 - Current window PR-AUC: `0.3490`
 
+Batch scoring and prediction logging were added to show how the model would be scored in a production-style batch workflow. The sample run scored `1,000` rows, validated `76` required model features, found `0` missing required features, and wrote privacy-safe audit fields with request IDs, batch ID, score timestamp, model version, schema version, hashed applicant ID, risk band, collections priority score, and reason codes. The committed audit sample does not include raw feature values or unhashed applicant IDs.
+
 ## Limitations
 
 - The dataset is public and historical, not live production data.
 - The monitoring phase simulates production using a historical split rather than real serving logs.
+- Batch scoring logs are privacy-safe local samples, not live production event logs.
 - SHAP explanations are generated on a sample to keep local runtime practical.
 - Categorical encoding uses index-style preparation; further production work should validate category stability and unseen-category handling.
 - Probability calibration needs additional review before probabilities are used as policy thresholds.
@@ -125,6 +128,6 @@ Monitoring output shows stable simulated production windows for this run:
 - Evaluate additional challenger variants, including feature-removal and constrained-model approaches approved by compliance and credit risk.
 - Add probability calibration experiments and cost-sensitive threshold optimization.
 - Enforce the documented feature registry controls through a production feature store and model approval workflow.
-- Add model registry-style versioning and batch scoring logs.
+- Move batch scoring logs to secure production storage with retention, access control, and deletion policies.
 - Extend monitoring with production event logs, alert thresholds, and scheduled retraining recommendations.
 - Add CI checks before GitHub pushes to run formatting, compile checks, and smoke tests.

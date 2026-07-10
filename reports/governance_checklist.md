@@ -18,6 +18,7 @@ This checklist translates the model card into concrete controls a fintech data s
 | Challenger model review | Complete for portfolio review | `reports/challenger_governance_report.md` |
 | Reject inference methodology | Complete for portfolio review | `reports/reject_inference_note.md` |
 | Monitoring report produced | Complete for simulated windows | `reports/monitoring_summary.md` |
+| Batch scoring and prediction logging | Complete for portfolio review | `reports/batch_scoring_summary.md`, `reports/prediction_audit_log_sample.csv` |
 | API implemented | Complete for local serving | `src/api/main.py` |
 | Production approval | Not complete | Requires business, risk, legal, compliance, and MLOps review |
 
@@ -76,6 +77,8 @@ This checklist translates the model card into concrete controls a fintech data s
 - Validate request and response schemas with representative applicants.
 - Add authentication and authorization before any non-local deployment.
 - Add request logging, prediction logging, model version logging, and correlation IDs.
+- Require request ID, batch ID, score timestamp, model version, schema version, hashed applicant identifier, risk band, threshold flag, and reason-code fields for batch scoring logs.
+- Store production logs outside Git in an access-controlled location with retention, deletion, and incident-review policies.
 - Add timeout, payload-size, and rate-limit controls.
 - Validate Docker build and container startup.
 - Define rollback procedure for a bad model or bad deployment.
@@ -90,6 +93,7 @@ This checklist translates the model card into concrete controls a fintech data s
 - Monitor labeled performance when outcomes mature.
 - Monitor calibration drift for probability quality.
 - Monitor segment-level review rates and reason-code distribution.
+- Monitor prediction-log completeness, schema-validation failures, and logging pipeline failures.
 - Set alert thresholds, owners, and escalation paths.
 - Define retraining and recalibration triggers.
 
@@ -109,6 +113,7 @@ Before production, every item below should be complete:
 - [ ] Calibration strategy selected.
 - [ ] Threshold and review-capacity policy approved.
 - [ ] API authentication and logging added.
+- [ ] Batch scoring schema and prediction audit logging approved.
 - [ ] Model registry and versioning configured.
 - [ ] Monitoring alerts configured.
 - [ ] Rollback and incident process documented.

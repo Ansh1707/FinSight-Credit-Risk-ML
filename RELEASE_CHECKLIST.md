@@ -9,6 +9,7 @@ Use this checklist before sharing the repository link with recruiters, interview
 - [ ] Trained model binaries are not tracked if large.
 - [ ] Virtual environment files are not tracked.
 - [ ] Large HTML monitoring reports are ignored.
+- [ ] Production log folders such as `logs/` and `reports/production_logs/` are ignored.
 - [ ] No local absolute paths appear in code or documentation.
 - [ ] No secrets, tokens, or credentials are committed.
 - [ ] License, security policy, contributing guide, changelog, and GitHub templates are present.
@@ -55,6 +56,8 @@ Current verified result: run `make check` before release and update this line if
 - [ ] Fair-lending governance review is present and does not claim legal certification.
 - [ ] Protected/proxy feature-control inventory is present.
 - [ ] Challenger model governance comparison is present and uses actual computed metrics.
+- [ ] Batch scoring schema and privacy-safe audit sample are present.
+- [ ] Prediction audit sample does not contain raw feature columns or unhashed applicant IDs.
 
 ## GitHub Presentation
 
@@ -77,6 +80,7 @@ Current verified result: run `make check` before release and update this line if
 - [ ] You can explain protected/proxy feature controls without claiming legal certification.
 - [ ] You can explain why calibration matters for credit-risk probabilities.
 - [ ] You can explain how monitoring would work in real production.
+- [ ] You can explain how prediction logging captures request IDs, timestamps, model metadata, hashed IDs, risk bands, and reason codes.
 - [ ] You can explain accepted-applicant bias and why reject inference is documented but not applied.
 - [ ] You can explain the champion versus less-sensitive challenger tradeoff.
 - [ ] You can describe the next production steps: feature registry, timestamp controls, compliance review, model registry, and live monitoring.

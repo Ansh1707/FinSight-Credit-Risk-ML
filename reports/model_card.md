@@ -219,6 +219,7 @@ Latest monitoring results:
 Production monitoring should include:
 
 - Batch-level schema validation.
+- Prediction logging with request IDs, batch IDs, score timestamps, model version, schema version, and risk bands.
 - Feature missingness and distribution drift checks.
 - Prediction distribution drift checks.
 - Segment-level score and review-rate monitoring.
@@ -226,11 +227,26 @@ Production monitoring should include:
 - Calibration monitoring for probability quality.
 - Alert thresholds and documented retraining triggers.
 
+## Batch Scoring And Prediction Logging
+
+Production-style batch scoring is documented in `reports/batch_scoring_summary.md`, with schema contract in `reports/batch_scoring_schema.json` and privacy-safe audit sample in `reports/prediction_audit_log_sample.csv`.
+
+Current sample run:
+
+- Rows scored: `1,000`
+- Required model features validated: `76`
+- Missing required features: `0`
+- Non-numeric required features: `0`
+- Schema validation status: `passed`
+
+Logged audit fields include request ID, batch ID, score timestamp, model name, model version, model stage, feature count, schema version, hashed applicant ID, default probability, risk band, operational-threshold flag, collections priority score, reason-code fields, and schema validation status. The committed audit sample does not contain raw model feature values or unhashed applicant identifiers.
+
 ## Limitations
 
 - The dataset is public and historical, not live production data.
 - The model is trained on accepted historical applicants only; reject inference methodology is documented but not applied because rejected-applicant outcomes are not available.
 - Monitoring is simulated rather than based on live serving logs.
+- Batch scoring logs are privacy-safe local samples, not live production logs.
 - SHAP explanations are sampled for runtime practicality.
 - Encoded categorical proxies require stronger production treatment for unseen categories and protected/proxy features.
 - Challenger-model evidence exists, but final feature inclusion still requires business, risk, fair-lending, legal, and compliance approval.
@@ -253,6 +269,7 @@ Required before production:
 - Apply reject inference only after obtaining compliant rejected-applicant outcomes or approved inference assumptions.
 - Select calibrated probability policy and threshold strategy.
 - Validate API schema, error handling, and batch scoring behavior under realistic load.
+- Store prediction logs in a secure, access-controlled location with retention and deletion policies.
 - Add model versioning and rollback plan.
 - Add monitoring alerts, ownership, and escalation process.
 - Define retraining, recalibration, and retirement criteria.
@@ -278,6 +295,9 @@ The local `mlruns/` store is ignored by Git. A real production registry would ad
 - `reports/proxy_feature_controls.csv`
 - `reports/challenger_governance_report.md`
 - `reports/challenger_model_comparison.csv`
+- `reports/batch_scoring_summary.md`
+- `reports/batch_scoring_schema.json`
+- `reports/prediction_audit_log_sample.csv`
 - `reports/calibration_report.md`
 - `reports/fairness_proxy_analysis.md`
 - `reports/leakage_audit.md`

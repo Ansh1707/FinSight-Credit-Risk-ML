@@ -6,7 +6,7 @@ FinSight is portfolio-ready for a fintech Data Scientist I application. The repo
 
 Strict final rating: `99/100`.
 
-This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, MLflow/model registry-style documentation, feature registry and timestamp-lineage documentation, reject inference methodology, fair-lending/proxy-risk governance documentation, challenger-model evidence, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, legal fair-lending certification, adverse-action compliance approval, compliant rejected-applicant outcome data for applied reject inference, production enforcement of timestamp cutoffs, authentication, production logging, production-grade registry approval workflow, and business/compliance sign-off.
+This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, batch scoring and prediction logging documentation, MLflow/model registry-style documentation, feature registry and timestamp-lineage documentation, reject inference methodology, fair-lending/proxy-risk governance documentation, challenger-model evidence, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, legal fair-lending certification, adverse-action compliance approval, compliant rejected-applicant outcome data for applied reject inference, production enforcement of timestamp cutoffs, authentication, live production logging infrastructure, production-grade registry approval workflow, and business/compliance sign-off.
 
 ## Completion Checklist
 
@@ -28,6 +28,7 @@ This rating reflects strong end-to-end scope, realistic fintech framing, validat
 | Explainability | Complete | `src/explainability/shap_reason_codes.py`, SHAP reports |
 | Collections scoring | Complete | `src/business/collections_scoring.py`, business impact reports |
 | API | Complete | `src/api/`, `Dockerfile`, `reports/api_summary.md` |
+| Batch scoring and logging | Complete | `src/api/batch_score.py`, privacy-safe audit sample |
 | Monitoring | Complete | `src/monitoring/evidently_monitoring.py`, monitoring summary |
 | Dashboard outputs | Complete | `dashboard/dashboard_data/`, `reports/dashboard_summary.md` |
 | Leakage audit | Complete | `src/features/leakage_checks.py`, `reports/leakage_audit.md` |
@@ -80,6 +81,7 @@ This is a strong business translation because it connects model ranking to revie
 | Fair-lending governance review | Complete, no legal certification claimed |
 | Protected/proxy feature controls | Complete for portfolio review |
 | Less-sensitive challenger model | Complete, actual metrics computed |
+| Batch prediction logging | Complete, privacy-safe sample |
 | Model card | Complete |
 | Deployment checklist | Complete |
 | Security policy | Complete |
@@ -98,6 +100,8 @@ Expected ignored artifacts:
 - `data/processed/`
 - `/models/`
 - `reports/*.html`
+- `reports/production_logs/`
+- `logs/`
 - `.venv/`
 - `__pycache__/`
 - `*.pyc`
@@ -111,6 +115,7 @@ Expected ignored artifacts:
 - Converts model output into business priority scoring.
 - Includes explanation, monitoring, leakage, calibration, and governance.
 - Includes a less-sensitive challenger model to quantify predictive lift versus proxy-risk control tradeoffs.
+- Includes privacy-safe batch prediction logging with schema validation, model metadata, request IDs, timestamps, hashed IDs, risk bands, and reason-code fields.
 - Documents limitations honestly, which is important in regulated lending contexts.
 
 ## Remaining Gaps Before Real Production
@@ -120,7 +125,7 @@ Expected ignored artifacts:
 - Legal fair-lending certification and adverse-action compliance approval.
 - Applied reject inference using compliant rejected-applicant outcome data.
 - Production authentication and authorization.
-- Prediction logging and production model registry integration.
+- Live prediction logging infrastructure and production model registry integration.
 - Production-grade registry approval workflow and artifact access controls.
 - Real production monitoring windows and alert routing.
 - Retraining, recalibration, rollback, and incident-response process.

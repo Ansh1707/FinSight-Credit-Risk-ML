@@ -1,0 +1,1001 @@
+request_id,batch_id,score_timestamp_utc,applicant_hash,default_probability,risk_band,above_operational_threshold,collections_priority_score,reason_code_1,reason_code_2,reason_code_3
+req_af95a2e13cc24147a6de4a9f1a8e8a6c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ea07d4e6141c1b9d,0.0815992750091716,Low Risk,False,4.75,High credit-to-income ratio,Short employment duration,Missing credit bureau signal
+req_4a21572fcd15410f94b01d45d1022eac,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,30eea7c146a60d4a,0.4906304498899627,Medium Risk,False,37.84,Low external credit score,,
+req_141b7fc835a3492891b9a10671acc458,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,158223318aa93e66,0.22950225162902707,Low Risk,False,12.77,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_79f712a16b964c339246e01ee4f05f29,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9027fb92295bde5a,0.37879526066384583,Medium Risk,False,32.27,High credit-to-income ratio,Missing credit bureau signal,Prior repayment delay
+req_f31b0dda6b88406da4a1b02b4dd8f9a3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,105329ba02bfb25f,0.21155527966646376,Low Risk,False,12.08,Prior repayment delay,,
+req_073ffc9711c94d0f95efb402c10c6ab4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6e9b0ea7edf30424,0.33471727511758026,Medium Risk,False,26.87,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_5f68cd6a36ae4ff4adc7d9dca8e26b02,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2aedc8bd1f51cdc9,0.5218007846981875,High Risk,False,56.25,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_fe662ca7cb494ba4a1140812381f3474,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d4dff12783c34210,0.2806048441759366,Medium Risk,False,21.72,High credit-to-income ratio,,
+req_ad40e26578844a788db282a5ec1aa0e3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,472f6e6620e4839d,0.6866216838059833,High Risk,False,70.89,Low external credit score,High credit-to-income ratio,High annuity burden
+req_d50bb34463d940eda2130180227c438a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c17695f37fd64587,0.3277554223583579,Medium Risk,False,25.08,High credit-to-income ratio,High annuity burden,Short employment duration
+req_999fe7ef5af342ac926284eb27de96dd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a1c8d08e792255b9,0.047989791582491094,Low Risk,False,2.55,Short employment duration,,
+req_81789e2479f942669a89bf764e59456f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8cbb9e76da2c6067,0.6794457177298162,High Risk,False,69.58,High credit-to-income ratio,High annuity burden,Short employment duration
+req_f242d2fc0e59416c82e5bb84ebf89336,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bcd827b13a4f1be6,0.1298084150796137,Low Risk,False,7.6,High credit-to-income ratio,High annuity burden,Short employment duration
+req_9010e32b023e497db44ae12a3820c575,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c99ade8a85e52985,0.630623613772895,High Risk,False,61.91,Low external credit score,Prior repayment delay,
+req_3e92221ca32647a5ad8e3b7becd78dd8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,086693ab385fd623,0.6379633830775225,High Risk,False,59.19,Prior repayment delay,,
+req_fecb1ede4d964bb08a94108596689c8a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d402acb80643d098,0.28676103030308214,Medium Risk,False,22.26,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_e67a4aabfd2c4ecfa10e5c45b32fe466,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fcbc6b22167bb5bf,0.7345655696678287,Critical Risk,True,84.41,Low external credit score,Short employment duration,
+req_193e28c823c74ea1ba8dae9132098c8e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,007ec4f48d218f16,0.24826725815014772,Low Risk,False,14.4,High credit-to-income ratio,Prior repayment delay,
+req_ce8cd63ef7ef4d61b60fb7480909d0d6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c5ba1627d0a5279a,0.49393659210624774,Medium Risk,False,37.06,Low external credit score,High credit-to-income ratio,High annuity burden
+req_1a0dcb4468bf4384b82d48a39a85f955,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,adf157a0718f2eb4,0.3551030655240484,Medium Risk,False,27.96,High credit-to-income ratio,,
+req_82ae2f502d96490b9d663ee571cfeec9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,389c987ff8af0715,0.407365392511674,Medium Risk,False,31.19,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_058b611f9e2e44be96bfbd69ae57de32,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e000fdb6b9873ceb,0.08931119870345722,Low Risk,False,5.0,High annuity burden,,
+req_f97082c55c4241d89d7f80a85e6a44d4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b097abfd9559fc75,0.33303413015641486,Medium Risk,False,24.22,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_63dd1f63442140b6b9c323bdc6318f8b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4bb6ce313213b91d,0.31041795039575015,Medium Risk,False,23.26,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_e6e5f6340b4642d1abdfd0e1b8a52aea,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e2f00e2c3752b346,0.2902071840996018,Medium Risk,False,21.93,High credit-to-income ratio,High annuity burden,Short employment duration
+req_704be7a3883b4d7493bbcb5647d581e1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a784976aa198159d,0.13506235325617044,Low Risk,False,8.42,High credit-to-income ratio,,
+req_fdc203bfa3364789956d3e97c348b0b4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,412835a0c395211a,0.6904948717662013,High Risk,False,65.1,Low external credit score,Short employment duration,Prior repayment delay
+req_1ac754a02de54a8a8bd4965c3bce13dc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,80cef5a1f1c5ccb5,0.19767935243862503,Low Risk,False,10.65,Missing credit bureau signal,,
+req_a9329ee9365744b29322416e1879d68e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,66401ac29cf2ab34,0.6500511669134132,High Risk,False,68.15,Low external credit score,High credit-to-income ratio,
+req_2320bfcb424c4fe1bbd8f278d595b1a0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,29d732d3729d4334,0.5646308548993028,High Risk,False,55.17,Low external credit score,High credit-to-income ratio,Short employment duration
+req_794c15fd41444d6ca2c7dd2c40720543,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a835af7075f60e69,0.14944163722433695,Low Risk,False,8.58,High credit-to-income ratio,High annuity burden,Short employment duration
+req_0f1a608b5701460492f8e6a2dde5938d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3fafb5b90fe74ea5,0.7150669979367186,Critical Risk,True,80.7,Low external credit score,Short employment duration,
+req_e29ee2a19d9a4a8d8d26df5fe4150994,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,206952e5fa898ca0,0.7098755937187762,Critical Risk,True,85.27,Low external credit score,High credit-to-income ratio,High annuity burden
+req_d0739115b9a74379a2bb4fcb1d8583b7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8fdb1bb927ea617d,0.37787375350212254,Medium Risk,False,27.15,Short employment duration,,
+req_179661b124144652ad9a09f8b010eef3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0074980a28fd3c22,0.2973294914736534,Medium Risk,False,22.3,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_a06673324cfd4bc2baada9fae324c330,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a919755a0c1a8ae0,0.3545992041450498,Medium Risk,False,25.75,Short employment duration,Prior repayment delay,
+req_f8301cf7059f437cbddb35758b617edd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,90e6c19f6a2c604b,0.10386495889622074,Low Risk,False,5.83,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_24f95264595942bb8a2c02b1629dd987,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f48f8dcab77422b,0.5367280226848388,High Risk,False,49.78,Low external credit score,Short employment duration,
+req_6a843cc012d24dd0a6e3d115f18fc53e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7227865b3328d68d,0.4254253372496017,Medium Risk,False,31.87,High credit-to-income ratio,,
+req_9b5a8cab175d4e43b1330da7305fda85,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e13f7aa367e334ac,0.35342667316255477,Medium Risk,False,26.52,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_b7158b202b824fb3a844ee908ba6a687,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,260e98ef8b4529cb,0.23612275628642268,Low Risk,False,13.97,Prior repayment delay,,
+req_c9df733fcf39461d865b776ddc60530e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,41c915733e8a2a56,0.7519535121949777,Critical Risk,True,105.23,Low external credit score,High credit-to-income ratio,High annuity burden
+req_9652458d902a42178023c806bb177491,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0a8c10d5e6e55253,0.7582020126151542,Critical Risk,True,97.06,Low external credit score,High credit-to-income ratio,High annuity burden
+req_5b975edd87e04503aa7d04150fc2e77e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,16fb0df5824be5c7,0.41325209532303503,Medium Risk,False,29.95,Prior repayment delay,,
+req_f7db0f1bc58f4b7b806132309a779347,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,844f67d3e579d392,0.2623676959692156,Medium Risk,False,19.58,Short employment duration,,
+req_36cd3a463b234cdfa98676fa111b03a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e81d12546d868794,0.2821307689921239,Medium Risk,False,21.71,Prior repayment delay,,
+req_b317be62274d4a07bd48812b2be5cc7f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ea50df927dc53fce,0.06271949638411628,Low Risk,False,3.36,Short employment duration,,
+req_8d0ea70f387d4aa79f4a3bfb1355341d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8392ce0c0cf1d979,0.1467630294305052,Low Risk,False,8.2,High annuity burden,Prior repayment delay,
+req_2b75f3b6472948bea0c8030c09ccac97,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a5270a572a6744bc,0.40884499351622056,Medium Risk,False,30.34,High credit-to-income ratio,High annuity burden,
+req_f9d8b72d6675406ba515f015876b095c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7459bb3f4735ad81,0.05140042307306526,Low Risk,False,2.73,Short employment duration,Prior repayment delay,
+req_b8f72088fe7d4458b4d833cda644377b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,561d3f19812de653,0.40599864570451805,Medium Risk,False,29.16,Short employment duration,,
+req_f9e0ba991ee64a0da33f3d0bdf590e8e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1ef3ec9168c42961,0.4375598713685308,Medium Risk,False,31.7,Missing credit bureau signal,,
+req_6210b89e5dfa4f7e9a3c85c2e23636a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b6d09f3dc2382007,0.9014708159490916,Critical Risk,True,113.75,Low external credit score,High credit-to-income ratio,High annuity burden
+req_ca2eba86ae114100a70ed510e830b50c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,344c9754e833b6aa,0.12430715662895048,Low Risk,False,7.57,High credit-to-income ratio,Short employment duration,
+req_758ea21bd3e3402882d9efa5c29ed17d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d02043864ddf8461,0.11654005611427415,Low Risk,False,6.28,Short employment duration,Missing credit bureau signal,
+req_1bb759c8abba4eb483bad33888886bb7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,28fd8fc1551f7fb5,0.35019196406067354,Medium Risk,False,25.64,No dominant submitted risk driver identified,,
+req_cbe892892a2340f4ba19b7e6675d7f3c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d2afc949f83e68c2,0.33772884815548704,Medium Risk,False,28.91,High credit-to-income ratio,High annuity burden,Short employment duration
+req_f6021727ef8d4a6a839a707f4d02c158,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9d687708b5f3b12e,0.4896745869786084,Medium Risk,False,35.47,Prior repayment delay,,
+req_291803f673dc42bc90e9d46a3c3fdcc4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ed276d7c401023cf,0.3125702583281509,Medium Risk,False,23.4,High credit-to-income ratio,High annuity burden,Short employment duration
+req_3cfe7f1827db46808bde525008e263c0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9d1ea64bcc97b994,0.2670208819653559,Medium Risk,False,19.55,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_7246ad37d59948d99ed36e6bb953d266,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7f088d67ff9f7142,0.6696854641339945,High Risk,False,67.16,High credit-to-income ratio,,
+req_bc85a8a44b4f4027ac49351549e4ae41,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e2207f633787963b,0.30417547850308496,Medium Risk,False,23.99,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_c2fb9abaefca4cb2bce7fd9756d9c6e8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e37f31f24eb7a436,0.1511314329976622,Low Risk,False,10.0,High credit-to-income ratio,High annuity burden,
+req_170a9d1627514d0fab6277daa14a71a1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d7f00d17f9c177e4,0.10518544118312062,Low Risk,False,6.23,High credit-to-income ratio,,
+req_c81028b480dd469ab922de3edfbec47a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,590e70846592fd52,0.1286165759375123,Low Risk,False,7.34,High credit-to-income ratio,,
+req_e529d87e478e45e09ce490c40b21aa62,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6ca5c4c8896d29e0,0.14034991382692266,Low Risk,False,7.61,No dominant submitted risk driver identified,,
+req_58ed1b0286d843d9afa304eb423d35f8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0710df9fbacb5d14,0.4098058157948119,Medium Risk,False,33.28,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_4d05826c4a71477890195ad2e4783a06,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f9e19d5461da0262,0.40697180328276883,Medium Risk,False,32.85,High credit-to-income ratio,Prior repayment delay,
+req_5abf6eeb8e2043f3b8c2015ccad5280b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7fa61e991efc017e,0.4398457050574492,Medium Risk,False,30.97,Low external credit score,Short employment duration,
+req_3e6229035fb3498aac84a0bd104508d5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7a6b7618b8e28483,0.23009378053971552,Low Risk,False,14.08,High credit-to-income ratio,High annuity burden,Short employment duration
+req_839793520d9f4fc28986f9654c46098d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c4b68b07b012aa14,0.11672775060770486,Low Risk,False,7.52,No dominant submitted risk driver identified,,
+req_a450e4d1405044189dd09a7975c804a4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b8c253c45f101f1a,0.06093946588892109,Low Risk,False,3.35,No dominant submitted risk driver identified,,
+req_0a3e8b9485494454b791113ff4c985e6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,474b19f09192139c,0.06974884065459411,Low Risk,False,3.78,No dominant submitted risk driver identified,,
+req_600779e0c7094f51b4fc52df630df957,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d25098b980dce596,0.0658737113228781,Low Risk,False,4.06,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_c4d2ce4a11624637afa84f64dc14e125,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,58b4160a19a8c023,0.18897751580139843,Low Risk,False,10.85,High credit-to-income ratio,Short employment duration,
+req_07d20242fbc04161819f17b7be59d2a5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a9923bbfe1e8f457,0.47489621024649603,Medium Risk,False,34.68,Prior repayment delay,,
+req_2620e2ff23f641b088777e5f40ed9997,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,87d977b048c5cf56,0.2634493823487862,Medium Risk,False,20.22,High credit-to-income ratio,Short employment duration,
+req_8b4fbc11195b47a2a76b02c6e3b77753,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,86630091adfeab2e,0.3827240726293416,Medium Risk,False,30.18,Low external credit score,,
+req_219375a7dfc34880a0de249c8ce8b4e9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a7896cf86809c24e,0.5580740827548639,High Risk,False,61.91,High credit-to-income ratio,Short employment duration,
+req_aae937d30d3f4266914af26c9ad3a6c1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1205933f4ea9c73a,0.4274009666331066,Medium Risk,False,31.86,Short employment duration,Prior repayment delay,
+req_ec9d9e99cac34f93aa2e7f1c68927824,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,edf2a60269b38f6a,0.5085887402643184,High Risk,False,46.86,Low external credit score,High credit-to-income ratio,Short employment duration
+req_9a33d37f75214c8c9ee74b250aa9d436,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5ee7fe1d8a828941,0.3369752126569132,Medium Risk,False,27.23,High credit-to-income ratio,Prior repayment delay,
+req_3380e2f0aae1407eb0272d6a4a36335b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,960bef1802cbde72,0.22573284310594385,Low Risk,False,13.93,High credit-to-income ratio,Prior repayment delay,
+req_87b3ac5dc60b41019d200ff35eef38f5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,64b11f8859e49bc6,0.12807405662564078,Low Risk,False,6.88,Missing credit bureau signal,Prior repayment delay,
+req_773380c6066c498ebe54aa6a6edba8da,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6df5134f4745c298,0.7633503570214114,Critical Risk,True,87.89,Low external credit score,Short employment duration,Missing credit bureau signal
+req_317cff094e574a4380dcf2afa47eeb78,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,36551f74322101f2,0.8455284596364727,Critical Risk,True,98.6,Low external credit score,Prior repayment delay,
+req_ec217a8cf55243c6820ce97ec0c3820f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ebac42c28271463c,0.037143196843418325,Low Risk,False,2.2,High credit-to-income ratio,Prior repayment delay,
+req_41a8279350df42ff83fd47e8e7508fbd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,278483fa1c90a4cf,0.5055115322967357,High Risk,False,47.8,Short employment duration,Missing credit bureau signal,Prior repayment delay
+req_9b1808835ad942f18ceb5b2813aaf5a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,37f8eeebe5e3b7f4,0.8976806251401905,Critical Risk,True,108.04,Low external credit score,High credit-to-income ratio,High annuity burden
+req_d3053d780ddb4c5ca6cecc8b974e0d63,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,45c718ac1e19d622,0.12415724711654955,Low Risk,False,6.86,Prior repayment delay,,
+req_6e3b81deb7174edc970fa908a0c0cbd7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d5ab733190f8c687,0.22359527483229946,Low Risk,False,12.83,High credit-to-income ratio,,
+req_fdf5864f205c4ab2a4f34fec2425247d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b759e96e5daab1e4,0.22638425661841927,Low Risk,False,12.11,No dominant submitted risk driver identified,,
+req_271d1cbfe42046cfbe31c5ae38216fdc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d1a9afe14a3d9ad7,0.6370056211049525,High Risk,False,60.82,Low external credit score,Prior repayment delay,
+req_414c38f6375947dc84d7a780350f3844,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,904f6926ed8e885e,0.7914638652901334,Critical Risk,True,90.93,Low external credit score,Prior repayment delay,
+req_ebd59c2b38614888acbd833f1d73bcea,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,696e4f55b9191f84,0.33033567861298047,Medium Risk,False,24.19,High credit-to-income ratio,Prior repayment delay,
+req_77ec5fb81e58440bba21af16178758b6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,96da7072fdcbfff2,0.6764473028493709,High Risk,False,70.29,Low external credit score,High credit-to-income ratio,High annuity burden
+req_41c689a5cdd543f0b761a18874403c3a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0043e0272c8e4fc5,0.08535803870968815,Low Risk,False,4.79,High credit-to-income ratio,High annuity burden,
+req_84930dbb165f455ba2dfa086f5b3a347,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,434f981ca24695a0,0.38271330529562236,Medium Risk,False,29.14,High credit-to-income ratio,Prior repayment delay,
+req_0e7a6766689d42988113014f2ae1dba0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4c00c306f8282cf0,0.19484745477409807,Low Risk,False,10.87,High credit-to-income ratio,Prior repayment delay,
+req_8a0cfda36d3d40ba950fe2493d7dbe97,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,db4b7ed61569bb33,0.40780670374067485,Medium Risk,False,29.35,High annuity burden,Short employment duration,
+req_68ce34f6d93545d7ad5e05e15aca4273,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,531ed391233ebe89,0.12418092201942083,Low Risk,False,7.44,High credit-to-income ratio,,
+req_366dbfe5f5834c28aef78cb23a11ecd0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5a138e0e4a58a485,0.7086665679877534,Critical Risk,True,80.37,Low external credit score,Short employment duration,Prior repayment delay
+req_b7f815d501ad46f1a8051da8279a5a3c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dc7d08ed90050387,0.15823330057171112,Low Risk,False,9.08,High credit-to-income ratio,,
+req_80a18522f9eb4257a5432f7347ca713d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f6c49bc201fd8853,0.40067633024805854,Medium Risk,False,28.59,Low external credit score,Short employment duration,Prior repayment delay
+req_a97e9506cab24123b4485c2d9e7f78f4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2027a0568c970aa1,0.358738144630383,Medium Risk,False,27.47,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_4af33eba457640fdadde776e4908cd44,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,638ac33346e3f5a7,0.05980554973930693,Low Risk,False,3.54,High credit-to-income ratio,High annuity burden,
+req_31d9371abb3c452aa5f0d7325a16d104,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,351df70549c954ef,0.2842103128809376,Medium Risk,False,22.17,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_4ade1bced1694be8a4ca1a9dd5b549a3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,de89af55dc8aee84,0.08926432881364606,Low Risk,False,5.18,No dominant submitted risk driver identified,,
+req_5b7f53cfceb04b02a05c086f3bbc1937,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c7c7bb0c329cac37,0.4131707705070758,Medium Risk,False,31.46,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_24e5443c9d944b879e7d0a25ca0ba462,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e972c23262981b1d,0.3571565177077142,Medium Risk,False,26.64,High credit-to-income ratio,,
+req_64803338b5124bb48b4879235507f184,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,aa4267967e6fe37c,0.13512516855698503,Low Risk,False,7.58,High credit-to-income ratio,Prior repayment delay,
+req_368fc89d71cb480c9c5e646705381dbe,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8d0f67877b3557e6,0.1627517138438422,Low Risk,False,9.64,High credit-to-income ratio,High annuity burden,Short employment duration
+req_c717801462454e9bbc75c39eacba3608,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,58fc33619e636148,0.4438630602555806,Medium Risk,False,33.96,High credit-to-income ratio,Prior repayment delay,
+req_da84a5e307234994b260272c625ad596,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9c43ad55654945a0,0.22356786076065094,Low Risk,False,11.93,No dominant submitted risk driver identified,,
+req_1d5b455ce80d4363b2b2e2693b01e2dd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1ee9c2b9fd8922de,0.44331814506513256,Medium Risk,False,35.79,High credit-to-income ratio,Missing credit bureau signal,
+req_3e815af7081941da850d20142d4707a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d76538e6ee49b7d9,0.23448597753295417,Low Risk,False,13.87,No dominant submitted risk driver identified,,
+req_180d43f00fa54975b70b0bef7158f843,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,eafb4452117a7254,0.5366708885336072,High Risk,False,51.78,Low external credit score,Prior repayment delay,
+req_d5d1617b959945c581f28c431e4713b4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0a99212686f42a08,0.811964284908903,Critical Risk,True,92.69,Low external credit score,Prior repayment delay,
+req_c383f4fa8e27423895a98c0d20f6a552,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d554f0161089c119,0.5232052107796372,High Risk,False,49.01,High credit-to-income ratio,High annuity burden,Short employment duration
+req_29a329bacc4b49a39a6d36c3359833e4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4aa8b9868c16053e,0.15209489181389324,Low Risk,False,8.33,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_90fca78f3b5e47e4b46a6c124cfb520f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,37be2761011b3d9f,0.10410977642187398,Low Risk,False,5.58,Short employment duration,,
+req_9a49d79aa99e471e9500f04d473201cf,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b06a1679f24cf6f9,0.1686180830897867,Low Risk,False,9.24,High credit-to-income ratio,Short employment duration,
+req_17ad84a2974d466b9347ab44a0f7bd1b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,570fe468603c3037,0.24216565680745564,Low Risk,False,14.32,Short employment duration,,
+req_aec58db081d24fa1bfcd53da84acd417,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3a45cdea4e3f2827,0.07622996751145025,Low Risk,False,4.13,High credit-to-income ratio,High annuity burden,Short employment duration
+req_bd68aa9b800e44fdb2b89cf0c9f11f1f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,878ecb03572e0a1a,0.46563035398865094,Medium Risk,False,35.63,High credit-to-income ratio,Short employment duration,
+req_53389d056aac4750ac95c8a0a219fbe9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,18097e10e22a4a90,0.5112016557330463,High Risk,False,49.78,Short employment duration,Missing credit bureau signal,
+req_0b23f886416840e9af9c34104fe20382,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0c49833566e41ebb,0.4766268509663402,Medium Risk,False,35.78,Low external credit score,High credit-to-income ratio,High annuity burden
+req_481018a5523644e782f62e6d40c0e83e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,11ea17d33597fdd8,0.2926692722095673,Medium Risk,False,22.08,High credit-to-income ratio,High annuity burden,Short employment duration
+req_8f2bd037b43c4ceeb6efffcf410e2c5f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f8bd3f37b0450c8a,0.13188978226798836,Low Risk,False,7.06,No dominant submitted risk driver identified,,
+req_3f1647ef6bf74130b458e12e1db4260e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0a09104ebb434c67,0.20285440910795796,Low Risk,False,11.76,Prior repayment delay,,
+req_4e4b0ac478944f7f9fd2119a331748ad,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b0469bcb06e3c5da,0.7898031979960546,Critical Risk,True,89.57,Low external credit score,Missing credit bureau signal,
+req_418f7a67e55848fcac18c51440417b6b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4a628418e24b42d8,0.020993851295660438,Low Risk,False,1.11,No dominant submitted risk driver identified,,
+req_c170550567fa4d1980d4a8613b0c692f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0150a0af64d5a1b6,0.44252819480014227,Medium Risk,False,33.17,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_83a942b5f27244f0a85137eb2ade2843,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,935858db9cc4bc8b,0.10020174152696615,Low Risk,False,5.33,High annuity burden,Prior repayment delay,
+req_c9d9a6cfd5f740428d982f58796cee9c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,46f7c7fcf7cda8f6,0.8893229587211279,Critical Risk,True,103.89,Low external credit score,High credit-to-income ratio,
+req_9eebe07c81d94f03844d318727d03d2d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9703abbf2d17c8b7,0.7660572564027377,Critical Risk,True,91.82,Low external credit score,High credit-to-income ratio,High annuity burden
+req_9fabdcf198d14e449ae6de05e57982e1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3c904133a6ac25d9,0.5282709029182683,High Risk,False,51.52,Short employment duration,Prior repayment delay,
+req_f570999d6e6642158285bab78bfa9299,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b068aeea82502508,0.23018439391721832,Low Risk,False,14.0,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_89cd26d2825e47e9820b028b950fdf54,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,33abb35b640a3522,0.17822351460414962,Low Risk,False,10.21,High credit-to-income ratio,Prior repayment delay,
+req_41b1bd123055433496720919650ebdc1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c1e683459609ec54,0.579084188317132,High Risk,False,57.0,Low external credit score,High credit-to-income ratio,Short employment duration
+req_8f33d5d734de45068ee594002b9b45ce,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,76983083b7917f77,0.13902162043307775,Low Risk,False,8.06,Short employment duration,Prior repayment delay,
+req_b1a9f46aee7a4ab2b8384f32359f0b64,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d68d7dfb62593bdf,0.06943801576953472,Low Risk,False,4.47,High credit-to-income ratio,High annuity burden,
+req_759903552e184ebebf9c22c4569810dd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1bcad73c6d416a5f,0.25402491831613533,Medium Risk,False,21.23,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_03e478c6463a44e2b8185d1b2c8793ab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ee0423dc60ccda69,0.08759829177051075,Low Risk,False,4.63,Short employment duration,Prior repayment delay,
+req_3885516d155740469c2ae1304e42078d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,effe806e6f8ddce9,0.13685506713213283,Low Risk,False,8.75,High credit-to-income ratio,,
+req_88759ddc6f914da4b00084e4deafb2c5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,81b1e5c94c9d64ef,0.29902285900642905,Medium Risk,False,21.47,No dominant submitted risk driver identified,,
+req_582ac149fba64dc192c7d4441c4424bc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,83fea491a04a0b17,0.7500540241906293,Critical Risk,True,85.28,Low external credit score,Missing credit bureau signal,Prior repayment delay
+req_e68d4ab914ce4c009c6bf95d7ab3eee9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,00374634e83c0036,0.2266032686722553,Low Risk,False,12.3,High credit-to-income ratio,Short employment duration,
+req_f6ccd4c912da49ccbe7e1951fbafc9fb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4aede820ec0425c0,0.10427274889443984,Low Risk,False,6.53,High credit-to-income ratio,,
+req_2e0cc4131a7040afb61e2eb0f0a1413f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8bbe2a11071ea14b,0.2658771450987438,Medium Risk,False,20.73,High credit-to-income ratio,Missing credit bureau signal,Prior repayment delay
+req_5ddab66e90554b258379f74782956c3e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6ff9cb84684a1c01,0.7856715752924436,Critical Risk,True,89.33,Low external credit score,Prior repayment delay,
+req_ce5f60ab46fd4ee9bcb78faa98d49afe,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8dd04a06ade9261e,0.20994974936359456,Low Risk,False,11.83,High credit-to-income ratio,Short employment duration,
+req_ff00b1cacc2748619b72076b7eb54e83,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cfe60f79b524e496,0.07741750652139225,Low Risk,False,4.34,High credit-to-income ratio,Missing credit bureau signal,
+req_3e61b9f79375452da69859a63eced96b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,24a091509feaf749,0.13707043181290887,Low Risk,False,8.11,High credit-to-income ratio,Short employment duration,
+req_9d628272211a46f4b02abc92985c431d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,885cffe35854f702,0.5534545315450841,High Risk,False,50.79,Low external credit score,Short employment duration,Prior repayment delay
+req_5b6cd47866574e66b8ce02ca0c8f9dbe,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ebb7b84526f2f378,0.16334864789099204,Low Risk,False,9.06,High credit-to-income ratio,Prior repayment delay,
+req_4860cd1f60e64156994a241e780b9fdc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f662c7f15633fda,0.29979574044394486,Medium Risk,False,21.6,Prior repayment delay,,
+req_d8a9f603101d4eba9c2c796b0d12ae71,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fe6f885e11ca225a,0.24020763485490407,Low Risk,False,14.63,High credit-to-income ratio,High annuity burden,
+req_5f85a3ec69db404780cc8d39d3140054,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a7ca9ea4a7d1fe4e,0.8033083593113686,Critical Risk,True,100.49,Low external credit score,Short employment duration,Missing credit bureau signal
+req_88f92f11c1c24ca8b160256feec63dff,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,377fff3e410f763d,0.7707820789211453,Critical Risk,True,92.69,High credit-to-income ratio,Prior repayment delay,
+req_41445fe6569041e9978398725b49fa05,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,94aae8bbfbd05669,0.09723188095637489,Low Risk,False,5.44,High credit-to-income ratio,,
+req_f97b19edd208473582740698c2b00f8d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4dc9a1007e4f2117,0.22250307509488398,Low Risk,False,11.84,No dominant submitted risk driver identified,,
+req_c0289864437b4dd4a63fddbc8a49a4ff,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7f41a8922c221993,0.18541350352793645,Low Risk,False,10.21,Short employment duration,Missing credit bureau signal,
+req_9a1b64167277465792da745e9f44b6c6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2af7c2c09367c900,0.5681702800619013,High Risk,False,54.51,No dominant submitted risk driver identified,,
+req_d9973c2ea3554a119ecc2bbecd6c7fc9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1eaf07db383e688f,0.09550150684985026,Low Risk,False,5.52,High credit-to-income ratio,High annuity burden,
+req_bb88bc2891c642eca1904d95dfec7638,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,01a4bb209657f2ed,0.19555066172526298,Low Risk,False,10.87,High credit-to-income ratio,High annuity burden,Short employment duration
+req_ece60065853348d387c5d70bac424c78,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bf164466d5abd05d,0.5219996051096165,High Risk,False,51.8,Low external credit score,High credit-to-income ratio,High annuity burden
+req_e9823ae99230412a96da9733a0f985c0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7e87948df81288a6,0.2627604196618918,Medium Risk,False,20.47,High credit-to-income ratio,Prior repayment delay,
+req_59fd91a7375d4ac5bcdae4a9384ccfa9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,28db265a373362fe,0.1476355054798154,Low Risk,False,8.42,Missing credit bureau signal,Prior repayment delay,
+req_dc26823723044b538acc6e93382306f7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a21fadb48c6991f2,0.5650841705481765,High Risk,False,52.27,Low external credit score,Prior repayment delay,
+req_5efcbe797cd1493094d33e76d38f5de4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,200462421e84c680,0.5113235139602923,High Risk,False,46.68,Short employment duration,Missing credit bureau signal,Prior repayment delay
+req_fbdaecefdeaa4fb5ac0dfa75b48df8c5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,caa4d3f27aec553b,0.5389975863157745,High Risk,False,51.47,Low external credit score,High credit-to-income ratio,Short employment duration
+req_fc2f9516b8924d3b83d2aa9f59f6e9f1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,26f768fb43fc973a,0.48423895911519027,Medium Risk,False,36.21,Short employment duration,Prior repayment delay,
+req_56a9fe72d7644dfa89e7ef855754b7ec,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b757b2ceadd8af1a,0.1458230155089694,Low Risk,False,9.07,High credit-to-income ratio,High annuity burden,
+req_05c8d682b11443f5b101e9a46537e42f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f47fda808b69f2bb,0.2443110247077012,Low Risk,False,17.03,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_33807a2a36ee4c5db2c4b13ed8b20529,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1c2e1073aacb352f,0.7657782426409797,Critical Risk,True,94.76,Low external credit score,High credit-to-income ratio,High annuity burden
+req_bb2f84401c9049539c8d875daa149340,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4cabcc461a90270d,0.21834097282527132,Low Risk,False,13.31,High credit-to-income ratio,Short employment duration,
+req_4c6522dec0b74d6486d82ca76ce334ba,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,98a7ea2a48c05a05,0.6259071370255266,High Risk,False,61.96,High credit-to-income ratio,Prior repayment delay,
+req_823156aa7e4b4282b6e0a1fb9fa5d169,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5821a997a218c0e2,0.6787549002934532,High Risk,False,64.85,Prior repayment delay,,
+req_9fd8335273d34ce38dba3f75c0107f2e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cb1c678628d11339,0.21818949276866076,Low Risk,False,11.72,Prior repayment delay,,
+req_4173a02698fb4f6cb3ee42488ac86fc0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5351ed72dab9d363,0.3200499690827718,Medium Risk,False,24.85,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_a73733a294dd40a2ab710f7b8eb1a24e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8d5b313eb74c349d,0.27340956260430227,Medium Risk,False,19.64,Low external credit score,Short employment duration,
+req_ec0bbd7bd37d4d9daca7dc453506e880,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d7c921a417ed9da5,0.384055794754644,Medium Risk,False,29.92,Low external credit score,High credit-to-income ratio,High annuity burden
+req_0ec192d011cb4078b582a4877532bc82,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,23350d0ca76ae915,0.5061066071063768,High Risk,False,48.38,High credit-to-income ratio,,
+req_932c1770aee9498dbdb049098cc3b623,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,35da5cd81e49bc09,0.07882414467008743,Low Risk,False,4.25,No dominant submitted risk driver identified,,
+req_b638e4d6812741868ad638ee5ac543d4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,61bfbf759eb822b1,0.15700974518522695,Low Risk,False,8.33,Short employment duration,Missing credit bureau signal,
+req_7343e84685924eb3893a3b53a6737835,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2986eba5e8b43943,0.35881504489537486,Medium Risk,False,25.68,Prior repayment delay,,
+req_5623440887f541d996bd238ad8e6d368,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6dc9a913d3227a46,0.06826248698180858,Low Risk,False,4.71,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_81acd2b4ae644cc18f8e85b0c1fc6982,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d772da204da3a31f,0.4661058981370814,Medium Risk,False,37.85,High credit-to-income ratio,Missing credit bureau signal,
+req_18692f79baa94c1ba4f30be50a760845,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,42b8013321069aa1,0.19866741604540838,Low Risk,False,11.6,Missing credit bureau signal,Prior repayment delay,
+req_c66ef4baa5024a2b90ee3e1eb1921aab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,caa70e94b93036b8,0.2502317369445181,Medium Risk,False,19.15,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_57b278b2f4264cc081c97c2c3797dbc0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,343a2f0c97803fc5,0.26029739256897483,Medium Risk,False,18.86,Short employment duration,,
+req_505a08bb6a31436584d1290d2e56530b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e2263ee9f2c08788,0.15750788289352238,Low Risk,False,9.14,High credit-to-income ratio,Short employment duration,
+req_564706320d7641dd8af19c8be32108d1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3d72b70094a4ab54,0.39968507139269605,Medium Risk,False,34.91,High credit-to-income ratio,Prior repayment delay,
+req_bd953113d9964b89956d32169d86af12,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ed15466142d7af44,0.1927574925973845,Low Risk,False,10.73,No dominant submitted risk driver identified,,
+req_5ea77993b3aa4cfcbf50582bee469e78,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b9314ce149efabc0,0.8183999524555463,Critical Risk,True,94.7,Low external credit score,Missing credit bureau signal,Prior repayment delay
+req_eeef8637719549ed97aa3653de399b07,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9d45cde98b9f12ee,0.24305136076212383,Low Risk,False,14.2,Short employment duration,Prior repayment delay,
+req_97b2615266694b08b70fdda42575bf86,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b0b9cfae3322338e,0.33098950770985525,Medium Risk,False,24.08,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_6eaae62b44f1476b8d11eaafee079ce8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d7702cf16cde8c91,0.4281642703933746,Medium Risk,False,31.86,High annuity burden,Prior repayment delay,
+req_2f5f8c02a5ef4d87b6faf55b1172efe3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,113a2213581bdc21,0.14908304585868065,Low Risk,False,9.24,High credit-to-income ratio,Missing credit bureau signal,
+req_993e104126254cb491d6558167b8fd5f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c018723087de410a,0.2636553385035332,Medium Risk,False,20.97,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_1cebe4396b074a6cb92e780e464485e0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,da36923a59e49c1f,0.06835943759950128,Low Risk,False,3.95,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_106653add78e4f869801ce771bed317a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f9268d90141118cf,0.5705821298507815,High Risk,False,57.17,High credit-to-income ratio,High annuity burden,Short employment duration
+req_5cc1f95fbc2c443d99e689f2c4b07ab5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6f747ca1e2f83904,0.15879434090599095,Low Risk,False,9.11,High credit-to-income ratio,High annuity burden,Short employment duration
+req_ac45d18406984ac6b78a4517db55ba52,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2220ee5b547cb4fc,0.43196902914870466,Medium Risk,False,36.98,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_f2f74d99fecc405e9c1bf52e911e4b12,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f0055b9284f1491b,0.4998012651672649,Medium Risk,False,36.51,Prior repayment delay,,
+req_e7a10fe60e164d46b25325da80d4a442,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,47687bbde5269c72,0.8677704048394174,Critical Risk,True,102.97,Low external credit score,High credit-to-income ratio,High annuity burden
+req_e0c6b0aaf5f34f36b113b51340661d02,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,18bd5263147a0768,0.7296337918906614,Critical Risk,True,90.95,High credit-to-income ratio,Prior repayment delay,
+req_1d1ecadc8ce24f5c8c8a501732138a0d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c2a7f967f07c1d1d,0.3268778332121461,Medium Risk,False,23.32,Missing credit bureau signal,,
+req_ea7a8788f5ef47b6abe4e510eb7116b6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6e2f205fcf8da066,0.27926008854510503,Medium Risk,False,20.32,Short employment duration,Prior repayment delay,
+req_673d64378f464dd0baf18744da3a401a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,deb56f2d11e7cb04,0.08836357938070381,Low Risk,False,4.67,Short employment duration,,
+req_a0c4d80200eb457e8a19caf9e8d9e331,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,061943f34aaf2382,0.6709831427609445,High Risk,False,61.62,Low external credit score,,
+req_119b71583bb246e292bbf3ece5963175,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0889b7e039d0ab60,0.1346049783345707,Low Risk,False,7.64,High credit-to-income ratio,High annuity burden,Short employment duration
+req_40dd4c06e4114f2b9159613cdb877aff,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,04051ecb3b1b65ba,0.12495033839423664,Low Risk,False,7.02,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_390dcacccc6b43b79247c32f6a3f5728,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6907d2aadde0e895,0.1637813315366013,Low Risk,False,8.76,No dominant submitted risk driver identified,,
+req_bda6eaa9128946d2ac615c516642564e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0bc2056ec915fa5b,0.19522367818585287,Low Risk,False,10.69,Prior repayment delay,,
+req_78dbfb2904c849258882d56b811ddb15,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c2689eadc570f0af,0.4959892302383083,Medium Risk,False,37.53,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_e7ef5f8b12d94c43b036d02ae685961e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ad2afd1dc557d39b,0.6120793145715864,High Risk,False,59.76,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_c602790e5e0a48a9af0c1bec53fb797b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bf096cf6dddea92f,0.6092548526407484,High Risk,False,59.7,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_cca241788cd0400c8be3e661c852aa60,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b41f77404ed8affe,0.17808686246553965,Low Risk,False,9.39,Short employment duration,Prior repayment delay,
+req_ed6507b140ae49c29509155a7fa40f53,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8df7c0790334e799,0.1606160714400614,Low Risk,False,8.43,Short employment duration,Prior repayment delay,
+req_1d0b8b7a12de403db3884fd339e3d995,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ebf68e5231531cb9,0.24683105533569938,Low Risk,False,14.22,High credit-to-income ratio,High annuity burden,Short employment duration
+req_36b6cd0db1b54a9c9a793d61515aaa98,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,178cb79699a1330e,0.05958723837386527,Low Risk,False,3.18,Prior repayment delay,,
+req_2470dbe9298a470fb266e91f83842296,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,72c6a75ab267218e,0.13872522233803,Low Risk,False,7.53,Missing credit bureau signal,Prior repayment delay,
+req_6585c03de794461a9c844125b9c945d8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f05733204518d7c2,0.580502617979769,High Risk,False,55.04,Missing credit bureau signal,Prior repayment delay,
+req_44c3b9f132c04f5e8473df3d903c070d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,451ed739ae555305,0.17771699426402998,Low Risk,False,9.61,Short employment duration,,
+req_6b7c258d145640ccbdcb13f418dbf77a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f49be7b64d23366c,0.3248243150782844,Medium Risk,False,25.25,High credit-to-income ratio,High annuity burden,
+req_76a87c1f292645979ee568eadecf3ee7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,85921a09c90055d2,0.209400610583124,Low Risk,False,12.39,High credit-to-income ratio,High annuity burden,Short employment duration
+req_9503ebd7bb99403787b0d4abdc5b2c4d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5da77658d1b07292,0.3124507922306813,Medium Risk,False,24.57,High credit-to-income ratio,High annuity burden,
+req_aa8bdad10d004e8ba156fa49daeda6e7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6555222c74df693a,0.3870507233109007,Medium Risk,False,27.13,Short employment duration,Prior repayment delay,
+req_adc37bccccea4dc784b7a5e42b5f8405,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,aed016c723915a64,0.29404519454373473,Medium Risk,False,21.32,Prior repayment delay,,
+req_e9d3f7b9a5994215b975dcfb1ad074db,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,92b4d72e3806a59b,0.05383281196535772,Low Risk,False,3.09,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_58010574a4d74233a160093a90f3434f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e0ba88283117f7b2,0.3339757379393856,Medium Risk,False,25.48,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_8c5481a2a17246bf9807211b6d404139,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,178d1d9ecb91c813,0.3052824307568526,Medium Risk,False,22.89,Short employment duration,Prior repayment delay,
+req_d9cd178747c742beac9133f9ece82423,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0aeee55ed5abb1bd,0.1767276029731333,Low Risk,False,10.76,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_34130d2c54524225a5534d4817a69802,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,700990be7732fd26,0.6823226977059581,High Risk,False,65.58,Low external credit score,High credit-to-income ratio,Short employment duration
+req_a1780c874b0743f39adb3d280dd1882d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,48d993ddeab990d7,0.23064287680610418,Low Risk,False,12.81,Prior repayment delay,,
+req_ba722ebf31fd45a9a135621bab20da4c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,edcf29a05c323822,0.3514534813128053,Medium Risk,False,27.53,No dominant submitted risk driver identified,,
+req_42f4e177423f4addb015026ec58b527e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fc2ab16e48b07d9a,0.2980491387433218,Medium Risk,False,21.5,High annuity burden,Short employment duration,Prior repayment delay
+req_f7195d3451d94445ab94fb9495caf49a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9c6f3c7c848f86f8,0.19100615917923308,Low Risk,False,10.84,Prior repayment delay,,
+req_897a03920b3e46029b28b37c3ec34a2e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,89b4866c40795ebf,0.7302592000245997,Critical Risk,True,92.66,Low external credit score,High credit-to-income ratio,Short employment duration
+req_1dec3ad275964d34a62cd6aa1ce1b093,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a1db645337f75aee,0.4157497188440253,Medium Risk,False,31.09,Low external credit score,High credit-to-income ratio,High annuity burden
+req_cf210897956c48da85e82ef079cdc29f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c1cb6dbb10e7e507,0.5973665119701521,High Risk,False,64.13,High credit-to-income ratio,,
+req_dcc319cf6a824525a436a52d59f80106,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c63f8fd0eac9cd53,0.5212957954742757,High Risk,False,51.61,High credit-to-income ratio,,
+req_c25227e248144ccb938378fd456384b1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e66906db362d336a,0.9154053935158954,Critical Risk,True,109.31,Low external credit score,High credit-to-income ratio,High annuity burden
+req_1ed2b437a6b349deb0ddcf4a0d0f932f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f2650a8f6071dba,0.18345240265369606,Low Risk,False,9.95,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_f2cde6cec3f64ed89b9a3dcc8bd052c2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c5a73b249cca5b37,0.07327579651308397,Low Risk,False,3.97,High annuity burden,Short employment duration,
+req_c67633fe288444a7be3d64dda6b67ccb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,df18f89f19da37b5,0.05661643153749793,Low Risk,False,2.98,Prior repayment delay,,
+req_b20dbf7355b24e148585490e19dd665f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0b16b0cd81052836,0.1765536355050755,Low Risk,False,9.7,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_0f3cca8ca71d4f3fb8a7f515f6d2f079,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d6beb5c67117e3a1,0.6852617132857284,High Risk,False,67.54,Low external credit score,High credit-to-income ratio,High annuity burden
+req_a08074052e334f6ca8a1db061b9eaff6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,36b29dbbc2cbce43,0.22350979341371963,Low Risk,False,13.11,High credit-to-income ratio,Short employment duration,
+req_ae1291eb60c64a07b129fd9e54024648,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4a792b9702888525,0.793804236571512,Critical Risk,True,91.61,Low external credit score,Prior repayment delay,
+req_a082c77205424bcca2457ee1e176f21d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5fec4b483611c6bb,0.31832747346838214,Medium Risk,False,24.03,High credit-to-income ratio,High annuity burden,Short employment duration
+req_70e98f52b1714eba8c5abe8a068f3372,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cf7912093dc6ca83,0.45586480398982643,Medium Risk,False,36.65,High credit-to-income ratio,Prior repayment delay,
+req_b9655f8d3a1f45b591656a6ede82eda3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,31cfcdebfca236bb,0.4408784167949936,Medium Risk,False,32.07,Short employment duration,Prior repayment delay,
+req_77fa98dead664d5abd4d8ce2e5ade81a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f057983b271b707b,0.46855888111053107,Medium Risk,False,34.82,Prior repayment delay,,
+req_2c3403a6956b427db13f61d0133d6885,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ec2daaf461850e31,0.15541347708395561,Low Risk,False,8.44,High credit-to-income ratio,,
+req_7dddc369687144d7b5b163304d7c21d7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,731639db90320a5f,0.15833011055296659,Low Risk,False,8.41,Short employment duration,,
+req_42dffc05480440838454f161e414c1d5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,50c4ce499e3fa1b4,0.2445679792766555,Low Risk,False,13.17,No dominant submitted risk driver identified,,
+req_a20c5fc14eec4e6c96b571f2c0898d4b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,eca57a169095a329,0.659336605446672,High Risk,False,60.01,Low external credit score,Short employment duration,Prior repayment delay
+req_dd5f4fc2f0e24df1a90899806fbdcfa3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3738ec6d2ea04f70,0.6284380838762734,High Risk,False,58.69,Low external credit score,Short employment duration,
+req_0b04b457cd214a83abf4f8fe7c443b01,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e365f0f08c0b121f,0.27079975931410694,Medium Risk,False,19.19,Prior repayment delay,,
+req_1644a32f2ffd468693243840cf488274,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,19cb26b4a07703bd,0.0560186203246537,Low Risk,False,3.02,High annuity burden,Short employment duration,
+req_e00c50d3231b4b44859227cf45aba563,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1c7bceb07a40d83e,0.817335323749284,Critical Risk,True,94.89,Low external credit score,High annuity burden,Short employment duration
+req_66c4557fb1bc43e8944451de4342e0db,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,de58719c0af44c95,0.8003219754152768,Critical Risk,True,94.08,Low external credit score,High credit-to-income ratio,High annuity burden
+req_44f34fbc12ef4d36bfc16323650b2d21,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9fc874c9bb918afd,0.09801906458756403,Low Risk,False,5.48,High credit-to-income ratio,High annuity burden,Short employment duration
+req_5cd57ae788844dd98e9695611b795e4e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f0faed511b2465a2,0.802397879750795,Critical Risk,True,93.0,Low external credit score,High credit-to-income ratio,High annuity burden
+req_9e833911c3f54709b3a5e3b20d0704c5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8ec9f375a2db2f05,0.1300274941971703,Low Risk,False,7.46,High credit-to-income ratio,High annuity burden,
+req_2140e0dc3860451c9851ce136be60b73,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a0fe2d12a6b7ba73,0.6453569577322122,High Risk,False,64.01,No dominant submitted risk driver identified,,
+req_e989c59d5835415ca3825975fec530c6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a28fb79c5360ce6f,0.16431046225271984,Low Risk,False,8.73,Low external credit score,,
+req_c627b47740694f509ae6375f423bae06,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8390e883f1182b26,0.1355717314602583,Low Risk,False,7.35,Prior repayment delay,,
+req_ab4db971fa744ab99554aaeea216e03f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d4304d6097f66994,0.3749313420111042,Medium Risk,False,27.1,Short employment duration,,
+req_8246229444704418b0fd01a287c1e983,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dc2eb70c8b9fbcd4,0.09475106163451652,Low Risk,False,5.2,High credit-to-income ratio,Short employment duration,
+req_39262226bf6b466185703d37a2eaa14e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dfdf2e821f324356,0.2744206488168622,Medium Risk,False,20.47,High credit-to-income ratio,High annuity burden,Short employment duration
+req_6d98d23dc4e14415afccd50081cda287,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,597c7e2ac5040a4e,0.0434460536445056,Low Risk,False,2.72,High credit-to-income ratio,Prior repayment delay,
+req_31240199f78e476dbbed8c2395b3dcf3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,81a13b855da9da2d,0.6116914434623847,High Risk,False,59.57,High credit-to-income ratio,High annuity burden,
+req_8c91be78c6324555bfd33be645713d04,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,28eab45870af0468,0.16872434794166918,Low Risk,False,9.81,Prior repayment delay,,
+req_3fd9411c2a884ce79eb3ad6e7cacdd9d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0d43f4cc0f153d76,0.15022904812212845,Low Risk,False,7.96,Missing credit bureau signal,Prior repayment delay,
+req_67c3f973ba974282b3983377b451a48f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0621f006c0c2b928,0.7555000850240897,Critical Risk,True,87.1,Low external credit score,,
+req_ba1f5eea96da4d33b78260d5fa3db9fe,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e82a0ac882a1a21a,0.12072020725633528,Low Risk,False,6.71,Prior repayment delay,,
+req_4c48fbf337fc4775a5f09c66ad2dcfc2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2a449f6ea8d3ed25,0.5757041069157337,High Risk,False,54.66,High credit-to-income ratio,High annuity burden,
+req_6f7efa4e3c0c4c8384605cdd91fece56,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,127e96ed02873e3c,0.190126681289293,Low Risk,False,10.17,Prior repayment delay,,
+req_8fdaee3e8f704782aa808bab7c96db9a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,316f9b74d033c54a,0.04118410048302505,Low Risk,False,2.2,High annuity burden,Short employment duration,Prior repayment delay
+req_08fc541e49db4857bc815ee821928f11,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bd85bda70d8e946d,0.05540996200459666,Low Risk,False,3.71,High credit-to-income ratio,High annuity burden,
+req_d4d92f3aef1f4194a18d8c7bdbc3a9c6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,804387acfe0674f5,0.21847793413749111,Low Risk,False,11.84,High credit-to-income ratio,Short employment duration,
+req_5c24bbefe0454fdab09c16abbd8ad39b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,16c04917ead2aec8,0.5030906066955667,High Risk,False,47.38,Low external credit score,,
+req_3169dbedd45f4e77b369c7f5d06581d6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,70549f8756131f5b,0.08087680468629582,Low Risk,False,4.73,High credit-to-income ratio,,
+req_5176c1cf76714922a167d8f8e3f82908,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,944a310ca8bcd8c1,0.44394813795288623,Medium Risk,False,32.7,No dominant submitted risk driver identified,,
+req_0616d941713140c0ac10dfa14389b525,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1083dacd40293560,0.0648443194968865,Low Risk,False,3.68,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_3e02c6c745ec4de38963f09cc81c3917,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6c4747d648f5d276,0.5650623001724517,High Risk,False,52.24,Low external credit score,Missing credit bureau signal,
+req_9c1fd4769f86473f8bd1b1edea7bad7c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,48ab00cd72ed9fd3,0.44305288408236343,Medium Risk,False,31.96,High annuity burden,Short employment duration,Missing credit bureau signal
+req_5a45ee941bcb4408981c669555212c87,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,18136a9a8efbf767,0.06994096765294508,Low Risk,False,4.23,High credit-to-income ratio,Prior repayment delay,
+req_83b335fa7a104e9dad9dc17dfbc98987,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1dd210f7b0f70617,0.35090361531033265,Medium Risk,False,26.35,Prior repayment delay,,
+req_b1f49d00835e477f9003203b39ccc3f0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,042527f2b4e534c9,0.29301625847135837,Medium Risk,False,25.06,High credit-to-income ratio,Missing credit bureau signal,Prior repayment delay
+req_7a97edaf3574468693a48a46caa76f8c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1f602a08f68c6a16,0.27168022763673577,Medium Risk,False,20.65,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_3228d84edc5445d8a4d2d887aaa6db60,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c6be50e0249786ea,0.35101672094269576,Medium Risk,False,25.13,Prior repayment delay,,
+req_9acb181cb9a942279fce7e0ccc24715c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0c9eb4a73f452939,0.28199510175571757,Medium Risk,False,21.31,Prior repayment delay,,
+req_bc2d38b0d6874e8cad78f01fb4ae0862,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a828cc893d4e5dfa,0.41404709483296775,Medium Risk,False,31.75,High credit-to-income ratio,High annuity burden,
+req_f354af39faf34a47b45012977f47f088,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f512327e2ba3da3b,0.18127130405466282,Low Risk,False,11.09,High credit-to-income ratio,Prior repayment delay,
+req_0bf6f8441f3b4fffbfda64dac8d2aa7f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,eab344c4b0038106,0.06716008632085292,Low Risk,False,3.63,High credit-to-income ratio,High annuity burden,Short employment duration
+req_871ae871dc4e471babadf2a9f431d48d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a32f0b8a96b78328,0.060601062624271895,Low Risk,False,3.22,Short employment duration,Prior repayment delay,
+req_2ccba7c51b3840e694e22f0b993caa3e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,07c8177516129930,0.10280179692456294,Low Risk,False,6.87,High credit-to-income ratio,High annuity burden,Short employment duration
+req_8310dcabee2248fb94dd830117e0463c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b8830b8fbafc974d,0.45944037043480906,Medium Risk,False,34.53,High credit-to-income ratio,Prior repayment delay,
+req_2d768ed23e824e1eaa58b92487314311,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,86f77a1924c18b01,0.30759853009628013,Medium Risk,False,22.81,High annuity burden,Short employment duration,
+req_b5d16e7b6d01429cbe50cfd0a2300c69,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3445d27cb73e34c0,0.36499703814635837,Medium Risk,False,26.03,High annuity burden,Prior repayment delay,
+req_b4fa07e8141c4aeaa98da646f5f12f25,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3a150dc799e09671,0.3661566737812428,Medium Risk,False,26.75,Prior repayment delay,,
+req_7e8922590df94dc19300324b38a61031,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5ff3d34bf5debf47,0.2796252506530174,Medium Risk,False,20.34,Prior repayment delay,,
+req_00f723481d654ab4a73f1af22a3496bc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fd22a86c19c37dd0,0.8098110140908842,Critical Risk,True,101.17,Low external credit score,Prior repayment delay,
+req_cc1e9530500a4ffb91b5e9b31d8d9abe,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8c5e986dbd426a9c,0.38933326930110573,Medium Risk,False,31.21,High credit-to-income ratio,High annuity burden,
+req_0ad606c989d34e2ca3f522340fa69d62,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cf22d97321a2f0c5,0.39222892750542887,Medium Risk,False,27.89,Short employment duration,,
+req_c7580f190b2042c0b438a4062965fe94,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,67ccd6ab1350d30e,0.43580182225139974,Medium Risk,False,31.3,Low external credit score,Prior repayment delay,
+req_601596764454490fa614110e23d99df5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3c605729d83c49e4,0.3237995569744835,Medium Risk,False,25.63,High credit-to-income ratio,High annuity burden,Short employment duration
+req_4d69170708a94b7caa6dd1e7ab7a9927,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c0e3e1ba0ec804dc,0.05797991066846795,Low Risk,False,3.2,High credit-to-income ratio,Short employment duration,
+req_0bb646ad7eaa48619be17a5dd4b54575,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e28d918735a74cf0,0.48124849767936084,Medium Risk,False,40.88,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_6482c21c37084a8295560733451fdaac,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,17ee911f4fa8559d,0.3066724889826703,Medium Risk,False,24.84,High credit-to-income ratio,,
+req_d82481eba1ef4d859c5e19b2b47df368,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8c083e83f6c283c7,0.1707266965012104,Low Risk,False,10.91,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_acdb9fed6e734e97a0bb0da85c776215,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,80aad67b0a351db1,0.49879887228147085,Medium Risk,False,36.82,Prior repayment delay,,
+req_d54839d6e6184b8bbc5bf2d2d56da305,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a30724110ed86adf,0.1989281470814042,Low Risk,False,11.77,High credit-to-income ratio,Prior repayment delay,
+req_ab3e2cdf2c624b66a6e8b54e678278c2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,10a40b252006ae06,0.12066940292587366,Low Risk,False,6.5,Short employment duration,,
+req_d516b821ee4047f0829d9984bf0ff9e3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,211faec962410162,0.19527262063712197,Low Risk,False,10.95,High credit-to-income ratio,High annuity burden,Short employment duration
+req_fcfe017f94184ebea0aaf197302f1862,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,428c9c691d9aa64d,0.35503083458434376,Medium Risk,False,27.31,High credit-to-income ratio,High annuity burden,
+req_fff539e780994c6188970735d22139cc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,74d88a89e0bba738,0.16232571818115643,Low Risk,False,8.81,Short employment duration,Prior repayment delay,
+req_8a64b79f331c4a4aa40ded66a14b4392,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,96a579bafd2aab1d,0.2803233762382064,Medium Risk,False,20.93,Prior repayment delay,,
+req_e390a30348e442889bc40c221e6c64b5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bd9efd40af8d8677,0.10389961099942138,Low Risk,False,6.69,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_8585384a40ce46a1b0033a6e36a27d51,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,57a60d857b257489,0.31332410358789126,Medium Risk,False,23.01,Prior repayment delay,,
+req_96c05007e06a4dd7ae26b930a1624aef,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7c26a42537783858,0.03177286438854292,Low Risk,False,2.1,High credit-to-income ratio,,
+req_153a3ecbe02e483da489d99bec792bf4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ade92e36b6e16b10,0.2616597096834318,Medium Risk,False,19.22,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_80030693e5804a6c912231a4c52ecb76,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bcea0a7ea9cd6dcc,0.5454160928762967,High Risk,False,52.31,High credit-to-income ratio,High annuity burden,Short employment duration
+req_80ea951f674c4c8f93e3397a3971d827,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a991a5f646c3b78b,0.08241185500027737,Low Risk,False,4.44,High annuity burden,Short employment duration,Prior repayment delay
+req_8241465cf9bb4ef1942e8950c5badb1a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e02fe42f0833ec4d,0.5031639902384998,High Risk,False,50.05,High credit-to-income ratio,High annuity burden,
+req_3866ff129855466a801b5280cd5c7ebc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7eb010497d667b64,0.696479900388004,High Risk,False,69.07,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_73d5a5fcb6e747c489147150b57d2f4b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ef68d7e8825c0060,0.8478214831800951,Critical Risk,True,102.63,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_9a55062b73ab4e3d8274067ec3aba3a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9a8c30b496b572ff,0.0558850591256625,Low Risk,False,3.02,High annuity burden,Short employment duration,
+req_b54d911c69b2439eac690d64dc06ab8f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c2d334c2264ebb18,0.45479009795769015,Medium Risk,False,38.75,High credit-to-income ratio,High annuity burden,
+req_b75226f24e654516877ec5f032b59dd5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4ff88251c7d6259b,0.4730547669435401,Medium Risk,False,37.34,Low external credit score,High credit-to-income ratio,High annuity burden
+req_87c7af6ecd7e47718bf3e28739400034,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,92ba3645cee7d7fb,0.6400345929751821,High Risk,False,68.09,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_6e16a8eb7fba42f883ac05d4b5c1e91f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bbdfb603fb9dcf1a,0.8307236380878197,Critical Risk,True,96.28,Low external credit score,High credit-to-income ratio,
+req_0f406096400f4fa7ae5af7c42e035eb3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0bdcfcdecd4367b4,0.7729158606136413,Critical Risk,True,89.89,Low external credit score,Short employment duration,Prior repayment delay
+req_5ae2799b26bb41ca986c71e1c9b5f783,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bfe40a7f7ecc2f2a,0.8393662883326709,Critical Risk,True,102.27,High credit-to-income ratio,High annuity burden,
+req_31f10ae5327c4b65b383966017ea2057,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a9c59cc4139904be,0.5968841562870864,High Risk,False,55.73,Short employment duration,Missing credit bureau signal,Prior repayment delay
+req_ee878a2523814c64a108eb1392ea100f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9f14ea4ce765d0f8,0.09166236503909432,Low Risk,False,4.84,No dominant submitted risk driver identified,,
+req_b31508aac5ab43698a9eec8546f1eb63,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,107d3673ea4d5da9,0.2601808346260187,Medium Risk,False,19.07,High credit-to-income ratio,,
+req_41726f25f98d45fc9b89d62342859c7a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b738b58613eb931d,0.09042564368883503,Low Risk,False,5.35,Short employment duration,,
+req_215904fa53624943bb04920c390b643f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,21fbc45d6e2afa79,0.7652131578718574,Critical Risk,True,93.05,Low external credit score,High credit-to-income ratio,High annuity burden
+req_acf39bd92a32474b91e1ab09417f190c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,04ff45a0130b7a32,0.30800372123570835,Medium Risk,False,28.33,High credit-to-income ratio,,
+req_2df0ed07a90441beb45529fc0775f58c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4a80a99f4576120d,0.13280761395158613,Low Risk,False,7.7,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_18234d1a47a249ffbdc7c3f1022496a0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,edc8d6cbd8b259ac,0.13361945306568318,Low Risk,False,7.53,High credit-to-income ratio,High annuity burden,Short employment duration
+req_d69823ca1c394686bce01c9718ae1c16,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,164c563193361577,0.23303787693524725,Low Risk,False,13.76,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_fe91967362f943dcab4d143991bf873e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,993748fca54fbac7,0.6224475923427363,High Risk,False,60.82,High credit-to-income ratio,Prior repayment delay,
+req_7e41cf5d662346f997363dd73d7eabb5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fe906d98ffe640b9,0.12918218012883373,Low Risk,False,7.12,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_3c1a1bcae24545298e7ba4813f721bc2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e61268a30c7cfd3e,0.06980935171421808,Low Risk,False,4.54,High credit-to-income ratio,Short employment duration,
+req_0e72c8d14b51430695ea2ce30c1e3ef4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,94c46484b5e59e7f,0.19592587031491712,Low Risk,False,10.48,Prior repayment delay,,
+req_a5b36ae57f9d4ab284f53985376413dc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4d54077546b1950a,0.2501837276682545,Medium Risk,False,19.49,High credit-to-income ratio,,
+req_ca729b50ebb348db853071d4407287a6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,407235262997a164,0.1876897452825035,Low Risk,False,11.29,High credit-to-income ratio,Missing credit bureau signal,Prior repayment delay
+req_fdcaa78b12fd4a498b3f02033b17ed52,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5dca59c73632d534,0.5299923841785106,High Risk,False,49.48,Low external credit score,High annuity burden,
+req_eecadc6ea97942349a69d3cd7a433dae,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a144195da7ded358,0.39755166936932723,Medium Risk,False,29.3,Prior repayment delay,,
+req_251254569e4b47fabf0a1662309740b1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,95d3698463e33710,0.09648300353239284,Low Risk,False,5.16,Prior repayment delay,,
+req_0ee389078971468f943d2f88c0659126,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d9a75a862d180422,0.031479979736626404,Low Risk,False,1.67,No dominant submitted risk driver identified,,
+req_fb99d7423d684b8bb2e9dddfef28b60c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d1aca1b993920576,0.12025802551969693,Low Risk,False,6.42,Short employment duration,Prior repayment delay,
+req_7d04b4661fc34e44bd912e7094f2ba19,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2bb38c86cfeef0fd,0.3666166464123454,Medium Risk,False,26.67,No dominant submitted risk driver identified,,
+req_8f6d63b4b39145bba6785f9cd62ff8a4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e3464bd9741b579d,0.063675131235991,Low Risk,False,3.49,High credit-to-income ratio,Prior repayment delay,
+req_9e2386a300d0454183ac22a884e243e5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d19788242e239335,0.19438005884473653,Low Risk,False,11.15,High credit-to-income ratio,Prior repayment delay,
+req_4a6a7bbfe08e4cafb9179a23923164b7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d9b2ccb53e7e126d,0.4178507965104672,Medium Risk,False,32.12,Low external credit score,High credit-to-income ratio,Short employment duration
+req_ec0649bf11d54740a676314ae5171a23,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,79a63b65e7d0df75,0.4547275409739842,Medium Risk,False,36.71,High credit-to-income ratio,High annuity burden,
+req_4bd7f44d4aed4c30b0b9fe01dc80d99e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,61125a88a6bdfd77,0.7221890854705391,Critical Risk,True,91.7,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_8d21693d164f4e7f8d0c432d4a1b17c1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1881e8dc3615aef3,0.7027796506209013,Critical Risk,True,79.96,Low external credit score,Missing credit bureau signal,Prior repayment delay
+req_d084964b6d2d471cb5b4746fabf1df3c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a40081aa55fa6e98,0.6950641709907963,High Risk,False,65.31,Low external credit score,Short employment duration,
+req_f5cd4781dde144d09ddf03eafd4af5b5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d5487f4f199dba57,0.5400358931182796,High Risk,False,52.72,No dominant submitted risk driver identified,,
+req_d8c99ea2487a4cec9805f57334a83103,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0a64e5e35347794c,0.21530703085588598,Low Risk,False,11.65,High credit-to-income ratio,Short employment duration,Missing credit bureau signal
+req_a67be93633bc45629ece72be6c60d1c9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4f3def65f5a4cc1c,0.5722831927732673,High Risk,False,55.73,No dominant submitted risk driver identified,,
+req_e39785b2e2234bb2a2aec1befa3db1a4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,893f69e45cad85eb,0.08502113300508084,Low Risk,False,4.78,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_84b76a14f5604a5b8b8e86655913ae44,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9750c1537cc987a7,0.7042226660931166,Critical Risk,True,83.79,Low external credit score,High credit-to-income ratio,High annuity burden
+req_29b09514f345465f8b2ef41626171dfa,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,884a7d196234372c,0.3461838014477232,Medium Risk,False,29.49,High credit-to-income ratio,High annuity burden,
+req_821df083015e40849be9cfb3c5e08e97,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b3d10c82676bc138,0.14577214003358255,Low Risk,False,8.06,High credit-to-income ratio,High annuity burden,Short employment duration
+req_3309a2da7d6648ce9c29edab0aec6b15,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8c7e2b50323c8030,0.34309438030210715,Medium Risk,False,25.45,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_15a16608bfb841f88607f8c3d7d563c6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,232529bd2600325f,0.30671804739381997,Medium Risk,False,23.72,Prior repayment delay,,
+req_52b2f5185c2c489ea6a043198deafda4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4921af610736f1a3,0.22342524043292247,Low Risk,False,12.43,Prior repayment delay,,
+req_0de163b4a7cb4ff9af490d11c50460da,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5dc97d22b5831129,0.6278703990241868,High Risk,False,57.25,Low external credit score,Prior repayment delay,
+req_95015c22062f4138b16260867ff831ac,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e4f1126075638ab7,0.32050417500217143,Medium Risk,False,23.77,No dominant submitted risk driver identified,,
+req_f636684f3bbd48f2ad5f842433d8497b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d3d751309db0bf67,0.793573056792241,Critical Risk,True,89.19,Low external credit score,Prior repayment delay,
+req_af69a6786da5453b98ac40b649a774ba,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e0ba22cf78a165f0,0.21764390837510766,Low Risk,False,12.63,High credit-to-income ratio,,
+req_15c524cc55414a3fb722ff1a30da417d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,105dbe364daa207c,0.42704267709642446,Medium Risk,False,30.5,No dominant submitted risk driver identified,,
+req_73766843081841a2bb61f27484885d55,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,93b8f4cfa923f275,0.40476786311723395,Medium Risk,False,32.87,High credit-to-income ratio,Prior repayment delay,
+req_9b171a35be704d80a7c0e7d8f0c04a65,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ca9194c20f2fcc74,0.0618956793648607,Low Risk,False,4.24,High credit-to-income ratio,High annuity burden,Short employment duration
+req_4a8ae152da0241189328018186e13819,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,471017370d30c37d,0.4434818813409928,Medium Risk,False,34.07,High credit-to-income ratio,Prior repayment delay,
+req_e2bf83cca77648d3a593bbe43c7153ab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3c56e1a785c1bcd1,0.0757436753131895,Low Risk,False,4.13,High credit-to-income ratio,Short employment duration,
+req_1cfe54418cce4b119cf84b1ce29f7ceb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4ce9fc8dea85c510,0.23078755912520807,Low Risk,False,13.84,High credit-to-income ratio,High annuity burden,
+req_31c0be1327ff407ca1a2df3e20556b1b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,81dadcae8ad55b07,0.1267822481453856,Low Risk,False,7.14,High credit-to-income ratio,High annuity burden,
+req_73049094bdce4e828d152c9fcf9467bf,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d09eec3c3b39a6bd,0.3528286306295798,Medium Risk,False,25.51,No dominant submitted risk driver identified,,
+req_97f4566217164622added7f5080d2f6e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cfd4295357b97b7f,0.14594635173315434,Low Risk,False,8.22,High credit-to-income ratio,High annuity burden,Short employment duration
+req_5961ebe461154fcc9a12865012fc6f25,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,13ca42f955033fae,0.6529532362083194,High Risk,False,68.68,High credit-to-income ratio,High annuity burden,
+req_fcf34a58385b4a9a86b60c5aba92b687,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bbc9c8010af489a6,0.18682681978717783,Low Risk,False,10.0,Prior repayment delay,,
+req_92507aecb7284f65a71df136b6c59171,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3e2395153027cd03,0.7433655331120858,Critical Risk,True,83.3,Low external credit score,Prior repayment delay,
+req_9bb932f4d9fc4c8d8cfb343467c5317f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,aa7d5bbd70ceb22f,0.1341283563440307,Low Risk,False,7.18,Short employment duration,,
+req_38f0c379a4454739ac420e701ddc379c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0823c7c663f611b0,0.021478827755926837,Low Risk,False,1.27,No dominant submitted risk driver identified,,
+req_49d5afd104a34046978260395e0e3d42,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,293ca111490d5a3e,0.8650004966987331,Critical Risk,True,99.82,Low external credit score,Prior repayment delay,
+req_98ac93539b8f40e08bc1994fb3de8f43,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,003359500d8e7c59,0.12589986249211116,Low Risk,False,7.09,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_2dc29609b94541e3a4eeaacd7f22fb07,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4df29482d7dd7c37,0.17701913823159038,Low Risk,False,11.77,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_a54d7ffc2b394041be80d519a6f47813,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f81ebd3f0c340313,0.3906271163317934,Medium Risk,False,28.05,Low external credit score,Prior repayment delay,
+req_468c1373d71341c6986e4c4b60aa62f8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6e9edb58d71dab6a,0.11955841861375134,Low Risk,False,7.6,High credit-to-income ratio,High annuity burden,
+req_de7f271d19314f6784dfb846fd98e21b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d0028e4676582029,0.17379604736646123,Low Risk,False,9.4,Short employment duration,,
+req_9c532867ebe84e72b1975cace4c00f41,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3bb8d02ea2b9a073,0.4021231011594858,Medium Risk,False,31.46,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_4b922264ffb04141acd89711384ec241,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,720fb1655f807b14,0.6110507088102253,High Risk,False,62.65,High credit-to-income ratio,High annuity burden,Short employment duration
+req_8375c2024b5d44018d593c9784e530df,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d683398424ce491f,0.6920513430469185,High Risk,False,67.62,Short employment duration,Prior repayment delay,
+req_cc816590c2794a4fb3ba005c335d05dd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,aaca2f1b59571ac5,0.4476986556223253,Medium Risk,False,33.65,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_28684297b6114d8c81618f9544dccdf3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,af21bdd2c4a3a93e,0.27981893985383927,Medium Risk,False,21.41,High credit-to-income ratio,High annuity burden,Short employment duration
+req_d955bd5609184b79bdae65367a2e48f8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,13e955af4562d2b5,0.5227595488858704,High Risk,False,49.44,Short employment duration,,
+req_cec6c3c41673460ca18752d37f087980,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,21f7050b9f0201f7,0.06923000642426262,Low Risk,False,3.74,No dominant submitted risk driver identified,,
+req_4cce61b9067a4dcfba7a81c313dfd38c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f9e65570f44cf3a2,0.3237694565129995,Medium Risk,False,25.04,High credit-to-income ratio,Prior repayment delay,
+req_99fa1dc6fded407b9cce0b62d79521a6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4b0c5304a5b3b37b,0.08667283824680479,Low Risk,False,4.73,No dominant submitted risk driver identified,,
+req_ab0c5ef3cf1042ab97f44c3c319510bc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6aed46db85d8654a,0.1626375641128656,Low Risk,False,9.78,Prior repayment delay,,
+req_f794fc9b9fc0472499553a3fc5a9e5ca,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,96a653cf7b541011,0.8057057342086047,Critical Risk,True,98.64,Low external credit score,High credit-to-income ratio,
+req_b168816dc9b84222b04f333c493fba43,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4f744bb8a7d6aa4c,0.16093787695330125,Low Risk,False,9.38,High credit-to-income ratio,High annuity burden,
+req_976a5f8aa5ea4ccca10af020f6d39069,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,89e797118f947a87,0.433456121879781,Medium Risk,False,34.65,Low external credit score,High credit-to-income ratio,Short employment duration
+req_7d1bfa11b88e4b70ac1bdaef66556a4c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a7b52c49721012e3,0.43878397489386284,Medium Risk,False,33.61,Prior repayment delay,,
+req_dae949a601ab4ce3b1a82977ef303d4d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dafeb07ac444b0fe,0.20527669428136586,Low Risk,False,11.49,No dominant submitted risk driver identified,,
+req_4d08b7d3ab28455489ff99e2446b0a70,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9edbc8100111c6f4,0.15816297269995488,Low Risk,False,9.18,High credit-to-income ratio,High annuity burden,Short employment duration
+req_9e8cbf5d307e40dbb433659bb3eac068,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e119fab48e81ac42,0.1490617236758795,Low Risk,False,8.32,High credit-to-income ratio,High annuity burden,Short employment duration
+req_79fd441270ab4014b35866fbfc0102d5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,072ec226be31f501,0.4037498623332141,Medium Risk,False,30.27,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_3e6a92e96f8b4524b953e7a5ebc383dc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4a26b66290740ea5,0.11609267181531274,Low Risk,False,6.13,Short employment duration,Prior repayment delay,
+req_009130e5fa7b4c68ae84b5697f746ba7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6aa611f98e6d4231,0.2913354387081899,Medium Risk,False,21.15,High credit-to-income ratio,Prior repayment delay,
+req_aeea5bf1c7be4dca86130edd55c04e99,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,62cc3b48c4a1fc64,0.6062502157907461,High Risk,False,57.09,Prior repayment delay,,
+req_c394a28cd8864a6fb74cd908a5011baf,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f15862ba5dd852ff,0.5409401761062408,High Risk,False,54.4,No dominant submitted risk driver identified,,
+req_771d339f29a245eebbc4b9a896d8efd0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bec302633885b0e9,0.2520060633879264,Medium Risk,False,19.05,High credit-to-income ratio,,
+req_b31c74132b63462b861a720c196aa112,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,693eeaea8470de57,0.39696054410460907,Medium Risk,False,30.11,High credit-to-income ratio,Prior repayment delay,
+req_d33cba01f6734900bf8596c20827b22d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c17f6a4821132627,0.6100173955604848,High Risk,False,57.69,No dominant submitted risk driver identified,,
+req_ac4e08b20dc14cd8a41b6dff0d1ad87c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c86b0961efbf6743,0.6361001697681486,High Risk,False,58.89,Low external credit score,,
+req_ebafb307c89c49468b00df3e82f1d489,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4c7aa7f8cbd8b9fb,0.25079295300253723,Medium Risk,False,18.75,High credit-to-income ratio,,
+req_442da7dcb54c4a5d9095bb86ee45d642,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4ad09e304391f2bc,0.15554253793335623,Low Risk,False,9.75,High credit-to-income ratio,Prior repayment delay,
+req_04f6e33ab43c4fcca75ee88f831e69b6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,51c46cbd1405f274,0.22426374299658172,Low Risk,False,11.87,Low external credit score,Short employment duration,Prior repayment delay
+req_f62494f667ca443fb833d0f771763348,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,eeedffc74053b5be,0.2873682808668664,Medium Risk,False,21.31,No dominant submitted risk driver identified,,
+req_a21aa80fc0264f22b0b2456467a7eb54,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b7e65094da71844f,0.09950720836919835,Low Risk,False,6.05,High credit-to-income ratio,Prior repayment delay,
+req_7c145fd52eef46999872373dcd31e12f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bb9eb29c83577115,0.4146471274904789,Medium Risk,False,29.58,Prior repayment delay,,
+req_3ecf2048f85f4c58b902d8c18ad08c6a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,70029015dd669dfa,0.37632233428304124,Medium Risk,False,28.79,Low external credit score,High credit-to-income ratio,High annuity burden
+req_3415dbdfaddd4049a9cb154453129a11,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c72afcc9fb3f769c,0.25651320426360824,Medium Risk,False,18.58,High credit-to-income ratio,Missing credit bureau signal,
+req_e8c9a6064f634b3e81261cb18656bf2e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,436b1f21cd4e5887,0.8251601920887975,Critical Risk,True,96.45,Low external credit score,High credit-to-income ratio,High annuity burden
+req_af5a6cf2b9784c12b2fa173e481aeea2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,362c940a09ddcf0e,0.1405543204503369,Low Risk,False,9.44,No dominant submitted risk driver identified,,
+req_987d51098d7241c18a4422e665817ae2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,99a5b6f954bd7a53,0.35201458899885474,Medium Risk,False,25.07,Low external credit score,,
+req_276e2ca46db041779682d8b27946dc0a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b1efa7ffa858431f,0.10325495562239523,Low Risk,False,6.11,High credit-to-income ratio,Prior repayment delay,
+req_17aa05e97a784efe9bc24c1d9393dbd9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9982031dc1d4b143,0.14148700792246505,Low Risk,False,7.54,Prior repayment delay,,
+req_126b9ebdaf0346ab9411d6079743e9d2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7bc5be7e4bb33b20,0.10783196677367479,Low Risk,False,5.86,High credit-to-income ratio,High annuity burden,Short employment duration
+req_0e5083095d844fd3af06b93cde0a6504,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ac9a8378938033a6,0.1671171162212106,Low Risk,False,10.14,Prior repayment delay,,
+req_8a9ed719e735462882ddd880a80811bc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c1b7229c15be9e9c,0.2209849103864307,Low Risk,False,13.05,High credit-to-income ratio,Prior repayment delay,
+req_5542835e46c1443d8b8154ebcc3dfde5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,190b6b1ef1606bb3,0.671599624745343,High Risk,False,66.8,High credit-to-income ratio,High annuity burden,Short employment duration
+req_70272faf4a874d9aa6036d062d8cc9ee,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,44ce2d880d90c614,0.6520551207937217,High Risk,False,61.28,Low external credit score,,
+req_13554ef1fa334f9f88711aa5b8e669ab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2690093bcf01ce99,0.14212761469098115,Low Risk,False,7.69,Short employment duration,,
+req_bdcfa287bbad42b2a6e3d982c0b854f9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2b0016fcecfcaa43,0.502250492135893,High Risk,False,49.96,High credit-to-income ratio,Short employment duration,Missing credit bureau signal
+req_d2891525e7ec4d96b4dde8013d319979,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a85171ce50327ef7,0.23482228759248389,Low Risk,False,12.68,Prior repayment delay,,
+req_7e8ffd4dfd9446fe876a89fa1661cb7e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bdcdf765c40ea51b,0.33696667540510183,Medium Risk,False,24.67,No dominant submitted risk driver identified,,
+req_b914e5e3d9f34ca3a486e103799509cd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,33e24a7cfcd2d8b8,0.2932546341045057,Medium Risk,False,21.54,Prior repayment delay,,
+req_4c2f2d7173b7418a963a69aad1395a33,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f904c876cc07af25,0.7725116576003805,Critical Risk,True,91.98,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_0a4e8cba351e49699b665228cf2ae47b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b34b6ea1bbea8ca2,0.12633215091719938,Low Risk,False,6.75,Short employment duration,Prior repayment delay,
+req_f6c43587eff143dca014fde868693bc6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,90e58aeeb3e56d2e,0.6873227757354626,High Risk,False,64.0,Low external credit score,Prior repayment delay,
+req_3f39d77f816c444f9a6e0d2a05d4077c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ae9ecdb8b6969cd4,0.35176059128320764,Medium Risk,False,24.94,Prior repayment delay,,
+req_7ce00534bf0a4bcdb726ce1669170091,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6ab4fcb67b2b57fd,0.4485998634171587,Medium Risk,False,35.71,Prior repayment delay,,
+req_6b989e97721f4097bb8ad173dd6902de,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,34252d548b22628b,0.6522721784623494,High Risk,False,66.87,Low external credit score,High credit-to-income ratio,High annuity burden
+req_6a7002666853499ab63f8c0ea5dfb6dc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b6a167e6168654e6,0.2744941979869372,Medium Risk,False,21.26,High credit-to-income ratio,High annuity burden,
+req_57ee472c5521451282fd0bfb184d27db,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b8e7b7c971897ade,0.8784073893844087,Critical Risk,True,101.37,Low external credit score,Missing credit bureau signal,
+req_1d205669a5d9451ca8bc204e72c3cb01,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,149ad27eed2c35f1,0.28497945494787524,Medium Risk,False,21.42,High credit-to-income ratio,,
+req_41c4a075ea2d4ebb826675a35e0523c1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,db57c48677b7b330,0.5899884740124108,High Risk,False,54.72,Low external credit score,High credit-to-income ratio,High annuity burden
+req_b739b6472874464b8ace65a4a8217667,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,be7538cc24289d4d,0.11634503298751664,Low Risk,False,6.18,Missing credit bureau signal,,
+req_19f2f6cf9e4645edbc50ca41a672098d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,33a6fdf3a5b1126a,0.44541440000275656,Medium Risk,False,34.39,High credit-to-income ratio,Prior repayment delay,
+req_92b3b8ce58e2484c8e7b19747dec72b3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,02cb4a136ac7c0e5,0.05977300255554664,Low Risk,False,3.24,Short employment duration,,
+req_b3836e882956470486194db06171a9e8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4d2fae8531497d36,0.4591878828533382,Medium Risk,False,32.76,Prior repayment delay,,
+req_1096cd7cef854a6abe4b497f2b35762a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cd374c5e3288b676,0.04219896335347319,Low Risk,False,2.33,High credit-to-income ratio,Short employment duration,
+req_c45b62eaa5ae408e969a6242193bdc04,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e82ab9e22b1de29f,0.09615356598969096,Low Risk,False,5.09,Prior repayment delay,,
+req_bd8afba3d92446819fbed3d76d944c8b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,88e9f9e338b7aafd,0.7562691907571579,Critical Risk,True,86.9,Low external credit score,Missing credit bureau signal,Prior repayment delay
+req_5802c19a17884236b94e865b0efbea04,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,95086b8f1cb3d5e8,0.3415919970795531,Medium Risk,False,24.42,Missing credit bureau signal,,
+req_d814698c6c7b491baf3ec381b5ec697e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5430e722aac183aa,0.6748223278543551,High Risk,False,66.03,High credit-to-income ratio,High annuity burden,Short employment duration
+req_babf7a415c80423e9753da1b1d6bb55a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d4197530d8c51275,0.3511147833762021,Medium Risk,False,30.16,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_1e88a0373a1c4b6b8026a5e08b8fc2ab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,691a1180fe5dcabf,0.06705600470282237,Low Risk,False,3.61,Missing credit bureau signal,Prior repayment delay,
+req_bf220fc1cbeb4183bd6e66793fa8d82b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8ef55b6698053dc2,0.4594656292453573,Medium Risk,False,33.14,High credit-to-income ratio,Prior repayment delay,
+req_92e36f6bc4ae4871966a704bab5194fa,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cf50b5dfeeecc6f1,0.5135188478150065,High Risk,False,49.41,Low external credit score,High credit-to-income ratio,High annuity burden
+req_287f66a1ff714ebca46ea3ad010e5e80,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0b18d217fc611d20,0.14106814508465262,Low Risk,False,7.95,High credit-to-income ratio,Prior repayment delay,
+req_6ccccd54167c48359cbd3907ed0fcb53,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f4fdeb30e4d9e9a8,0.5306836984984644,High Risk,False,49.67,Low external credit score,High credit-to-income ratio,Short employment duration
+req_d50bea02c3ff4710a159b50fe51c776f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,53d66b4c8e3f9376,0.6275450089068602,High Risk,False,59.88,Low external credit score,High credit-to-income ratio,Short employment duration
+req_17a22bea2d304c2abb1fffca819c2626,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bcc8e4ed1df47b5a,0.5547717396492994,High Risk,False,53.17,Short employment duration,Missing credit bureau signal,
+req_3f61a8705d9e4b7b9affd853d9d18390,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b2a73feb0904918f,0.1543001190618709,Low Risk,False,8.71,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_8f53bc0553aa4adea3a39d33e08e337b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,506c38de4f111841,0.36590071267015883,Medium Risk,False,26.51,Prior repayment delay,,
+req_1b5974a8b1f049649eba950dcfa3dfa4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9ba622d982ef4522,0.5515621687358473,High Risk,False,59.7,High credit-to-income ratio,High annuity burden,Short employment duration
+req_9cc9c0d2b8d243ea9039b62104a5e67f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9be1ad67d2b0a7d9,0.37041296306272925,Medium Risk,False,30.6,High credit-to-income ratio,High annuity burden,Short employment duration
+req_0b45cdcab3a74c1eaa94acc5189d765f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,00449c37fc25c885,0.7489841323763917,Critical Risk,True,87.16,Low external credit score,Short employment duration,
+req_abe2404aa60e46c08b9b0bdebde54517,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a4fe63f531baddd6,0.22100568215796387,Low Risk,False,11.64,No dominant submitted risk driver identified,,
+req_f7134546f0984caaa707a485b7bb9c26,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,38540193c2bed82b,0.19099695559911223,Low Risk,False,11.83,High credit-to-income ratio,High annuity burden,
+req_39f9f39fa68543269892a0186428d7c5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8da0143e6fdfd596,0.15129009792634998,Low Risk,False,8.12,No dominant submitted risk driver identified,,
+req_eae81ea6fc354d809300eeed7dc09629,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1f67fbbad37b7bd8,0.20603615828339342,Low Risk,False,12.71,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_419eef2152bf4b75a33f044ce49210c8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,561f6b01a5ded342,0.4734508377245505,Medium Risk,False,36.62,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_a1c1e719709546818ddbfcc1bdcd8256,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,acbcdd8ed58a07a8,0.3832654105534436,Medium Risk,False,29.69,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_c2be50124afd4d7fa0a5d65df2793ef3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c6efa92ce34654d8,0.7844893342739745,Critical Risk,True,94.09,Low external credit score,High credit-to-income ratio,High annuity burden
+req_21b90ea8e9e5417fb69463d13b5e6b2a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,574114c9d291ee8d,0.0648539238916514,Low Risk,False,3.86,High credit-to-income ratio,Prior repayment delay,
+req_10dcc6350ba44665b7226051dad66d0a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,faf996dc486d48f0,0.1796197635119906,Low Risk,False,10.41,Prior repayment delay,,
+req_14a0dfe5fe3e4d88b4ea70c1a28e1751,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,85a5c1b304f4c2ab,0.07685846108392022,Low Risk,False,4.46,No dominant submitted risk driver identified,,
+req_2e5b14587ee2414d888226d92c5ba7e3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6bcad995a32e595a,0.5329691005927131,High Risk,False,51.9,No dominant submitted risk driver identified,,
+req_2d7f45f4b09a4215a23fd1ec0b54b889,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,de22e9ef90989412,0.5809098330376161,High Risk,False,56.71,Low external credit score,High credit-to-income ratio,High annuity burden
+req_0656342e09234291a4782c2c31be70b0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,41ec6493b5f9d706,0.7336882488633881,Critical Risk,True,84.93,Low external credit score,High credit-to-income ratio,Short employment duration
+req_f5a5d6d9a48c4f57ab50076d3d79cc96,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cf56d0a4745b6d1d,0.36817050496022896,Medium Risk,False,27.31,No dominant submitted risk driver identified,,
+req_4a32ee6aec05426fa98f26d4c02e2551,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,64c4251a148c3159,0.6498522871218998,High Risk,False,63.28,Prior repayment delay,,
+req_ea519854ba3b451ab294cb84d4f4acff,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f55c9d95cb93294d,0.759671921278446,Critical Risk,True,86.75,Low external credit score,High credit-to-income ratio,High annuity burden
+req_28b07258ec6b4f15a0e9a09eb4452b88,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f5cbed83f45d09c4,0.8378913508441947,Critical Risk,True,100.76,Low external credit score,High credit-to-income ratio,High annuity burden
+req_bc853788c56243329bda18c715c89d4c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,10cc92cc95e9db9e,0.30381280345174416,Medium Risk,False,22.18,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_7bdd783e854f494188db8562507d29f3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6ecc6258c63e4bb2,0.47239831872138266,Medium Risk,False,40.44,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_b19119722bb647b8bf3d5fd7b6f290a0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cdf8f558e7d95fb1,0.15317445300079882,Low Risk,False,9.23,High credit-to-income ratio,Missing credit bureau signal,
+req_11f3cfe3f3334673bd2412e76b6bb225,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,044761167af31149,0.5307454088315723,High Risk,False,59.27,High credit-to-income ratio,High annuity burden,Short employment duration
+req_115d1a86604f4cccad6c7bfb87c08be8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,411f8c3d667f1c95,0.44890762114250105,Medium Risk,False,34.03,No dominant submitted risk driver identified,,
+req_afbd12e23dbf42969548264a9335d897,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1894063e246a2253,0.6835372050053713,High Risk,False,71.73,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_908bbebc6fd84dc69e79415bfa9c6078,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c33fbf8958309148,0.33457988322592586,Medium Risk,False,24.83,High credit-to-income ratio,Prior repayment delay,
+req_bc9ce5c7c91c44529bf4b34e7ee2b8b9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f0c350dae2d2aae4,0.26807957926906,Medium Risk,False,19.88,Short employment duration,Prior repayment delay,
+req_dfc86d82cff5480fa2f8d901737310b1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,aa786f834d11f2fd,0.11000193472640142,Low Risk,False,5.87,Short employment duration,,
+req_0b86a9bd4e2d46ba8dd2a5901d65f5e1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,634b4ca15a5e2ac5,0.364486459093987,Medium Risk,False,29.34,High credit-to-income ratio,Prior repayment delay,
+req_904194f8b06a4baab1e34b3cbc5db3cd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,df3e7e9c518a1596,0.2799367830841371,Medium Risk,False,21.01,High credit-to-income ratio,High annuity burden,Short employment duration
+req_d62cd774af7743d89cc0a7fe9a7f7f2d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ab440a6e1388e5ba,0.17605579381028927,Low Risk,False,9.51,Prior repayment delay,,
+req_916eedf419b74c40801e952ae07e0528,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4cf4048f284ea161,0.43791126084967547,Medium Risk,False,31.0,Low external credit score,Short employment duration,Prior repayment delay
+req_016a28141ddd4048a00133065beca8ac,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4ddf01803923d302,0.6975799210932015,High Risk,True,73.65,Low external credit score,High credit-to-income ratio,Short employment duration
+req_93743c56ad81486ea5599641bd91c213,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a6c44ddd5278d116,0.4329305856445334,Medium Risk,False,33.06,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_fdaa9023191d401bbe00ce3544f71dde,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bb86eaa07111589f,0.16753830648400922,Low Risk,False,9.37,High credit-to-income ratio,,
+req_1db4b6b1f7dc41489b9b18f64a8a9aaa,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8a4ab12d2b2ec65c,0.45572386536364035,Medium Risk,False,36.53,Low external credit score,High credit-to-income ratio,Short employment duration
+req_d91d32d63f9c4cb28369bbb9bd69859a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3e0ff29d7d04e9a8,0.5993855106194387,High Risk,False,59.25,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_316e3cd355bb4d2d89a8ab3a0d426a2b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ce40bda814aa26e8,0.16718054181751418,Low Risk,False,9.51,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_7efc28c61cdf4b7ba7e8fd4fc56fcd5c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,75e955ea25013d49,0.2694641377863371,Medium Risk,False,19.67,Short employment duration,Prior repayment delay,
+req_28fbd39baeb8454993b0eaea702b519a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0167ffa8aa39d867,0.1199361412657323,Low Risk,False,6.71,High credit-to-income ratio,High annuity burden,
+req_40b1e55085e6450dbc1452f5be67dffb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6cd7ea2b5d0fac32,0.15112897655747065,Low Risk,False,7.93,Prior repayment delay,,
+req_19eca05f2eee4edb93e10847c53cd205,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5623ace8f06cad23,0.4302128175971541,Medium Risk,False,32.01,Short employment duration,,
+req_d16dd9adeb9c43d9af6c3b1545f1ffb7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9d08e4c97d5eba7a,0.23912692562010132,Low Risk,False,13.76,High credit-to-income ratio,,
+req_830270e33b1e4cd488ad75b798e30c83,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,26969e5b2a55c68f,0.5428449325339406,High Risk,False,50.35,Low external credit score,Short employment duration,
+req_192a2413479a4f9e85347528b9d79de3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,013e18e6c8b56d0c,0.23822313283948343,Low Risk,False,12.92,High credit-to-income ratio,Prior repayment delay,
+req_2a67b8c242c149a9aca4d906c3ad73a0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fd0a1364952973ac,0.7684488224903825,Critical Risk,True,91.19,Missing credit bureau signal,Prior repayment delay,
+req_2a85eed8146b4bb7954ca44acc262473,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b1b0d69683521fac,0.11399965681552113,Low Risk,False,6.74,Short employment duration,,
+req_6791a65d32ac4b8499d3841c419e600d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d377ff0280bd2496,0.11347881473386152,Low Risk,False,6.32,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_fb712edfe62545c297891db118ecd7ab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dc18ba7ddf3d292a,0.6176757429396617,High Risk,False,68.74,Low external credit score,High credit-to-income ratio,High annuity burden
+req_623bc58ab15741acada9405867e1e1e9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5ab6ce8b5c8acf4f,0.7345054257452126,Critical Risk,True,90.24,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_bfe75390324a41699ddd11cafd70f5e1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9f89b70ba7ce51c9,0.6461750082122648,High Risk,False,59.93,Low external credit score,Short employment duration,Prior repayment delay
+req_02eda4e4b5864bf395328776f064dc13,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e3c71cb27321cecf,0.1196180931868224,Low Risk,False,7.8,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_2d84e8fec0cb46368867457929c5006d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e2c909aaa2df7987,0.10451012694871481,Low Risk,False,5.81,High credit-to-income ratio,Prior repayment delay,
+req_0df57c77851d4823ae7683370e6ed618,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,74af0e65eb9b4f88,0.09279114210286726,Low Risk,False,5.49,High credit-to-income ratio,High annuity burden,
+req_dd49096366ad46aeab3171157d04c573,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,648f4afa6f5df7c2,0.8901164133161695,Critical Risk,True,108.04,Low external credit score,High credit-to-income ratio,High annuity burden
+req_f7c550b0a40241948d31723772f3259b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b4cc2765bb1ac8ad,0.19897358766775067,Low Risk,False,11.36,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_433a8866fdd94de09a48d8121d260b17,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ad23fdda0ff6c9b3,0.6207775299390234,High Risk,False,63.64,Low external credit score,High credit-to-income ratio,Short employment duration
+req_bad8254c3fdc4d21bd51aa6097007975,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,937756e789f0550a,0.09964115267108038,Low Risk,False,5.37,High credit-to-income ratio,High annuity burden,Short employment duration
+req_6bc2c6054b6541a6b70ee36afe644b12,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3284cd3d7e6dbb42,0.4925668552564747,Medium Risk,False,39.6,High credit-to-income ratio,Short employment duration,Missing credit bureau signal
+req_2b75a035fceb4570842fe2c932834cd4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dc80f077bd37c008,0.10804839930054433,Low Risk,False,6.34,High credit-to-income ratio,High annuity burden,
+req_de6029a26cf046e98947e61375688a0c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,640aaf5575f6f218,0.4774828197048682,Medium Risk,False,35.41,Missing credit bureau signal,Prior repayment delay,
+req_8514629cc53048cdbf1867d6ecfffe78,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4f3c69c425e3f5b9,0.30582580256890224,Medium Risk,False,24.8,High credit-to-income ratio,High annuity burden,
+req_09b914359ff84309a6bc7d8dec28312d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d3e8c675e24e4ea3,0.8066247509136876,Critical Risk,True,93.49,Low external credit score,Prior repayment delay,
+req_383d239efe4b4e56a9f7a727f58be21e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b5eb769375a2820e,0.2978206142856316,Medium Risk,False,23.82,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_40db279c3ab24764ab9b6a005f39dd85,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f982f4a86f5f86ea,0.31969744378030956,Medium Risk,False,23.56,High credit-to-income ratio,,
+req_1973016e2c7f4b6fb7d880a0c6d6dc0f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,34b1920c4b527b6d,0.7099304185235573,Critical Risk,True,82.64,Low external credit score,Prior repayment delay,
+req_1613556e695c4d8c92b83e08891c6b97,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c80bdceefb744f95,0.38162704163459904,Medium Risk,False,28.17,High credit-to-income ratio,High annuity burden,
+req_9d78a4d5c3b94e18b99840bfbae940df,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b696842b8b202d0e,0.14632010935294662,Low Risk,False,8.4,High credit-to-income ratio,Prior repayment delay,
+req_6129b2eaa9524859b9464521934aed9b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f18eff5c5cfebf6,0.15610561648733476,Low Risk,False,8.77,High credit-to-income ratio,High annuity burden,
+req_5fcf25e2d2364292945995f2c44d0f9d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dd4c511e163e05f4,0.16499477000889093,Low Risk,False,8.69,Low external credit score,Prior repayment delay,
+req_7bbd6a6cf9e440f290b0698c79b5287d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,479d295d31bf5d2e,0.35959850306259966,Medium Risk,False,25.27,Missing credit bureau signal,Prior repayment delay,
+req_0dfea2075f7a4158a206c0dba6b68600,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,237cb8f2022c109e,0.2209504897426216,Low Risk,False,12.39,High credit-to-income ratio,Short employment duration,
+req_066429fed696472d807ae798e9c7a800,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d8193621e94ab363,0.61681625744686,High Risk,False,59.51,Prior repayment delay,,
+req_989b03c54f824d168b6b46aecc61b733,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,97123e5d7434546f,0.42205096002648623,Medium Risk,False,31.72,Short employment duration,Prior repayment delay,
+req_0c2f412394dc4f9ab7aca9c9042d0ef4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a4a90b74064b6883,0.04182302493710722,Low Risk,False,2.26,High credit-to-income ratio,High annuity burden,Short employment duration
+req_e97bce483ffa4fb0b4517acb0a3df59e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,29d20fd58a6701d6,0.15743393209674006,Low Risk,False,8.48,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_f878af54a9db4c648467e78c9ecb84d3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b7b92b410275e2d5,0.22904328422163284,Low Risk,False,13.24,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_7a2c5e6855b7494bb2670b1d32a3ae16,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c52e3eb21dc83af0,0.44166446571583773,Medium Risk,False,31.18,Prior repayment delay,,
+req_62e619d23ca9429a9095fc98212b571c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bcc974186a9eb780,0.35624020817231666,Medium Risk,False,25.75,Low external credit score,Missing credit bureau signal,Prior repayment delay
+req_b4fb292abe95452bbbd0545c84ee1081,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e9cd6521658941ce,0.11605920187869001,Low Risk,False,6.41,High credit-to-income ratio,Missing credit bureau signal,
+req_3aafb6073e2e4e15b0b35e884f4b1567,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,30eb25db2ab26fe3,0.046248833625780764,Low Risk,False,2.61,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_9aa4f22a62ff43a6ba5ae62229cacde3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,653f7d429da7153e,0.20217525378445653,Low Risk,False,10.96,Missing credit bureau signal,,
+req_b05508cc552c4d5cacef33daf004daeb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4e7f253f8fdfe09e,0.0518692984194573,Low Risk,False,2.78,Prior repayment delay,,
+req_80e68db7b4f148fe9b2e7c0674ec5af2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9f31402817980e5f,0.21834251525123644,Low Risk,False,11.61,Low external credit score,High annuity burden,Short employment duration
+req_e2f0107cb15845a4bb997f66438ac73b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e1cc9da04eb59019,0.2825258050650683,Medium Risk,False,22.6,High credit-to-income ratio,Missing credit bureau signal,Prior repayment delay
+req_36cf8375f6f2430aab271968754a35ef,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9f602dc91bffd799,0.2796376138244073,Medium Risk,False,20.15,Low external credit score,,
+req_6bdccb8b86744a2aa7e602fca58a99e0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,731e9b392b7c120d,0.06185875160828598,Low Risk,False,3.8,High credit-to-income ratio,High annuity burden,Short employment duration
+req_0fd3d674cd5045d3b0266678335af6ed,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cbc2854dafd1c239,0.586984551333508,High Risk,False,56.95,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_4b376ba059e24b88a098914f9c568e03,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,92e52fc80a1a91e9,0.8508214798928194,Critical Risk,True,103.15,Low external credit score,Short employment duration,
+req_8dce341f08054bb1804e9fcc28ad2082,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,943b361ef5218112,0.1294098374007548,Low Risk,False,6.99,Short employment duration,,
+req_b285bddef8de4ca0abc903bc8d794189,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4b72a0d3ded9cfda,0.13642548247578776,Low Risk,False,7.44,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_f35f62564d6e4471967ef2c2ee500889,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7bf9b47db46831c2,0.19684155828485356,Low Risk,False,10.51,Prior repayment delay,,
+req_5535282ca6484ab18cb1d2d4be9730dd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2df6c623d3876d2a,0.368442287318925,Medium Risk,False,29.74,High credit-to-income ratio,High annuity burden,
+req_726445d69683491bb521a11991bf4fe9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1c25d27fd36292f2,0.12397499561426259,Low Risk,False,6.59,No dominant submitted risk driver identified,,
+req_b4fb20d66a9f4c2ca01bc344019d220d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,293ad272bbe827fc,0.35108371512086184,Medium Risk,False,25.11,Missing credit bureau signal,,
+req_6e6dfab3970b4ce1964f1e0b0923e9d5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a7e0f84616ee6e86,0.2883949424187187,Medium Risk,False,20.79,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_df3b62121d4c40159b19a5956eac43ec,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3e5ace87e5e079b6,0.0740068816527841,Low Risk,False,4.07,No dominant submitted risk driver identified,,
+req_01490d6f20ee4a23932ab03c380a73eb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f12287e611fe93c7,0.28641548752208,Medium Risk,False,21.46,Short employment duration,,
+req_7ba6400779c54263a4bc403ff09da97c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e098e09b20505d05,0.08407707144098811,Low Risk,False,5.33,High credit-to-income ratio,,
+req_55babd68c7ed4b69af7f64e2c1f6aa68,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,797ae35d02baeec5,0.30509398538436083,Medium Risk,False,21.84,Short employment duration,Missing credit bureau signal,
+req_fc0431d668604d2996e4d445f891d2ef,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b83cb08a85a385a8,0.16840104963085142,Low Risk,False,8.99,No dominant submitted risk driver identified,,
+req_3ea62e6f2ce941e5bcbea231267263de,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8ff8d11021ea3d84,0.5037072925674374,High Risk,False,47.18,Low external credit score,Prior repayment delay,
+req_5dd14c9d55ad4abf99dd3dae2e0aab6f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1f834a526d69533a,0.2248658167967851,Low Risk,False,12.63,High annuity burden,Prior repayment delay,
+req_644f1beccb1f4bc6bcbca7cf173cd39b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,148efc7982470585,0.37935934972053537,Medium Risk,False,30.62,High credit-to-income ratio,Prior repayment delay,
+req_e23174e8b4934abdb8c0dbae48c6f910,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2ac90e32e08ac1b1,0.5730103062739553,High Risk,False,55.25,High credit-to-income ratio,Prior repayment delay,
+req_697559bd643e4f249e5804ea0ad72a14,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f4ce30139805eb8f,0.2847337241552999,Medium Risk,False,22.25,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_cdbd20e2e4c84972ad059a418406e830,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5873cd9a96992616,0.20275935776875034,Low Risk,False,12.42,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_5cac709395c34d0d9c53a87bc5ddfe86,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a4869259bff8f98e,0.19229815285614688,Low Risk,False,11.64,No dominant submitted risk driver identified,,
+req_81e85492bfa549c5b2d6c845f0aca5b8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6e5db5ee7cd15e0a,0.8591857277741445,Critical Risk,True,97.46,Low external credit score,Prior repayment delay,
+req_8a6a8c11d35144afbc188e67605df562,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d41f803856b25f45,0.3636078672193117,Medium Risk,False,28.99,High credit-to-income ratio,High annuity burden,Short employment duration
+req_86c535b208a14b2cb18efd40a7fc0986,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0a20de269fa6c3d2,0.5235435284855968,High Risk,False,48.49,Prior repayment delay,,
+req_333bae8178aa4caa9dc8e97907dead25,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,452d753952909b1a,0.05279488529784057,Low Risk,False,2.79,Short employment duration,,
+req_087db255e36e4b25a8f7a3d9306800be,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,339d80964568de46,0.6094230034028252,High Risk,False,59.54,Missing credit bureau signal,,
+req_a389bc3ff4f346b88199bb86cf577130,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5ae484b300f069e0,0.3368782881778378,Medium Risk,False,27.01,High credit-to-income ratio,High annuity burden,
+req_dbc04bf2996a40f0b8891203ed9e5031,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d1979f79707199d6,0.26986416557030585,Medium Risk,False,21.08,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_ee0b892a32ac4f6d8eae646f803d9f95,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,55417ba2854b80eb,0.39937132958024796,Medium Risk,False,28.49,Low external credit score,,
+req_125ba682731a4f9086bdade111bc06a4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dd07e8e9122b9767,0.15426034377550563,Low Risk,False,8.2,Short employment duration,Missing credit bureau signal,
+req_5377975c3d6d413aaca52db29b27bcc3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e460d8e95ab7b6d4,0.1407239407583268,Low Risk,False,8.37,No dominant submitted risk driver identified,,
+req_f9b7e7f1f6354fe7a594156ad6c71798,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0d279c3c4673addc,0.6549621857987604,High Risk,False,64.85,Prior repayment delay,,
+req_721a9469650d44aa94d17bb837039319,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,68ee49828f6d5b8c,0.46381732466824543,Medium Risk,False,32.73,Missing credit bureau signal,,
+req_a3d3693f6c294cc8ae0a7fad7371d0b4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d1a38807514aa541,0.05733783406288107,Low Risk,False,3.19,No dominant submitted risk driver identified,,
+req_b3fc14c1faca402f874a8159bf485521,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f236f09612087d0d,0.12839799632243823,Low Risk,False,7.24,High credit-to-income ratio,High annuity burden,Short employment duration
+req_f26b46acc0de4f0397382521d4534e8d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1001e350d1406dec,0.20909044093868956,Low Risk,False,11.48,High credit-to-income ratio,,
+req_d335e42b5c5244b998ff9cdc4f02580e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0f738ca22255d62c,0.14979364994960115,Low Risk,False,8.21,High credit-to-income ratio,Prior repayment delay,
+req_a8bcaac3406a4591a9b04c33facda8c4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,579ce50340e8d929,0.4057320844855408,Medium Risk,False,31.3,Prior repayment delay,,
+req_4d3de738a4cb4c6aaa3d9ba8481eed3a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dc1b5ccb36467c03,0.20225363837743415,Low Risk,False,11.27,High credit-to-income ratio,Short employment duration,
+req_e52726c0a0b54c3daa8f880bd367d54e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3116f2911e23d303,0.3201940143454997,Medium Risk,False,26.76,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_9d1a0ecd3d5949af96350f030af6742b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6844c54fc34db5af,0.6261402887887054,High Risk,False,65.25,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_ad44737032bb474cb9266c9c20688eb4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,93f4af21dde3bab2,0.7160617395098186,Critical Risk,True,85.82,Low external credit score,High credit-to-income ratio,Short employment duration
+req_a7be2a6377124552bebd7d66f6158cfd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,948a257ca98fdc71,0.09829925004790604,Low Risk,False,5.23,High credit-to-income ratio,High annuity burden,Short employment duration
+req_edbcb190acf64dac9883287e3901d88e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,79707bbe9079b178,0.2595397909966026,Medium Risk,False,19.78,High credit-to-income ratio,Short employment duration,
+req_168623f2fac2477cafab10316920e303,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1d864519a173ca1d,0.5543428444446962,High Risk,False,52.13,Prior repayment delay,,
+req_93e17556491d4832a5591019fd1adbf6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f67f32752f207989,0.7310227513604459,Critical Risk,True,83.45,Prior repayment delay,,
+req_7b99c89e139c4cd6b3d25ba4affa99fd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,055447b871f1cddf,0.4500800924007445,Medium Risk,False,33.72,High credit-to-income ratio,Prior repayment delay,
+req_592fc57189f34f0fb5d92002a2bfb763,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5153765710408fae,0.24052535181349646,Low Risk,False,13.04,High credit-to-income ratio,Short employment duration,
+req_3667575f15684fa686b7f4d4d1d9f357,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6ba8fc125fa24612,0.11923914189037126,Low Risk,False,7.61,High credit-to-income ratio,,
+req_3700d963f19b463f9f70bae3b8325ce1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dd078c4787be5422,0.19151933001863358,Low Risk,False,10.19,Short employment duration,Missing credit bureau signal,
+req_7fd3fb73038e4d81aff4618a6b1041a0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cec68fb9892fca2e,0.16208652425242942,Low Risk,False,8.75,Prior repayment delay,,
+req_bd38c1567f884f9aa4404ad42d0a29d5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bb79fb1326f66eb3,0.3975483744265978,Medium Risk,False,32.43,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_5c055408b89c44a1acf83d3292b5e83b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,372f49bead9ef0ae,0.3755983937250191,Medium Risk,False,27.85,High credit-to-income ratio,Prior repayment delay,
+req_17755ae0f29a445a8ebde9502f41e58d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,18be5417d790e94f,0.7284945026227649,Critical Risk,True,93.44,Low external credit score,High credit-to-income ratio,High annuity burden
+req_481ab81df6314d3faad904cc47ff539a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d08477b86821b531,0.6470354447937381,High Risk,False,62.98,Low external credit score,High credit-to-income ratio,
+req_d42ee3af0f154285b07d57cce1fa1e2b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2cda1cb3060a0604,0.18239845884038683,Low Risk,False,10.53,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_15b12325f0354627b02137c6ab36406a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9158e3a5ba959d14,0.3703924035944009,Medium Risk,False,28.34,High credit-to-income ratio,,
+req_a0d323098ad54be598917b7d6e998d42,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6389262a12ed94f9,0.038950156995366116,Low Risk,False,2.05,Prior repayment delay,,
+req_307d1101a31141269fe571a6b98a06da,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a2b98fae9a04260b,0.6008259038562501,High Risk,False,59.48,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_7e205f9080f7450db87adcceb720be35,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3cbfda0ce59f071b,0.29856179788845805,Medium Risk,False,24.16,High credit-to-income ratio,High annuity burden,
+req_420435155e8544eabb5ca039b26e584a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2d6e2f13786e4448,0.2163330478708337,Low Risk,False,12.03,Short employment duration,Missing credit bureau signal,
+req_41b0e4ed4e184b6da3af9f6494e92c9c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7ef65fd51650b5ad,0.5755415278687835,High Risk,False,63.85,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_2158b2a1d8974358ade39ec406352298,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5ff588fcc1da62c7,0.10712821224203856,Low Risk,False,5.98,Short employment duration,,
+req_5d061a3e06e8404bb26b8274b73561ed,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e44ae3d787c5c79f,0.7422886952314411,Critical Risk,True,85.57,Low external credit score,Short employment duration,Prior repayment delay
+req_8a8eece340724d0e81dc825995f1a777,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,17c453a55f0ee0b5,0.45588434524927773,Medium Risk,False,32.88,High annuity burden,Prior repayment delay,
+req_c742f1a903d94a0f999fdaab4ecc0f2e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,49a2881c5af71e2c,0.15057666918392487,Low Risk,False,9.01,High credit-to-income ratio,Prior repayment delay,
+req_f57811fbd6324bbf9c4666bce39f0527,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a3f3974c131e327f,0.4711222075806426,Medium Risk,False,38.03,Low external credit score,High credit-to-income ratio,Missing credit bureau signal
+req_f6975eb78fff4169ab360be636c1d5fb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,063ab978b8de5216,0.6752186378391247,High Risk,False,65.1,High credit-to-income ratio,Prior repayment delay,
+req_48d996005c15475092881a5b86ae26df,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9f9f569e89b39af3,0.35982498868283597,Medium Risk,False,26.44,High credit-to-income ratio,High annuity burden,
+req_892d2f5b8a3e4cd99d3ba993ad88b8b1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8de3ebb6b6394624,0.5725874728682039,High Risk,False,53.67,Prior repayment delay,,
+req_372d2bc141494e129c26c7b65381ccc4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,25225ba56ab49772,0.21665052220998343,Low Risk,False,11.69,Low external credit score,High annuity burden,Short employment duration
+req_4415c8ebf76e4341b62e9b00b78da4cb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b26e8e97a78a0b02,0.26625222935502324,Medium Risk,False,19.12,Short employment duration,Prior repayment delay,
+req_ade82aa0815a45a9bb88215dcef93915,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ee0585be7f65b338,0.15409260339170677,Low Risk,False,8.68,High credit-to-income ratio,High annuity burden,Short employment duration
+req_b2638f3d1a9048d395cd822f3a708894,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2d599278d2199888,0.586518730139641,High Risk,False,59.22,High credit-to-income ratio,High annuity burden,Short employment duration
+req_1d86092b7a0741a58c53a8d62f0bc4a9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,aeeafc2e22b959a4,0.3665912782146209,Medium Risk,False,27.94,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_5019431aa64045fc89ac69d7e656a7fa,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3cc6b806eef3e46e,0.4045105390693377,Medium Risk,False,31.74,High credit-to-income ratio,,
+req_4992b76906fd4a0a984e1aa1b5b212f8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,794d86c45f47c4c1,0.40051025587183386,Medium Risk,False,30.98,High credit-to-income ratio,High annuity burden,
+req_a1c6c9e9d3f04b7da352a2a51ef834d8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,65b2c1369e8efcd0,0.1490209879048399,Low Risk,False,9.02,High credit-to-income ratio,High annuity burden,
+req_6390bf5815f8426f8656bdfe3e93e53a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1ac72efb9c0fa928,0.21969857788296482,Low Risk,False,12.01,Prior repayment delay,,
+req_d75d2f5a2eb046ff97be45635c576e34,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bf65fcfb32f13072,0.8480986591477669,Critical Risk,True,102.66,Low external credit score,High credit-to-income ratio,High annuity burden
+req_3c922b7c929c4b70af8b3fc9b504608e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d15586900d76425b,0.11614287364472872,Low Risk,False,6.12,No dominant submitted risk driver identified,,
+req_86537cf8d959468c82fe0ff0b1daa373,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,77661ef2a612092d,0.15630756746378588,Low Risk,False,9.3,High credit-to-income ratio,Short employment duration,
+req_cb1051285a764ddaae4d13c7415c6d2c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,58c4af7405f78942,0.6412170754443475,High Risk,False,60.81,Missing credit bureau signal,,
+req_170eb0108bd54fa482125e1f1dbfbbab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,62d4e75a020acea3,0.7810672823352718,Critical Risk,True,90.09,Low external credit score,High credit-to-income ratio,Missing credit bureau signal
+req_4e18b29a573b4d5a8f17f2078620b283,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2843e0b013b8f6d6,0.7544187501831742,Critical Risk,True,93.44,Low external credit score,High credit-to-income ratio,High annuity burden
+req_9dd61dd4204d45c4a955d1f222600726,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,411a6970bafd1152,0.6207074024161585,High Risk,False,61.74,Low external credit score,High credit-to-income ratio,High annuity burden
+req_e27d56eb82c4452fb4be12f418e48b87,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2c256224c4df29a0,0.5672024898283363,High Risk,False,54.47,High credit-to-income ratio,High annuity burden,
+req_7215f10431294af4b949ff7310c95133,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,faa6b0238d837a45,0.18496771995294245,Low Risk,False,11.46,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_ba221825d25a432ea7deadf8d2f665f1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,72fde3e8ed6538c0,0.595192723367722,High Risk,False,58.15,High credit-to-income ratio,Prior repayment delay,
+req_034972cc6f854e0ab12169a44b359640,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bfa6e06e9eeb6b7e,0.15141064929200126,Low Risk,False,9.07,High credit-to-income ratio,High annuity burden,
+req_2aafa97c77294cb68159bd957740762e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cb4ad804a417dd41,0.351656377977499,Medium Risk,False,25.25,High credit-to-income ratio,High annuity burden,
+req_0f64c5a7504b4f7892345131dddc92ab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c52fa5007ac0251f,0.32987087228027734,Medium Risk,False,23.79,Low external credit score,High credit-to-income ratio,Short employment duration
+req_708ae4bde69a4731965611bf9c437cc6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,96607b81369c2216,0.5482373848134098,High Risk,False,55.57,High credit-to-income ratio,Prior repayment delay,
+req_eff3574b41154043b5d8040b33f6d91b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,54e7c1aa4ce93274,0.2084017763290437,Low Risk,False,13.06,High credit-to-income ratio,Short employment duration,
+req_fb4c5f2c45fe4a86b5cea049d6f23ed2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f2b6f5920ab9104,0.24218161173921557,Low Risk,False,14.41,Prior repayment delay,,
+req_e258e549f118431c9cee2e565598d59c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7942a087f8806925,0.17130274916389662,Low Risk,False,9.53,High credit-to-income ratio,,
+req_b40b8e4fc0624f3486625d07626606f6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1a4d3f6bf5c1689a,0.21066693069436573,Low Risk,False,11.87,High credit-to-income ratio,Missing credit bureau signal,
+req_bf99395abe0a4e79902c440831fc96e0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b2d6ed47579ca49d,0.3614021870207491,Medium Risk,False,27.16,Short employment duration,Missing credit bureau signal,
+req_1b279e8d85c444cb8c861034085fd94e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,14c0237e9fbae5af,0.053732510610276014,Low Risk,False,2.91,High credit-to-income ratio,High annuity burden,
+req_f84fae81bc6a4e728ab2aa2b798a2dc3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1c2340185276574e,0.1154733778297911,Low Risk,False,7.56,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_1d76c1bdd34d4ded899eb27777527aa0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7435e062a16983b1,0.2032812691000569,Low Risk,False,10.95,Prior repayment delay,,
+req_94cd566825a74ca28b721ba10c6564e1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2ec7d6e052d90759,0.194379396417088,Low Risk,False,10.58,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_64b05a6883624e168c816820335f2408,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,95b87cd06f194caa,0.22728581172741458,Low Risk,False,13.44,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_3bc8405784d947b38395ec092235732c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b4cdee1a2ae70169,0.16406194683058703,Low Risk,False,10.32,High credit-to-income ratio,High annuity burden,
+req_d3d12d8f1a7b4579843f98b15d32f9fd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,24015a19dab3ec7c,0.7060093022832478,Critical Risk,True,87.21,Low external credit score,Prior repayment delay,
+req_03155a8aa95946a18e34a6477575a7f6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cce3fb802feeda97,0.7159252533631236,Critical Risk,True,82.8,Low external credit score,,
+req_93c1b7be08144a8aa530480791b85eba,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,32df8472c0bfc68f,0.18027265005497561,Low Risk,False,9.65,Short employment duration,,
+req_694d8fc82ccd4e81ba64171afd06458d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,80c20e478f70a924,0.5044159297236851,High Risk,False,51.09,Low external credit score,High credit-to-income ratio,Short employment duration
+req_e52303a1a1744eb3a4dfd49aedeb5e21,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c35558019cab5254,0.051288883102581784,Low Risk,False,2.76,Missing credit bureau signal,,
+req_5683afffdd8e44adbee5ef3d6193a878,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b718ac6408913903,0.05983778472883065,Low Risk,False,4.06,High credit-to-income ratio,,
+req_49ae94c16c8445418a1c997fd19decf6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9e715d174b03be57,0.5477969487221577,High Risk,False,52.85,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_01a0c0e11cae457bb7451567530673d4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ea94031c72dd2267,0.44911321457464815,Medium Risk,False,33.64,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_72d49f4028e14f1a8b493af837d56002,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,20c877c11806b3b4,0.5774934106315979,High Risk,False,58.21,Low external credit score,High credit-to-income ratio,Short employment duration
+req_e91a8dbb4dac446aada31012dd8ff301,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6bc1d0a1b7227fd3,0.07530525708335577,Low Risk,False,4.96,High credit-to-income ratio,High annuity burden,Short employment duration
+req_45add1bf48aa4927beb80a95f4f8f9c4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ba80b53f31170d29,0.4844900894306968,Medium Risk,False,36.39,High credit-to-income ratio,Short employment duration,
+req_36e455c576d94bddb53f1c71c0df440f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2eaf2bbd549e3dee,0.15697130007491278,Low Risk,False,9.64,High credit-to-income ratio,,
+req_6e35f25a11614f2ea3353d2311847588,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,461d82fa962392b6,0.23778527222460663,Low Risk,False,12.92,No dominant submitted risk driver identified,,
+req_d95bb921493e4dd6b02a375edea5bc34,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2ac228fe883f5a4e,0.11454039600765858,Low Risk,False,6.84,High credit-to-income ratio,High annuity burden,Short employment duration
+req_fe4add95c5b24e1699656374af2a2be9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9b683d35e79afa7b,0.8161142844692368,Critical Risk,True,99.43,Low external credit score,High credit-to-income ratio,High annuity burden
+req_69f0c5a963104810bbb06b0ccfd5423a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,871b284e08322363,0.41307547068587097,Medium Risk,False,32.38,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_fea275841dce40698c5152f04450fd15,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4dc498b590182415,0.27979917901358986,Medium Risk,False,23.8,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_5028243bf4bd47aea84422d7357d4641,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f2aab4db79c3b50f,0.49031054963379633,Medium Risk,False,43.01,Low external credit score,High credit-to-income ratio,High annuity burden
+req_9142201391234379894f25b221c80e85,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,eb952fdc1eaafe52,0.8585435116393113,Critical Risk,True,103.24,Low external credit score,Prior repayment delay,
+req_aeaa6607d4864842b2958a2f38a91e19,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9983ab8eca668888,0.3103883526745701,Medium Risk,False,22.36,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_ca3326ceed024ece9e7dcbbd542d4ae9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c8d1aee87c0a56c3,0.16722415020215217,Low Risk,False,9.07,High credit-to-income ratio,Prior repayment delay,
+req_120ca59e46f845909ae3babb1c74e956,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fc4740c0b6de9cbb,0.1958198600211218,Low Risk,False,12.13,High credit-to-income ratio,High annuity burden,
+req_cf918fa2786244da9c4bc077f6538aab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,130b357d5c8fcf95,0.24929975255863634,Low Risk,False,13.6,No dominant submitted risk driver identified,,
+req_b586bf46c1fa47a29d81baffe37254bb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,90ed688cc4b4073e,0.2226801850073684,Low Risk,False,11.84,Prior repayment delay,,
+req_fd272cc00d0c410ba09e25eb212999f9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ec491baa76694e7c,0.05728904538093649,Low Risk,False,3.39,Short employment duration,Prior repayment delay,
+req_4c082865359a41c4acb58602d18acfcb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2cc18cd6ab6295cb,0.6385329753168172,High Risk,False,68.19,Low external credit score,High credit-to-income ratio,High annuity burden
+req_90b826fc73754161b5a7e44bf357d240,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fa7bc09674059dda,0.8015490917832241,Critical Risk,True,92.26,Low external credit score,High credit-to-income ratio,Short employment duration
+req_8bbd9b7a03ca4eeda669150c6c6c4422,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c6f7433146ce8b31,0.688402938604202,High Risk,False,66.82,Low external credit score,Prior repayment delay,
+req_aec138df3fd24cda80e23e946bbde2b0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6a0654d362a796c9,0.3177925387553658,Medium Risk,False,22.95,Prior repayment delay,,
+req_f82e471b07d243c0924415fbd2656ccd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e85dc101adf77b7d,0.08723714239371219,Low Risk,False,4.62,Missing credit bureau signal,,
+req_5a07f572920c41a9ad60fea03b8fbc6c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,089f0b1d377d92ee,0.31498346278870926,Medium Risk,False,22.62,Short employment duration,,
+req_f1513f0ae0754e95b02fc3cdaaeade1b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bae591b54710c3e7,0.4175919999179333,Medium Risk,False,29.79,Low external credit score,Short employment duration,Missing credit bureau signal
+req_71b64be4523a4eb3837dd4060db99157,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6e7bf908fb6ed870,0.789323046127025,Critical Risk,True,92.18,Low external credit score,,
+req_96999091a4f140eaab9e3f341f972c2c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fade699888f85ac3,0.6502954915923913,High Risk,False,63.07,Low external credit score,High credit-to-income ratio,High annuity burden
+req_864c121378c5474dbe298c0fa2624c83,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8e5011d61028c648,0.6892675140900596,High Risk,False,71.62,Low external credit score,High credit-to-income ratio,
+req_12b360d2f7cf4de19554ebb80ec5f686,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5e91f29206e45b64,0.7465258600894391,Critical Risk,True,91.91,Low external credit score,High credit-to-income ratio,High annuity burden
+req_e4aaba4260e94de7a9f7bf51abe006f9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6a8ea27b446c4dad,0.17219443879077706,Low Risk,False,11.63,High credit-to-income ratio,High annuity burden,Short employment duration
+req_83aa09bc36b64cc69af4c74458d54a6e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e741097562a169e1,0.7597177237139088,Critical Risk,True,98.57,Low external credit score,High credit-to-income ratio,High annuity burden
+req_fe42b9e19de846e8b59e35bbfee9a58b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d6ef5c3115e59049,0.19928148065960624,Low Risk,False,12.29,High credit-to-income ratio,High annuity burden,Short employment duration
+req_e6de38d8ec78437cbf3b503754b96bc7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5a0d3e0f366863ed,0.30301172507512236,Medium Risk,False,21.48,Prior repayment delay,,
+req_86ea7d0d606c47cd9767b93126d1f376,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a750dba4d9f3caf6,0.11747235734540522,Low Risk,False,6.24,Short employment duration,Prior repayment delay,
+req_f79b18fa7b984d15952029fd25790e1f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5dd34dc7a5c9ad1e,0.20345414791182448,Low Risk,False,11.68,High credit-to-income ratio,High annuity burden,Short employment duration
+req_2a11515009c74432a50a79887c4a93b1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dc64365a6ae001e4,0.21134691951777457,Low Risk,False,11.92,High credit-to-income ratio,High annuity burden,
+req_f564d81056cb4c04a4dd244b0150bcd6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1cd2f6f406504aa5,0.40074845321527025,Medium Risk,False,30.02,Low external credit score,High credit-to-income ratio,Short employment duration
+req_ccd703d0da6c4a48b8f143dad4489168,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9a471d090430ce2e,0.4824550989883625,Medium Risk,False,34.76,Low external credit score,High credit-to-income ratio,
+req_6bb4b91a561643c0a6491115ba10ae2b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f966ac0812462573,0.05249738095938602,Low Risk,False,2.83,High annuity burden,Short employment duration,
+req_69c5915cb75c4feeb8dadd9ee4d945d0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7742fbf07c5f34e1,0.42155048149892804,Medium Risk,False,35.07,High credit-to-income ratio,High annuity burden,Short employment duration
+req_20e11f34ddf44276bd6017b8e1c18d5e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,511bb3b49775d542,0.5467026824778726,High Risk,False,58.93,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_09048e92aa374ec0bb5a2f0a4aa9f710,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bd0e2db1ae58caf9,0.37955860005468967,Medium Risk,False,33.5,Low external credit score,High credit-to-income ratio,High annuity burden
+req_6df3dcfa2e4b47ae95a5100c6ec1f782,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,948f6b209aa14bda,0.46644762509531024,Medium Risk,False,35.19,High credit-to-income ratio,,
+req_8eed89e07f4a48aa8be0b5a49d129a68,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7e1c98f4d8baa171,0.3184899275569439,Medium Risk,False,22.72,Prior repayment delay,,
+req_04b8b766a93445fe9b340aa441258227,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8b04271c4268e017,0.25562839619657,Medium Risk,False,19.47,High credit-to-income ratio,Short employment duration,
+req_916166a7f5c5405b940a8ee0445d8385,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ee2b019ab455afd3,0.07991890399898331,Low Risk,False,4.54,Missing credit bureau signal,,
+req_c1923ee391a94f0caa48f1dd81fceb50,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4b4470f8a8a3a16d,0.4193604853947654,Medium Risk,False,33.32,Low external credit score,High credit-to-income ratio,High annuity burden
+req_abc650552c664620ac9d7aae357ada60,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cb4fe815cb2917f7,0.5340372695347536,High Risk,False,54.4,High credit-to-income ratio,High annuity burden,Short employment duration
+req_43f799a5279d4715854af2c624846f10,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1a3d7780da052c05,0.5433233534962771,High Risk,False,52.65,High annuity burden,Prior repayment delay,
+req_2965dff2f57c4a8c8ce981af410c8d87,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3bea80ce9ba39216,0.10589772210798594,Low Risk,False,6.45,Prior repayment delay,,
+req_e6f2fec6b36e4c7383204502e70c3975,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6431f88d8d383b10,0.5130067936572125,High Risk,False,47.9,Short employment duration,Prior repayment delay,
+req_3154435f44ec474c8cf68e8002dde8a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8230b4a9c926beab,0.43043940288325866,Medium Risk,False,31.92,Low external credit score,Prior repayment delay,
+req_da2c65bcfd1c492cb904e895a8f1e5c9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,413bb470f6d2f9ef,0.5582737473076438,High Risk,False,51.09,Prior repayment delay,,
+req_1db944b0563c4ea68f13d6acc2914f72,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,eb9751949a4a1757,0.10201607486972607,Low Risk,False,6.53,High credit-to-income ratio,,
+req_4a19c090c3674d029feb29fffbd690de,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,58ae7b38104ad7ac,0.2647102460943537,Medium Risk,False,19.89,High credit-to-income ratio,High annuity burden,
+req_0c19b5c459a74632844823edb01d559e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2009632c146238db,0.4547452205088221,Medium Risk,False,35.3,High credit-to-income ratio,Prior repayment delay,
+req_fc96490b34f746c6bec5d729b8674036,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,09da1a34b36c0768,0.07039117896152156,Low Risk,False,3.82,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_d3d91978e6194f37bcfb92ec23d90d7c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b75508b38d3a5168,0.24041066189993926,Low Risk,False,14.29,Prior repayment delay,,
+req_f11d9d2bcd01480db07f366c16b58280,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e3e2c9e62c89742d,0.6618883386060092,High Risk,False,63.82,Low external credit score,Prior repayment delay,
+req_3ed25ea5f69241f0b20312da2bee264a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6950003471eba235,0.6513785148681968,High Risk,False,62.8,Low external credit score,Short employment duration,Missing credit bureau signal
+req_1faad8baca3d4562b47fac25e0688b68,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,858ebb54b6bb498b,0.2643384591355457,Medium Risk,False,18.55,Short employment duration,Prior repayment delay,
+req_5c22df0ec13e43348ea10795adeb59bd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,39b57879a3493ce2,0.3541279090982842,Medium Risk,False,25.63,High credit-to-income ratio,Short employment duration,Missing credit bureau signal
+req_ce48285b7f604845955ca3bbd3229593,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,57ae21e0be8f1fed,0.6975388680675805,High Risk,True,64.95,Low external credit score,High annuity burden,Prior repayment delay
+req_d162d673ab07416c9ab8afbd546c2ad9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3814e61b0474393c,0.5790830990510281,High Risk,False,56.66,High credit-to-income ratio,,
+req_8407a4e4c8534ce7bc909f3efecd0f38,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,675cec636c32f346,0.39553952167603446,Medium Risk,False,33.33,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_15c0e222ad5c4eb8943a4f16fd19168a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ef72a016b0e7c1ee,0.352644285375621,Medium Risk,False,25.41,Low external credit score,High credit-to-income ratio,High annuity burden
+req_4459ae0c8fac435e8686f85cd0f45eee,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3561513738a0ad43,0.16157856864369477,Low Risk,False,8.59,Short employment duration,,
+req_8c04a7a026ee438496f7a1fefe405dd7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2771711d8ab95de0,0.47403193772671987,Medium Risk,False,35.57,High credit-to-income ratio,Prior repayment delay,
+req_e292b5af9fc34407949ce415df77d9a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a44f18be1ed7d0b7,0.52148240836579,High Risk,False,53.44,High credit-to-income ratio,High annuity burden,Short employment duration
+req_ed0ef9ff756b45f29a5a0f619ba7f9d7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,feb7b862a6952d6c,0.7723385792332903,Critical Risk,True,91.65,Low external credit score,High credit-to-income ratio,High annuity burden
+req_8de803973f224a3ab86f8fa662a15a98,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4dcf208aff736476,0.2779440061659002,Medium Risk,False,22.0,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_34d022cfd09145a79676afb7721cac97,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,671d67e223492846,0.11275322991456457,Low Risk,False,6.6,High credit-to-income ratio,High annuity burden,Short employment duration
+req_8ba72d7e83b5438ab4fee9d3ad923f8a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,78201fc735575e90,0.2091075292947747,Low Risk,False,11.67,Short employment duration,Prior repayment delay,
+req_cce0dc15b90f443493ba0445653f5eab,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9b3cbbfa0049ee95,0.492677779406252,Medium Risk,False,38.11,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_811cda95dc994b34aece936f95252ca3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2c6e59ec48333638,0.6458645473292667,High Risk,False,59.84,Low external credit score,Missing credit bureau signal,
+req_ea1507319a784c3c9954bd35c8668327,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f5aa3d58477458d,0.771455174875184,Critical Risk,True,88.07,Low external credit score,Short employment duration,Missing credit bureau signal
+req_b747a25abc7a4382a2b735ff2f2f53ce,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,46147979119d430d,0.17003620040502454,Low Risk,False,9.03,Prior repayment delay,,
+req_79d90644f00248b49ae7ec14d049e2fa,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,09165192d88cda7f,0.08976952303860479,Low Risk,False,5.01,No dominant submitted risk driver identified,,
+req_8b50c65e47ad4f45863e302747132635,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3def2c3b7689cc60,0.8518689101864101,Critical Risk,True,99.15,Low external credit score,High credit-to-income ratio,High annuity burden
+req_634f344683f34b91bec5a800708fd321,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,be953fb4c1ece32a,0.05485268763241446,Low Risk,False,3.06,High credit-to-income ratio,High annuity burden,
+req_97cbd9c67a4a4c1d8022f3ba8feb0c2d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2d4a21aa75106323,0.8474964253008578,Critical Risk,True,99.06,Low external credit score,,
+req_84400d3ab0a541fa907975afd0cdd126,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,160a5a6adb82faa6,0.5260899547843162,High Risk,False,55.46,High credit-to-income ratio,Missing credit bureau signal,Prior repayment delay
+req_092d284abd6946549d8ac69a7c079f79,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9023b8e661771d6e,0.24105885821641368,Low Risk,False,13.49,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_44353e1b087d4707b9c3fd3b1df0d9db,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e8317f582679aca5,0.5521227867301665,High Risk,False,51.66,Short employment duration,,
+req_a862476c14a647fda45060274529cfb0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1309952e3616912e,0.3078220219409334,Medium Risk,False,22.62,Prior repayment delay,,
+req_2f04bb4d10a94f979ae2e8adfbbb5595,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3b8ec23b7386247b,0.13659897511132288,Low Risk,False,8.57,High credit-to-income ratio,High annuity burden,
+req_4e727733ae14402c8515f8736308475d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,039d5ce216b95f86,0.0906423669376866,Low Risk,False,5.04,Short employment duration,,
+req_2778022dce9e4832aec6e34e39871f54,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4f057b2f6b8ffaf2,0.10680416152122285,Low Risk,False,5.79,High credit-to-income ratio,,
+req_0c3a04ca045f46cca9e8798a183f036e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f829ba8c28f3b10,0.4038443955190476,Medium Risk,False,32.8,High annuity burden,Prior repayment delay,
+req_d79b27b9d3734665b08347f9308a068b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e07a672047a6719c,0.3378163493326476,Medium Risk,False,24.34,High credit-to-income ratio,High annuity burden,Short employment duration
+req_e22e47a6c4a0419c8a29254c22b7e71c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9744567935bb7576,0.5999617155618924,High Risk,False,55.65,Low external credit score,Short employment duration,
+req_ff507c71966d4585a57b81c0a64c74ca,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fc1d8cc357bea211,0.36764672235035356,Medium Risk,False,32.3,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_ecd787cdb7954c7ea2aaf021e28369cc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c5249af4a1849a5d,0.2030180760365394,Low Risk,False,11.03,Short employment duration,Prior repayment delay,
+req_6b3d108e746d44e2aa6930e459b3bfc8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,059cfb0349546943,0.19712383960249905,Low Risk,False,11.31,No dominant submitted risk driver identified,,
+req_f39b41ba0ad94713ad45902ce45f6a53,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,16424d4e934041a8,0.06939946901284781,Low Risk,False,4.09,High credit-to-income ratio,,
+req_fa9af79d64c747cdae841f001d306d2d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6039a41c0446e593,0.25299940439266166,Medium Risk,False,18.29,No dominant submitted risk driver identified,,
+req_a4a6c48cf2a649fc9d08bc2e3e2724b7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,20ca010e02f336e2,0.34171760081073393,Medium Risk,False,27.43,High credit-to-income ratio,Prior repayment delay,
+req_8ba1a1d470064edba773a240c383a662,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0236b9aa66a7698a,0.4199555032821668,Medium Risk,False,31.74,Prior repayment delay,,
+req_1075435c88354f3e889c5df04c1d4a93,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6971f01a3c3c4560,0.13245724474006856,Low Risk,False,7.84,Prior repayment delay,,
+req_d104250c796049898e98474b0ee5db31,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,23f6b3a8ecceb942,0.3504935455932661,Medium Risk,False,27.11,High credit-to-income ratio,High annuity burden,Short employment duration
+req_9b6a6c6902a0410fa4eb3b6d3372223c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,88e73fd1d8a3fcb4,0.11385857275173587,Low Risk,False,6.24,No dominant submitted risk driver identified,,
+req_cef92066753646c4a1127685c0e00f48,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b6da8b8e921dc527,0.15592305708272475,Low Risk,False,9.99,High credit-to-income ratio,Short employment duration,
+req_e6e59407ae894fe88acdbe1741dcca31,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a32a5cb94560c540,0.7963454489900477,Critical Risk,True,96.29,Low external credit score,Prior repayment delay,
+req_ae79de7f76bc4e42889f3ddd58c1ed57,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c0c04fd7252ccf81,0.7236145348989954,Critical Risk,True,83.42,Low external credit score,High annuity burden,Prior repayment delay
+req_d309c942733748f59249a9630e3d3e79,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b2489dbef2b33d48,0.3755533447082778,Medium Risk,False,31.07,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_7e3408ff83ee4dbb80978813e4adbc7d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b40830a3ca724375,0.2271828477537298,Low Risk,False,12.32,High credit-to-income ratio,Short employment duration,
+req_1ce87dd1b5b24b0aa0533fa61185e376,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c4030ca566795286,0.7458412975378482,Critical Risk,True,91.31,Low external credit score,Prior repayment delay,
+req_3a23fa23da04465ba7046af15e638c33,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,377ea64d0db694b0,0.25374051207037396,Medium Risk,False,20.33,High credit-to-income ratio,High annuity burden,Short employment duration
+req_21b63627d1a64e1b823fccb54bae9fe7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,aed09ee41c2648ae,0.5509513723469653,High Risk,False,56.0,High credit-to-income ratio,High annuity burden,
+req_59e960b19f864eab872f01f0967ee222,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1e7a5c73e55b47ec,0.16869220445780597,Low Risk,False,8.96,Prior repayment delay,,
+req_2aeba548e6e64b9680aea68d5c2bcde2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,95362aa88f3e1d3d,0.5604175492816748,High Risk,False,53.0,Missing credit bureau signal,,
+req_d787616e36424b9ba187f354db8b378c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,42ea777b03fe74ef,0.15675903798849206,Low Risk,False,8.47,Short employment duration,Prior repayment delay,
+req_f2ef2389f18e4311947d45c4a2ceab6b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9179d1eed2c83f99,0.20685486236288056,Low Risk,False,11.27,High credit-to-income ratio,High annuity burden,
+req_ba04ff334c664331a54a29eba9768d78,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,90dfc547052232a8,0.6993378995840149,High Risk,True,73.39,Low external credit score,High credit-to-income ratio,Short employment duration
+req_034ac7098e5a479096e18fe35e6a80df,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,69d35be788885084,0.5787980565865841,High Risk,False,54.5,Low external credit score,High credit-to-income ratio,Short employment duration
+req_dc094f711fe7456ea5ddb9e85b7fbd77,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c993432f45724e0a,0.21730838208179415,Low Risk,False,11.76,High annuity burden,Prior repayment delay,
+req_e8fb7a327f854b9f9bb866945f9ecab5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7d4396e8f757d1c2,0.6653014165676635,High Risk,False,61.78,Low external credit score,,
+req_2051fed4278a419298cfaf556de533cf,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,92bf309544f7cd36,0.129404274043159,Low Risk,False,6.99,High credit-to-income ratio,High annuity burden,Short employment duration
+req_18ae76a58ae9447b9c6d5d49a38d9e9b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d88483869e5f39fb,0.38381821540264194,Medium Risk,False,29.0,High credit-to-income ratio,High annuity burden,Short employment duration
+req_46b3f6eadd304f9a82493ad9363a2101,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c3d753354873ad23,0.20925545423820238,Low Risk,False,12.14,Short employment duration,,
+req_b6b8cae8a212421eb3e961cac67c3225,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4211c2f6335da79b,0.07173617856602783,Low Risk,False,4.46,High credit-to-income ratio,Short employment duration,
+req_608257ace5294154aa6809683548156a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3194dacb04723b97,0.35134475133924287,Medium Risk,False,28.85,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_4d6a6d996a674d25a4dcfaaeb3b39e03,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6e360c08c5895274,0.08397716061836186,Low Risk,False,4.7,No dominant submitted risk driver identified,,
+req_d5a1c60e65ad4e47b6ec77332d51542a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f4ac2a84de9dfc5a,0.4445735291898791,Medium Risk,False,31.72,Low external credit score,,
+req_69fbb82ae77e4784935eae46f2d7a0fd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,70cf8f21ff14cda8,0.3497039384293029,Medium Risk,False,24.95,Prior repayment delay,,
+req_c08741e733994e3986f36ef45052cc1d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,750c26734555c4a5,0.1486283635917076,Low Risk,False,7.9,Short employment duration,Missing credit bureau signal,
+req_9b9ab94a12d949e8884a9b67e84652aa,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7d50e6834595bf75,0.19820840874854545,Low Risk,False,12.21,High credit-to-income ratio,High annuity burden,Short employment duration
+req_f739102fe3b240dd95cd7eb3f49b892f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,43ea4ae6cbae2ece,0.4026738359315119,Medium Risk,False,31.35,No dominant submitted risk driver identified,,
+req_7a65190c741c4efd8fd1ec3043049ed1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,81f306159d0a5137,0.532295770769301,High Risk,False,49.37,Low external credit score,Short employment duration,Prior repayment delay
+req_bb892fa9252f4e22a1ba67d634881633,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b25029d091252ca0,0.2341461466272438,Low Risk,False,12.64,High credit-to-income ratio,High annuity burden,Short employment duration
+req_c280890db4c046408d08d802f213e009,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b8a6d7dbaa0b7116,0.4708711897328959,Medium Risk,False,33.04,Missing credit bureau signal,Prior repayment delay,
+req_e4216433975745a48dfe8b1e65393afd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,014637e8d9bad98e,0.20141992177599086,Low Risk,False,12.08,High credit-to-income ratio,High annuity burden,
+req_2b018dfcd5d94ff99279fb051e792504,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9820479823d02a11,0.38959365622173736,Medium Risk,False,30.18,Prior repayment delay,,
+req_0b19dbaf1746491a8a9e594d880d8d05,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bf9a61f83916539e,0.18392092583089212,Low Risk,False,9.99,High credit-to-income ratio,Prior repayment delay,
+req_637fae8e499e4fc2b532982ef4009257,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6ca47537f3a50ad8,0.09799888162583928,Low Risk,False,5.99,High credit-to-income ratio,High annuity burden,Short employment duration
+req_dcf7cdd901b14d45b09af69a23119e6d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4cf3e448381e46e3,0.45181452795844074,Medium Risk,False,33.44,Low external credit score,Prior repayment delay,
+req_9487c09d3a4a425988baf2740373f751,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,19fc1a52d83d85e0,0.34823857220668686,Medium Risk,False,24.85,Prior repayment delay,,
+req_d0f27568892e4b44b5e8420337702701,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0ef3cb742c3934d6,0.08860893253304097,Low Risk,False,4.69,Short employment duration,Prior repayment delay,
+req_3e8e8e61aca6479d81868b04651a0e45,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1ed05afe87b8d58d,0.40729203068960423,Medium Risk,False,31.73,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_f098b9aba6414a4b9558a0e9cdbd27d2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,637d9b796954a119,0.07328006158909853,Low Risk,False,4.15,High credit-to-income ratio,Prior repayment delay,
+req_5b30deba30df4d5489ecfbab5067ac70,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ad5faab5fafd9b85,0.24593588581333206,Low Risk,False,13.04,No dominant submitted risk driver identified,,
+req_5dc7907b16514ef7b5af7573fc329397,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,631bb8a3db991f5f,0.7647591642868465,Critical Risk,True,89.31,Low external credit score,Short employment duration,Prior repayment delay
+req_dbbc56f6e3af443eb173ba1a1f264ff7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1bba9737e80225da,0.6610475567564537,High Risk,False,62.12,Low external credit score,High credit-to-income ratio,Short employment duration
+req_44a717ad702646a6be3bb5f47130161f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4b53b426e451390c,0.24296225061058344,Low Risk,False,14.32,High credit-to-income ratio,Prior repayment delay,
+req_be3ae1f21e1c476291abf579e26e5d92,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,16118b9500bef8f3,0.3433806276178858,Medium Risk,False,25.42,Prior repayment delay,,
+req_a675c4ce1ac84a91bcc4ef54d3584612,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,afbbd36b395a5b82,0.100378662100656,Low Risk,False,6.29,High credit-to-income ratio,High annuity burden,Short employment duration
+req_d21b350d165c41e9b93b0dfc2b405ccc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,994c25a0be961540,0.4803744356042368,Medium Risk,False,36.89,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_9376bb7d3f3e4c658069b0bf5e1a8b6e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,54d729370d4ad1dc,0.2511915147647011,Medium Risk,False,18.74,High credit-to-income ratio,Prior repayment delay,
+req_15890d9ea15c4567b187abe4d1376588,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7f0873f9b973d605,0.40371970954454806,Medium Risk,False,29.39,Short employment duration,,
+req_897457a2382546a391329cff4adc9145,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,261749119d44dc3e,0.17944634661252107,Low Risk,False,11.18,High credit-to-income ratio,High annuity burden,
+req_d2cb5ba962f4434f8a1675fa593ea11f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a0c7e8f9ba87e440,0.07427814565136727,Low Risk,False,4.05,High credit-to-income ratio,Short employment duration,
+req_e52b6090b36243279d61e8cdc6042cdc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f4a23cb7968a4a2,0.801228315232415,Critical Risk,True,95.82,Low external credit score,High credit-to-income ratio,High annuity burden
+req_d20399b47eba4040ab601f5dd845b5de,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b8bd779b9436bfce,0.741501286267727,Critical Risk,True,95.77,Low external credit score,High credit-to-income ratio,Short employment duration
+req_72a04b30d7724c6f8c1fff9d6588471e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7488e14e2c44d41d,0.3308794598462498,Medium Risk,False,24.54,Prior repayment delay,,
+req_8b656746076649048387e086d3c42bc3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,df1f80ff9b8137e5,0.11254123224338045,Low Risk,False,7.01,High credit-to-income ratio,High annuity burden,
+req_af0acf5d60204b5ca45186326e564564,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ff39a58fd83cbe7e,0.1943244258719518,Low Risk,False,10.69,No dominant submitted risk driver identified,,
+req_3f18b0929621408db6d4c15c7d863249,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,22cf90a73c8c10ec,0.29904132531543176,Medium Risk,False,21.55,Prior repayment delay,,
+req_53250d8bfdea42d0975da1f4af566c48,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,159b5c607a8b8b2a,0.4747808738999045,Medium Risk,False,39.11,High credit-to-income ratio,Short employment duration,Missing credit bureau signal
+req_636e2f4c991d4e4aa38783a554954375,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cd5f0b9dc8977a3d,0.5526681449823722,High Risk,False,51.19,Short employment duration,Missing credit bureau signal,Prior repayment delay
+req_a86b8514dd5c4f91a70e17b0908bfdf2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,08030d10d30e0a44,0.5131930504042986,High Risk,False,49.51,Missing credit bureau signal,,
+req_61826e9d5a2f46d0b9aa626579de76fd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ae301ace8a1c0f97,0.6172322110018569,High Risk,False,74.59,Low external credit score,High credit-to-income ratio,High annuity burden
+req_f33ee381b1c1448e8c0a687e4f8d6779,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,40893abfe6089b51,0.5430185488575621,High Risk,False,50.53,Low external credit score,Prior repayment delay,
+req_9ae7f2cb0fda4e74b1777bbc47253375,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c4e4d20607a0546c,0.3060450877988301,Medium Risk,False,23.11,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_b7a894cc3adf434cab1efdaead80bde7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fbaeef13af2a3e1d,0.2962770082783252,Medium Risk,False,21.83,High credit-to-income ratio,Short employment duration,
+req_1bf7ed06d59e4ab9a4651d053d768484,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f9a0a410b10a7956,0.40119917698910257,Medium Risk,False,30.15,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_419f410a19cf4e2aae2d77b8bda5af95,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,07f32f1e23f3e4f6,0.03240822028378909,Low Risk,False,1.72,Prior repayment delay,,
+req_2ba924dda82a46c896fc5a79d57da8ca,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b7a5f0e153aa90f6,0.7146258715545318,Critical Risk,True,81.04,Low external credit score,High credit-to-income ratio,Short employment duration
+req_b534d3eed2804cb4a978e8a1b5f4d619,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7054066552cd2605,0.6453399553574778,High Risk,False,60.76,Low external credit score,Short employment duration,Prior repayment delay
+req_24e4bd0905d2427bb1b5fb50bcff71f5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,232fa3c9717a7cc0,0.3156936289651424,Medium Risk,False,26.87,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_9ccef5f1c87c43b589d52ef8fb0e36df,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1fb1672ff26f2099,0.07307064894558643,Low Risk,False,4.32,High credit-to-income ratio,,
+req_dab1c47752574f5ba4fc02534aa30f40,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0a3308eb4925ddd9,0.2537799873361688,Medium Risk,False,19.63,High credit-to-income ratio,High annuity burden,Short employment duration
+req_732e31b2c3754e4ba179bcbbbdcbc24c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,de0b71b4e0f79985,0.04495230074904143,Low Risk,False,2.52,No dominant submitted risk driver identified,,
+req_1db6054fa1184bcf849b6b62334012a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8092b8f6e8886c60,0.5351524762587676,High Risk,False,49.37,High credit-to-income ratio,High annuity burden,Short employment duration
+req_a6bdf9b047ed405c8fb5ea8da46cb328,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,89571915f94b3c02,0.23187444689725073,Low Risk,False,14.3,High credit-to-income ratio,High annuity burden,
+req_ca2cecf45ea54ea89e8a3fd3630d3515,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,943e885df4cd779f,0.1843261853193926,Low Risk,False,9.99,No dominant submitted risk driver identified,,
+req_e8b8dd8ace8c4f3c8efbc548b4815bdd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,dbf0c04f96b60bbc,0.19178657408195704,Low Risk,False,11.38,High credit-to-income ratio,High annuity burden,Short employment duration
+req_d19b935b58bf4719838a9e8bb5ecaad4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e1b17521918b1891,0.5916866655375879,High Risk,False,59.97,Low external credit score,High credit-to-income ratio,High annuity burden
+req_a7fb7343aa514d5b8a96c770502252a1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,608daf83e0cd418b,0.13719702965354116,Low Risk,False,8.27,High credit-to-income ratio,,
+req_25f551498dea470abf3561bcdbabbafc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,070d076152735208,0.6563600691297946,High Risk,False,61.05,Low external credit score,Prior repayment delay,
+req_0bba27370da74ee5bd9a9c9bdcd702ff,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,06f15c73ab736abe,0.24370748183897767,Low Risk,False,14.84,No dominant submitted risk driver identified,,
+req_02efdb57244949ad9376ea2fce46c979,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c42ca88626023eda,0.09714611346209696,Low Risk,False,5.17,Short employment duration,Prior repayment delay,
+req_438919d3284345d69f0cbd66f659c9bc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,88873c393c0a5244,0.17421279305427878,Low Risk,False,9.99,Prior repayment delay,,
+req_16cf20d334eb44e8bed99f23ee8d31ad,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fee1436709c821b2,0.07084715458902363,Low Risk,False,3.82,Short employment duration,Prior repayment delay,
+req_051c7f499c3c4d1fba3b623777601e3e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e5cdb00ea48bbfd0,0.13922500975676594,Low Risk,False,7.36,Short employment duration,,
+req_68dd846b420e4944af2a2c7a272d21d4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1e84aacb832ddee9,0.4923919011234052,Medium Risk,False,37.1,High credit-to-income ratio,High annuity burden,
+req_5bbe659104d84752ae0d479c0e74fd6e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f34b492960042108,0.6630176119534013,High Risk,False,65.31,Low external credit score,High credit-to-income ratio,High annuity burden
+req_bbc557caa5884f0e8bad685d821c7f71,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,db9b295baf42f52e,0.3439875284683599,Medium Risk,False,25.51,Missing credit bureau signal,,
+req_50c640f96fcd4bd99d733e646e0a7c94,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,03339443df9114ac,0.6271455911450728,High Risk,False,62.38,Low external credit score,High credit-to-income ratio,High annuity burden
+req_6ceeb02c76c14dc0b0c815bf8a653cf8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bca87c5b187a8c9c,0.4429309256769466,Medium Risk,False,31.6,Low external credit score,Short employment duration,
+req_fa3fe961a3e04149a5999b48e545d7cd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,57fb53920da21913,0.5202157944043158,High Risk,False,52.21,High credit-to-income ratio,High annuity burden,Short employment duration
+req_283f1ab8cf1849dcb231f256d04bed5d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9da87aff432b0f40,0.12521940750891755,Low Risk,False,6.69,Short employment duration,Prior repayment delay,
+req_a77323a23e7f48608287bee60ec6d06f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8f1c883ba99232ae,0.8904360258559579,Critical Risk,True,106.78,Low external credit score,High credit-to-income ratio,High annuity burden
+req_07a9cc13b18a4de599cd90cd8de7e252,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,10bd756e9ed83617,0.06119996482220466,Low Risk,False,3.84,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_20a9fa6aa578477fa98ffbae17a424e1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a9600b871369f138,0.1592535647042989,Low Risk,False,9.98,High credit-to-income ratio,High annuity burden,Short employment duration
+req_ff071e39a3c14d5da0b04af794c37302,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4ebb09f4a62e706c,0.3693880298661824,Medium Risk,False,28.81,High credit-to-income ratio,Missing credit bureau signal,Prior repayment delay
+req_3e05d7ac0d0e4b5b9a32d653400e8d29,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,65afb05a41fb34c2,0.7370623874738722,Critical Risk,True,84.14,Low external credit score,Short employment duration,
+req_cb2357bfe91a42feacba76ad2b47d433,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b79df78e2562dd84,0.27442285766408436,Medium Risk,False,19.4,Low external credit score,Prior repayment delay,
+req_52703888eef241afa6427f0252cafe4b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c9b8aafcff6a033f,0.30701001440992104,Medium Risk,False,23.49,Low external credit score,,
+req_0b8c236c32cf4b75935a625daa545627,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,68b56bd3c210e07a,0.5985398123161284,High Risk,False,55.37,Low external credit score,Short employment duration,
+req_1b3597f355ff4a98b722ec00faa3b98b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,714956b2508b470f,0.10880094187437603,Low Risk,False,6.19,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_446212c85ff04d62bd2f71a26bf4f03e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,49b519f4f3b3933d,0.5511949112378018,High Risk,False,54.86,Low external credit score,High credit-to-income ratio,Missing credit bureau signal
+req_ca60e874581f467fb819c10e2108d0a2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,abc8bfc5595785e5,0.5394555387154478,High Risk,False,54.02,Prior repayment delay,,
+req_6602bbc69d704d5c97eaf742a28d6feb,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9540046142b2e8b2,0.3666439406225904,Medium Risk,False,26.5,High credit-to-income ratio,High annuity burden,Short employment duration
+req_9ac5e62d8f2848da97aa7e0f273a23fd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e15e180189097e20,0.1359675470259928,Low Risk,False,7.57,Prior repayment delay,,
+req_4c9aa4d78e354359936026f9d794e29d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b1e32ceac6c690a1,0.3738099725125557,Medium Risk,False,29.02,High credit-to-income ratio,High annuity burden,Short employment duration
+req_e5eb9a4619d1403fbb079c41cd0d12b2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,31b2b6b3d9dbee9d,0.2044159649599654,Low Risk,False,11.73,High credit-to-income ratio,High annuity burden,
+req_f24deb1e48834dd2a02db5c68593353d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d8b7f6e6313d11ac,0.5426097342119719,High Risk,False,62.26,Low external credit score,High credit-to-income ratio,Short employment duration
+req_af7e076c1ed943078b3ba2edbf7083d6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ab5e806933810366,0.4150426091729436,Medium Risk,False,30.45,Low external credit score,High annuity burden,Missing credit bureau signal
+req_0fc836dad4c8415e987b5b9d065fa9fd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f710e56c965dccb4,0.4506943997566737,Medium Risk,False,32.54,Short employment duration,Prior repayment delay,
+req_7af315d8c1124ff2b0614191d026b4b8,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3643e2b81f76aa97,0.6532093991368069,High Risk,False,62.95,High credit-to-income ratio,Short employment duration,
+req_07f49a0dd6fc4b84979b5716f3ad16e3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a0f2b3b5a08ebcb6,0.8071848734512128,Critical Risk,True,96.42,Low external credit score,High credit-to-income ratio,High annuity burden
+req_565beeb88beb463fab6720db70c50b8e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,31bf7a6bedba4eef,0.16044612567299577,Low Risk,False,8.92,High credit-to-income ratio,,
+req_3c6adb7d9f6a44c599d69c8d7f5258ba,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3f84f544bf8b8818,0.2974885448667463,Medium Risk,False,21.36,Short employment duration,Missing credit bureau signal,
+req_61c543a0fb214f2c924a8a21b6133248,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c0228edd8ed41bd0,0.418687146204247,Medium Risk,False,30.57,High credit-to-income ratio,,
+req_e84f93fc54234ac8bf517c47136ecd67,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b03203591452d5ed,0.32614490298188836,Medium Risk,False,25.24,High credit-to-income ratio,,
+req_95b99a1ad2564d7cb661961b6d84fe68,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,9999c374611ef573,0.10260504997319497,Low Risk,False,6.3,High credit-to-income ratio,High annuity burden,
+req_fc4ed612fe20428d9eff795ef104140f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,7f36cb50fb24e91c,0.21875008197820991,Low Risk,False,11.81,High annuity burden,Prior repayment delay,
+req_575eba3945764893a06884a19438a9cc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,106c36d4c71baeaf,0.11803675565484863,Low Risk,False,6.51,High credit-to-income ratio,,
+req_576225ac22fb4b5fac0e17d8eabea3db,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,74e11487096a0c79,0.5600701908771265,High Risk,False,58.5,High credit-to-income ratio,High annuity burden,Short employment duration
+req_71029e7dca0d49c5820a128a94edb2ae,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,928f6f7d7a8bcd7c,0.14956348802870595,Low Risk,False,8.35,High credit-to-income ratio,High annuity burden,
+req_2779b868708d471789f690163c796ac6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ae83658bbd1e6231,0.7608384072155421,Critical Risk,True,89.04,Short employment duration,Prior repayment delay,
+req_b0af8d6142174b24bfeea2c4e29e3f7a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fbd4abab8695aadf,0.17362291821311407,Low Risk,False,10.26,High credit-to-income ratio,Missing credit bureau signal,
+req_d118773c6d6f478c88937008e7b76b0c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,98247db2992e0a76,0.03780077575400762,Low Risk,False,1.99,Missing credit bureau signal,,
+req_2fba246c92a34e508bb44f6f2f2a0207,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,76b4943945da2715,0.06822634503933633,Low Risk,False,3.7,High credit-to-income ratio,Short employment duration,
+req_209a90ceef3c4c7da1e65d18b59a6f35,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c03bd45632877a3f,0.13649574502104106,Low Risk,False,8.31,High credit-to-income ratio,,
+req_31d480bbca63497b9edc95602a5b3c19,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b2bc49c3fa7d374c,0.22454459025087503,Low Risk,False,12.81,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_d0f846bd04bf46e8b919e5d688885814,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,84361a5ac6284291,0.059834454235437824,Low Risk,False,3.41,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_f341497c05fa46dd8a74d05684a6b07e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6e4bfe2414a18c04,0.3505475165846246,Medium Risk,False,26.28,No dominant submitted risk driver identified,,
+req_2970f2f8e5114e319fb88ae2d887e852,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,faa39a517ec938fc,0.18841935065788398,Low Risk,False,14.13,High credit-to-income ratio,,
+req_c4e607147f024bd68b2060cc94e326fa,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a6691f7f912b1ca0,0.38335906507650175,Medium Risk,False,27.53,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_c43fd493ebe44614b14587af619963b2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,02d68454f3384ec0,0.5837440994292337,High Risk,False,55.21,Low external credit score,Prior repayment delay,
+req_39882d26e4e74a6f8fcff652ca6c6a51,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,32bbb18dd2510a04,0.09652648130761232,Low Risk,False,5.71,High credit-to-income ratio,High annuity burden,
+req_cffe58508694483893819474bdef662c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,006b324bd6b9f974,0.09825541386032609,Low Risk,False,5.62,High credit-to-income ratio,High annuity burden,Short employment duration
+req_9637e407ed004d91bbd62bce194ac25b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,279060f6cd6b2a8c,0.4621484374839244,Medium Risk,False,34.28,Prior repayment delay,,
+req_40f8039384f540de854ff4b2c0f27696,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b06fe40cb088c97e,0.5055697912347034,High Risk,False,50.84,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_69c2073ebe004a6693b3eb51f74f2c8c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,18cb585adff59c9b,0.6127444082571509,High Risk,False,63.17,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_82997755f50c4d5f86fb216fb7d6cdfc,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2ecbcfd2ad4dcc44,0.13354772719229127,Low Risk,False,7.45,No dominant submitted risk driver identified,,
+req_d1d61322b23b4703aac702b7396dab47,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5d2431e255900957,0.7040736556201105,Critical Risk,True,81.43,High credit-to-income ratio,High annuity burden,Short employment duration
+req_a00f1d48d3b14c0eb21249f2c3363b10,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,63b8c620046b02ec,0.2965830692011202,Medium Risk,False,21.27,Short employment duration,Prior repayment delay,
+req_306ac3cbf21d46e79a8bc3cc65d8cf6c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ff9c9d54e81214d4,0.2438570133471975,Low Risk,False,14.2,High credit-to-income ratio,High annuity burden,Short employment duration
+req_531848e097d74e7fbfdee2b7060a243d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,350edfcecfc846b9,0.14722995024840443,Low Risk,False,8.07,High credit-to-income ratio,,
+req_c8239a9cba3e4a4dac8d3c3889ece525,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,de10825d3c63da26,0.15056097003530933,Low Risk,False,8.16,Short employment duration,Prior repayment delay,
+req_b9700e5dca59463c976fa4e517f50d2a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,af0d48459012084f,0.3156068696203254,Medium Risk,False,22.81,No dominant submitted risk driver identified,,
+req_bb4aaf8b10b342cbafc9f42dc8acc25d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,22153a91647dc713,0.6006168309565143,High Risk,False,56.56,Low external credit score,High credit-to-income ratio,Short employment duration
+req_4e06207de7a4447bac149e60a83b1e0c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,55db5c51361e0bd3,0.2521235913427873,Medium Risk,False,18.34,Prior repayment delay,,
+req_4a85fac6a54740469f0c0450dea81c38,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f238a29ae74e9156,0.09072535637219904,Low Risk,False,5.78,High credit-to-income ratio,,
+req_6f422261b346461f8dacf1ddd6d2a1ed,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,364cb101d9a0919b,0.12781165144864373,Low Risk,False,7.41,High credit-to-income ratio,High annuity burden,
+req_2a302ded492449a794af8dac07e0ddb2,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,13e2d92d20ab7635,0.430820911870755,Medium Risk,False,33.44,High credit-to-income ratio,High annuity burden,Short employment duration
+req_5b69d7b600cd42cca39034d22f6de097,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,70849c57f524bf70,0.2553665255042353,Medium Risk,False,19.69,High credit-to-income ratio,High annuity burden,Short employment duration
+req_5dbd5bc637204b28832279c09e73b46d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1017727d59ab4dfe,0.18805044938419907,Low Risk,False,11.6,High credit-to-income ratio,Prior repayment delay,
+req_257d79b4de324e49aa578a979c80aa10,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d84768b3d5ac0abe,0.48530439640613143,Medium Risk,False,34.51,No dominant submitted risk driver identified,,
+req_5309f82bcbd14f4f80606451efc71ea0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,aa67cc4abf3c8103,0.16994820652262946,Low Risk,False,9.53,High credit-to-income ratio,High annuity burden,Short employment duration
+req_2b8a7aea092a45cebfb4014d8084aca0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ca5febf6f812b473,0.1859429989889297,Low Risk,False,9.98,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_37d9be721c7c403a81ed4f63cea876b5,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6fe163ab48e665f1,0.7961805060464312,Critical Risk,True,95.39,Low external credit score,Prior repayment delay,
+req_f5a65f5f3fdf458f955b7b5304faa0a6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e3b06df2bad96b33,0.3535939384253923,Medium Risk,False,25.26,Short employment duration,Prior repayment delay,
+req_22a2605f7e44448890ee367c0f2f990c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e0e31a40d827a239,0.4548801327127363,Medium Risk,False,34.19,High credit-to-income ratio,,
+req_6b90ae01c51445c48ba253cab2099491,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e93f91864ba1abfd,0.06827824965442826,Low Risk,False,4.01,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_83d08eebfc954859ba3dd8fba594be07,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cd4ca5396c200931,0.5398414429105974,High Risk,False,58.23,Low external credit score,High credit-to-income ratio,High annuity burden
+req_9b87a761270f4d38a517ef46700d1a60,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1c6e08d4304c55c8,0.04173278850967482,Low Risk,False,2.26,Short employment duration,,
+req_cd867e5181a84863bb9fd091dcece284,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1ba62610d5f5e333,0.5681086710986964,High Risk,False,53.73,Low external credit score,High credit-to-income ratio,Short employment duration
+req_ba66977de4f04a95a480c4093b004ae0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,598f35d34ab71e96,0.6071182267905211,High Risk,False,66.2,Low external credit score,High credit-to-income ratio,High annuity burden
+req_92c7a3f62311435bb339c16c50efc021,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,03f748d00d4f2c4a,0.21860249160424894,Low Risk,False,11.68,Prior repayment delay,,
+req_c7c307f5b33140b793bdbe496d4ebde9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1ab9e39105f60d99,0.09166062857791082,Low Risk,False,4.87,Short employment duration,,
+req_7c57c0b210844145ad7a51f731a7133e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8e27223a115b47fa,0.32929930615370717,Medium Risk,False,24.73,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_31f1cde6a19a4268bdb303e6941f7797,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c344990dda89772e,0.1129125240652679,Low Risk,False,5.95,Prior repayment delay,,
+req_534c9856c0cd4d0d809845bc8a4602ca,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,caf9d62174965f30,0.2735821073691178,Medium Risk,False,21.67,High credit-to-income ratio,High annuity burden,Short employment duration
+req_c060609bac8544aa974a253405409df4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5343f7f7bad9eadf,0.559898560604201,High Risk,False,58.21,High credit-to-income ratio,Prior repayment delay,
+req_2c18ca0365a2436b91adb5d73c1024e3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2b42501e3d2ad450,0.47909371414766777,Medium Risk,False,34.58,Low external credit score,High annuity burden,Short employment duration
+req_7bb39844177c41bd93fe035372c06fda,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,f228e306fe688bc6,0.2253405753257682,Low Risk,False,11.88,Short employment duration,Missing credit bureau signal,
+req_63b003dad54f40c4a5fbb1948b6184c9,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,6dca2298fa1d7cea,0.03822176680105253,Low Risk,False,2.45,High credit-to-income ratio,High annuity burden,
+req_81ebcb4c8459417c979ff837115b91a1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e7a48907bb33246e,0.36361225219384563,Medium Risk,False,28.4,High credit-to-income ratio,High annuity burden,Prior repayment delay
+req_71c589e94d8a44d68da817df8cf742be,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,2198d74355832170,0.2535517624370619,Medium Risk,False,20.56,High credit-to-income ratio,High annuity burden,Short employment duration
+req_21ef383e475d4079adced79d7f180fa4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,116b609a1b634d62,0.19886031274350183,Low Risk,False,11.04,No dominant submitted risk driver identified,,
+req_85183acf63ec4deda2f31d1178458f58,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,abb8e7e1cb4f9c83,0.3887968053264304,Medium Risk,False,32.24,High credit-to-income ratio,High annuity burden,Short employment duration
+req_b6a7ae5e31384f81b1b7503d8c76b88a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,628dd4ddde91cef1,0.6949703757471123,High Risk,False,68.35,Prior repayment delay,,
+req_254a826da3d1444292db3bd4e1b92c46,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ef4236819f87cafc,0.13146122343364733,Low Risk,False,7.06,Missing credit bureau signal,,
+req_35bee4929bb840fbb80a0b2e99b9c0b4,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,3bc2f4539c1b7d16,0.2069155002966087,Low Risk,False,11.44,Missing credit bureau signal,Prior repayment delay,
+req_3a84133802bf4ae98f73a85eeb6cea66,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c9ed0cef09c48dbf,0.0402142227502072,Low Risk,False,2.18,No dominant submitted risk driver identified,,
+req_05ae418ebb394c258924d11c08117c65,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,599aed7eb740ac89,0.40753737739469054,Medium Risk,False,30.63,Low external credit score,,
+req_f013850045694ec8a0b2cc6769f16cfe,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,480b6b88cc0f8378,0.06693726064265144,Low Risk,False,3.7,High credit-to-income ratio,,
+req_554d2112ac374332b3af6e465d0abefe,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,356f4d208a94ee2b,0.3027273533409356,Medium Risk,False,21.93,Short employment duration,Prior repayment delay,
+req_68eb59d2f51f4a7c98dd4f2334f7f529,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d477fb22cec08255,0.2809406723340616,Medium Risk,False,20.12,High annuity burden,Short employment duration,Prior repayment delay
+req_b1fdb95141b84dcd984088a5d24a9162,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5e368e094765de08,0.8168185770121906,Critical Risk,True,95.01,Low external credit score,High annuity burden,Short employment duration
+req_d33116ea41804e40b12481bc29833c26,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4fb0ba7461be07c4,0.18219456183716048,Low Risk,False,10.13,No dominant submitted risk driver identified,,
+req_e0f361e93731494ab8715213e4046a99,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,ab2296321a3e61f0,0.2090649106480352,Low Risk,False,13.51,High credit-to-income ratio,High annuity burden,Short employment duration
+req_58db6a354c5f40a5a68f5b66667c84c6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,1d1a49b9b32f33a6,0.4138002188701935,Medium Risk,False,30.51,No dominant submitted risk driver identified,,
+req_e3bae01b013b4b31b8ba14c05d0b842b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a37d1645b2cec3d0,0.1314566070309869,Low Risk,False,6.95,High annuity burden,Short employment duration,
+req_47e792f6ee0245358718634a2c2546b7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e5d7eb9f50d1eb2c,0.31173918997935135,Medium Risk,False,23.34,High credit-to-income ratio,Short employment duration,Prior repayment delay
+req_ecb50ec1d1fd400e8e7bce2cf1639a10,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,46fdfa4382fdce4c,0.27537102817994,Medium Risk,False,20.63,High credit-to-income ratio,High annuity burden,
+req_3a889bb4e60d4e9cae97ea5637cbf418,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bef947799ba13273,0.19760835853458225,Low Risk,False,12.42,High credit-to-income ratio,Missing credit bureau signal,Prior repayment delay
+req_84c11402dae1470fa7d07bbd916a835d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4b6f58cbf17fb207,0.25524266956943165,Medium Risk,False,20.22,High credit-to-income ratio,High annuity burden,Missing credit bureau signal
+req_09160592857b486eb85adc0b538c2077,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,88e9f6bb7b059b5a,0.7309488960143777,Critical Risk,True,84.7,Low external credit score,High credit-to-income ratio,High annuity burden
+req_2c7827ab33c9488e936732bf1c70b091,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,e60ca54b3074d5e3,0.07084461598309935,Low Risk,False,3.94,High credit-to-income ratio,,
+req_9be6a89e44624f40b7d8500731057ae3,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,bdca974984a172cd,0.520526738275679,High Risk,False,48.7,Low external credit score,High annuity burden,Short employment duration
+req_cc9c0c50a39647ca95d5db5a3a570ee7,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0949158a5c63ad45,0.08486051190545317,Low Risk,False,5.3,High credit-to-income ratio,,
+req_73213a144786424f84972245010db714,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c92157fc06712730,0.6216508683175065,High Risk,False,58.54,Low external credit score,Prior repayment delay,
+req_685c123ab5ed42349b9bc12de9fe2e7e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4a8bd406b86e846b,0.04178897942496159,Low Risk,False,2.3,Missing credit bureau signal,,
+req_885fef61307f4fe08a4ee0d24705c0e1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,394646431bcaabbf,0.5894869628105401,High Risk,False,57.45,Low external credit score,Missing credit bureau signal,
+req_b4fd6df870b84f9587d847c3708de4ce,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,656755f066732ddd,0.6098084785571811,High Risk,False,57.98,Low external credit score,Prior repayment delay,
+req_8e8ccca858da4b58a3d241392dd3df64,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,fafa63a9c72207d6,0.43832439543244717,Medium Risk,False,33.44,High credit-to-income ratio,High annuity burden,
+req_c3be79ba42224e7f83c1b537cfb8d3cd,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,b6c591443daa46a1,0.12296659593798617,Low Risk,False,6.77,Prior repayment delay,,
+req_86885f9ac8a64ce48b0bf3f5778b3b2b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,8ae835194f59b908,0.3957753930157391,Medium Risk,False,33.81,High credit-to-income ratio,High annuity burden,Short employment duration
+req_012b29910b014713b5d3601befcb4028,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,065b1a16e5da9ac1,0.2670451880069219,Medium Risk,False,20.2,High credit-to-income ratio,,
+req_1e3284e867be40baaa40020ece58f7b1,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,cb6750680d46b6d0,0.4100800383987228,Medium Risk,False,30.12,No dominant submitted risk driver identified,,
+req_8ef4a37d041c48dfb5a84aaf51e1492c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,0de1a3f547a8f06d,0.072516624644267,Low Risk,False,3.92,Short employment duration,,
+req_4c7aaf20bf5b4c4495271cec3db90032,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,056603d50400a1e3,0.1691043100156858,Low Risk,False,9.11,Prior repayment delay,,
+req_b3fda153b3c64ffb8c20201809f7611a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,934b08f19b7bda0f,0.17125119219862384,Low Risk,False,9.19,Prior repayment delay,,
+req_09bd39d2fb664e689a048503160dbf0f,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,248f68037dce8d96,0.16329848563695332,Low Risk,False,11.84,High credit-to-income ratio,,
+req_72b186afeef1442c8ab9f0e2e17bac8c,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4fdf9b7e4e63b1a0,0.7346102878646492,Critical Risk,True,87.17,Low external credit score,Prior repayment delay,
+req_144dcdcef8664c609d613c0db7ea3cc0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,455f51c9b709634b,0.03830179313716455,Low Risk,False,2.04,No dominant submitted risk driver identified,,
+req_3a8ef82f7cb44f4ea0c21d7c7893c06a,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5ab808b9f1748a6b,0.5002172714523254,High Risk,False,48.83,No dominant submitted risk driver identified,,
+req_93c82094d8ae4a60961abb40c5d12681,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c6fb28e3ff010113,0.5421748385777625,High Risk,False,52.91,High credit-to-income ratio,Prior repayment delay,
+req_1a6aa8cc7543421ca1016f6753d3a67d,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,a867b0e30ea7c980,0.38324535021144207,Medium Risk,False,27.34,Prior repayment delay,,
+req_207c720c4ff3424282112de3f999bec6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,47a7fccd59c951af,0.8699875083723396,Critical Risk,True,104.14,Prior repayment delay,,
+req_daf436906a9540deaab73ebc676574ea,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4525f9eb714b1093,0.7579707051561767,Critical Risk,True,95.36,Low external credit score,High credit-to-income ratio,Prior repayment delay
+req_32a8bf36c59040da87bc3ff62883fc0e,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,91998bb21633ecfc,0.33264856629075035,Medium Risk,False,23.42,Short employment duration,Prior repayment delay,
+req_c3e62c82c4d84f88ba69092ddb6473d6,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,5f5760b5f6fe6b0f,0.16895403946692625,Low Risk,False,9.92,High credit-to-income ratio,Prior repayment delay,
+req_ee9437aff1fe4ba8bb94a5ccb779800b,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,d28848338b82a940,0.41315062192815205,Medium Risk,False,29.22,Low external credit score,High annuity burden,Short employment duration
+req_7c0e0b87606d45e3bf66fee6411b9b42,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,c613de98b48dc132,0.6588431951212644,High Risk,False,63.52,High credit-to-income ratio,High annuity burden,
+req_290f26c8aeb94c008226582734107909,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,20236b35d122ada1,0.5184904707418269,High Risk,False,47.22,Short employment duration,,
+req_07a5dd9c8e4a421991b848817ffd58e0,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,53cd7ccca50d0685,0.5085216026612427,High Risk,False,52.13,Low external credit score,High credit-to-income ratio,
+req_db961a0df7824bfa9816063c70337162,batch_020425dbbc3a,2026-07-10T00:22:41+00:00,4f1c1133b5972caa,0.14823802943846792,Low Risk,False,9.22,High credit-to-income ratio,Short employment duration,

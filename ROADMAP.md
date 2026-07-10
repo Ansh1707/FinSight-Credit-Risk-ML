@@ -144,6 +144,13 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Documents the tradeoff between predictive lift and fair-lending/proxy-risk exposure without inventing metrics or changing the champion model.
 - Output: `src/models/challenger_governance.py`, `reports/challenger_model_comparison.csv`, `reports/challenger_governance_report.md`, and `reports/challenger_governance.json`.
 
+## Phase 23: Batch Scoring And Prediction Logging - Complete
+
+- Adds production-style batch scoring using the saved final model without retraining.
+- Validates the serving schema before scoring and documents required features, output columns, audit-log columns, and privacy controls.
+- Writes privacy-safe prediction and audit samples with request IDs, batch ID, score timestamp, model metadata, schema version, hashed applicant ID, risk band, priority score, and reason-code fields.
+- Output: `src/api/batch_score.py`, `reports/batch_scoring_sample.csv`, `reports/prediction_audit_log_sample.csv`, `reports/batch_scoring_schema.json`, and `reports/batch_scoring_summary.md`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

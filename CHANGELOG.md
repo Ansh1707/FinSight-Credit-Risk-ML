@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.18.0 - Batch Scoring And Prediction Logging
+
+- Added production-style batch scoring using the saved final model without retraining.
+- Added schema validation, model metadata, request IDs, batch IDs, score timestamps, risk bands, reason-code fields, and collections priority scores.
+- Added privacy-safe prediction audit sample with hashed applicant identifiers and no raw feature values.
+
 ## 0.17.0 - Challenger Model Governance
 
 - Added a less-sensitive challenger model workflow using the existing processed data and final-model split strategy.

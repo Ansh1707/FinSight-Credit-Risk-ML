@@ -80,6 +80,7 @@ The implemented project produces:
 * reject inference methodology documentation under `reports/reject_inference_note.md` and `reports/reject_inference_methodology.json`
 * fair-lending and proxy-risk governance review under `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv`, and `reports/fair_lending_governance.json`
 * less-sensitive challenger-model governance comparison under `reports/challenger_model_comparison.csv`, `reports/challenger_governance_report.md`, and `reports/challenger_governance.json`
+* batch scoring and privacy-safe prediction logging artifacts under `reports/batch_scoring_summary.md`, `reports/batch_scoring_schema.json`, and `reports/prediction_audit_log_sample.csv`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 * final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
@@ -195,6 +196,18 @@ The project includes a less-sensitive challenger model governance workflow:
 
 The challenger removes `15` features flagged by fair-lending/proxy-risk controls and trains with `61` lower-risk features. Actual test metrics show a modest predictive tradeoff: PR-AUC moves from `0.2640` to `0.2559`, Recall@Top-10% moves from `0.3593` to `0.3488`, and KS moves from `0.4123` to `0.4013`. This gives reviewers a concrete governance artifact for discussing whether the champion model's predictive lift justifies stronger protected/proxy feature controls.
 
+## Batch Scoring And Logging Snapshot
+
+The project includes a production-style batch scoring and prediction logging workflow:
+
+* `src/api/batch_score.py`
+* `reports/batch_scoring_sample.csv`
+* `reports/prediction_audit_log_sample.csv`
+* `reports/batch_scoring_schema.json`
+* `reports/batch_scoring_summary.md`
+
+The workflow validates the serving schema, scores a local batch with the saved final model, and writes privacy-safe audit fields including request ID, batch ID, score timestamp, model name, model version, model stage, schema version, hashed applicant ID, default probability, risk band, threshold flag, collections priority score, reason-code fields, and validation status. The current sample run scored `1,000` rows with `0` missing required features and schema validation status `passed`.
+
 ## Reject Inference Snapshot
 
 The project includes a portfolio-safe reject inference methodology note:
@@ -232,7 +245,7 @@ The project now includes a professional model card and governance checklist:
 * `reports/model_card.md`
 * `reports/governance_checklist.md`
 
-These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, challenger-model tradeoffs, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.
+These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, challenger-model tradeoffs, batch prediction logging, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.
 
 ## Reviewer Readiness Snapshot
 

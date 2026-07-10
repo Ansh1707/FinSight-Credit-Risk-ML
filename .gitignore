@@ -5,6 +5,8 @@ mlruns/
 reports/*.html
 reports/.cache/
 reports/.matplotlib-cache/
+reports/production_logs/
+logs/
 
 .env
 .venv/

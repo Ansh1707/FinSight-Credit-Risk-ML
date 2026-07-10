@@ -391,6 +391,25 @@ docker run -p 8000:8000 finsight-credit-risk
 
 The API loads `models/credit_risk_model.pkl`; it does not retrain the model.
 
+## Batch Scoring And Prediction Logging
+
+Run production-style batch scoring and privacy-safe audit-log generation:
+
+```bash
+python src/api/batch_score.py --input data/processed/model_features.parquet --limit 1000
+```
+
+The command writes:
+
+- `reports/batch_scoring_sample.csv`
+- `reports/prediction_audit_log_sample.csv`
+- `reports/batch_scoring_schema.json`
+- `reports/batch_scoring_summary.md`
+
+The batch scoring layer validates the serving schema, logs model name, model version, model stage, feature count, schema version, request IDs, batch ID, score timestamp, risk band, operational threshold flag, collections priority score, and reason-code fields. The committed audit sample is privacy-safe: applicant identifiers are hashed, raw model feature values are not written, and production log folders are ignored by Git.
+
+Current sample run: `1,000` rows scored, `76` required features validated, `0` missing required features, `0` non-numeric required features, and schema validation status `passed`.
+
 ## Monitoring Summary
 
 The monitoring phase simulates production by splitting the processed dataset into a reference window and a current window, scoring both windows with the saved model, and comparing feature distributions, missingness, prediction distributions, and labeled performance.
@@ -419,8 +438,10 @@ FinSight includes a professional model card and deployment governance checklist:
 - `reports/proxy_feature_controls.csv`
 - `reports/challenger_governance_report.md`
 - `reports/challenger_model_comparison.csv`
+- `reports/batch_scoring_summary.md`
+- `reports/prediction_audit_log_sample.csv`
 
-The model card documents intended use, prohibited use, training data, feature groups, validation metrics, calibration, SHAP explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, and deployment readiness. The governance checklist translates those sections into concrete production controls for data, features, model validation, fairness review, API deployment, monitoring, rollback, and sign-off. The fair-lending review adds segment-risk interpretation and protected/proxy feature controls without claiming legal certification.
+The model card documents intended use, prohibited use, training data, feature groups, validation metrics, calibration, SHAP explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, and deployment readiness. The governance checklist translates those sections into concrete production controls for data, features, model validation, fairness review, API deployment, monitoring, rollback, and sign-off. The fair-lending review adds segment-risk interpretation and protected/proxy feature controls without claiming legal certification. The batch scoring artifacts show how prediction logging would capture model metadata and audit fields without exposing raw feature values.
 
 Current governance position: FinSight is a portfolio-ready production-style prototype. It is not production-approved for automated credit decisions without business, risk, legal, compliance, data governance, and MLOps review.
 
@@ -524,6 +545,7 @@ python src/models/fairness_analysis.py
 python src/explainability/shap_reason_codes.py
 python src/business/collections_scoring.py
 python src/business/business_impact.py
+python src/api/batch_score.py --input data/processed/model_features.parquet --limit 1000
 uvicorn src.api.main:app --reload
 python src/monitoring/evidently_monitoring.py
 python dashboard/build_dashboard_data.py
@@ -580,6 +602,9 @@ For senior-review or interview discussion, start with:
 - `reports/proxy_feature_controls.csv`
 - `reports/challenger_governance_report.md`
 - `reports/challenger_model_comparison.csv`
+- `reports/batch_scoring_summary.md`
+- `reports/batch_scoring_schema.json`
+- `reports/prediction_audit_log_sample.csv`
 - `reports/mlflow_experiment_summary.md`
 - `reports/model_registry.md`
 - `reports/model_card.md`
