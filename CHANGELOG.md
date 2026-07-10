@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.21.0 - Final GitHub Polish
+
+- Added `reports/github_polish_checklist.md` for README rendering, repository safety, ignored artifacts, final links, command snippets, portfolio presentation, and push readiness.
+- Linked the GitHub polish checklist from README, reviewer guide, release checklist, final submission, roadmap, project brief, and final audit.
+- Extended repository hygiene tests to validate local Markdown/report references and README fenced-code rendering basics.
+
 ## 0.20.0 - Executive Summary And Interview Defense
 
 - Added recruiter-facing executive summary with 2-minute, 5-minute, and deep-dive formats.

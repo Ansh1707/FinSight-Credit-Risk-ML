@@ -9,16 +9,17 @@ Read these files in order:
 1. `README.md` — project overview, architecture, metrics, run commands, and resume bullets.
 2. `reports/executive_summary.md` — 2-minute, 5-minute, and deep-dive recruiter-facing summary.
 3. `reports/interview_defense_guide.md` — likely interview questions and crisp answers.
-4. `FINAL_SUBMISSION.md` — concise final project handoff and sharing note.
-5. `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
-6. `reports/final_case_study.md` — business story, methodology, validation, impact, and limitations.
-7. `reports/model_card.md` — model governance, intended use, validation, calibration, fairness/proxy-risk, leakage, and monitoring.
-8. `reports/governance_checklist.md` — production-readiness controls and sign-off checklist.
-9. `reports/fair_lending_review.md` — formal portfolio fair-lending/proxy-risk governance review without legal-certification claims.
-10. `reports/challenger_governance_report.md` — champion versus less-sensitive challenger tradeoff.
-11. `reports/batch_scoring_summary.md` — batch scoring schema validation and privacy-safe prediction logging.
-12. `reports/production_readiness_runbook.md` — deployment, monitoring, rollback, incident, retraining, and sign-off runbook.
-13. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
+4. `reports/github_polish_checklist.md` — final GitHub rendering, safety, links, commands, and push-ready checklist.
+5. `FINAL_SUBMISSION.md` — concise final project handoff and sharing note.
+6. `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
+7. `reports/final_case_study.md` — business story, methodology, validation, impact, and limitations.
+8. `reports/model_card.md` — model governance, intended use, validation, calibration, fairness/proxy-risk, leakage, and monitoring.
+9. `reports/governance_checklist.md` — production-readiness controls and sign-off checklist.
+10. `reports/fair_lending_review.md` — formal portfolio fair-lending/proxy-risk governance review without legal-certification claims.
+11. `reports/challenger_governance_report.md` — champion versus less-sensitive challenger tradeoff.
+12. `reports/batch_scoring_summary.md` — batch scoring schema validation and privacy-safe prediction logging.
+13. `reports/production_readiness_runbook.md` — deployment, monitoring, rollback, incident, retraining, and sign-off runbook.
+14. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
 
 ## What This Project Demonstrates
 
@@ -27,6 +28,7 @@ Read these files in order:
 | Credit-risk framing | README, project brief, final case study |
 | Recruiter summary | `reports/executive_summary.md` |
 | Interview defense | `reports/interview_defense_guide.md` |
+| GitHub polish | `reports/github_polish_checklist.md` |
 | SQL analysis | `sql/` and `reports/sql_analysis_summary.md` |
 | PySpark feature engineering | `src/features/pyspark_feature_engineering.py` |
 | Feature lineage | `src/features/feature_registry.py`, `reports/feature_registry.md` |

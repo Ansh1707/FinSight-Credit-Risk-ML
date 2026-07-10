@@ -164,6 +164,12 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Adds an interview defense guide with strongest evidence, likely Navi Data Scientist I questions, crisp answers, limitations, and questions to ask interviewers.
 - Output: `reports/executive_summary.md` and `reports/interview_defense_guide.md`.
 
+## Phase 26: Final GitHub Polish - Complete
+
+- Adds a final GitHub polish checklist covering README rendering, repository safety, ignored artifacts, final links, command snippets, portfolio presentation, and push readiness.
+- Extends repository hygiene tests to verify local Markdown/report references and README fenced-code rendering basics.
+- Output: `reports/github_polish_checklist.md`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

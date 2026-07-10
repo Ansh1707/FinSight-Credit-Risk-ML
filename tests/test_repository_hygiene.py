@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,6 +27,7 @@ def test_expected_project_files_exist() -> None:
         "reports/final_project_audit.md",
         "reports/executive_summary.md",
         "reports/interview_defense_guide.md",
+        "reports/github_polish_checklist.md",
         "reports/governance_checklist.md",
         "reports/mlflow_experiment_summary.md",
         "reports/model_registry.md",
@@ -115,9 +117,49 @@ def test_readme_contains_portfolio_sections() -> None:
         "Dashboard Instructions",
         "Governance Artifacts",
         "Repository Maintenance",
+        "GitHub Polish Checklist",
         "Resume-Ready Impact Bullets",
         "Limitations",
     ]
 
     missing = [section for section in required_sections if section not in readme]
     assert not missing, f"Missing README sections: {missing}"
+
+
+def test_readme_markdown_rendering_basics() -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    assert readme.count("```") % 2 == 0, "README has an unclosed fenced code block"
+    assert readme.startswith("# FinSight"), "README should start with the project title"
+    assert "![Python]" in readme, "README should keep visible status badges near the top"
+
+
+def test_documented_local_markdown_and_report_references_exist() -> None:
+    docs_to_check = [
+        "README.md",
+        "REVIEW_GUIDE.md",
+        "RELEASE_CHECKLIST.md",
+        "FINAL_SUBMISSION.md",
+        "PROJECT_BRIEF.md",
+        "ROADMAP.md",
+        "reports/github_polish_checklist.md",
+    ]
+    pattern = re.compile(
+        r"`((?:reports|dashboard|sql|src|tests|\.github)/[^`\s]+|"
+        r"(?:README|FINAL_SUBMISSION|REVIEW_GUIDE|RELEASE_CHECKLIST|PROJECT_BRIEF|ROADMAP|CHANGELOG|CONTRIBUTING|SECURITY|LICENSE)\.md|"
+        r"Dockerfile|requirements\.txt|Makefile)`"
+    )
+    allowed_absent_paths = {
+        "reports/production_logs/",
+    }
+
+    missing = []
+    for doc_path in docs_to_check:
+        text = (ROOT / doc_path).read_text(encoding="utf-8")
+        for match in pattern.findall(text):
+            normalized = match.rstrip(".,)")
+            if "*" in normalized or normalized in allowed_absent_paths:
+                continue
+            if not (ROOT / normalized).exists():
+                missing.append(f"{doc_path} -> {normalized}")
+
+    assert not missing, f"Documented local references do not exist: {missing}"

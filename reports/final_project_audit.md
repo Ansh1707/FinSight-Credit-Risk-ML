@@ -37,7 +37,7 @@ This rating reflects strong end-to-end scope, realistic fintech framing, validat
 | Fair-lending governance | Complete | `src/models/fair_lending_governance.py`, feature-control report |
 | Challenger governance | Complete | `src/models/challenger_governance.py`, challenger comparison report |
 | Governance | Complete | `reports/model_card.md`, `reports/governance_checklist.md` |
-| Reviewer readiness | Complete | `REVIEW_GUIDE.md`, `RELEASE_CHECKLIST.md`, executive/interview guides |
+| Reviewer readiness | Complete | `REVIEW_GUIDE.md`, `RELEASE_CHECKLIST.md`, executive/interview guides, GitHub polish checklist |
 | Maintenance | Complete | `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, GitHub templates |
 | Tests and CI | Complete | `tests/`, `Makefile`, `.github/workflows/ci.yml` |
 
@@ -90,6 +90,7 @@ This is a strong business translation because it connects model ranking to revie
 | Release checklist | Complete |
 | Executive summary | Complete |
 | Interview defense guide | Complete |
+| GitHub polish checklist | Complete |
 | MLflow/model registry documentation | Complete |
 | Feature timestamp-lineage documentation | Complete |
 | Reject inference methodology | Complete, no labels invented |

@@ -67,6 +67,7 @@ Current verified result: run `make check` before release and update this line if
 - [ ] Repository name is clear and professional.
 - [ ] README appears correctly on GitHub.
 - [ ] Badges render correctly.
+- [ ] Final GitHub polish checklist is reviewed: `reports/github_polish_checklist.md`.
 - [ ] License is visible on GitHub.
 - [ ] Final reviewer links are visible near the top of README.
 - [ ] Project description mentions credit risk, collections, explainability, monitoring, and FastAPI.
@@ -95,8 +96,10 @@ Current verified result: run `make check` before release and update this line if
 ```bash
 git status
 make check
+git diff --check
+git status --ignored --short
 git add README.md PROJECT_BRIEF.md ROADMAP.md REVIEW_GUIDE.md RELEASE_CHECKLIST.md reports/ tests/
-git commit -m "Polish repository review guide"
+git commit -m "Add final GitHub polish checklist"
 git push origin main
 ```
 
