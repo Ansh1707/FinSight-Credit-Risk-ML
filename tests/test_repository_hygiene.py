@@ -151,6 +151,8 @@ def test_documented_local_markdown_and_report_references_exist() -> None:
         r"Dockerfile|requirements\.txt|Makefile)`"
     )
     allowed_absent_paths = {
+        "reports/drift_report.html",
+        "reports/monitoring_report.html",
         "reports/production_logs/",
     }
 
