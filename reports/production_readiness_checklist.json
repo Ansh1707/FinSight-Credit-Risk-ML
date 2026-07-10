@@ -1,0 +1,79 @@
+{
+  "artifact": "FinSight production readiness checklist",
+  "status": "portfolio_runbook_not_production_approval",
+  "model_name": "FinSight Credit Risk LightGBM",
+  "model_version": "0.13.0",
+  "required_signoffs": [
+    "business_owner",
+    "credit_risk_owner",
+    "compliance_or_fair_lending_owner",
+    "legal_owner",
+    "data_owner",
+    "mlops_owner",
+    "security_privacy_owner"
+  ],
+  "pre_production_gates": [
+    {
+      "gate": "intended_use",
+      "required": true,
+      "evidence": "reports/model_card.md"
+    },
+    {
+      "gate": "feature_lineage",
+      "required": true,
+      "evidence": "reports/feature_registry.md"
+    },
+    {
+      "gate": "leakage_audit",
+      "required": true,
+      "evidence": "reports/leakage_audit.md"
+    },
+    {
+      "gate": "fair_lending_proxy_review",
+      "required": true,
+      "evidence": "reports/fair_lending_review.md"
+    },
+    {
+      "gate": "challenger_model_review",
+      "required": true,
+      "evidence": "reports/challenger_governance_report.md"
+    },
+    {
+      "gate": "batch_scoring_schema",
+      "required": true,
+      "evidence": "reports/batch_scoring_schema.json"
+    },
+    {
+      "gate": "monitoring_plan",
+      "required": true,
+      "evidence": "reports/monitoring_summary.md"
+    },
+    {
+      "gate": "rollback_and_incident_plan",
+      "required": true,
+      "evidence": "reports/production_readiness_runbook.md"
+    }
+  ],
+  "alert_thresholds": {
+    "feature_psi_warning": 0.1,
+    "feature_psi_critical": 0.2,
+    "prediction_psi_warning": 0.1,
+    "prediction_psi_critical": 0.2,
+    "missingness_change_warning_pct_points": 3,
+    "missingness_change_critical_pct_points": 5,
+    "pr_auc_relative_degradation_warning": 0.05,
+    "pr_auc_relative_degradation_critical": 0.1,
+    "recall_at_top_10pct_relative_degradation_warning": 0.05,
+    "recall_at_top_10pct_relative_degradation_critical": 0.1,
+    "ks_absolute_degradation_warning": 0.03,
+    "ks_absolute_degradation_critical": 0.05,
+    "calibration_ece_warning": 0.03,
+    "calibration_ece_critical": 0.05
+  },
+  "privacy_controls": [
+    "Hash applicant identifiers in audit samples",
+    "Do not commit raw feature values",
+    "Do not commit raw data, processed data, model binaries, secrets, or production logs",
+    "Store production logs in access-controlled infrastructure with retention policy"
+  ]
+}

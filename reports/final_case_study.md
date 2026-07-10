@@ -106,11 +106,14 @@ Monitoring output shows stable simulated production windows for this run:
 
 Batch scoring and prediction logging were added to show how the model would be scored in a production-style batch workflow. The sample run scored `1,000` rows, validated `76` required model features, found `0` missing required features, and wrote privacy-safe audit fields with request IDs, batch ID, score timestamp, model version, schema version, hashed applicant ID, risk band, collections priority score, and reason codes. The committed audit sample does not include raw feature values or unhashed applicant IDs.
 
+The production readiness runbook translates the model governance artifacts into an operating plan. It documents deployment steps, batch scoring operations, monitoring cadence, alert thresholds, rollback, incident response, retraining triggers, ownership, and final pre-production sign-off. This makes the project easier to discuss as a production-style system rather than a notebook-only model.
+
 ## Limitations
 
 - The dataset is public and historical, not live production data.
 - The monitoring phase simulates production using a historical split rather than real serving logs.
 - Batch scoring logs are privacy-safe local samples, not live production event logs.
+- The production readiness runbook is a portfolio artifact, not an executed production approval or incident drill.
 - SHAP explanations are generated on a sample to keep local runtime practical.
 - Categorical encoding uses index-style preparation; further production work should validate category stability and unseen-category handling.
 - Probability calibration needs additional review before probabilities are used as policy thresholds.
@@ -129,5 +132,6 @@ Batch scoring and prediction logging were added to show how the model would be s
 - Add probability calibration experiments and cost-sensitive threshold optimization.
 - Enforce the documented feature registry controls through a production feature store and model approval workflow.
 - Move batch scoring logs to secure production storage with retention, access control, and deletion policies.
+- Execute the runbook in a real staging environment with approval records, incident drills, and monitoring alert routing.
 - Extend monitoring with production event logs, alert thresholds, and scheduled retraining recommendations.
 - Add CI checks before GitHub pushes to run formatting, compile checks, and smoke tests.

@@ -81,6 +81,7 @@ The implemented project produces:
 * fair-lending and proxy-risk governance review under `reports/fair_lending_review.md`, `reports/proxy_feature_controls.csv`, and `reports/fair_lending_governance.json`
 * less-sensitive challenger-model governance comparison under `reports/challenger_model_comparison.csv`, `reports/challenger_governance_report.md`, and `reports/challenger_governance.json`
 * batch scoring and privacy-safe prediction logging artifacts under `reports/batch_scoring_summary.md`, `reports/batch_scoring_schema.json`, and `reports/prediction_audit_log_sample.csv`
+* production readiness runbook and sign-off checklist under `reports/production_readiness_runbook.md` and `reports/production_readiness_checklist.json`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 * final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
@@ -208,6 +209,15 @@ The project includes a production-style batch scoring and prediction logging wor
 
 The workflow validates the serving schema, scores a local batch with the saved final model, and writes privacy-safe audit fields including request ID, batch ID, score timestamp, model name, model version, model stage, schema version, hashed applicant ID, default probability, risk band, threshold flag, collections priority score, reason-code fields, and validation status. The current sample run scored `1,000` rows with `0` missing required features and schema validation status `passed`.
 
+## Production Readiness Snapshot
+
+The project includes a production readiness runbook:
+
+* `reports/production_readiness_runbook.md`
+* `reports/production_readiness_checklist.json`
+
+The runbook covers deployment steps, batch scoring operations, monitoring cadence, alert thresholds, rollback plan, incident response, retraining triggers, ownership, and final pre-production sign-off. It is designed for portfolio review and interview discussion, not as a real production approval record.
+
 ## Reject Inference Snapshot
 
 The project includes a portfolio-safe reject inference methodology note:
@@ -245,7 +255,7 @@ The project now includes a professional model card and governance checklist:
 * `reports/model_card.md`
 * `reports/governance_checklist.md`
 
-These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, challenger-model tradeoffs, batch prediction logging, leakage audit results, monitoring plan, limitations, deployment checklist, ownership expectations, rollback needs, and production sign-off requirements.
+These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, challenger-model tradeoffs, batch prediction logging, leakage audit results, monitoring plan, limitations, deployment runbook, ownership expectations, rollback needs, incident response, retraining triggers, and production sign-off requirements.
 
 ## Reviewer Readiness Snapshot
 

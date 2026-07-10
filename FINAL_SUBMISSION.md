@@ -32,6 +32,7 @@ GitHub reviewers should start here:
 - Fair-lending governance review and protected/proxy feature controls under `reports/fair_lending_review.md` and `reports/proxy_feature_controls.csv`.
 - Less-sensitive challenger model comparison under `reports/challenger_governance_report.md`.
 - Batch scoring and privacy-safe prediction logging under `reports/batch_scoring_summary.md` and `reports/prediction_audit_log_sample.csv`.
+- Production readiness runbook under `reports/production_readiness_runbook.md`.
 - Final tuned LightGBM model validation with ROC-AUC, PR-AUC, Recall@Top-10%, KS statistic, confusion matrix, calibration, and cross-validation.
 - MLflow tracking script and model registry-style documentation for the existing final model artifacts.
 - Business impact analysis showing the model-ranked top `10%` review queue captures `43.72%` of observed defaults, a `4.37x` lift over random review.
@@ -58,6 +59,7 @@ GitHub reviewers should start here:
 | Fair-lending governance review | `reports/fair_lending_review.md` |
 | Challenger model governance | `reports/challenger_governance_report.md` |
 | Batch scoring audit sample | `reports/prediction_audit_log_sample.csv` |
+| Production readiness runbook | `reports/production_readiness_runbook.md` |
 | Local test suite | `44` tests passed |
 
 ## Repository Safety
@@ -83,6 +85,7 @@ Emphasize that this is not just a model. It is a production-style data science w
 - Collections priority scoring that translates ML into an operational queue.
 - Batch scoring and privacy-safe prediction logging with request IDs, timestamps, model metadata, hashed IDs, and reason-code fields.
 - Challenger-model governance that quantifies predictive lift versus protected/proxy feature risk.
+- Production readiness runbook covering deployment, monitoring cadence, alerts, rollback, incidents, retraining triggers, owners, and sign-off.
 - Monitoring and governance because real fintech models need lifecycle controls.
 
 ## Honest Production Caveats
@@ -91,7 +94,7 @@ Emphasize that this is not just a model. It is a production-style data science w
 - The dataset is public and historical, not Navi production data.
 - Formal legal fair-lending certification, adverse-action compliance approval, applied reject inference with compliant rejected-applicant outcomes, and compliance sign-off are not included.
 - Historical aggregate features have documented timestamp-lineage assumptions; production use still needs source-system enforcement of those cutoffs.
-- Live deployment would require authentication, secure production log storage, production-grade model registry controls, alerts, rollback, and incident ownership.
+- Live deployment would require authentication, secure production log storage, production-grade model registry controls, executed alert routing, incident drills, rollback validation, and approval records.
 
 ## Final Recommendation
 

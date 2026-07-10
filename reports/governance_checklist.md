@@ -19,6 +19,7 @@ This checklist translates the model card into concrete controls a fintech data s
 | Reject inference methodology | Complete for portfolio review | `reports/reject_inference_note.md` |
 | Monitoring report produced | Complete for simulated windows | `reports/monitoring_summary.md` |
 | Batch scoring and prediction logging | Complete for portfolio review | `reports/batch_scoring_summary.md`, `reports/prediction_audit_log_sample.csv` |
+| Production readiness runbook | Complete for portfolio review | `reports/production_readiness_runbook.md` |
 | API implemented | Complete for local serving | `src/api/main.py` |
 | Production approval | Not complete | Requires business, risk, legal, compliance, and MLOps review |
 
@@ -81,7 +82,7 @@ This checklist translates the model card into concrete controls a fintech data s
 - Store production logs outside Git in an access-controlled location with retention, deletion, and incident-review policies.
 - Add timeout, payload-size, and rate-limit controls.
 - Validate Docker build and container startup.
-- Define rollback procedure for a bad model or bad deployment.
+- Follow the rollback procedure in `reports/production_readiness_runbook.md` for a bad model or bad deployment.
 - Store model artifacts in a controlled registry for production use.
 
 ## Monitoring Controls
@@ -96,6 +97,7 @@ This checklist translates the model card into concrete controls a fintech data s
 - Monitor prediction-log completeness, schema-validation failures, and logging pipeline failures.
 - Set alert thresholds, owners, and escalation paths.
 - Define retraining and recalibration triggers.
+- Review monitoring cadence, alert thresholds, incident severity, and retraining triggers in `reports/production_readiness_runbook.md`.
 
 ## Production Deployment Checklist
 
@@ -118,6 +120,7 @@ Before production, every item below should be complete:
 - [ ] Monitoring alerts configured.
 - [ ] Rollback and incident process documented.
 - [ ] Retraining and retirement criteria documented.
+- [ ] Production readiness runbook reviewed.
 - [ ] Final sign-off recorded.
 
 ## Current Portfolio Conclusion

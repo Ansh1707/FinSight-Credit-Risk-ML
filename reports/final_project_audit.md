@@ -6,7 +6,7 @@ FinSight is portfolio-ready for a fintech Data Scientist I application. The repo
 
 Strict final rating: `99/100`.
 
-This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, batch scoring and prediction logging documentation, MLflow/model registry-style documentation, feature registry and timestamp-lineage documentation, reject inference methodology, fair-lending/proxy-risk governance documentation, challenger-model evidence, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, legal fair-lending certification, adverse-action compliance approval, compliant rejected-applicant outcome data for applied reject inference, production enforcement of timestamp cutoffs, authentication, live production logging infrastructure, production-grade registry approval workflow, and business/compliance sign-off.
+This rating reflects strong end-to-end scope, realistic fintech framing, validation beyond accuracy, explainability, monitoring, API serving, batch scoring and prediction logging documentation, MLflow/model registry-style documentation, feature registry and timestamp-lineage documentation, reject inference methodology, fair-lending/proxy-risk governance documentation, challenger-model evidence, production readiness runbook, and GitHub readiness. It is not `100/100` because a real production credit-risk system would still require live data contracts, legal fair-lending certification, adverse-action compliance approval, compliant rejected-applicant outcome data for applied reject inference, production enforcement of timestamp cutoffs, authentication, live production infrastructure, production-grade registry approval workflow, and formal business/compliance sign-off.
 
 ## Completion Checklist
 
@@ -30,6 +30,7 @@ This rating reflects strong end-to-end scope, realistic fintech framing, validat
 | API | Complete | `src/api/`, `Dockerfile`, `reports/api_summary.md` |
 | Batch scoring and logging | Complete | `src/api/batch_score.py`, privacy-safe audit sample |
 | Monitoring | Complete | `src/monitoring/evidently_monitoring.py`, monitoring summary |
+| Production runbook | Complete | `reports/production_readiness_runbook.md` |
 | Dashboard outputs | Complete | `dashboard/dashboard_data/`, `reports/dashboard_summary.md` |
 | Leakage audit | Complete | `src/features/leakage_checks.py`, `reports/leakage_audit.md` |
 | Proxy-risk review | Complete | `src/models/fairness_analysis.py`, proxy-risk report |
@@ -82,6 +83,7 @@ This is a strong business translation because it connects model ranking to revie
 | Protected/proxy feature controls | Complete for portfolio review |
 | Less-sensitive challenger model | Complete, actual metrics computed |
 | Batch prediction logging | Complete, privacy-safe sample |
+| Production readiness runbook | Complete, not production approval |
 | Model card | Complete |
 | Deployment checklist | Complete |
 | Security policy | Complete |
@@ -116,6 +118,7 @@ Expected ignored artifacts:
 - Includes explanation, monitoring, leakage, calibration, and governance.
 - Includes a less-sensitive challenger model to quantify predictive lift versus proxy-risk control tradeoffs.
 - Includes privacy-safe batch prediction logging with schema validation, model metadata, request IDs, timestamps, hashed IDs, risk bands, and reason-code fields.
+- Includes an operator-facing production readiness runbook with deployment, rollback, incidents, retraining triggers, ownership, and sign-off gates.
 - Documents limitations honestly, which is important in regulated lending contexts.
 
 ## Remaining Gaps Before Real Production
@@ -128,7 +131,7 @@ Expected ignored artifacts:
 - Live prediction logging infrastructure and production model registry integration.
 - Production-grade registry approval workflow and artifact access controls.
 - Real production monitoring windows and alert routing.
-- Retraining, recalibration, rollback, and incident-response process.
+- Executed production incident drills, retraining jobs, and approval workflow records.
 
 ## Final Verdict
 

@@ -151,6 +151,13 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Writes privacy-safe prediction and audit samples with request IDs, batch ID, score timestamp, model metadata, schema version, hashed applicant ID, risk band, priority score, and reason-code fields.
 - Output: `src/api/batch_score.py`, `reports/batch_scoring_sample.csv`, `reports/prediction_audit_log_sample.csv`, `reports/batch_scoring_schema.json`, and `reports/batch_scoring_summary.md`.
 
+## Phase 24: Production Readiness Runbook - Complete
+
+- Adds an operator-facing production readiness runbook for pre-production review.
+- Covers deployment steps, batch scoring operations, monitoring cadence, alert thresholds, rollback plan, incident response, retraining triggers, ownership, and final sign-off.
+- Adds a machine-readable checklist with required owners, approval gates, alert thresholds, and privacy controls.
+- Output: `reports/production_readiness_runbook.md` and `reports/production_readiness_checklist.json`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

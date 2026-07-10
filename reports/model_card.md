@@ -258,6 +258,11 @@ Logged audit fields include request ID, batch ID, score timestamp, model name, m
 
 Current status: portfolio-ready prototype, not production-approved.
 
+Operating runbook:
+
+- `reports/production_readiness_runbook.md`
+- `reports/production_readiness_checklist.json`
+
 Required before production:
 
 - Approve intended and prohibited use cases.
@@ -273,6 +278,7 @@ Required before production:
 - Add model versioning and rollback plan.
 - Add monitoring alerts, ownership, and escalation process.
 - Define retraining, recalibration, and retirement criteria.
+- Complete the final pre-production sign-off checklist in the production readiness runbook.
 
 ## Experiment Tracking And Registry
 
@@ -298,6 +304,8 @@ The local `mlruns/` store is ignored by Git. A real production registry would ad
 - `reports/batch_scoring_summary.md`
 - `reports/batch_scoring_schema.json`
 - `reports/prediction_audit_log_sample.csv`
+- `reports/production_readiness_runbook.md`
+- `reports/production_readiness_checklist.json`
 - `reports/calibration_report.md`
 - `reports/fairness_proxy_analysis.md`
 - `reports/leakage_audit.md`

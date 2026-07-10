@@ -410,6 +410,15 @@ The batch scoring layer validates the serving schema, logs model name, model ver
 
 Current sample run: `1,000` rows scored, `76` required features validated, `0` missing required features, `0` non-numeric required features, and schema validation status `passed`.
 
+## Production Readiness Runbook
+
+Review the production readiness runbook before discussing deployment:
+
+- `reports/production_readiness_runbook.md`
+- `reports/production_readiness_checklist.json`
+
+The runbook covers deployment steps, batch scoring operations, monitoring cadence, alert thresholds, rollback plan, incident response, retraining triggers, ownership, and the final pre-production sign-off checklist. It is a portfolio-grade production-readiness artifact, not a real lender approval record.
+
 ## Monitoring Summary
 
 The monitoring phase simulates production by splitting the processed dataset into a reference window and a current window, scoring both windows with the saved model, and comparing feature distributions, missingness, prediction distributions, and labeled performance.
@@ -440,8 +449,10 @@ FinSight includes a professional model card and deployment governance checklist:
 - `reports/challenger_model_comparison.csv`
 - `reports/batch_scoring_summary.md`
 - `reports/prediction_audit_log_sample.csv`
+- `reports/production_readiness_runbook.md`
+- `reports/production_readiness_checklist.json`
 
-The model card documents intended use, prohibited use, training data, feature groups, validation metrics, calibration, SHAP explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, and deployment readiness. The governance checklist translates those sections into concrete production controls for data, features, model validation, fairness review, API deployment, monitoring, rollback, and sign-off. The fair-lending review adds segment-risk interpretation and protected/proxy feature controls without claiming legal certification. The batch scoring artifacts show how prediction logging would capture model metadata and audit fields without exposing raw feature values.
+The model card documents intended use, prohibited use, training data, feature groups, validation metrics, calibration, SHAP explainability, proxy-risk findings, leakage audit results, monitoring plan, limitations, and deployment readiness. The governance checklist translates those sections into concrete production controls for data, features, model validation, fairness review, API deployment, monitoring, rollback, and sign-off. The fair-lending review adds segment-risk interpretation and protected/proxy feature controls without claiming legal certification. The batch scoring artifacts show how prediction logging would capture model metadata and audit fields without exposing raw feature values. The production readiness runbook turns these controls into an operating checklist.
 
 Current governance position: FinSight is a portfolio-ready production-style prototype. It is not production-approved for automated credit decisions without business, risk, legal, compliance, data governance, and MLOps review.
 
@@ -605,6 +616,8 @@ For senior-review or interview discussion, start with:
 - `reports/batch_scoring_summary.md`
 - `reports/batch_scoring_schema.json`
 - `reports/prediction_audit_log_sample.csv`
+- `reports/production_readiness_runbook.md`
+- `reports/production_readiness_checklist.json`
 - `reports/mlflow_experiment_summary.md`
 - `reports/model_registry.md`
 - `reports/model_card.md`

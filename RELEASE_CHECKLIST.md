@@ -58,6 +58,7 @@ Current verified result: run `make check` before release and update this line if
 - [ ] Challenger model governance comparison is present and uses actual computed metrics.
 - [ ] Batch scoring schema and privacy-safe audit sample are present.
 - [ ] Prediction audit sample does not contain raw feature columns or unhashed applicant IDs.
+- [ ] Production readiness runbook and machine-readable checklist are present.
 
 ## GitHub Presentation
 
@@ -81,6 +82,7 @@ Current verified result: run `make check` before release and update this line if
 - [ ] You can explain why calibration matters for credit-risk probabilities.
 - [ ] You can explain how monitoring would work in real production.
 - [ ] You can explain how prediction logging captures request IDs, timestamps, model metadata, hashed IDs, risk bands, and reason codes.
+- [ ] You can explain deployment steps, monitoring cadence, alert thresholds, rollback, incident response, retraining triggers, ownership, and sign-off.
 - [ ] You can explain accepted-applicant bias and why reject inference is documented but not applied.
 - [ ] You can explain the champion versus less-sensitive challenger tradeoff.
 - [ ] You can describe the next production steps: feature registry, timestamp controls, compliance review, model registry, and live monitoring.

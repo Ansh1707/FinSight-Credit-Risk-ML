@@ -15,7 +15,8 @@ Read these files in order:
 7. `reports/fair_lending_review.md` — formal portfolio fair-lending/proxy-risk governance review without legal-certification claims.
 8. `reports/challenger_governance_report.md` — champion versus less-sensitive challenger tradeoff.
 9. `reports/batch_scoring_summary.md` — batch scoring schema validation and privacy-safe prediction logging.
-10. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
+10. `reports/production_readiness_runbook.md` — deployment, monitoring, rollback, incident, retraining, and sign-off runbook.
+11. `reports/business_impact_summary.md` — review-capacity and collections-priority business interpretation.
 
 ## What This Project Demonstrates
 
@@ -36,6 +37,7 @@ Read these files in order:
 | API serving | FastAPI app and Dockerfile |
 | Batch scoring and audit logs | `src/api/batch_score.py`, `reports/prediction_audit_log_sample.csv` |
 | Monitoring | drift and performance monitoring reports |
+| Production readiness | `reports/production_readiness_runbook.md`, `reports/production_readiness_checklist.json` |
 | Governance | model card, leakage audit, proxy-risk analysis, governance checklist |
 | Engineering hygiene | tests, Makefile, CI workflow, `.gitignore` |
 | Final handoff | final submission note and final project audit |
@@ -54,6 +56,7 @@ Read these files in order:
 - Fair-lending/proxy feature-control documentation: `reports/fair_lending_review.md`.
 - Less-sensitive challenger model: PR-AUC `0.2559`, Recall@Top-10% `0.3488`, after removing `15` controlled features.
 - Batch scoring sample: `1,000` rows scored with schema validation `passed` and privacy-safe hashed applicant IDs.
+- Production readiness runbook: deployment steps, monitoring cadence, alert thresholds, rollback, incidents, retraining triggers, owners, and sign-off checklist.
 - At `10%` review capacity, the model captures `43.72%` of observed defaults, a `4.37x` lift over random review.
 - Leakage audit passed with `0` forbidden target or identifier fields in the model input list.
 - Monitoring simulation found `0` features with PSI >= `0.2` and prediction PSI `0.000117`.
@@ -124,6 +127,7 @@ Open `http://127.0.0.1:8000/docs`.
 - How proxy-risk analysis and fair-lending governance surface segment gaps and protected/proxy feature controls without claiming legal certification.
 - How the less-sensitive challenger quantifies the tradeoff between predictive lift and fair-lending/proxy-risk exposure.
 - How monitoring would work with real production windows and matured labels.
+- How the production readiness runbook handles rollback, incident response, retraining triggers, ownership, and sign-off.
 
 ## Honest Limitations
 

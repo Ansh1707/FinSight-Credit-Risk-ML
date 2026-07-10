@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.19.0 - Production Readiness Runbook
+
+- Added production readiness runbook covering deployment, batch operations, monitoring cadence, alert thresholds, rollback, incidents, retraining triggers, ownership, and sign-off.
+- Added machine-readable production readiness checklist with required gates, owner sign-offs, alert thresholds, and privacy controls.
+- Linked runbook evidence across README, project brief, model card, governance checklist, reviewer guide, release checklist, and final audit.
+
 ## 0.18.0 - Batch Scoring And Prediction Logging
 
 - Added production-style batch scoring using the saved final model without retraining.
