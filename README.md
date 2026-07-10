@@ -15,6 +15,7 @@ FinSight is an end-to-end fintech data science project for credit default predic
 - `reports/executive_summary.md` — recruiter-facing 2-minute, 5-minute, and deep-dive summary.
 - `reports/interview_defense_guide.md` — likely interview questions with crisp answers.
 - `reports/github_polish_checklist.md` — final GitHub safety, rendering, links, commands, and push-ready checklist.
+- `reports/github_repository_presentation.md` — repository description, topics, visibility, and README first-screen check.
 - `reports/final_case_study.md` — end-to-end business case study.
 - `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
 - `reports/model_card.md` — model card with validation, calibration, explainability, proxy-risk, leakage, and monitoring.
@@ -604,9 +605,10 @@ model service so CI does not require private raw data or trained model artifacts
 Before sharing the repository, review:
 
 - `reports/github_polish_checklist.md`
+- `reports/github_repository_presentation.md`
 - `RELEASE_CHECKLIST.md`
 
-These files verify README rendering, repository safety, ignored artifacts, final links, command snippets, portfolio presentation, and the final push-ready workflow. The checklist also reminds reviewers that raw data, processed data, trained models, local MLflow runs, large HTML reports, virtual environments, and logs are intentionally excluded from Git.
+These files verify README rendering, repository safety, ignored artifacts, final links, command snippets, portfolio presentation, repository description, topics, public/private sharing readiness, and the final push-ready workflow. The checklist also reminds reviewers that raw data, processed data, trained models, local MLflow runs, large HTML reports, virtual environments, and logs are intentionally excluded from Git.
 
 ## Repository Maintenance
 
@@ -631,6 +633,7 @@ For senior-review or interview discussion, start with:
 - `reports/executive_summary.md`
 - `reports/interview_defense_guide.md`
 - `reports/github_polish_checklist.md`
+- `reports/github_repository_presentation.md`
 - `reports/feature_registry.md`
 - `reports/reject_inference_note.md`
 - `reports/fair_lending_review.md`

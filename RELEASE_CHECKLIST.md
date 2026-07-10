@@ -68,6 +68,7 @@ Current verified result: run `make check` before release and update this line if
 - [ ] README appears correctly on GitHub.
 - [ ] Badges render correctly.
 - [ ] Final GitHub polish checklist is reviewed: `reports/github_polish_checklist.md`.
+- [ ] Repository presentation guide is reviewed: `reports/github_repository_presentation.md`.
 - [ ] License is visible on GitHub.
 - [ ] Final reviewer links are visible near the top of README.
 - [ ] Project description mentions credit risk, collections, explainability, monitoring, and FastAPI.

@@ -2,6 +2,12 @@
 
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
+## 0.22.0 - GitHub Repository Presentation
+
+- Added `reports/github_repository_presentation.md` with repository description, topic recommendations, README first-screen assessment, and private/public sharing readiness.
+- Documented the live GitHub metadata check: the repository is public, while description and topics still need GitHub UI updates.
+- Linked the repository presentation check from README, reviewer guide, release checklist, final submission, project brief, roadmap, and final audit.
+
 ## 0.21.0 - Final GitHub Polish
 
 - Added `reports/github_polish_checklist.md` for README rendering, repository safety, ignored artifacts, final links, command snippets, portfolio presentation, and push readiness.

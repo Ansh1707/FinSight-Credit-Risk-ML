@@ -20,16 +20,18 @@ GitHub reviewers should start here:
 2. `reports/executive_summary.md`
 3. `reports/interview_defense_guide.md`
 4. `reports/github_polish_checklist.md`
-5. `REVIEW_GUIDE.md`
-6. `reports/final_case_study.md`
-7. `reports/model_card.md`
-8. `reports/final_project_audit.md`
+5. `reports/github_repository_presentation.md`
+6. `REVIEW_GUIDE.md`
+7. `reports/final_case_study.md`
+8. `reports/model_card.md`
+9. `reports/final_project_audit.md`
 
 ## Best Evidence
 
 - End-to-end pipeline from raw data validation to feature engineering, modeling, explainability, API serving, monitoring, dashboard outputs, and governance.
 - Recruiter-facing executive summary and interview defense guide.
 - GitHub polish checklist for rendering, safety, links, commands, and final push readiness.
+- GitHub repository presentation check with recommended description, topics, visibility status, and README first-screen review.
 - SQL analysis layer under `sql/`.
 - PySpark feature pipeline under `src/features/pyspark_feature_engineering.py`.
 - Feature registry and timestamp-lineage report under `reports/feature_registry.md`.
@@ -68,6 +70,7 @@ GitHub reviewers should start here:
 | Executive summary | `reports/executive_summary.md` |
 | Interview defense guide | `reports/interview_defense_guide.md` |
 | GitHub polish checklist | `reports/github_polish_checklist.md` |
+| GitHub repository presentation | `reports/github_repository_presentation.md` |
 | Local test suite | `46` tests passed |
 
 ## Repository Safety

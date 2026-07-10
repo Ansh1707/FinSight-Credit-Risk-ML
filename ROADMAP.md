@@ -170,6 +170,12 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Extends repository hygiene tests to verify local Markdown/report references and README fenced-code rendering basics.
 - Output: `reports/github_polish_checklist.md`.
 
+## Phase 27: GitHub Repository Presentation - Complete
+
+- Adds final repository presentation guidance covering the GitHub description, topics, README first-screen impression, and private/public sharing readiness.
+- Documents the live GitHub metadata state: public repository, empty description, and empty topics.
+- Output: `reports/github_repository_presentation.md`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

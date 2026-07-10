@@ -28,6 +28,7 @@ def test_expected_project_files_exist() -> None:
         "reports/executive_summary.md",
         "reports/interview_defense_guide.md",
         "reports/github_polish_checklist.md",
+        "reports/github_repository_presentation.md",
         "reports/governance_checklist.md",
         "reports/mlflow_experiment_summary.md",
         "reports/model_registry.md",
@@ -142,6 +143,7 @@ def test_documented_local_markdown_and_report_references_exist() -> None:
         "PROJECT_BRIEF.md",
         "ROADMAP.md",
         "reports/github_polish_checklist.md",
+        "reports/github_repository_presentation.md",
     ]
     pattern = re.compile(
         r"`((?:reports|dashboard|sql|src|tests|\.github)/[^`\s]+|"

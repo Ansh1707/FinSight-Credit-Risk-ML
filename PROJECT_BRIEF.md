@@ -84,6 +84,7 @@ The implemented project produces:
 * production readiness runbook and sign-off checklist under `reports/production_readiness_runbook.md` and `reports/production_readiness_checklist.json`
 * recruiter-facing executive summary and interview defense guide under `reports/executive_summary.md` and `reports/interview_defense_guide.md`
 * final GitHub polish checklist under `reports/github_polish_checklist.md`
+* final GitHub repository presentation check under `reports/github_repository_presentation.md`
 * reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
 * final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
