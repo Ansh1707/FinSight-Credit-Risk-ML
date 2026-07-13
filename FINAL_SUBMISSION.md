@@ -4,27 +4,10 @@
 
 FinSight — Explainable Credit Risk & Collections ML Platform
 
-## Target Role
-
-Data Scientist I, fintech credit-risk and collections analytics.
-
 ## One-Line Pitch
 
 Built an end-to-end credit-risk and collections ML platform that uses SQL, PySpark, LightGBM, SHAP, FastAPI, monitoring, dashboard-ready outputs, and governance documentation to predict loan default risk and prioritize high-risk applicants for review.
 
-## What To Share First
-
-GitHub reviewers should start here:
-
-1. `README.md`
-2. `reports/executive_summary.md`
-3. `reports/interview_defense_guide.md`
-4. `reports/github_polish_checklist.md`
-5. `reports/github_repository_presentation.md`
-6. `REVIEW_GUIDE.md`
-7. `reports/final_case_study.md`
-8. `reports/model_card.md`
-9. `reports/final_project_audit.md`
 
 ## Best Evidence
 
@@ -84,21 +67,7 @@ The repository is safe to share because these artifacts are ignored and not comm
 - Production log folders under `logs/` and `reports/production_logs/`
 - Virtual environments and Python caches
 
-## How To Position This In An Interview
 
-Emphasize that this is not just a model. It is a production-style data science workflow:
-
-- Business framing before modeling.
-- Clear 2-minute, 5-minute, and deep-dive project explanation.
-- SQL and PySpark for scalable analysis and feature engineering.
-- Ranking-focused validation because defaults are imbalanced.
-- Calibration and leakage checks because credit-risk probabilities can affect policy decisions.
-- SHAP explanations and reason codes for analyst usability.
-- Collections priority scoring that translates ML into an operational queue.
-- Batch scoring and privacy-safe prediction logging with request IDs, timestamps, model metadata, hashed IDs, and reason-code fields.
-- Challenger-model governance that quantifies predictive lift versus protected/proxy feature risk.
-- Production readiness runbook covering deployment, monitoring cadence, alerts, rollback, incidents, retraining triggers, owners, and sign-off.
-- Monitoring and governance because real fintech models need lifecycle controls.
 
 ## Honest Production Caveats
 
