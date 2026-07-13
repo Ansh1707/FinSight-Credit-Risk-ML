@@ -1,9 +1,5 @@
 # AGENTS.md
 
-## Role
-
-You are helping build a portfolio-grade Data Science project for a junior Data Scientist role at Navi, a fintech company.
-
 ## Project Name
 
 FinSight — Explainable Credit Risk & Collections ML Platform
@@ -90,4 +86,3 @@ A task is complete only when:
 * README or related documentation is updated.
 * Assumptions are documented.
 * Results are reproducible.
-* The implementation improves the project’s value for a fintech Data Scientist I role.
