@@ -39,8 +39,6 @@ For recruiter review and interview preparation:
 - `reports/executive_summary.md`
 - `reports/interview_defense_guide.md`
 
-The executive summary explains the project in 2-minute, 5-minute, and deep-dive formats. The interview guide covers strongest evidence, likely Navi Data Scientist I interview questions, crisp answers, limitations, and how to defend choices around PR-AUC, Recall@Top-K, KS, leakage, reject inference, fair-lending/proxy-risk controls, challenger modeling, batch logging, monitoring, and production readiness.
-
 ## Solution Overview
 
 The project uses the Home Credit Default Risk dataset to build a production-style machine learning workflow:
