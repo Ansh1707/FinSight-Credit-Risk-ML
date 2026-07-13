@@ -8,22 +8,6 @@
 
 FinSight is an end-to-end fintech data science project for credit default prediction, explainable risk review, collections prioritization, API serving, model monitoring, and dashboard-ready reporting. It is designed as a portfolio project.
 
-## Reviewer Quick Links
-
-- `REVIEW_GUIDE.md` — fast path for recruiters and interviewers.
-- `FINAL_SUBMISSION.md` — concise final project handoff and sharing note.
-- `reports/executive_summary.md` — recruiter-facing 2-minute, 5-minute, and deep-dive summary.
-- `reports/interview_defense_guide.md` — likely interview questions with crisp answers.
-- `reports/github_polish_checklist.md` — final GitHub safety, rendering, links, commands, and push-ready checklist.
-- `reports/github_repository_presentation.md` — repository description, topics, visibility, and README first-screen check.
-- `reports/final_case_study.md` — end-to-end business case study.
-- `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
-- `reports/model_card.md` — model card with validation, calibration, explainability, proxy-risk, leakage, and monitoring.
-- `reports/governance_checklist.md` — production-readiness and deployment controls.
-- `reports/fair_lending_review.md` — formal fair-lending/proxy-risk governance review without legal-certification claims.
-- `RELEASE_CHECKLIST.md` — final GitHub safety and presentation checklist.
-- `CHANGELOG.md` — release-history style summary of project maturity milestones.
-
 ## Business Problem
 
 Digital lenders need to identify applicants who are likely to default, understand why they are risky, and prioritize high-risk accounts for review or collections. A useful credit-risk workflow needs more than a model score: it needs feature pipelines, validation, explainability, monitoring, and business-facing outputs.
