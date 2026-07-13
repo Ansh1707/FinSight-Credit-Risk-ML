@@ -4,9 +4,6 @@
 
 FinSight — Explainable Credit Risk & Collections ML Platform
 
-## Target Role
-
-Data Scientist I at Navi.
 
 ## Business Problem
 
@@ -260,16 +257,6 @@ The project now includes a professional model card and governance checklist:
 
 These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, challenger-model tradeoffs, batch prediction logging, leakage audit results, monitoring plan, limitations, deployment runbook, ownership expectations, rollback needs, incident response, retraining triggers, and production sign-off requirements.
 
-## Reviewer Readiness Snapshot
-
-The repository includes:
-
-* `REVIEW_GUIDE.md` for a fast recruiter or interviewer walkthrough.
-* `reports/executive_summary.md` for a 2-minute, 5-minute, and deep-dive recruiter-facing summary.
-* `reports/interview_defense_guide.md` for likely interview questions and crisp answers.
-* `RELEASE_CHECKLIST.md` for safe GitHub sharing and final push checks.
-
-These files help reviewers understand the strongest project evidence quickly while documenting what is intentionally excluded from Git, such as raw data, processed data, trained model binaries, virtual environments, and large HTML reports.
 
 ## Repository Maintenance Snapshot
 
@@ -283,15 +270,6 @@ The repository includes open-source-style maintenance files:
 * `.github/ISSUE_TEMPLATE/`
 
 These artifacts make the repository easier to inspect, maintain, and safely share as a professional portfolio project.
-
-## Final Handoff Snapshot
-
-The final handoff files are:
-
-* `FINAL_SUBMISSION.md`
-* `reports/final_project_audit.md`
-
-The final audit rates FinSight at `99/100` as a portfolio project, with explicit remaining production gaps around live data contracts, legal fair-lending certification, adverse-action compliance approval, applied reject inference with compliant rejected-applicant outcomes, production enforcement of timestamp cutoffs, authentication, production-grade registry approval workflow, production monitoring, and incident ownership.
 
 ## MLflow and Registry Snapshot
 
