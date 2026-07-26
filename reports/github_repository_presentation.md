@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This is the final GitHub presentation check for FinSight before sharing the repository with recruiters, hiring managers, or Navi Data Scientist I interviewers.
+This is the final GitHub presentation check for FinSight before sharing the repository with technical reviewers.
 
 ## Live Repository Metadata
 
@@ -65,14 +65,14 @@ Current first-screen strengths:
 - The title clearly communicates the domain: `FinSight: Explainable Credit Risk & Collections ML Platform`.
 - Badges show Python, CI, model type, API, and portfolio-ready status.
 - The opening paragraph immediately frames credit default prediction, explainable risk review, collections prioritization, API serving, monitoring, and dashboard-ready reporting.
-- The first visible section is `Reviewer Quick Links`, which helps a recruiter or interviewer navigate quickly.
-- The README explicitly targets a Navi Data Scientist I application.
+- The first visible section is `Reviewer Quick Links`, which helps technical reviewers navigate quickly.
+- The README presents the project as a company-neutral fintech data science portfolio project.
 
 Recommended manual check after final push:
 
 1. Open the GitHub repository in a browser.
 2. Confirm the first screen shows title, badges, one-sentence intro, and reviewer quick links without scrolling too far.
-3. Open `reports/executive_summary.md` and `reports/interview_defense_guide.md` from the quick links.
+3. Open `reports/final_project_audit.md` from the quick links.
 4. Confirm tables in the final metrics section render cleanly.
 5. Confirm code blocks and the architecture text diagram render cleanly.
 
@@ -97,27 +97,25 @@ Before sharing publicly, verify:
 
 If the repository is later made private:
 
-- Add each intended reviewer as a GitHub collaborator before sending the link.
+- Add each intended technical reviewer as a GitHub collaborator before sending the link.
 - Ask the reviewer to confirm they can open the repository.
 - Mention that raw data, processed data, trained model binaries, local MLflow runs, and large HTML reports are intentionally excluded from Git.
-- Keep `README.md`, `reports/executive_summary.md`, `reports/interview_defense_guide.md`, and `reports/final_project_audit.md` as the first review path.
+- Keep `README.md` and `reports/final_project_audit.md` as the first review path.
 
 ## Final Share Message
 
-Use this when sending the repo to a Navi recruiter or interviewer:
+Use this when sending the repo to a technical reviewer:
 
 ```text
-Hi, I built FinSight as an end-to-end fintech credit-risk and collections ML platform for a Navi Data Scientist I role. It covers SQL analysis, PySpark feature engineering, imbalanced classification with LightGBM, SHAP reason codes, collections prioritization, FastAPI serving, monitoring, dashboard-ready outputs, and model governance.
+Hi, I built FinSight as an end-to-end fintech credit-risk and collections ML platform. It covers SQL analysis, PySpark feature engineering, imbalanced classification with LightGBM, SHAP reason codes, collections prioritization, FastAPI serving, monitoring, dashboard-ready outputs, and model governance.
 
 Suggested review path:
 1. README.md
-2. reports/executive_summary.md
-3. reports/interview_defense_guide.md
-4. reports/final_project_audit.md
+2. reports/final_project_audit.md
 
 The repository intentionally excludes raw data, processed data, trained model binaries, local MLflow runs, and large HTML reports for safe sharing. The committed reports contain the actual generated metrics and business findings.
 ```
 
 ## Final Recommendation
 
-The repository is presentation-ready after two GitHub UI updates: add the repository description and add topics. The README first screen already presents the project professionally for a Navi Data Scientist I portfolio review.
+The repository is presentation-ready. The README first screen presents the project professionally for a fintech data science portfolio review.

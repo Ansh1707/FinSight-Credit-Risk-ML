@@ -6,7 +6,18 @@
 ![API](https://img.shields.io/badge/API-FastAPI-teal)
 ![Status](https://img.shields.io/badge/Status-Portfolio%20Ready-brightgreen)
 
-FinSight is an end-to-end fintech data science project for credit default prediction, explainable risk review, collections prioritization, API serving, model monitoring, and dashboard-ready reporting. It is designed as a portfolio project.
+FinSight is an end-to-end fintech data science project for credit default prediction, explainable risk review, collections prioritization, API serving, model monitoring, and dashboard-ready reporting. It is designed as a company-neutral portfolio project for credit-risk and collections analytics.
+
+## Reviewer Quick Links
+
+- `reports/github_polish_checklist.md` — final GitHub safety, rendering, links, commands, and push-ready checklist.
+- `reports/github_repository_presentation.md` — repository description, topics, visibility, and README first-screen check.
+- `reports/final_case_study.md` — end-to-end business case study.
+- `reports/final_project_audit.md` — strict final audit, rating, checklist, and production caveats.
+- `reports/model_card.md` — model card with validation, calibration, explainability, proxy-risk, leakage, and monitoring.
+- `reports/governance_checklist.md` — production-readiness and deployment controls.
+- `reports/fair_lending_review.md` — formal fair-lending/proxy-risk governance review without legal-certification claims.
+- `CHANGELOG.md` — release-history style summary of project maturity milestones.
 
 ## Business Problem
 
@@ -15,13 +26,6 @@ Digital lenders need to identify applicants who are likely to default, understan
 FinSight answers:
 
 > Which applicants are most likely to default, what risk drivers explain the prediction, and how should collections teams prioritize action?
-
-## Executive Summary And Interview Defense
-
-For recruiter review and interview preparation:
-
-- `reports/executive_summary.md`
-- `reports/interview_defense_guide.md`
 
 ## Solution Overview
 
@@ -512,9 +516,6 @@ FinSight_Credit_Risk_ML/
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── SECURITY.md
-├── FINAL_SUBMISSION.md
-├── REVIEW_GUIDE.md
-├── RELEASE_CHECKLIST.md
 ├── PROJECT_BRIEF.md
 ├── ROADMAP.md
 └── README.md
@@ -588,8 +589,6 @@ Before sharing the repository, review:
 
 - `reports/github_polish_checklist.md`
 - `reports/github_repository_presentation.md`
-- `RELEASE_CHECKLIST.md`
-
 These files verify README rendering, repository safety, ignored artifacts, final links, command snippets, portfolio presentation, repository description, topics, public/private sharing readiness, and the final push-ready workflow. The checklist also reminds reviewers that raw data, processed data, trained models, local MLflow runs, large HTML reports, virtual environments, and logs are intentionally excluded from Git.
 
 ## Repository Maintenance
@@ -607,13 +606,9 @@ These files document how the project should be reviewed, changed, and shared wit
 
 ## Governance Artifacts
 
-For senior-review or interview discussion, start with:
+For senior technical review, start with:
 
-- `FINAL_SUBMISSION.md`
-- `REVIEW_GUIDE.md`
 - `reports/final_project_audit.md`
-- `reports/executive_summary.md`
-- `reports/interview_defense_guide.md`
 - `reports/github_polish_checklist.md`
 - `reports/github_repository_presentation.md`
 - `reports/feature_registry.md`
@@ -634,10 +629,9 @@ For senior-review or interview discussion, start with:
 - `reports/final_case_study.md`
 - `reports/leakage_audit.md`
 - `reports/fairness_proxy_analysis.md`
-- `RELEASE_CHECKLIST.md`
 - `CHANGELOG.md`
 
-## Resume-Ready Impact Bullets
+## Project Impact Bullets
 
 - Built FinSight, an end-to-end credit-risk and collections ML platform using PySpark, SQL, scikit-learn, XGBoost/LightGBM, SHAP, FastAPI, and Docker to predict loan default probability and prioritize high-risk applicants.
 - Engineered lending-risk features including credit-to-income ratio, annuity burden, employment stability, external score aggregates, repayment behavior, and bureau-history signals using PySpark pipelines.
@@ -647,7 +641,7 @@ For senior-review or interview discussion, start with:
 
 ## Limitations
 
-- The project uses the public Home Credit dataset, not live Navi data or production credit bureau feeds.
+- The project uses the public Home Credit dataset, not live production lending data or production credit bureau feeds.
 - Monitoring is simulated by splitting historical processed data into reference and current windows.
 - SHAP applicant-level reason codes are generated for a sample to keep local runtime practical.
 - Raw probabilities need further calibration and policy review before use as automated decision thresholds.

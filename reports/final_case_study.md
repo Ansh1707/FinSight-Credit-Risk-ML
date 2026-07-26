@@ -4,7 +4,7 @@
 
 FinSight simulates a fintech credit-risk workflow for predicting loan default, explaining applicant-level risk, and prioritizing collections actions. The business goal is to help lending and collections teams identify high-risk applicants, understand the drivers behind risk, and monitor whether model inputs and predictions remain stable over time.
 
-The project is framed for a Data Scientist I role at Navi, where the work should show practical credit-risk modeling, SQL analysis, PySpark feature engineering, model validation, explainability, API deployment, monitoring, and business communication.
+The project is framed as a fintech data science portfolio project showing practical credit-risk modeling, SQL analysis, PySpark feature engineering, model validation, explainability, API deployment, monitoring, and business communication.
 
 ## Data Used
 

@@ -27,7 +27,7 @@ FinSight is intended for:
 - Supporting manual credit-risk review and collections prioritization.
 - Generating applicant-level reason codes for analyst review.
 - Producing portfolio monitoring signals for drift, missingness, prediction movement, and labeled performance.
-- Demonstrating reproducible data science work for a fintech Data Scientist I role.
+- Demonstrating reproducible data science work for a fintech portfolio project.
 
 Recommended operational interpretation: use the score as a decision-support and queue-prioritization signal, not as a fully automated approval, rejection, or adverse-action rule.
 

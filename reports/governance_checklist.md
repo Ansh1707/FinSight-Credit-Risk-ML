@@ -125,6 +125,6 @@ Before production, every item below should be complete:
 
 ## Current Portfolio Conclusion
 
-FinSight is strong as a portfolio-grade credit-risk and collections ML platform. It demonstrates the technical workflow expected from a fintech Data Scientist I candidate: PySpark feature engineering, SQL analysis, imbalanced classification, validation beyond accuracy, calibration, SHAP explanations, business prioritization, FastAPI serving, monitoring, dashboard outputs, and governance documentation.
+FinSight is strong as a portfolio-grade credit-risk and collections ML platform. It demonstrates a complete fintech data science workflow: PySpark feature engineering, SQL analysis, imbalanced classification, validation beyond accuracy, calibration, SHAP explanations, business prioritization, FastAPI serving, monitoring, dashboard outputs, and governance documentation.
 
 It should be presented as a production-style prototype. A real lender would still require formal compliance review, fair-lending validation, data contracts, timestamp-based feature controls, model registry integration, and live monitoring operations before deployment.

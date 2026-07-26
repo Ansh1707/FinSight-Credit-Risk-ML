@@ -8,9 +8,6 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_expected_project_files_exist() -> None:
     expected_paths = [
         "README.md",
-        "FINAL_SUBMISSION.md",
-        "REVIEW_GUIDE.md",
-        "RELEASE_CHECKLIST.md",
         "LICENSE",
         "CHANGELOG.md",
         "CONTRIBUTING.md",
@@ -25,8 +22,6 @@ def test_expected_project_files_exist() -> None:
         ".github/ISSUE_TEMPLATE/model_governance_review.md",
         "reports/model_card.md",
         "reports/final_project_audit.md",
-        "reports/executive_summary.md",
-        "reports/interview_defense_guide.md",
         "reports/github_polish_checklist.md",
         "reports/github_repository_presentation.md",
         "reports/governance_checklist.md",
@@ -100,7 +95,6 @@ def test_readme_contains_portfolio_sections() -> None:
     required_sections = [
         "Business Problem",
         "Reviewer Quick Links",
-        "Executive Summary And Interview Defense",
         "Architecture",
         "Feature Registry And Timestamp Lineage",
         "Final Metrics",
@@ -119,7 +113,7 @@ def test_readme_contains_portfolio_sections() -> None:
         "Governance Artifacts",
         "Repository Maintenance",
         "GitHub Polish Checklist",
-        "Resume-Ready Impact Bullets",
+        "Project Impact Bullets",
         "Limitations",
     ]
 
@@ -137,9 +131,6 @@ def test_readme_markdown_rendering_basics() -> None:
 def test_documented_local_markdown_and_report_references_exist() -> None:
     docs_to_check = [
         "README.md",
-        "REVIEW_GUIDE.md",
-        "RELEASE_CHECKLIST.md",
-        "FINAL_SUBMISSION.md",
         "PROJECT_BRIEF.md",
         "ROADMAP.md",
         "reports/github_polish_checklist.md",
@@ -147,7 +138,7 @@ def test_documented_local_markdown_and_report_references_exist() -> None:
     ]
     pattern = re.compile(
         r"`((?:reports|dashboard|sql|src|tests|\.github)/[^`\s]+|"
-        r"(?:README|FINAL_SUBMISSION|REVIEW_GUIDE|RELEASE_CHECKLIST|PROJECT_BRIEF|ROADMAP|CHANGELOG|CONTRIBUTING|SECURITY|LICENSE)\.md|"
+        r"(?:README|PROJECT_BRIEF|ROADMAP|CHANGELOG|CONTRIBUTING|SECURITY|LICENSE)\.md|"
         r"Dockerfile|requirements\.txt|Makefile)`"
     )
     allowed_absent_paths = {

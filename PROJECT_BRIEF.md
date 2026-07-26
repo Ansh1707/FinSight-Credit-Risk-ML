@@ -4,7 +4,6 @@
 
 FinSight — Explainable Credit Risk & Collections ML Platform
 
-
 ## Business Problem
 
 A fintech lending company needs to predict which loan applicants are likely to default and prioritize high-risk customers for manual review or collections. The model must be accurate, explainable, monitored, and useful to business stakeholders.
@@ -56,7 +55,7 @@ Do not use `application_test.csv` or `sample_submission.csv`. This is not a Kagg
 * FastAPI inference service
 * model monitoring reports
 * dashboard or dashboard-ready output
-* final README with resume-ready explanation
+* final README with project explanation and run commands
 
 ## Final Project Outputs
 
@@ -79,12 +78,10 @@ The implemented project produces:
 * less-sensitive challenger-model governance comparison under `reports/challenger_model_comparison.csv`, `reports/challenger_governance_report.md`, and `reports/challenger_governance.json`
 * batch scoring and privacy-safe prediction logging artifacts under `reports/batch_scoring_summary.md`, `reports/batch_scoring_schema.json`, and `reports/prediction_audit_log_sample.csv`
 * production readiness runbook and sign-off checklist under `reports/production_readiness_runbook.md` and `reports/production_readiness_checklist.json`
-* recruiter-facing executive summary and interview defense guide under `reports/executive_summary.md` and `reports/interview_defense_guide.md`
 * final GitHub polish checklist under `reports/github_polish_checklist.md`
 * final GitHub repository presentation check under `reports/github_repository_presentation.md`
-* reviewer and release-readiness documentation under `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`
 * repository maintenance files including `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, and GitHub issue/PR templates
-* final handoff artifacts under `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`
+* final audit artifact under `reports/final_project_audit.md`
 
 ## Success Metrics
 
@@ -107,9 +104,9 @@ Business outputs:
 * collections priority ranking
 * monitoring summary
 
-## Final Resume Goal
+## Final Portfolio Goal
 
-The final project should support resume bullets showing PySpark, SQL, credit risk modeling, model validation, explainability, FastAPI deployment, and model monitoring.
+The final project should show PySpark, SQL, credit risk modeling, model validation, explainability, FastAPI deployment, and model monitoring.
 
 ## Final Model Snapshot
 
@@ -195,7 +192,7 @@ The project includes a less-sensitive challenger model governance workflow:
 * `reports/challenger_governance_report.md`
 * `reports/challenger_governance.json`
 
-The challenger removes `15` features flagged by fair-lending/proxy-risk controls and trains with `61` lower-risk features. Actual test metrics show a modest predictive tradeoff: PR-AUC moves from `0.2640` to `0.2559`, Recall@Top-10% moves from `0.3593` to `0.3488`, and KS moves from `0.4123` to `0.4013`. This gives reviewers a concrete governance artifact for discussing whether the champion model's predictive lift justifies stronger protected/proxy feature controls.
+The challenger removes `15` features flagged by fair-lending/proxy-risk controls and trains with `61` lower-risk features. Actual test metrics show a modest predictive tradeoff: PR-AUC moves from `0.2640` to `0.2559`, Recall@Top-10% moves from `0.3593` to `0.3488`, and KS moves from `0.4123` to `0.4013`. This gives technical reviewers a concrete governance artifact for discussing whether the champion model's predictive lift justifies stronger protected/proxy feature controls.
 
 ## Batch Scoring And Logging Snapshot
 
@@ -216,7 +213,7 @@ The project includes a production readiness runbook:
 * `reports/production_readiness_runbook.md`
 * `reports/production_readiness_checklist.json`
 
-The runbook covers deployment steps, batch scoring operations, monitoring cadence, alert thresholds, rollback plan, incident response, retraining triggers, ownership, and final pre-production sign-off. It is designed for portfolio review and interview discussion, not as a real production approval record.
+The runbook covers deployment steps, batch scoring operations, monitoring cadence, alert thresholds, rollback plan, incident response, retraining triggers, ownership, and final pre-production sign-off. It is designed for portfolio review, not as a real production approval record.
 
 ## Reject Inference Snapshot
 
@@ -256,7 +253,6 @@ The project now includes a professional model card and governance checklist:
 * `reports/governance_checklist.md`
 
 These documents cover intended use, prohibited use, training data, feature groups, validation metrics, calibration, explainability, proxy-risk findings, fair-lending governance, challenger-model tradeoffs, batch prediction logging, leakage audit results, monitoring plan, limitations, deployment runbook, ownership expectations, rollback needs, incident response, retraining triggers, and production sign-off requirements.
-
 
 ## Repository Maintenance Snapshot
 

@@ -82,9 +82,9 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 
 ## Phase 13: Final Documentation - Complete
 
-- Polishes README for recruiter and GitHub review.
+- Polishes README for technical and GitHub review.
 - Adds a final project case study.
-- Documents final metrics, architecture, run commands, limitations, and resume bullets.
+- Documents final metrics, architecture, run commands, limitations, and project impact bullets.
 - Output: `README.md` and `reports/final_case_study.md`.
 
 ## Phase 14: Model Governance - Complete
@@ -95,9 +95,9 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 
 ## Phase 15: GitHub Review Readiness - Complete
 
-- Adds a reviewer guide so recruiters and interviewers can evaluate the project quickly without running the full pipeline.
-- Adds a release checklist for GitHub safety, local quality checks, portfolio evidence, presentation, and interview readiness.
-- Output: `REVIEW_GUIDE.md` and `RELEASE_CHECKLIST.md`.
+- Adds a reviewer guide so technical reviewers can evaluate the project quickly without running the full pipeline.
+- Adds a release checklist for GitHub safety, local quality checks, portfolio evidence, and presentation readiness.
+- Output: GitHub-facing documentation and repository safety checks.
 
 ## Phase 16: Repository Maintenance - Complete
 
@@ -107,9 +107,9 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 
 ## Phase 17: Final Handoff And Audit - Complete
 
-- Adds a concise final submission note for sharing the project with recruiters and interviewers.
-- Adds a strict final project audit with rating, completion checklist, metric evidence, business evidence, governance evidence, repository safety audit, Navi role fit, and remaining production gaps.
-- Output: `FINAL_SUBMISSION.md` and `reports/final_project_audit.md`.
+- Adds a concise final submission note for sharing the project.
+- Adds a strict final project audit with rating, completion checklist, metric evidence, business evidence, governance evidence, repository safety audit, fintech relevance, and remaining production gaps.
+- Output: `reports/final_project_audit.md`.
 
 ## Phase 18: MLflow Tracking And Registry Documentation - Complete
 
@@ -158,11 +158,10 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Adds a machine-readable checklist with required owners, approval gates, alert thresholds, and privacy controls.
 - Output: `reports/production_readiness_runbook.md` and `reports/production_readiness_checklist.json`.
 
-## Phase 25: Executive Summary And Interview Defense - Complete
+## Phase 25: Company-Neutral Documentation Cleanup - Complete
 
-- Adds a recruiter-facing executive summary with 2-minute, 5-minute, and deep-dive project narratives.
-- Adds an interview defense guide with strongest evidence, likely Navi Data Scientist I questions, crisp answers, limitations, and questions to ask interviewers.
-- Output: `reports/executive_summary.md` and `reports/interview_defense_guide.md`.
+- Removes company-specific role references and dedicated job-application preparation artifacts.
+- Keeps the project positioned as a company-neutral fintech credit-risk portfolio project.
 
 ## Phase 26: Final GitHub Polish - Complete
 

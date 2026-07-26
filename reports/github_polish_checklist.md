@@ -2,21 +2,17 @@
 
 ## Purpose
 
-This checklist verifies that FinSight is safe, readable, and portfolio-ready before sharing the GitHub repository with recruiters, hiring managers, or Navi Data Scientist I interviewers.
+This checklist verifies that FinSight is safe, readable, and portfolio-ready before sharing the GitHub repository with technical reviewers.
 
 ## Final Reviewer Path
 
 Use this order for the cleanest first impression:
 
 1. `README.md`
-2. `reports/executive_summary.md`
-3. `reports/interview_defense_guide.md`
-4. `REVIEW_GUIDE.md`
-5. `FINAL_SUBMISSION.md`
-6. `reports/final_project_audit.md`
-7. `reports/model_card.md`
-8. `reports/governance_checklist.md`
-9. `reports/production_readiness_runbook.md`
+2. `reports/final_project_audit.md`
+3. `reports/model_card.md`
+4. `reports/governance_checklist.md`
+5. `reports/production_readiness_runbook.md`
 
 ## README Rendering Checks
 
@@ -26,7 +22,7 @@ Use this order for the cleanest first impression:
 - [x] Tables are used for final metrics, calibration, business impact, and risk-band summaries.
 - [x] Local commands are fenced with `bash` or `text`.
 - [x] The README includes honest limitations and does not claim production approval.
-- [x] The README links to recruiter-facing and governance artifacts.
+- [x] The README links to project summary and governance artifacts.
 
 Manual GitHub check:
 
@@ -110,7 +106,7 @@ Reviewer note: commands that depend on `data/raw/`, `data/processed/`, or `model
 - [x] Accuracy is not used as the main model metric.
 - [x] Business impact is expressed through review capacity, default capture, and lift.
 - [x] Limitations are explicit: public data, simulated monitoring, accepted-applicant bias, reject inference not applied, fair-lending review not legal certification, and production timestamp controls still required.
-- [x] Interview preparation exists in 2-minute, 5-minute, and deep-dive formats.
+- [x] Project explanation exists in 2-minute, 5-minute, and deep-dive formats.
 
 ## Push-Ready Checklist
 
@@ -132,7 +128,7 @@ Before pushing, confirm:
 - [ ] `git diff --check` reports no whitespace errors.
 - [ ] README renders cleanly on GitHub after push.
 - [ ] Repository description and topics are set on GitHub.
-- [ ] Private repository access is granted to intended reviewers, or the repository is made public when ready.
+- [ ] Private repository access is granted to intended technical reviewers, or the repository is made public when ready.
 
 ## Final GitHub Topic Suggestions
 
@@ -151,4 +147,4 @@ Recommended topics:
 
 ## Final Positioning Statement
 
-FinSight is ready to present as a portfolio-grade, production-style credit-risk and collections ML platform. It demonstrates not only modeling, but also feature engineering, SQL analysis, explainability, business prioritization, API serving, monitoring, audit logging, governance, and interview-ready communication.
+FinSight is ready to present as a portfolio-grade, production-style credit-risk and collections ML platform. It demonstrates not only modeling, but also feature engineering, SQL analysis, explainability, business prioritization, API serving, monitoring, audit logging, governance, and clear technical communication.

@@ -14,11 +14,10 @@ All notable project changes are summarized here. This is a portfolio project, so
 - Linked the GitHub polish checklist from README, reviewer guide, release checklist, final submission, roadmap, project brief, and final audit.
 - Extended repository hygiene tests to validate local Markdown/report references and README fenced-code rendering basics.
 
-## 0.20.0 - Executive Summary And Interview Defense
+## 0.20.0 - Executive Summary
 
-- Added recruiter-facing executive summary with 2-minute, 5-minute, and deep-dive formats.
-- Added Navi Data Scientist I interview defense guide with likely questions, crisp answers, limitations, and closing narrative.
-- Linked executive and interview artifacts from README, final submission note, reviewer guide, project brief, roadmap, release checklist, and final audit.
+- Added executive summary with 2-minute, 5-minute, and deep-dive formats.
+- Linked executive summary artifacts from README, final submission note, reviewer guide, project brief, roadmap, release checklist, and final audit.
 
 ## 0.19.0 - Production Readiness Runbook
 
@@ -76,11 +75,6 @@ All notable project changes are summarized here. This is a portfolio project, so
 - Added security policy explaining secret, data, and vulnerability handling.
 - Added GitHub issue templates and pull request template.
 - Added this changelog for release-history visibility.
-
-## 0.10.0 - Reviewer Readiness
-
-- Added `REVIEW_GUIDE.md` for recruiter and interviewer review.
-- Added `RELEASE_CHECKLIST.md` for GitHub safety, presentation, and final manual checks.
 
 ## 0.9.0 - Model Governance
 
