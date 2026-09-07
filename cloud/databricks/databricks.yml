@@ -1,0 +1,37 @@
+bundle:
+  name: finsight-cloud-baseline
+
+variables:
+  input_table:
+    description: Existing catalog.schema.table containing the uploaded application sample
+  output_schema:
+    description: Existing catalog.schema for run-specific Delta output tables
+  experiment_name:
+    description: Workspace MLflow experiment path
+  evidence_volume:
+    description: Existing Unity Catalog volume directory for aggregate evidence
+  revision:
+    description: Exact 40-character Git commit being deployed
+
+resources:
+  jobs:
+    credit_risk_baseline:
+      name: finsight-cloud-baseline
+      max_concurrent_runs: 1
+      tasks:
+        - task_key: prepare_train_score
+          notebook_task:
+            notebook_path: ./workflow.py
+            base_parameters:
+              input_table: ${var.input_table}
+              output_schema: ${var.output_schema}
+              experiment_name: ${var.experiment_name}
+              evidence_volume: ${var.evidence_volume}
+              revision: ${var.revision}
+              max_rows: '20000'
+          timeout_seconds: 3600
+
+targets:
+  dev:
+    default: true
+    mode: development

@@ -29,8 +29,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Compile source files
-        run: python -m compileall src dashboard tests
+        run: python -m compileall src cloud dashboard tests
 
       - name: Run tests
         run: pytest -q
-

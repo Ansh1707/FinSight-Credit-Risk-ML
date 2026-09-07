@@ -117,7 +117,7 @@ Calibration was evaluated using validation-fitted Platt/sigmoid and isotonic tra
 | Platt/sigmoid | 0.0669 | 0.0062 | 0.7765 | 0.2640 | 0.3593 |
 | Isotonic | 0.0668 | 0.0023 | 0.7760 | 0.2540 | 0.3547 |
 
-Platt/sigmoid is the preferred balanced option for probability reporting because it materially improves calibration while preserving ranking metrics. Isotonic has the lowest test Brier score but weakens PR-AUC and Recall@Top-10%.
+These historical comparisons do not select a production calibration policy. Platt preserved ranking; isotonic reduced Brier error with some ranking loss. See [statistical validation](statistical_validation.md) for selection on separate validation subsets and explicit test-reuse limitations. The original serving artifact has not been recalibrated.
 
 ## Explainability
 

@@ -175,6 +175,14 @@ FinSight is complete as a portfolio-grade end-to-end credit-risk and collections
 - Documents the live GitHub metadata state: public repository, empty description, and empty topics.
 - Output: `reports/github_repository_presentation.md`.
 
+## Phase 28: Statistical Evidence And Cloud Workflow - Partial
+
+- Complete: retrospective paired bootstrap intervals and validation-only calibration selection using actual saved predictions.
+- Complete: explicitly synthetic hypothesis-testing demonstration with effect size, uncertainty and assumptions.
+- Prepared: Databricks serverless notebook, sample exporter and repeatable job configuration.
+- Pending: user creates a Databricks workspace, runs the workflow twice and publishes sanitized aggregate evidence.
+- Outputs: `reports/statistical_validation.md`, `reports/synthetic_experiment.md`, and `reports/cloud_statistics_progress.md`.
+
 ## Final Manual Checks Before GitHub Push
 
 ```bash

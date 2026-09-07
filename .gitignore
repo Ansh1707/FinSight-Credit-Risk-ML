@@ -7,6 +7,9 @@ reports/.cache/
 reports/.matplotlib-cache/
 reports/production_logs/
 logs/
+.databricks/
+cloud/databricks/.databricks/
+cloud/databricks/local-config.*
 
 .env
 .venv/

@@ -1,0 +1,21 @@
+{
+  "source_rows_scanned": 307511,
+  "sample_rows": 20000,
+  "sample_default_count": 1618,
+  "columns": [
+    "SK_ID_CURR",
+    "TARGET",
+    "AMT_INCOME_TOTAL",
+    "AMT_CREDIT",
+    "AMT_ANNUITY",
+    "DAYS_BIRTH",
+    "DAYS_EMPLOYED",
+    "EXT_SOURCE_1",
+    "EXT_SOURCE_2",
+    "EXT_SOURCE_3"
+  ],
+  "sha256": "75cdc1b6b864b5774fada641578e49638db04e552c54ae8580577b9b6a2dd665",
+  "sampling": "smallest deterministic pandas ID hashes; not stratified; no labels used in selection",
+  "pandas_version": "2.3.3",
+  "numpy_version": "2.4.6"
+}

@@ -7,7 +7,7 @@ setup:
 	$(PYTHON) -m pip install -r requirements.txt
 
 compile:
-	$(PYTHON) -m compileall src dashboard tests
+	$(PYTHON) -m compileall src cloud dashboard tests
 
 test:
 	$(PYTHON) -m pytest -q
@@ -19,4 +19,3 @@ api:
 
 dashboard:
 	$(PYTHON) dashboard/build_dashboard_data.py
-

@@ -216,7 +216,22 @@ Actual test-set calibration results:
 | Platt/sigmoid | 0.0669 | 0.0062 | 0.7765 | 0.2640 | 0.3593 |
 | Isotonic | 0.0668 | 0.0023 | 0.7760 | 0.2540 | 0.3547 |
 
-Platt/sigmoid calibration is the most balanced option because it materially improves probability calibration while preserving the final model's ranking metrics. Isotonic has the lowest test Brier score but slightly weakens PR-AUC and Recall@Top-10%.
+These are historical, descriptive comparisons, not a test-based method-selection policy. Platt preserves ranking in this comparison; isotonic trades some ranking resolution for lower Brier error. The API still uses the original champion probabilities. New validation-only calibration selection and retrospective confidence intervals are documented in [Statistical Validation](reports/statistical_validation.md).
+
+### Statistical Evidence And Cloud Extension
+
+- [Statistical validation](reports/statistical_validation.md): 1,000 paired applicant bootstrap replicates for champion/challenger metrics and their differences; validation-only calibration selection.
+- [Synthetic experiment](reports/synthetic_experiment.md): two-proportion hypothesis test, effect size, confidence interval and assumptions. Explicitly simulated; no measured business uplift.
+- [Databricks setup](cloud/databricks/README.md): SQL/PySpark transformations, training-only imputation, validation-selected logistic regression, MLflow and repeatable job configuration.
+- [Execution checklist](reports/cloud_statistics_progress.md): completed local evidence and pending cloud verification.
+
+```bash
+python -m src.models.statistical_validation --bootstrap 1000
+python -m src.business.experiment_analysis
+python -m src.data.prepare_cloud_sample --limit 20000
+```
+
+Cloud execution is pending workspace setup and two successful job runs. Local tests do not establish Databricks or Azure experience. No new champion training is required for the statistical analysis. Previously inspected test data remains retrospective evidence; a future independent assessment requires a locked evaluation cohort.
 
 ## Fairness And Proxy-Risk Analysis
 

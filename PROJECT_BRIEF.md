@@ -140,7 +140,7 @@ Calibration was evaluated by fitting Platt/sigmoid and isotonic transforms on th
 | Platt/sigmoid | 0.0669 | 0.0062 | 0.7765 | 0.2640 | 0.3593 |
 | Isotonic | 0.0668 | 0.0023 | 0.7760 | 0.2540 | 0.3547 |
 
-Platt/sigmoid calibration is the preferred balanced option for calibrated probability reporting because it improves Brier score and expected calibration error while preserving the model's ranking metrics.
+This is a historical comparison, not an independent method-selection result. Platt preserved ranking in the recorded comparison. Separate validation-only calibration selection and retrospective paired uncertainty analysis are now documented in `reports/statistical_validation.md`; the serving artifact is unchanged.
 
 ## Business Impact Snapshot
 

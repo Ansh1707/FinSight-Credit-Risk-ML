@@ -34,9 +34,9 @@ This report compares probability calibration methods for the saved final LightGB
 | platt_sigmoid | validation | 0.0666 | 0.0061 | 0.7799 | 0.2712 | 0.3644 | 0.4194 |
 | isotonic | validation | 0.0662 | 0.0 | 0.7813 | 0.2645 | 0.3631 | 0.421 |
 
-## Test Recommendation
+## Retrospective Interpretation
 
-The lowest test Brier score is from `isotonic` with Brier score `0.0668` and expected calibration error `0.0023`.
+This historical comparison is descriptive, not a method-selection rule. Validation metrics evaluate calibrators on their fitting data and are optimistic. The test set was inspected, so its results cannot support a new independent selection claim. See [statistical validation](statistical_validation.md) for calibration fitting and selection on separate validation subsets. Existing measurements above are preserved.
 
 Ranking metrics should still be reviewed alongside calibration. For collections prioritization, ROC-AUC, PR-AUC, Recall@Top-10%, and KS remain important; for policy thresholds or customer-facing probabilities, calibrated probabilities are more appropriate than raw class-weighted model scores.
 

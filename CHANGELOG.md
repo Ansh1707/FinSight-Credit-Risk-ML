@@ -1,5 +1,13 @@
 # Changelog
 
+## Cloud Preparation And Statistical Evidence
+
+- Added actual paired bootstrap uncertainty for the saved champion and challenger.
+- Added calibration selection using separate validation fitting/selection subsets and clarified historical test reuse.
+- Added an explicitly synthetic randomized experiment with confidence intervals and a two-proportion test.
+- Prepared a Databricks SQL/PySpark baseline notebook, MLflow logging, sample export and repeatable job configuration. Cloud execution remains pending workspace setup.
+- Added tests for statistical edge cases, split integrity and training-only preprocessing.
+
 All notable project changes are summarized here. This is a portfolio project, so versions represent repository maturity milestones rather than production releases.
 
 ## 0.22.0 - GitHub Repository Presentation

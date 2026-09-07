@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "seed": 42,
+  "assumed_control_probability": 0.1,
+  "assumed_treatment_probability": 0.12,
+  "control_users": 5000,
+  "treatment_users": 5000,
+  "control_conversions": 497,
+  "treatment_conversions": 614,
+  "control_rate": 0.0994,
+  "treatment_rate": 0.1228,
+  "absolute_effect": 0.023400000000000004,
+  "lower_95": 0.011089934447762313,
+  "upper_95": 0.0357100655522377,
+  "z_statistic": 3.7230800935915545,
+  "two_sided_p_value": 0.0001968070544493191
+}

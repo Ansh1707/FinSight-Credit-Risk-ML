@@ -277,7 +277,6 @@ def build_report(
     """Build calibration markdown report."""
     validation = comparison[comparison["split"] == "validation"].copy()
     test = comparison[comparison["split"] == "test"].copy()
-    best_test = test.sort_values("brier_score", ascending=True).iloc[0]
     compact_columns = [
         "method",
         "split",
@@ -318,11 +317,14 @@ def build_report(
             "",
             markdown_table(validation[compact_columns]),
             "",
-            "## Test Recommendation",
+            "## Retrospective Interpretation",
             "",
-            f"The lowest test Brier score is from `{best_test['method']}` "
-            f"with Brier score `{best_test['brier_score']:.4f}` and expected "
-            f"calibration error `{best_test['expected_calibration_error']:.4f}`.",
+            "This historical comparison is descriptive, not a method-selection rule. "
+            "Validation metrics here evaluate calibrators on their fitting data and "
+            "are optimistic. Do not select a calibrator using this test comparison. "
+            "Run python -m src.models.statistical_validation for separate calibration "
+            "fitting and selection within validation. Previously inspected test data "
+            "cannot be made untouched retrospectively.",
             "",
             "Ranking metrics should still be reviewed alongside calibration. For collections "
             "prioritization, ROC-AUC, PR-AUC, Recall@Top-10%, and KS remain important; for "
@@ -341,6 +343,8 @@ def build_report(
 
 def run(sample_size: int | None = None) -> pd.DataFrame:
     """Run calibration comparison and save outputs."""
+    if sample_size is not None:
+        raise ValueError("Sampling before reconstructing splits can include training rows. Use the full original dataset.")
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     X, y = load_features(sample_size=sample_size)
     _, X_valid, X_test, _, y_valid, y_test = split_data(X, y)
@@ -404,4 +408,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
