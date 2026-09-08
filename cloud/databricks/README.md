@@ -1,6 +1,6 @@
 # FinSight Databricks Workflow
 
-Status: prepared and locally tested; no cloud execution claimed. Databricks Free Edition provides serverless compute subject to quotas. This workflow demonstrates Databricks, not Azure. See [Free Edition limitations](https://docs.databricks.com/aws/en/getting-started/free-edition-limitations).
+Status: two supplied manual-job run exports reviewed on 2026-09-08, with matching data fingerprints and aggregate metrics. A supplied screenshot shows two successful jobs. See [cloud execution evidence](../../reports/cloud_execution_summary.md) for measured results and verification limits. CLI bundle deployment remains unverified. Databricks Free Edition provides serverless compute subject to quotas. This workflow demonstrates Databricks, not Azure. See [Free Edition limitations](https://docs.databricks.com/aws/en/getting-started/free-edition-limitations).
 
 ## Architecture
 
@@ -86,4 +86,4 @@ Download only the two `aggregate_evidence_*.json` files from the volume into ign
 
 Compare code revision, fingerprint, sample size, parameters, split counts, versions and metrics across the two runs. They should agree apart from run IDs, timestamps and runtime. Investigate differences before publication. Publish the reviewed aggregate files under a new `reports/cloud_runs/` directory and update the progress checklist only after successful cloud execution. Never publish predictions, model binaries, IDs, source exports, tokens or notebook cell outputs containing rows.
 
-After verified runs, a defensible project statement is: "Executed a reproducible credit-risk baseline training and scoring job on Databricks using SQL/PySpark, training-only preprocessing and MLflow." Add measured row counts and run evidence. Until then describe it as a prepared workflow. No cloud metric or work-experience score is promised.
+The reviewed runs support this project statement: "Executed a Databricks credit-risk baseline training and scoring workflow on 20,000 public-data applicants using SQL/PySpark, scikit-learn and MLflow; two reported successful manual job runs produced identical recorded metrics and data fingerprints." The report distinguishes matching aggregates from independently verified prediction or model-artifact identity. No work-experience score is promised.

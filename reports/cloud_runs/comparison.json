@@ -1,0 +1,54 @@
+{
+  "review_date": "2026-09-08",
+  "basis": "User-supplied aggregate JSON exports and reviewed job-run screenshot; no direct workspace access",
+  "runs_in_completion_order": [
+    "2688e7c56a8f4629820c6afd14cf1717",
+    "1d8ef6a8d8b1444790bb17543fe4cccb"
+  ],
+  "exact_match_fields": [
+    "status",
+    "platform",
+    "source_revision",
+    "data_sha256",
+    "parameters",
+    "metrics",
+    "selection",
+    "missing_counts",
+    "split_counts",
+    "versions"
+  ],
+  "different_fields": [
+    "run_id",
+    "output_run_key",
+    "finished_at_utc",
+    "elapsed_seconds"
+  ],
+  "metric_deltas_later_minus_earlier": {
+    "validation_roc_auc": 0,
+    "validation_average_precision": 0,
+    "validation_brier": 0,
+    "test_roc_auc": 0,
+    "test_average_precision": 0,
+    "test_brier": 0
+  },
+  "within_run_split_totals_match_sample_rows": true,
+  "elapsed_seconds_in_completion_order": [
+    74.92426629800002,
+    30.784016830999974
+  ],
+  "screenshot_observation": {
+    "successful_manual_job_rows": 2,
+    "displayed_durations_seconds": [
+      193,
+      128
+    ],
+    "exact_json_to_job_row_mapping_verified": false,
+    "screenshot_published": false
+  },
+  "limitations": [
+    "Source revision is a supplied widget value, not an independently measured notebook checksum.",
+    "Matching aggregate metrics and data hashes do not prove identical individual predictions or model binaries.",
+    "Cloud Spark/Python runtime versions, job IDs and model artifact hashes are not included.",
+    "No independent cloud rerun or applicant-level data inspection was performed."
+  ]
+}

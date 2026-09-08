@@ -110,6 +110,8 @@ The final project should show PySpark, SQL, credit risk modeling, model validati
 
 ## Final Model Snapshot
 
+The local champion below is separate from the completed cloud baseline demonstration. Two user-supplied Databricks run exports record a 20,000-applicant, 9-feature logistic regression workflow with identical data fingerprints, parameters, versions and metrics. Cloud test ROC-AUC is 0.7209, average precision 0.2010 and Brier score 0.2089. A supplied screenshot shows two successful manual jobs. See `reports/cloud_execution_summary.md` for evidence and limits; this is not a production endpoint or a cloud deployment of the champion.
+
 The final tuned LightGBM model was selected by validation PR-AUC.
 
 | split | ROC-AUC | PR-AUC | Precision | Recall | F1 | Recall@Top-10% | KS |

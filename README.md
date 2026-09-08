@@ -223,7 +223,8 @@ These are historical, descriptive comparisons, not a test-based method-selection
 - [Statistical validation](reports/statistical_validation.md): 1,000 paired applicant bootstrap replicates for champion/challenger metrics and their differences; validation-only calibration selection.
 - [Synthetic experiment](reports/synthetic_experiment.md): two-proportion hypothesis test, effect size, confidence interval and assumptions. Explicitly simulated; no measured business uplift.
 - [Databricks setup](cloud/databricks/README.md): SQL/PySpark transformations, training-only imputation, validation-selected logistic regression, MLflow and repeatable job configuration.
-- [Execution checklist](reports/cloud_statistics_progress.md): completed local evidence and pending cloud verification.
+- [Cloud execution evidence](reports/cloud_execution_summary.md): two reported successful manual Databricks job runs with matching data fingerprints, configurations and metrics.
+- [Execution checklist](reports/cloud_statistics_progress.md): completed statistical analysis and cloud evidence review, with verification limits.
 
 ```bash
 python -m src.models.statistical_validation --bootstrap 1000
@@ -231,7 +232,7 @@ python -m src.business.experiment_analysis
 python -m src.data.prepare_cloud_sample --limit 20000
 ```
 
-Cloud execution is pending workspace setup and two successful job runs. Local tests do not establish Databricks or Azure experience. No new champion training is required for the statistical analysis. Previously inspected test data remains retrospective evidence; a future independent assessment requires a locked evaluation cohort.
+Two supplied Databricks run records match on all six metrics, the transformed-data fingerprint, declared revision, parameters, versions and split counts. The cloud logistic baseline used 20,000 applicants and 9 features, with 12,000/4,000/4,000 train/validation/test rows. Test ROC-AUC was **0.7209**, average precision **0.2010**, and Brier score **0.2089**. These are separate from the local champion metrics and describe an uncalibrated sample baseline. The user-provided screenshot supports two successful manual jobs; this review did not independently access the workspace. No Azure experience, production deployment or measured business uplift is claimed. Previously inspected local test data remains retrospective evidence.
 
 ## Fairness And Proxy-Risk Analysis
 

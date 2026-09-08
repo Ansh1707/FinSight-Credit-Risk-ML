@@ -1,0 +1,49 @@
+{
+  "status": "completed",
+  "platform": "Databricks",
+  "run_id": "21485739d2cd48aab5e94b0ac93db493",
+  "output_run_key": "1d8ef6a8d8b1444790bb17543fe4cccb",
+  "source_revision": "2eed79e1c97d9839e8d8f53440b2e4866ac9a66a",
+  "data_sha256": "f605df3d4e3a223bdfa06d3147afae6523cba09826595d4710c0759f0f638433",
+  "finished_at_utc": "2026-09-08T01:32:24.948468+00:00",
+  "elapsed_seconds": 30.784016830999974,
+  "parameters": {
+    "C": 1,
+    "seed": 2026,
+    "class_weight": "balanced",
+    "sample_rows": 20000,
+    "source_rows": 20000,
+    "feature_count": 9
+  },
+  "metrics": {
+    "validation_roc_auc": 0.6982792372635183,
+    "validation_average_precision": 0.18927111835472615,
+    "validation_brier": 0.2103605678405546,
+    "test_roc_auc": 0.7209208210749741,
+    "test_average_precision": 0.20098655043043484,
+    "test_brier": 0.20888077445928938
+  },
+  "selection": "validation average precision",
+  "missing_counts": {
+    "AMT_INCOME_TOTAL": 0,
+    "AMT_CREDIT": 0,
+    "AMT_ANNUITY": 2,
+    "credit_to_income_ratio": 0,
+    "annuity_to_income_ratio": 2,
+    "age_years": 0,
+    "employment_years": 3607,
+    "external_score_mean": 18,
+    "missing_value_count": 0
+  },
+  "split_counts": {
+    "train": 12000,
+    "validation": 4000,
+    "test": 4000
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "mlflow": "2.22.0"
+  }
+}

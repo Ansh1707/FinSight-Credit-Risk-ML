@@ -1,5 +1,11 @@
 # Changelog
 
+## Databricks Run Evidence - 2026-09-08
+
+- Published two reviewed aggregate cloud exports and an exact field comparison.
+- Recorded 20,000-applicant baseline results, runtime differences and screenshot/provenance limits.
+- Updated cloud status without conflating the sample logistic baseline with the local champion or claiming production deployment.
+
 ## Cloud Preparation And Statistical Evidence
 
 - Added actual paired bootstrap uncertainty for the saved champion and challenger.
