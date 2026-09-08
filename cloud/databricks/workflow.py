@@ -76,11 +76,24 @@ def fit_baseline(frame, seed=2026):
     return model, metrics, predictions, manifest, {"C": c, "seed": seed, "class_weight": "balanced"}
 
 
+def create_run_table(spark, output, table_name):
+    """Create a new Delta table through SQL; never replace an existing table."""
+    if not re.fullmatch(r"[A-Za-z_][\w]*\.[A-Za-z_][\w]*\.[A-Za-z_][\w]*", table_name):
+        raise ValueError("Output must be a simple catalog.schema.table identifier.")
+    view = "finsight_output_" + uuid.uuid4().hex
+    spark.createDataFrame(output).createOrReplaceTempView(view)
+    try:
+        spark.sql(f"CREATE TABLE {table_name} USING DELTA AS SELECT * FROM {view}")
+    finally:
+        spark.sql(f"DROP VIEW IF EXISTS {view}")
+
+
 def run_cloud(spark, input_table, output_schema, experiment_name, evidence_volume,
               max_rows=20000, revision=""):
     """Write each run to new cloud outputs; export only aggregate evidence."""
     import mlflow
     import mlflow.sklearn
+    from mlflow.models import infer_signature
     from pathlib import Path
     from pyspark.sql import functions as F
 
@@ -133,9 +146,10 @@ def run_cloud(spark, input_table, output_schema, experiment_name, evidence_volum
         mlflow.log_metrics(metrics)
         mlflow.set_tags({"source_revision": revision, "data_fingerprint": fingerprint,
                          "scope": "public-data sample cloud baseline; not production champion"})
-        mlflow.sklearn.log_model(model, artifact_path="baseline_model")
+        signature = infer_signature(frame[FEATURES], model.predict(frame[FEATURES]))
+        mlflow.sklearn.log_model(model, artifact_path="baseline_model", signature=signature)
         for suffix, output in (("features", frame), ("predictions", predictions), ("splits", manifest)):
-            spark.createDataFrame(output).write.format("delta").mode("errorifexists").saveAsTable(f"{output_schema}.run_{run_key}_{suffix}")
+            create_run_table(spark, output, f"{output_schema}.run_{run_key}_{suffix}")
         evidence = {"status": "completed", "platform": "Databricks", "run_id": run.info.run_id,
             "output_run_key": run_key, "source_revision": revision, "data_sha256": fingerprint,
             "finished_at_utc": datetime.now(timezone.utc).isoformat(), "elapsed_seconds": time.perf_counter()-started,

@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from cloud.databricks.workflow import FEATURES, SOURCE_COLUMNS, fit_baseline, validate_frame
+from cloud.databricks.workflow import FEATURES, SOURCE_COLUMNS, fit_baseline, validate_frame, create_run_table
 
 
 def fixture_frame():
@@ -37,3 +37,25 @@ def test_cloud_bad_schema_and_duplicate_ids_rejected():
     frame.loc[1, "SK_ID_CURR"] = frame.loc[0, "SK_ID_CURR"]
     with pytest.raises(ValueError, match="unique"):
         validate_frame(frame)
+
+
+def test_table_creation_preserves_existing_table_and_cleans_temp_view():
+    from unittest.mock import Mock
+
+    spark = Mock()
+    spark.sql.side_effect = [RuntimeError("TABLE_ALREADY_EXISTS"), None]
+    with pytest.raises(RuntimeError, match="TABLE_ALREADY_EXISTS"):
+        create_run_table(spark, fixture_frame(), "workspace.finsight.run_example_features")
+    queries = [call.args[0] for call in spark.sql.call_args_list]
+    assert queries[0].startswith("CREATE TABLE workspace.finsight.run_example_features USING DELTA AS SELECT")
+    assert "REPLACE" not in queries[0] and "IF NOT EXISTS" not in queries[0]
+    assert queries[1].startswith("DROP VIEW IF EXISTS finsight_output_")
+
+
+def test_table_creation_rejects_sql_injection_before_accessing_spark():
+    from unittest.mock import Mock
+
+    spark = Mock()
+    with pytest.raises(ValueError):
+        create_run_table(spark, fixture_frame(), "workspace.finsight.x; DROP TABLE y")
+    spark.createDataFrame.assert_not_called()

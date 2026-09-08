@@ -59,6 +59,8 @@ Cloud paths are supplied at runtime; no local absolute paths are embedded in cod
 
 ## Step 4: Create And Rerun A Job
 
+If an earlier notebook fails with `[UNSUPPORTED_OPERATION] errorifexists is not supported`, import the updated `workflow.py`. The output writer now uses SQL `CREATE TABLE ... USING DELTA AS SELECT`, with unique table names per run and no overwrite. MLflow logging also includes the model signature. An uploaded MLflow artifact alone does not mean the entire workflow succeeded. Preserve your widget values, update `revision` to the imported code's commit, and rerun all cells. Partial failed runs can remain for diagnosis; each rerun gets new output names.
+
 The UI is the simplest first route: choose **Schedule / Create job** from the notebook, use a manual trigger and serverless compute, copy the same parameters, and run twice. Confirm the job uses the notebook dependency environment. Both executions must finish successfully with the same input snapshot and code revision. This is a reproducibility check, not a second independent model evaluation.
 
 For CLI-managed deployment, install the current [Databricks CLI](https://docs.databricks.com/aws/en/dev-tools/cli/install), then use the bundled configuration. Authenticate with browser OAuth; never paste tokens into this repository.
